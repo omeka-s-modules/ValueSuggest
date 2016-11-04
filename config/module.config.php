@@ -17,7 +17,9 @@ return [
             // @todo Add more LC data types
             'valuesuggest:getty:aat' => 'ValueSuggest\Service\GettyDataTypeFactory',
             'valuesuggest:getty:tgn' => 'ValueSuggest\Service\GettyDataTypeFactory',
-            // @todo Add more Getty data types
+            'valuesuggest:getty:ulan' => 'ValueSuggest\Service\GettyDataTypeFactory',
+            // @todo Add "The Cultural Objects Name Authority (CONA)" once it's
+            // published (past due, fall 2015)
         ],
     ],
     'router' => [
