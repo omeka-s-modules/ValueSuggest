@@ -16,6 +16,7 @@ return [
             'valuesuggest:lc:performanceMediums' => 'ValueSuggest\Service\LcDataTypeFactory',
             // @todo Add more LC data types
             'valuesuggest:getty:aat' => 'ValueSuggest\Service\GettyDataTypeFactory',
+            'valuesuggest:getty:tgn' => 'ValueSuggest\Service\GettyDataTypeFactory',
             // @todo Add more Getty data types
         ],
     ],
