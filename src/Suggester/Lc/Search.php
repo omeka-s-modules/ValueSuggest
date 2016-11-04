@@ -27,11 +27,8 @@ class Search implements SuggesterInterface
     /**
      * Retrieve suggestions from the LC Linked Data Service search.
      *
-     * LC provides suggest endpoints for their authorities and vocabularies
-     * (e.g. http://id.loc.gov/authorities/subjects/suggest?q=foo) but
-     * the service is undocumented and only returns the first 10 results in
-     * alphabetical order. The search service we use here is slower but returns
-     * better (fulltext) and more (20) results than the suggest service.
+     * The search service is slow, but it's ideal for large data sets because it
+     * returns more (20) and better (fulltext) results than the suggest service.
      *
      * @see http://id.loc.gov/search/
      * @param string $query

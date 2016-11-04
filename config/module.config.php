@@ -19,6 +19,7 @@ return [
             'valuesuggest:lc:graphicMaterials' => 'ValueSuggest\Service\LcDataTypeFactory',
             'valuesuggest:lc:ethnographicTerms' => 'ValueSuggest\Service\LcDataTypeFactory',
             'valuesuggest:lc:organizations' => 'ValueSuggest\Service\LcDataTypeFactory',
+            'valuesuggest:lc:relators' => 'ValueSuggest\Service\LcDataTypeFactory',
             // @todo Add more LC data types
 
             /* Getty */
