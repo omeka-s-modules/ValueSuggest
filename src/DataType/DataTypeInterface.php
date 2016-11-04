@@ -4,10 +4,9 @@ namespace ValueSuggest\DataType;
 interface DataTypeInterface
 {
     /**
-     * Get an array of suggestions given a query.
+     * Get the suggestor needed to retrieve suggestions.
      *
-     * @param string $query
-     * @return array
+     * @return \ValueSuggest\Suggester\SuggesterInterface
      */
-    public function getSuggestions($query);
+    public function getSuggester();
 }

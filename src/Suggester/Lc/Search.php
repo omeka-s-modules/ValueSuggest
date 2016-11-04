@@ -1,18 +1,28 @@
 <?php
-namespace ValueSuggest\DataType\Lc;
+namespace ValueSuggest\Suggester\Lc;
 
-use ValueSuggest\DataType\AbstractDataType;
+use ValueSuggest\Suggester\SuggesterInterface;
+use Zend\Http\Client;
 
-abstract class AbstractLcDataType extends AbstractDataType
+class Search implements SuggesterInterface
 {
     const ENDPOINT = 'http://id.loc.gov/search/';
 
     /**
-     * Get the scheme portion of the search query.
-     *
-     * @return string
+     * @var Client
      */
-    abstract function getScheme();
+    protected $client;
+
+    /**
+     * @var string The scheme portion of the search query.
+     */
+    protected $scheme;
+
+    public function __construct(Client $client, $scheme)
+    {
+        $this->client = $client;
+        $this->scheme = $scheme;
+    }
 
     /**
      * Retrieve suggestions from the LC Linked Data Service search.
@@ -35,11 +45,10 @@ abstract class AbstractLcDataType extends AbstractDataType
             '%s?format=json&q=%s&q=%s',
             self::ENDPOINT,
             urlencode($query),
-            urlencode($this->getScheme())
+            urlencode($this->scheme)
         );
 
-        $client = $this->services->get('Omeka\HttpClient')->setUri($uri);
-        $response = $client->send();
+        $response = $this->client->setUri($uri)->send();
         if (!$response->isSuccess()) {
             return [];
         }

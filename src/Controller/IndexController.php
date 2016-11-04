@@ -3,6 +3,7 @@ namespace ValueSuggest\Controller;
 
 use Omeka\DataType\Manager as DataTypeManager;
 use ValueSuggest\DataType\DataTypeInterface;
+use ValueSuggest\Suggester\SuggesterInterface;
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\ServiceManager\ServiceManager;
 use Zend\View\Model\JsonModel;
@@ -34,7 +35,13 @@ class IndexController extends AbstractActionController
             return $response->setStatusCode('500')->setContent($errorMessage);
         }
 
-        $suggestions = $dataType->getSuggestions($query);
+        $suggester = $dataType->getSuggester();
+        if (!$suggester instanceof SuggesterInterface) {
+            $errorMessage = sprintf('The "%s" suggester does not implement ValueSuggest\Suggester\SuggesterInterface.', $type);
+            return $response->setStatusCode('500')->setContent($errorMessage);
+        }
+
+        $suggestions = $suggester->getSuggestions($query);
         if (!is_array($suggestions)) {
             $errorMessage = sprintf('The "%s" data type must return an array; %s given.', $type, gettype($suggestions));
             return $response->setStatusCode('500')->setContent($errorMessage);
