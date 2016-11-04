@@ -9,6 +9,12 @@ $(document).on('o:prepare-value', function(e, type, value) {
             // Must disable preventBadQueries or autocomple will not fire on
             // queries that share a root that previously returned no results.
             preventBadQueries: false,
+            onSearchStart: function() {
+                $('*').css('cursor', 'progress');
+            },
+            onSearchComplete: function(query, suggestions) {
+                $('*').css('cursor', 'default');
+            },
         });
     }
 });
