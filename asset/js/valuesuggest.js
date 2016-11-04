@@ -6,6 +6,9 @@ $(document).on('o:prepare-value', function(e, type, value) {
             params: {type: type},
             deferRequestBy: 200,
             minChars: 3,
+            // Must disable preventBadQueries or autocomple will not fire on
+            // queries that share a root that previously returned no results.
+            preventBadQueries: false,
         });
     }
 });
