@@ -23,8 +23,12 @@ abstract class AbstractGettyDataType extends AbstractDataType
      */
     public function getSuggestions($query)
     {
+        // Use the documented case-insensitive fulltext search to retrieve
+        // suggestions. Must use DISTINCT to filter duplicates because different
+        // results may have identical labels.
+        // @see http://vocab.getty.edu/doc/queries/#Case-insensitive_Full_Text_Search_Query
         $sparqlQuery = sprintf('
-select ?Term {
+select distinct ?Term {
   ?Subject a skos:Concept ;
   luc:term "%s" ;
   skos:inScheme %s: ;
