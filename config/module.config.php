@@ -7,6 +7,7 @@ return [
     ],
     'data_types' => [
         'factories' => [
+            /* Library of Congress */
             'valuesuggest:lc:all' => 'ValueSuggest\Service\LcDataTypeFactory',
             'valuesuggest:lc:subjects' => 'ValueSuggest\Service\LcDataTypeFactory',
             'valuesuggest:lc:names' => 'ValueSuggest\Service\LcDataTypeFactory',
@@ -14,7 +15,13 @@ return [
             'valuesuggest:lc:childrensSubjects' => 'ValueSuggest\Service\LcDataTypeFactory',
             'valuesuggest:lc:genreForms' => 'ValueSuggest\Service\LcDataTypeFactory',
             'valuesuggest:lc:performanceMediums' => 'ValueSuggest\Service\LcDataTypeFactory',
-            // @todo Add more LC data types
+            'valuesuggest:lc:demographicTerms' => 'ValueSuggest\Service\LcDataTypeFactory',
+            'valuesuggest:lc:graphicMaterials' => 'ValueSuggest\Service\LcDataTypeFactory',
+            'valuesuggest:lc:ethnographicTerms' => 'ValueSuggest\Service\LcDataTypeFactory',
+            'valuesuggest:lc:organizations' => 'ValueSuggest\Service\LcDataTypeFactory',
+            // @todo Add more LC data types, caching the smaller data sets.
+
+            /* Getty */
             'valuesuggest:getty:aat' => 'ValueSuggest\Service\GettyDataTypeFactory',
             'valuesuggest:getty:tgn' => 'ValueSuggest\Service\GettyDataTypeFactory',
             'valuesuggest:getty:ulan' => 'ValueSuggest\Service\GettyDataTypeFactory',
