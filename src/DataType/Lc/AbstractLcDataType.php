@@ -1,28 +1,11 @@
 <?php
 namespace ValueSuggest\DataType\Lc;
 
-use Omeka\DataType\Literal;
-use ValueSuggest\DataType\DataTypeInterface;
-use Zend\Form\Element\Text;
-use Zend\ServiceManager\ServiceManager;
-use Zend\View\Renderer\PhpRenderer;
+use ValueSuggest\DataType\AbstractDataType;
 
-abstract class AbstractLcDataType extends Literal implements DataTypeInterface
+abstract class AbstractLcDataType extends AbstractDataType
 {
     const ENDPOINT = 'http://id.loc.gov/search/';
-
-    /**
-     * @var ServiceManager
-     */
-    protected $services;
-
-    /**
-     * @param ServiceManager $services
-     */
-    public function __construct(ServiceManager $services)
-    {
-        $this->services = $services;
-    }
 
     /**
      * Get the scheme portion of the search query.
@@ -71,15 +54,5 @@ abstract class AbstractLcDataType extends Literal implements DataTypeInterface
         }
 
         return $suggestions;
-    }
-
-    public function form(PhpRenderer $view)
-    {
-        $text = new Text('valuesuggest');
-        $text->setAttributes([
-                'class' => 'to-require',
-                'data-value-key' => '@value',
-            ]);
-        return $view->formText($text);
     }
 }
