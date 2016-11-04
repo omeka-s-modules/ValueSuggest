@@ -76,6 +76,9 @@ select ?Term {
                 'class' => 'to-require',
                 'data-value-key' => '@value',
             ]);
-        return $view->formText($text);
+        return sprintf(
+            '<span class="o-icon-vocab label" title="%1$s">%1$s</span>',
+            $view->escapeHtml($this->getLabel())
+        ) . $view->formText($text);
     }
 }
