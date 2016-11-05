@@ -1,18 +1,28 @@
 <?php
-namespace ValueSuggest\DataType\Getty;
+namespace ValueSuggest\Suggester\Getty;
 
-use ValueSuggest\DataType\AbstractDataType;
+use ValueSuggest\Suggester\SuggesterInterface;
+use Zend\Http\Client;
 
-abstract class AbstractGettyDataType extends AbstractDataType
+class Sparql implements SuggesterInterface
 {
     const ENDPOINT = 'http://vocab.getty.edu/sparql.json';
 
     /**
-     * Get the skos:inScheme portion of the SPARQL query.
-     *
-     * @return string
+     * @var Client
      */
-    abstract function getScheme();
+    protected $client;
+
+    /**
+     * @var string The skos:inScheme portion of the SPARQL query.
+     */
+    protected $scheme;
+
+    public function __construct(Client $client, $scheme)
+    {
+        $this->client = $client;
+        $this->scheme = $scheme;
+    }
 
     /**
      * Retrieve suggestions from the Getty Vocabularies SPARQL endpoint.
@@ -35,13 +45,11 @@ select distinct ?Term {
   gvp:prefLabelGVP [xl:literalForm ?Term] .
 } order by asc(lcase(str(?Term)))',
             addslashes($query),
-            $this->getScheme()
+            $this->scheme
         );
-        $client = $this->services->get('Omeka\HttpClient')
-            ->setUri(self::ENDPOINT)
-            ->setParameterGet([
-                'query' => $sparqlQuery,
-            ]);
+        $client = $this->client->setUri(self::ENDPOINT)->setParameterGet([
+            'query' => $sparqlQuery,
+        ]);
 
         // Must include Accept header or endpoint returns 400 Bad Request with
         // message: "The request sent by the client was syntactically incorrect."

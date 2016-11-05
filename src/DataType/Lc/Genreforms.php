@@ -1,11 +1,17 @@
 <?php
 namespace ValueSuggest\DataType\Lc;
 
-class Genreforms extends AbstractLcDataType
+use ValueSuggest\DataType\AbstractDataType;
+use ValueSuggest\Suggester\Lc\Search;
+
+class Genreforms extends AbstractDataType
 {
-    public function getScheme()
+    public function getSuggester()
     {
-        return 'scheme:http://id.loc.gov/authorities/genreForms';
+        return new Search(
+            $this->services->get('Omeka\HttpClient'),
+            'scheme:http://id.loc.gov/authorities/genreForms'
+        );
     }
 
     public function getName()

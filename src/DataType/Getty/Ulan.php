@@ -1,11 +1,14 @@
 <?php
 namespace ValueSuggest\DataType\Getty;
 
-class Ulan extends AbstractGettyDataType
+use ValueSuggest\DataType\AbstractDataType;
+use ValueSuggest\Suggester\Getty\Sparql;
+
+class Ulan extends AbstractDataType
 {
-    public function getScheme()
+    public function getSuggester()
     {
-        return 'ulan';
+        return new Sparql($this->services->get('Omeka\HttpClient'), 'ulan');
     }
 
     public function getName()

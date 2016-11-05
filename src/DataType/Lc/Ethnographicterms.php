@@ -1,11 +1,17 @@
 <?php
 namespace ValueSuggest\DataType\Lc;
 
-class Ethnographicterms extends AbstractLcDataType
+use ValueSuggest\DataType\AbstractDataType;
+use ValueSuggest\Suggester\Lc\Search;
+
+class Ethnographicterms extends AbstractDataType
 {
-    public function getScheme()
+    public function getSuggester()
     {
-        return 'scheme:http://id.loc.gov/vocabulary/ethnographicTerms';
+        return new Search(
+            $this->services->get('Omeka\HttpClient'),
+            'scheme:http://id.loc.gov/vocabulary/ethnographicTerms'
+        );
     }
 
     public function getName()

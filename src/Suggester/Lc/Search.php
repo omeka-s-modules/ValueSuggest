@@ -1,27 +1,34 @@
 <?php
-namespace ValueSuggest\DataType\Lc;
+namespace ValueSuggest\Suggester\Lc;
 
-use ValueSuggest\DataType\AbstractDataType;
+use ValueSuggest\Suggester\SuggesterInterface;
+use Zend\Http\Client;
 
-abstract class AbstractLcDataType extends AbstractDataType
+class Search implements SuggesterInterface
 {
     const ENDPOINT = 'http://id.loc.gov/search/';
 
     /**
-     * Get the scheme portion of the search query.
-     *
-     * @return string
+     * @var Client
      */
-    abstract function getScheme();
+    protected $client;
+
+    /**
+     * @var string The scheme portion of the search query.
+     */
+    protected $scheme;
+
+    public function __construct(Client $client, $scheme)
+    {
+        $this->client = $client;
+        $this->scheme = $scheme;
+    }
 
     /**
      * Retrieve suggestions from the LC Linked Data Service search.
      *
-     * LC provides suggest endpoints for their authorities and vocabularies
-     * (e.g. http://id.loc.gov/authorities/subjects/suggest?q=foo) but
-     * the service is undocumented and only returns the first 10 results in
-     * alphabetical order. The search service we use here is slower but returns
-     * better (fulltext) and more (20) results than the suggest service.
+     * The search service is slow, but it's ideal for large data sets because it
+     * returns more (20) and better (fulltext) results than the suggest service.
      *
      * @see http://id.loc.gov/search/
      * @param string $query
@@ -35,11 +42,10 @@ abstract class AbstractLcDataType extends AbstractDataType
             '%s?format=json&q=%s&q=%s',
             self::ENDPOINT,
             urlencode($query),
-            urlencode($this->getScheme())
+            urlencode($this->scheme)
         );
 
-        $client = $this->services->get('Omeka\HttpClient')->setUri($uri);
-        $response = $client->send();
+        $response = $this->client->setUri($uri)->send();
         if (!$response->isSuccess()) {
             return [];
         }

@@ -2,25 +2,25 @@
 namespace ValueSuggest\DataType\Lc;
 
 use ValueSuggest\DataType\AbstractDataType;
-use ValueSuggest\Suggester\Lc\Search;
+use ValueSuggest\Suggester\Lc\Suggest;
 
-class Names extends AbstractDataType
+class Iso6395 extends AbstractDataType
 {
     public function getSuggester()
     {
-        return new Search(
+        return new Suggest(
             $this->services->get('Omeka\HttpClient'),
-            'scheme:http://id.loc.gov/authorities/names'
+            'http://id.loc.gov/vocabulary/iso639-5/suggest'
         );
     }
 
     public function getName()
     {
-        return 'valuesuggest:lc:names';
+        return 'valuesuggest:lc:iso6395';
     }
 
     public function getLabel()
     {
-        return 'Value Suggest: LC: Name Authority File'; // @translate
+        return 'Value Suggest: LC: ISO639-5 Languages'; // @translate
     }
 }

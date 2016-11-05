@@ -1,11 +1,14 @@
 <?php
 namespace ValueSuggest\DataType\Lc;
 
-class All extends AbstractLcDataType
+use ValueSuggest\DataType\AbstractDataType;
+use ValueSuggest\Suggester\Lc\Search;
+
+class All extends AbstractDataType
 {
-    public function getScheme()
+    public function getSuggester()
     {
-        return '';
+        return new Search($this->services->get('Omeka\HttpClient'), '');
     }
 
     public function getName()

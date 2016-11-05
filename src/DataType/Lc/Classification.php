@@ -1,11 +1,17 @@
 <?php
 namespace ValueSuggest\DataType\Lc;
 
-class Classification extends AbstractLcDataType
+use ValueSuggest\DataType\AbstractDataType;
+use ValueSuggest\Suggester\Lc\Search;
+
+class Classification extends AbstractDataType
 {
-    public function getScheme()
+    public function getSuggester()
     {
-        return 'scheme:http://id.loc.gov/authorities/classification';
+        return new Search(
+            $this->services->get('Omeka\HttpClient'),
+            'scheme:http://id.loc.gov/authorities/classification'
+        );
     }
 
     public function getName()

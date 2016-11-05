@@ -2,25 +2,25 @@
 namespace ValueSuggest\DataType\Lc;
 
 use ValueSuggest\DataType\AbstractDataType;
-use ValueSuggest\Suggester\Lc\Search;
+use ValueSuggest\Suggester\Lc\Suggest;
 
-class Names extends AbstractDataType
+class Relators extends AbstractDataType
 {
     public function getSuggester()
     {
-        return new Search(
+        return new Suggest(
             $this->services->get('Omeka\HttpClient'),
-            'scheme:http://id.loc.gov/authorities/names'
+            'http://id.loc.gov/vocabulary/relators/suggest'
         );
     }
 
     public function getName()
     {
-        return 'valuesuggest:lc:names';
+        return 'valuesuggest:lc:relators';
     }
 
     public function getLabel()
     {
-        return 'Value Suggest: LC: Name Authority File'; // @translate
+        return 'Value Suggest: LC: MARC Relators'; // @translate
     }
 }

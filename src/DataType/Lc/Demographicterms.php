@@ -1,11 +1,17 @@
 <?php
 namespace ValueSuggest\DataType\Lc;
 
-class Demographicterms extends AbstractLcDataType
+use ValueSuggest\DataType\AbstractDataType;
+use ValueSuggest\Suggester\Lc\Search;
+
+class Demographicterms extends AbstractDataType
 {
-    public function getScheme()
+    public function getSuggester()
     {
-        return 'scheme:http://id.loc.gov/authorities/demographicTerms';
+        return new Search(
+            $this->services->get('Omeka\HttpClient'),
+            'scheme:http://id.loc.gov/authorities/demographicTerms'
+        );
     }
 
     public function getName()
