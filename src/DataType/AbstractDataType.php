@@ -28,20 +28,21 @@ abstract class AbstractDataType extends BaseAbstractDataType implements DataType
 
     public function form(PhpRenderer $view)
     {
-        $label = new Text('valuesuggest-label');
-        $label->setAttributes([
+        $labelInput = new Text('valuesuggest-label');
+        $labelInput->setAttributes([
+            'class' => 'to-require',
             'data-value-key' => 'o:label',
         ]);
-        $uri = new Hidden('valuesuggest-uri');
-        $uri->setAttributes([
-            'class' => 'to-require',
+        $idInput = new Hidden('valuesuggest-uri');
+        $idInput->setAttributes([
             'data-value-key' => '@id',
         ]);
         return sprintf(
             '<span class="o-icon-vocab label" title="%1$s">%1$s</span>',
             $view->escapeHtml($this->getLabel())
-        ) . $view->formText($label)
-          . $view->formHidden($uri);
+        ) . $view->formText($labelInput)
+          . $view->formHidden($idInput)
+          . '<div class="valuesuggest-uri"></div>';
     }
 
     public function isValid(array $valueObject)
