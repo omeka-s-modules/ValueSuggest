@@ -28,44 +28,63 @@ abstract class AbstractDataType extends BaseAbstractDataType implements DataType
 
     public function form(PhpRenderer $view)
     {
-        $labelInput = new Text('valuesuggest-label');
+        $labelInput = new Hidden('valuesuggest-label');
         $labelInput->setAttributes([
-            'class' => 'to-require',
             'data-value-key' => 'o:label',
         ]);
-        $idInput = new Hidden('valuesuggest-uri');
+
+        $idInput = new Hidden('valuesuggest-id');
         $idInput->setAttributes([
             'data-value-key' => '@id',
         ]);
-        return sprintf(
-            '<span class="o-icon-vocab label" title="%1$s">%1$s</span>',
-            $view->escapeHtml($this->getLabel())
-        ) . $view->formText($labelInput)
-          . $view->formHidden($idInput)
-          . '<div class="valuesuggest-uri"></div>';
+
+        $valueInput = new Hidden('valuesuggest-value');
+        $valueInput->setAttributes([
+            'data-value-key' => '@value',
+        ]);
+
+        return '<input type="text" class="valuesuggest-input">'
+            . $view->formHidden($labelInput)
+            . $view->formHidden($idInput)
+            . $view->formHidden($valueInput)
+            . '<div class="valuesuggest-id"></div>';
     }
 
     public function isValid(array $valueObject)
     {
-        if (isset($valueObject['o:label'])
-            && is_string($valueObject['o:label'])
-            && '' !== trim($valueObject['o:label'])
+        if (isset($valueObject['@id'])
+            && is_string($valueObject['@id'])
+            && '' !== trim($valueObject['@id'])
         ) {
              return true;
+        }
+        if (isset($valueObject['@value'])
+            && is_string($valueObject['@value'])
+            && '' !== trim($valueObject['@value'])
+        ) {
+            return true;
         }
         return false;
     }
 
     public function hydrate(array $valueObject, Value $value, AbstractEntityAdapter $adapter)
     {
-        $value->setValue($valueObject['o:label']);
+        $uriStr = null;
+        $valueStr = null;
+
         if (isset($valueObject['@id'])) {
-            $value->setUri($valueObject['@id']);
-        } else {
-            $value->setUri(null); // set default
+            $uriStr = $valueObject['@id'];
+            if (isset($valueObject['o:label'])) {
+                $valueStr = $valueObject['o:label'];
+            }
+        } elseif (isset($valueObject['@value'])) {
+            $valueStr = $valueObject['@value'];
         }
-        $value->setLang(null); // set default
-        $value->setValueResource(null); // set default
+
+        $value->setUri($uriStr);
+        $value->setValue($valueStr);
+        $value->setLang(null);
+        $value->setValueResource(null);
     }
 
     public function render(PhpRenderer $view, ValueRepresentation $value)
@@ -77,9 +96,12 @@ abstract class AbstractDataType extends BaseAbstractDataType implements DataType
 
     public function getJsonLd(ValueRepresentation $value)
     {
-        $jsonLd = ['o:label' => $value->value()];
+        $jsonLd = [];
         if ($value->uri()) {
             $jsonLd['@id'] = $value->uri();
+            $jsonLd['o:label'] = $value->value();
+        } else {
+            $jsonLd['@value'] = $value->value();
         }
         return $jsonLd;
     }

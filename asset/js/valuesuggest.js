@@ -1,31 +1,35 @@
 $(document).on('o:prepare-value', function(e, type, value) {
     if (0 === type.indexOf('valuesuggest:')) {
 
-        var labelInput = $(value).find('input[data-value-key="o:label"]');
-        var uriInput = labelInput.siblings('input[data-value-key="@id"]');
-        var displayUri = labelInput.siblings('.valuesuggest-uri');
+        var thisValue = $(value);
+        var suggestInput = thisValue.find('.valuesuggest-input');
+        var labelInput = thisValue.find('input[data-value-key="o:label"]');
+        var idInput = thisValue.find('input[data-value-key="@id"]');
+        var valueInput = thisValue.find('input[data-value-key="@value"]');
+        var idDisplay = thisValue.find('.valuesuggest-id');
 
-        // Populate o:label placeholder and display URI for an existing value.
-        labelInput.attr('placeholder', labelInput.val());
-        var link = $('<a>')
-            .attr('href', uriInput.val())
-            .attr('target', '_blank')
-            .text(uriInput.val());
-        displayUri.html(link);
+        if (idInput.val()) {
+            // Set value as URI type
+            suggestInput.val(labelInput.val())
+                .attr('placeholder', labelInput.val());
+            idInput.prop('disabled', false);
+            labelInput.prop('disabled', false);
+            valueInput.prop('disabled', true);
+            var link = $('<a>')
+                .attr('href', idInput.val())
+                .attr('target', '_blank')
+                .text(idInput.val());
+            idDisplay.html(link);
+        } else if (valueInput.val()) {
+            // Set value as Literal type
+            suggestInput.val(valueInput.val())
+                .attr('placeholder', valueInput.val());
+            idInput.prop('disabled', true);
+            labelInput.prop('disabled', true);
+            valueInput.prop('disabled', false);
+        }
 
-        // Flag the display URI as invalid when there is no o:label. Otherwise,
-        // remove the flag.
-        labelInput.on('input', function(e) {
-            if ('' === labelInput.val().trim()) {
-                displayUri.addClass('error');
-            } else {
-                displayUri.removeClass('error');
-            }
-        });
-
-        // Set up autocomplete for the label input field.
-        // @see https://github.com/devbridge/jQuery-Autocomplete
-        labelInput.autocomplete({
+        suggestInput.autocomplete({
             serviceUrl: valueSuggestProxyUrl,
             params: {type: type},
             deferRequestBy: 200,
@@ -34,21 +38,36 @@ $(document).on('o:prepare-value', function(e, type, value) {
             // queries that share a root that previously returned no results.
             preventBadQueries: false,
             onSearchStart: function() {
-                $('*').css('cursor', 'progress');
+                //~ $('*').css('cursor', 'progress');
             },
             onSearchComplete: function(query, suggestions) {
-                $('*').css('cursor', 'default');
+                //~ $('*').css('cursor', 'default');
             },
             // Prepare the entire value when the user selects a suggestion.
             onSelect: function (suggestion) {
-                uriInput.val(suggestion.data.uri);
-                var link = $('<a>')
-                    .attr('href', suggestion.data.uri)
-                    .attr('target', '_blank')
-                    .text(suggestion.data.uri);
-                displayUri.html(link);
-                displayUri.removeClass('error');
-                labelInput.attr('placeholder', suggestion.value);
+                if (typeof suggestion.data !== 'undefined' && suggestion.data.uri) {
+                    // Set value as URI type
+                    suggestInput.val(suggestion.value)
+                        .attr('placeholder', suggestion.value);
+                    idInput.val(suggestion.data.uri);
+                    labelInput.val(suggestion.value);
+                    idInput.prop('disabled', false);
+                    labelInput.prop('disabled', false);
+                    valueInput.prop('disabled', true);
+                    var link = $('<a>')
+                        .attr('href', suggestion.data.uri)
+                        .attr('target', '_blank')
+                        .text(suggestion.data.uri);
+                    idDisplay.html(link);
+                } else {
+                    // Set value as Literal type
+                    suggestInput.val(suggestion.value)
+                        .attr('placeholder', suggestion.value);
+                    valueInput.val(suggestion.value);
+                    idInput.prop('disabled', true);
+                    labelInput.prop('disabled', true);
+                    valueInput.prop('disabled', false);
+                }
             },
         });
     }
