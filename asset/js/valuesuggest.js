@@ -57,10 +57,10 @@ $(document).on('o:prepare-value', function(e, type, value) {
             // explicitly select the suggestion.
             triggerSelectOnValidInput: false,
             onSearchStart: function() {
-                //~ $('*').css('cursor', 'progress');
+                $(this).css('cursor', 'progress');
             },
             onSearchComplete: function(query, suggestions) {
-                //~ $('*').css('cursor', 'default');
+                $(this).css('cursor', 'default');
             },
             // Prepare the value when the user selects a suggestion.
             onSelect: function (suggestion) {
