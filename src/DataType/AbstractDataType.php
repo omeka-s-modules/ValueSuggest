@@ -43,11 +43,15 @@ abstract class AbstractDataType extends BaseAbstractDataType implements DataType
             'data-value-key' => '@value',
         ]);
 
-        return '<input type="text" class="valuesuggest-input">'
-            . $view->formHidden($labelInput)
-            . $view->formHidden($idInput)
-            . $view->formHidden($valueInput)
-            . '<div class="valuesuggest-id"></div>';
+        return sprintf(
+            '<span class="o-icon-vocab label" title="%1$s">%1$s</span>',
+            $view->escapeHtml($this->getLabel())
+        )
+        . '<input type="text" class="valuesuggest-input">'
+        . $view->formHidden($labelInput)
+        . $view->formHidden($idInput)
+        . $view->formHidden($valueInput)
+        . '<div class="valuesuggest-id"></div>';
     }
 
     public function isValid(array $valueObject)
