@@ -49,9 +49,13 @@ $(document).on('o:prepare-value', function(e, type, value) {
             params: {type: type},
             deferRequestBy: 200,
             minChars: 3,
-            // Must disable preventBadQueries or autocomple will not fire on
+            // Must disable preventBadQueries or autocomplete will not fire on
             // queries that share a root that previously returned no results.
             preventBadQueries: false,
+            // Must disable triggerSelectOnValidInput or onSelect will be
+            // triggered whether the user wants it or not. The user must
+            // explicitly select the suggestion.
+            triggerSelectOnValidInput: false,
             onSearchStart: function() {
                 //~ $('*').css('cursor', 'progress');
             },
