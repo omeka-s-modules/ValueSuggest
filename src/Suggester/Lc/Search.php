@@ -55,7 +55,12 @@ class Search implements SuggesterInterface
         $results = json_decode($response->getBody(), true);
         foreach ($results as $result) {
             if (isset($result[0]) && 'atom:entry' === $result[0]) {
-                $suggestions[] = $result[2][2];
+                $suggestions[] = [
+                    'value' => $result[2][2],
+                    'data' => [
+                        'uri' => $result[3][1]['href'],
+                    ],
+                ];
             }
         }
 

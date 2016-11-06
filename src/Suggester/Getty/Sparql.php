@@ -33,12 +33,10 @@ class Sparql implements SuggesterInterface
      */
     public function getSuggestions($query)
     {
-        // Use the documented case-insensitive fulltext search to retrieve
-        // suggestions. Must use DISTINCT to filter duplicates because different
-        // results may have identical labels.
+        // Use case-insensitive fulltext search to retrieve suggestions.
         // @see http://vocab.getty.edu/doc/queries/#Case-insensitive_Full_Text_Search_Query
         $sparqlQuery = sprintf('
-select distinct ?Term {
+select ?Subject ?Term {
   ?Subject a skos:Concept ;
   luc:term "%s" ;
   skos:inScheme %s: ;
@@ -63,7 +61,12 @@ select distinct ?Term {
         $suggestions = [];
         $results = json_decode($response->getBody(), true);
         foreach ($results['results']['bindings'] as $result) {
-            $suggestions[] = $result['Term']['value'];
+            $suggestions[] = [
+                'value' => $result['Term']['value'],
+                'data' => [
+                    'uri' => $result['Subject']['value'],
+                ],
+            ];
         }
 
         return $suggestions;
