@@ -41,7 +41,7 @@ select ?Subject ?Term {
   luc:term "%s" ;
   skos:inScheme %s: ;
   gvp:prefLabelGVP [xl:literalForm ?Term] .
-} order by asc(lcase(str(?Term)))',
+} order by asc(lcase(str(?Term))) limit 1000',
             addslashes($query),
             $this->scheme
         );
