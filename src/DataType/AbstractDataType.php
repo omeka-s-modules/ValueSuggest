@@ -93,9 +93,13 @@ abstract class AbstractDataType extends BaseAbstractDataType implements DataType
 
     public function render(PhpRenderer $view, ValueRepresentation $value)
     {
-        return $value->uri()
-            ? $view->hyperlink($value->value(), $value->uri())
-            : $value->value();
+        if ($value->uri()) {
+            if ($value->value()) {
+                return $view->hyperlink($value->value(), $value->uri());
+            }
+            return $view->hyperlink($value->uri(), $value->uri());
+        }
+        return $value->value();
     }
 
     public function getJsonLd(ValueRepresentation $value)

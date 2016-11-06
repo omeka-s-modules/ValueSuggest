@@ -8,6 +8,11 @@ $(document).on('o:prepare-value', function(e, type, value) {
         var valueInput = thisValue.find('input[data-value-key="@value"]');
         var idDisplay = thisValue.find('.valuesuggest-id');
 
+        // Literal is the default type.
+        idInput.prop('disabled', true);
+        labelInput.prop('disabled', true);
+        valueInput.prop('disabled', false);
+
         // Set existing values duing initial load.
         if (idInput.val()) {
             // Set value as URI type
@@ -30,9 +35,11 @@ $(document).on('o:prepare-value', function(e, type, value) {
             valueInput.prop('disabled', false);
         }
 
-        // For Literal types, synchronize the suggest input with @value.
+        // Synchronize the suggest input with o:label or @value.
         suggestInput.on('input', function(e) {
-            if ('' === idInput.val()) {
+            if (idInput.val()) {
+                labelInput.val($(this).val());
+            } else {
                 valueInput.val($(this).val());
             }
         });
