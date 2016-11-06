@@ -8,6 +8,7 @@ $(document).on('o:prepare-value', function(e, type, value) {
         var valueInput = thisValue.find('input[data-value-key="@value"]');
         var idDisplay = thisValue.find('.valuesuggest-id');
 
+        // Set existing values duing initial load.
         if (idInput.val()) {
             // Set value as URI type
             suggestInput.val(labelInput.val())
@@ -29,6 +30,13 @@ $(document).on('o:prepare-value', function(e, type, value) {
             valueInput.prop('disabled', false);
         }
 
+        // For Literal types, synchronize the suggest input with @value.
+        suggestInput.on('input', function(e) {
+            if ('' === idInput.val()) {
+                valueInput.val($(this).val());
+            }
+        });
+
         suggestInput.autocomplete({
             serviceUrl: valueSuggestProxyUrl,
             params: {type: type},
@@ -43,7 +51,7 @@ $(document).on('o:prepare-value', function(e, type, value) {
             onSearchComplete: function(query, suggestions) {
                 //~ $('*').css('cursor', 'default');
             },
-            // Prepare the entire value when the user selects a suggestion.
+            // Prepare the value when the user selects a suggestion.
             onSelect: function (suggestion) {
                 if (typeof suggestion.data !== 'undefined' && suggestion.data.uri) {
                     // Set value as URI type
