@@ -64,29 +64,19 @@ $(document).on('o:prepare-value', function(e, type, value) {
             },
             // Prepare the value when the user selects a suggestion.
             onSelect: function (suggestion) {
-                if (typeof suggestion.data !== 'undefined' && suggestion.data.uri) {
-                    // Set value as URI type
-                    suggestInput.val(suggestion.value)
-                        .attr('placeholder', suggestion.value);
-                    idInput.val(suggestion.data.uri);
-                    labelInput.val(suggestion.value);
-                    idInput.prop('disabled', false);
-                    labelInput.prop('disabled', false);
-                    valueInput.prop('disabled', true);
-                    var link = $('<a>')
-                        .attr('href', suggestion.data.uri)
-                        .attr('target', '_blank')
-                        .text(suggestion.data.uri);
-                    idDisplay.html(link);
-                } else {
-                    // Set value as Literal type
-                    suggestInput.val(suggestion.value)
-                        .attr('placeholder', suggestion.value);
-                    valueInput.val(suggestion.value);
-                    idInput.prop('disabled', true);
-                    labelInput.prop('disabled', true);
-                    valueInput.prop('disabled', false);
-                }
+                // Set value as URI type
+                suggestInput.val(suggestion.value)
+                    .attr('placeholder', suggestion.value);
+                idInput.val(suggestion.data.uri);
+                labelInput.val(suggestion.value);
+                idInput.prop('disabled', false);
+                labelInput.prop('disabled', false);
+                valueInput.prop('disabled', true);
+                var link = $('<a>')
+                    .attr('href', suggestion.data.uri)
+                    .attr('target', '_blank')
+                    .text(suggestion.data.uri);
+                idDisplay.html(link);
             },
             // Prepare the suggestions prior to rendering them.
             beforeRender: function(container, suggestions) {
