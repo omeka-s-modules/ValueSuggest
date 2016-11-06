@@ -88,6 +88,13 @@ $(document).on('o:prepare-value', function(e, type, value) {
                     valueInput.prop('disabled', false);
                 }
             },
+            // Prepare the suggestions prior to rendering them.
+            beforeRender: function(container, suggestions) {
+                // Add title attribute to each suggestion for disambiguation.
+                container.children().each(function(index) {
+                    $(this).attr('title', suggestions[index].data.info);
+                });
+            }
         });
     }
 });

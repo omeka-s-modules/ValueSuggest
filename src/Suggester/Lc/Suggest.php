@@ -43,7 +43,8 @@ class Suggest implements SuggesterInterface
             return [];
         }
 
-        // Parse the JSON response.
+        // Parse the JSON response. LC does not provide disambiguating
+        // information.
         $suggestions = [];
         $results = json_decode($response->getBody(), true);
         foreach ($results[1] as $key => $result) {
@@ -51,6 +52,7 @@ class Suggest implements SuggesterInterface
                 'value' => $result,
                 'data' => [
                     'uri' => $results[3][$key],
+                    'info' => null,
                 ],
             ];
         }

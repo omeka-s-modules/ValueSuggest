@@ -36,12 +36,12 @@ class Sparql implements SuggesterInterface
         // Use case-insensitive fulltext search to retrieve suggestions.
         // @see http://vocab.getty.edu/doc/queries/#Case-insensitive_Full_Text_Search_Query
         $sparqlQuery = sprintf('
-select ?Subject ?Term {
-  ?Subject a skos:Concept ;
-  luc:term "%s" ;
-  skos:inScheme %s: ;
-  gvp:prefLabelGVP [xl:literalForm ?Term] .
-} order by asc(lcase(str(?Term))) limit 1000',
+select ?Subject ?Term ?Parents ?ScopeNote {
+    ?Subject a skos:Concept ; luc:term "%s" ; skos:inScheme %s: ;
+        gvp:prefLabelGVP [xl:literalForm ?Term] .
+    optional {?Subject gvp:parentString ?Parents}
+    optional {?Subject skos:scopeNote [dct:language gvp_lang:en; rdf:value ?ScopeNote]}
+} order by asc(lcase(str(?Term))) limit 500',
             addslashes($query),
             $this->scheme
         );
@@ -57,14 +57,22 @@ select ?Subject ?Term {
             return [];
         }
 
-        // Parse the JSON response.
+        // Parse the JSON response. Getty provides disambiguating information
+        // in ScopeNote and Parents.
         $suggestions = [];
         $results = json_decode($response->getBody(), true);
         foreach ($results['results']['bindings'] as $result) {
+            $info = null;
+            if (isset($result['ScopeNote']['value'])) {
+                $info = $result['ScopeNote']['value'];
+            } elseif (isset($result['Parents']['value'])) {
+                $info = $result['Parents']['value'];
+            }
             $suggestions[] = [
                 'value' => $result['Term']['value'],
                 'data' => [
                     'uri' => $result['Subject']['value'],
+                    'info' => $info,
                 ],
             ];
         }

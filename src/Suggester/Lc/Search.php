@@ -50,7 +50,8 @@ class Search implements SuggesterInterface
             return [];
         }
 
-        // Parse the Atom-formatted JSON response.
+        // Parse the Atom-formatted JSON response. LC does not provide
+        // disambiguating information.
         $suggestions = [];
         $results = json_decode($response->getBody(), true);
         foreach ($results as $result) {
@@ -59,6 +60,7 @@ class Search implements SuggesterInterface
                     'value' => $result[2][2],
                     'data' => [
                         'uri' => $result[3][1]['href'],
+                        'info' => null,
                     ],
                 ];
             }
