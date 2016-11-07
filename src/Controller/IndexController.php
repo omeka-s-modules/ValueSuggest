@@ -19,48 +19,46 @@ class IndexController extends AbstractActionController
     }
 
     /**
-     * Generic proxy action for suggest requests.
+     * Generic proxy for suggest requests.
      *
      * Responsible for accepting an AJAX request, retrieving suggestions from
      * the data type, and formatting the response according to specs.
      */
     public function proxyAction()
     {
-        $type = $this->params()->fromQuery('type');
-        $query = $this->params()->fromQuery('query');
-        $request = $this->getRequest();
         $response = $this->getResponse();
-
-        if (!$request->isXmlHttpRequest()){
-            $errorMessage = sprintf('The request must be a XMLHttpRequest.', $type);
-            return $response->setStatusCode('415')->setContent($errorMessage);
+        if (!$this->getRequest()->isXmlHttpRequest()){
+            return $response->setStatusCode('415')
+                ->setContent('The request must be a XMLHttpRequest.');
         }
+
+        $type = $this->params()->fromQuery('type');
         if ('' === trim($type)) {
-            $errorMessage = sprintf('The request must include a data type.', $type);
-            return $response->setStatusCode('400')->setContent($errorMessage);
+            return $response->setStatusCode('400')
+                ->setContent(sprintf('The request must include a data type.', $type));
         }
 
         try {
             $dataType = $this->dataTypes->get($type);
         } catch (ServiceNotFoundException $e) {
-            $errorMessage = sprintf('The "%s" data type not found.', $type);
-            return $response->setStatusCode('400')->setContent($errorMessage);
+            return $response->setStatusCode('400')
+                ->setContent(sprintf('The "%s" data type not found.', $type));
         }
         if (!$dataType instanceof DataTypeInterface) {
-            $errorMessage = sprintf('The "%s" data type does not implement ValueSuggest\DataType\DataTypeInterface.', $type);
-            return $response->setStatusCode('500')->setContent($errorMessage);
+            return $response->setStatusCode('500')
+                ->setContent(sprintf('The "%s" data type does not implement ValueSuggest\DataType\DataTypeInterface.', $type));
         }
 
         $suggester = $dataType->getSuggester();
         if (!$suggester instanceof SuggesterInterface) {
-            $errorMessage = sprintf('The "%s" suggester does not implement ValueSuggest\Suggester\SuggesterInterface.', $type);
-            return $response->setStatusCode('500')->setContent($errorMessage);
+            return $response->setStatusCode('500')
+                ->setContent(sprintf('The "%s" suggester does not implement ValueSuggest\Suggester\SuggesterInterface.', $type));
         }
 
-        $suggestions = $suggester->getSuggestions($query);
+        $suggestions = $suggester->getSuggestions($this->params()->fromQuery('query'));
         if (!is_array($suggestions)) {
-            $errorMessage = sprintf('The "%s" data type must return an array; %s given.', $type, gettype($suggestions));
-            return $response->setStatusCode('500')->setContent($errorMessage);
+            return $response->setStatusCode('500')
+                ->setContent(sprintf('The "%s" data type must return an array; %s given.', $type, gettype($suggestions)));
         }
 
         // Set the response format defined by Ajax Autocomplete.
