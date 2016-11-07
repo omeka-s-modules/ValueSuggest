@@ -5,6 +5,7 @@ use Omeka\DataType\Manager as DataTypeManager;
 use ValueSuggest\DataType\DataTypeInterface;
 use ValueSuggest\Suggester\SuggesterInterface;
 use Zend\Mvc\Controller\AbstractActionController;
+use Zend\ServiceManager\Exception\ServiceNotFoundException;
 use Zend\ServiceManager\ServiceManager;
 use Zend\View\Model\JsonModel;
 
@@ -27,9 +28,24 @@ class IndexController extends AbstractActionController
     {
         $type = $this->params()->fromQuery('type');
         $query = $this->params()->fromQuery('query');
+        $request = $this->getRequest();
         $response = $this->getResponse();
 
-        $dataType = $this->dataTypes->get($type);
+        if (!$request->isXmlHttpRequest()){
+            $errorMessage = sprintf('The request must be a XMLHttpRequest.', $type);
+            return $response->setStatusCode('415')->setContent($errorMessage);
+        }
+        if ('' === trim($type)) {
+            $errorMessage = sprintf('The request must include a data type.', $type);
+            return $response->setStatusCode('400')->setContent($errorMessage);
+        }
+
+        try {
+            $dataType = $this->dataTypes->get($type);
+        } catch (ServiceNotFoundException $e) {
+            $errorMessage = sprintf('The "%s" data type not found.', $type);
+            return $response->setStatusCode('400')->setContent($errorMessage);
+        }
         if (!$dataType instanceof DataTypeInterface) {
             $errorMessage = sprintf('The "%s" data type does not implement ValueSuggest\DataType\DataTypeInterface.', $type);
             return $response->setStatusCode('500')->setContent($errorMessage);
