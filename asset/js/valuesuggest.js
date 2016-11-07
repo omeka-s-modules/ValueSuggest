@@ -62,6 +62,10 @@ $(document).on('o:prepare-value', function(e, type, value) {
             onSearchComplete: function(query, suggestions) {
                 $(this).css('cursor', 'default');
             },
+            onSearchError: function (query, jqXHR, textStatus, errorThrown) {
+                // Silently handle error.
+                $(this).css('cursor', 'default');
+            },
             // Prepare the value when the user selects a suggestion.
             onSelect: function (suggestion) {
                 // Set value as URI type
