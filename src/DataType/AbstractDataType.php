@@ -51,7 +51,12 @@ abstract class AbstractDataType extends BaseAbstractDataType implements DataType
         . $view->formHidden($labelInput)
         . $view->formHidden($idInput)
         . $view->formHidden($valueInput)
-        . '<div class="valuesuggest-id"></div>';
+        . '
+<div class="valuesuggest-id-container">
+    <span class="o-icon-uri"></span>
+    <span class="valuesuggest-id"></span>
+    <a href="#" class="valuesuggest-id-remove o-icon-close" title="' . $view->escapeHtml($view->translate('Remove URI')) . '"></a>
+</div>';
     }
 
     public function isValid(array $valueObject)

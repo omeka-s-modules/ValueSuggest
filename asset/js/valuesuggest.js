@@ -6,12 +6,13 @@ $(document).on('o:prepare-value', function(e, type, value) {
         var labelInput = thisValue.find('input[data-value-key="o:label"]');
         var idInput = thisValue.find('input[data-value-key="@id"]');
         var valueInput = thisValue.find('input[data-value-key="@value"]');
-        var idDisplay = thisValue.find('.valuesuggest-id');
+        var idContainer = thisValue.find('.valuesuggest-id-container');
 
         // Literal is the default type.
         idInput.prop('disabled', true);
         labelInput.prop('disabled', true);
         valueInput.prop('disabled', false);
+        idContainer.hide();
 
         // Set existing values duing initial load.
         if (idInput.val()) {
@@ -25,7 +26,7 @@ $(document).on('o:prepare-value', function(e, type, value) {
                 .attr('href', idInput.val())
                 .attr('target', '_blank')
                 .text(idInput.val());
-            idDisplay.html(link);
+            idContainer.show().find('.valuesuggest-id').html(link);
         } else if (valueInput.val()) {
             // Set value as Literal type
             suggestInput.val(valueInput.val())
@@ -42,6 +43,16 @@ $(document).on('o:prepare-value', function(e, type, value) {
             } else {
                 valueInput.val($(this).val());
             }
+        });
+
+        // Remove the @id from URI type and transform it into Literal type.
+        idContainer.find('.valuesuggest-id-remove').on('click', function(e) {
+            e.preventDefault();
+            idContainer.hide();
+            valueInput.val(labelInput.val());
+            idInput.prop('disabled', true);
+            labelInput.prop('disabled', true);
+            valueInput.prop('disabled', false);
         });
 
         suggestInput.autocomplete({
@@ -80,7 +91,7 @@ $(document).on('o:prepare-value', function(e, type, value) {
                     .attr('href', suggestion.data.uri)
                     .attr('target', '_blank')
                     .text(suggestion.data.uri);
-                idDisplay.html(link);
+                idContainer.show().find('.valuesuggest-id').html(link);
             },
             // Prepare the suggestions prior to rendering them.
             beforeRender: function(container, suggestions) {
