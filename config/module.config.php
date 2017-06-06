@@ -34,6 +34,9 @@ return [
             'valuesuggest:getty:ulan' => 'ValueSuggest\Service\GettyDataTypeFactory',
             // @todo Add "The Cultural Objects Name Authority (CONA)" once it's
             // published (past due, fall 2015)
+
+            /* OCLC */
+            'valuesuggest:oclc:viaf' => 'ValueSuggest\Service\OclcDataTypeFactory',
         ],
     ],
     'router' => [
