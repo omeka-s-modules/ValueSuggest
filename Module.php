@@ -25,6 +25,26 @@ class Module extends AbstractModule
             'view.edit.after',
             [$this, 'prepareResourceForm']
         );
+        $sharedEventManager->attach(
+            'Omeka\Controller\Admin\ItemSet',
+            'view.add.after',
+            [$this, 'prepareResourceForm']
+        );
+        $sharedEventManager->attach(
+            'Omeka\Controller\Admin\ItemSet',
+            'view.edit.after',
+            [$this, 'prepareResourceForm']
+        );
+        $sharedEventManager->attach(
+            'Omeka\Controller\Admin\Media',
+            'view.add.after',
+            [$this, 'prepareResourceForm']
+        );
+        $sharedEventManager->attach(
+            'Omeka\Controller\Admin\Media',
+            'view.edit.after',
+            [$this, 'prepareResourceForm']
+        );
     }
 
     /**
