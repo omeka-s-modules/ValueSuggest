@@ -7,6 +7,9 @@
 
 .valuesuggest-id-container {
     display: flex;
+    padding: 0 6px;
+    border: 1px solid rgba(0,0,0,0.15);
+    border-top: 0;
 }
 .valuesuggest-id {
     flex-grow: 1;
