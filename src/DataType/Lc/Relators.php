@@ -21,6 +21,6 @@ class Relators extends AbstractDataType
 
     public function getLabel()
     {
-        return 'Value Suggest: LC: MARC Relators'; // @translate
+        return 'LC: MARC Relators'; // @translate
     }
 }

@@ -26,6 +26,11 @@ abstract class AbstractDataType extends BaseAbstractDataType implements DataType
         $this->services = $services;
     }
 
+    public function getOptgroupLabel()
+    {
+        return 'Value Suggest'; // @translate
+    }
+
     public function form(PhpRenderer $view)
     {
         $labelInput = new Hidden('valuesuggest-label');

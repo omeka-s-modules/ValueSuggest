@@ -18,6 +18,6 @@ class Viaf extends AbstractDataType
 
     public function getLabel()
     {
-        return 'Value Suggest: OCLC: The Virtual International Authority File (VIAF)'; // @translate
+        return 'OCLC: The Virtual International Authority File (VIAF)'; // @translate
     }
 }

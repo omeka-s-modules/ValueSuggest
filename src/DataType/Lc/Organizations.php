@@ -21,6 +21,6 @@ class Organizations extends AbstractDataType
 
     public function getLabel()
     {
-        return 'Value Suggest: LC: Cultural Heritage Organizations'; // @translate
+        return 'LC: Cultural Heritage Organizations'; // @translate
     }
 }

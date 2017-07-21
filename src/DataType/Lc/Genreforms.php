@@ -21,6 +21,6 @@ class Genreforms extends AbstractDataType
 
     public function getLabel()
     {
-        return 'Value Suggest: LC: Genre/Form Terms'; // @translate
+        return 'LC: Genre/Form Terms'; // @translate
     }
 }

@@ -21,6 +21,6 @@ class Demographicterms extends AbstractDataType
 
     public function getLabel()
     {
-        return 'Value Suggest: LC: Demographic Group Terms'; // @translate
+        return 'LC: Demographic Group Terms'; // @translate
     }
 }

@@ -18,6 +18,6 @@ class All extends AbstractDataType
 
     public function getLabel()
     {
-        return 'Value Suggest: LC: All'; // @translate
+        return 'LC: All'; // @translate
     }
 }

@@ -21,6 +21,6 @@ class Iso6392 extends AbstractDataType
 
     public function getLabel()
     {
-        return 'Value Suggest: LC: ISO639-2 Languages'; // @translate
+        return 'LC: ISO639-2 Languages'; // @translate
     }
 }

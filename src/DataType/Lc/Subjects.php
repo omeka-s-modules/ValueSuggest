@@ -21,6 +21,6 @@ class Subjects extends AbstractDataType
 
     public function getLabel()
     {
-        return 'Value Suggest: LC: Subject Headings'; // @translate
+        return 'LC: Subject Headings'; // @translate
     }
 }

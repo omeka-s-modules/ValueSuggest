@@ -21,6 +21,6 @@ class Iso6395 extends AbstractDataType
 
     public function getLabel()
     {
-        return 'Value Suggest: LC: ISO639-5 Languages'; // @translate
+        return 'LC: ISO639-5 Languages'; // @translate
     }
 }

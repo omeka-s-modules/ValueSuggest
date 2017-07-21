@@ -21,6 +21,6 @@ class Names extends AbstractDataType
 
     public function getLabel()
     {
-        return 'Value Suggest: LC: Name Authority File'; // @translate
+        return 'LC: Name Authority File'; // @translate
     }
 }

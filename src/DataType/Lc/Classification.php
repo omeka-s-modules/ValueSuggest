@@ -21,6 +21,6 @@ class Classification extends AbstractDataType
 
     public function getLabel()
     {
-        return 'Value Suggest: LC: Classification'; // @translate
+        return 'LC: Classification'; // @translate
     }
 }

@@ -18,6 +18,6 @@ class Tgn extends AbstractDataType
 
     public function getLabel()
     {
-        return 'Value Suggest: Getty: The Getty Thesaurus of Geographic Names (TGN)'; // @translate
+        return 'Getty: The Getty Thesaurus of Geographic Names (TGN)'; // @translate
     }
 }

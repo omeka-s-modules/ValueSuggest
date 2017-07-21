@@ -21,6 +21,6 @@ class Languages extends AbstractDataType
 
     public function getLabel()
     {
-        return 'Value Suggest: LC: MARC Languages'; // @translate
+        return 'LC: MARC Languages'; // @translate
     }
 }

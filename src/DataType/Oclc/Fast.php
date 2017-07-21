@@ -18,6 +18,6 @@ class Fast extends AbstractDataType
 
     public function getLabel()
     {
-        return 'Value Suggest: OCLC: Faceted Application of Subject Terminologies (FAST)'; // @translate
+        return 'OCLC: Faceted Application of Subject Terminologies (FAST)'; // @translate
     }
 }

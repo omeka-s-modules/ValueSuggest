@@ -21,6 +21,6 @@ class Geographicareas extends AbstractDataType
 
     public function getLabel()
     {
-        return 'Value Suggest: LC: MARC Geographic Areas'; // @translate
+        return 'LC: MARC Geographic Areas'; // @translate
     }
 }

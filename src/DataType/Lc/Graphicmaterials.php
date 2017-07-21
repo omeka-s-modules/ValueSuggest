@@ -21,6 +21,6 @@ class Graphicmaterials extends AbstractDataType
 
     public function getLabel()
     {
-        return 'Value Suggest: LC: Thesaurus for Graphic Materials'; // @translate
+        return 'LC: Thesaurus for Graphic Materials'; // @translate
     }
 }

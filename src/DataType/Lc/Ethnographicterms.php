@@ -21,6 +21,6 @@ class Ethnographicterms extends AbstractDataType
 
     public function getLabel()
     {
-        return 'Value Suggest: LC: AFS Ethnographic Thesaurus'; // @translate
+        return 'LC: AFS Ethnographic Thesaurus'; // @translate
     }
 }

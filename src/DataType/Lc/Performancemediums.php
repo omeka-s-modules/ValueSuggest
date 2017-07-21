@@ -21,6 +21,6 @@ class Performancemediums extends AbstractDataType
 
     public function getLabel()
     {
-        return 'Value Suggest: LC: Medium of Performance Thesaurus for Music'; // @translate
+        return 'LC: Medium of Performance Thesaurus for Music'; // @translate
     }
 }

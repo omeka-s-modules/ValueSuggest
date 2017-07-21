@@ -21,6 +21,6 @@ class Countries extends AbstractDataType
 
     public function getLabel()
     {
-        return 'Value Suggest: LC: MARC Countries'; // @translate
+        return 'LC: MARC Countries'; // @translate
     }
 }
