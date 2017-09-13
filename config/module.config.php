@@ -5,6 +5,16 @@ return [
             'ValueSuggest\Controller\Index' => 'ValueSuggest\Service\IndexControllerFactory',
         ],
     ],
+    'translator' => [
+        'translation_file_patterns' => [
+            [
+                'type' => 'gettext',
+                'base_dir' => OMEKA_PATH . '/modules/ValueSuggest/language',
+                'pattern' => '%s.mo',
+                'text_domain' => null,
+            ],
+        ],
+    ],
     'data_types' => [
         'factories' => [
             /* Library of Congress */
