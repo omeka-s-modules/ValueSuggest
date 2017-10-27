@@ -38,6 +38,9 @@ return [
             'valuesuggest:lc:iso6395' => 'ValueSuggest\Service\LcDataTypeFactory',
             // @todo Add more LC data types
 
+            /* Geonames */
+            'valuesuggest:geonames:geonames' => 'ValueSuggest\Service\GeonamesDataTypeFactory',
+
             /* Getty */
             'valuesuggest:getty:aat' => 'ValueSuggest\Service\GettyDataTypeFactory',
             'valuesuggest:getty:tgn' => 'ValueSuggest\Service\GettyDataTypeFactory',
