@@ -26,9 +26,9 @@ class GeonamesSuggest implements SuggesterInterface
     public function getSuggestions($query)
     {
         $response = $this->client
-            ->setUri('http://api.geonames.org/searchJSON')
-            ->setParameterGet(['q' => $query, 'maxRows' => 100, 'username' => 'kdlinfo'])
-            ->send();
+        ->setUri('http://api.geonames.org/searchJSON')
+        ->setParameterGet(['q' => $query, 'maxRows' => 100, 'username' => 'kdlinfo'])
+        ->send();
         if (!$response->isSuccess()) {
             return [];
         }
@@ -37,11 +37,14 @@ class GeonamesSuggest implements SuggesterInterface
         $suggestions = [];
         $results = json_decode($response->getBody(), true);
         foreach ($results['geonames'] as $result) {
+            $info = array_key_exists('fclName', $result) ? $result['fclName'] : '';
+            $info = $info . (array_key_exists('countryName', $result) ? ' in ' . $result['countryName'] : '');
+
             $suggestions[] = [
-                'value' => $result['name'],
+                'value' => $result['name'] . ' (' . $info . ')',
                 'data' => [
                     'uri' => sprintf('http://www.geonames.org/%s', $result['geonameId']),
-                    'info' => null,
+                    'info' => $info,
                 ],
             ];
         }
