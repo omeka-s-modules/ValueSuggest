@@ -40,3 +40,7 @@ See general end user documentation for [Installing a module](http://dev.omeka.or
 
 - Faceted Application of Subject Terminologies (FAST)
 - The Virtual International Authority File (VIAF)
+
+## [GeoNames](http://www.geonames.org/)
+
+- The GeoNames geographical database
