@@ -17,3 +17,6 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+input.valuesuggest-input {
+    padding-left: 42px;
+}
