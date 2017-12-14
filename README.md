@@ -3,11 +3,11 @@
 Adds auto-suggest data types to resource templates using controlled vocabulary
 services.
 
-See the [Omeka S user manual](http://dev.omeka.org/docs/s/user-manual/modules/valuesuggest/) for user documentation.
+See the [Omeka S user manual](http://omeka.org/s/docs/user-manual/modules/valuesuggest/) for user documentation.
 
 ## Installation
 
-See general end user documentation for [Installing a module](http://dev.omeka.org/docs/s/user-manual/modules/#installing-modules)
+See general end user documentation for [Installing a module](http://omeka.org/s/docs/user-manual/modules/#installing-modules)
 
 ## [Library of Congress Linked Data Service](http://id.loc.gov/)
 
