@@ -48,6 +48,9 @@ return [
             // @todo Add "The Cultural Objects Name Authority (CONA)" once it's
             // published (past due, fall 2015)
 
+            /* Homosaurus */
+            'valuesuggest:homosaurus:homosaurus' => 'ValueSuggest\Service\HomosaurusDataTypeFactory',
+
             /* OCLC */
             'valuesuggest:oclc:viaf' => 'ValueSuggest\Service\OclcDataTypeFactory',
             'valuesuggest:oclc:fast' => 'ValueSuggest\Service\OclcDataTypeFactory',
