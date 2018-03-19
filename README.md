@@ -44,3 +44,7 @@ See general end user documentation for [Installing a module](http://omeka.org/s/
 ## [GeoNames](http://www.geonames.org/)
 
 - The GeoNames geographical database
+
+## [Homosaurus](http://homosaurus.org/)
+
+- Homosaurus.org linked data vocabulary
