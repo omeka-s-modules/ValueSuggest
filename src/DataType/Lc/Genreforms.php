@@ -14,7 +14,7 @@ class Genreforms extends AbstractDataType
         );
     }
 
-    public function getName()
+    public function getData()
     {
         return 'valuesuggest:lc:genreForms';
     }

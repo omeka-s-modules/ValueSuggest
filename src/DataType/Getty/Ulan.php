@@ -11,7 +11,7 @@ class Ulan extends AbstractDataType
         return new Sparql($this->services->get('Omeka\HttpClient'), 'ulan');
     }
 
-    public function getName()
+    public function getData()
     {
         return 'valuesuggest:getty:ulan';
     }

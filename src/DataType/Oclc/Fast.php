@@ -11,7 +11,7 @@ class Fast extends AbstractDataType
         return new FastSuggest($this->services->get('Omeka\HttpClient'));
     }
 
-    public function getName()
+    public function getData()
     {
         return 'valuesuggest:oclc:fast';
     }

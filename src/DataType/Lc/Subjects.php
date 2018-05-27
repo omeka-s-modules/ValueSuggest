@@ -14,7 +14,7 @@ class Subjects extends AbstractDataType
         );
     }
 
-    public function getName()
+    public function getData()
     {
         return 'valuesuggest:lc:subjects';
     }

@@ -14,7 +14,7 @@ class Iso6392 extends AbstractDataType
         );
     }
 
-    public function getName()
+    public function getData()
     {
         return 'valuesuggest:lc:iso6392';
     }

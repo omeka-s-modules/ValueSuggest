@@ -11,7 +11,7 @@ class Homosaurus extends AbstractDataType
         return new HomosaurusSuggest($this->services->get('Omeka\HttpClient'));
     }
 
-    public function getName()
+    public function getData()
     {
         return 'valuesuggest:homosaurus:homosaurus';
     }

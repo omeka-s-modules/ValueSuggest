@@ -11,7 +11,7 @@ class Geonames extends AbstractDataType
         return new GeonamesSuggest($this->services->get('Omeka\HttpClient'));
     }
 
-    public function getName()
+    public function getData()
     {
         return 'valuesuggest:geonames:geonames';
     }

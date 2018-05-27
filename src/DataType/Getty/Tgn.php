@@ -11,7 +11,7 @@ class Tgn extends AbstractDataType
         return new Sparql($this->services->get('Omeka\HttpClient'), 'tgn');
     }
 
-    public function getName()
+    public function getData()
     {
         return 'valuesuggest:getty:tgn';
     }

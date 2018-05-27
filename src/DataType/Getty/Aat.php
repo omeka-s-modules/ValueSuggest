@@ -11,7 +11,7 @@ class Aat extends AbstractDataType
         return new Sparql($this->services->get('Omeka\HttpClient'), 'aat');
     }
 
-    public function getName()
+    public function getData()
     {
         return 'valuesuggest:getty:aat';
     }

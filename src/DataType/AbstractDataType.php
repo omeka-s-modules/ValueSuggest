@@ -5,9 +5,7 @@ use Omeka\Api\Adapter\AbstractEntityAdapter;
 use Omeka\Api\Representation\ValueRepresentation;
 use Omeka\DataType\AbstractDataType as BaseAbstractDataType;
 use Omeka\Entity\Value;
-use ValueSuggest\DataType\DataTypeInterface;
 use Zend\Form\Element\Hidden;
-use Zend\Form\Element\Text;
 use Zend\ServiceManager\ServiceManager;
 use Zend\View\Renderer\PhpRenderer;
 
@@ -24,6 +22,11 @@ abstract class AbstractDataType extends BaseAbstractDataType implements DataType
     public function __construct(ServiceManager $services)
     {
         $this->services = $services;
+    }
+
+    public function getName()
+    {
+        return 'uri';
     }
 
     public function getOptgroupLabel()
@@ -70,7 +73,7 @@ abstract class AbstractDataType extends BaseAbstractDataType implements DataType
             && is_string($valueObject['@id'])
             && '' !== trim($valueObject['@id'])
         ) {
-             return true;
+            return true;
         }
         if (isset($valueObject['@value'])
             && is_string($valueObject['@value'])

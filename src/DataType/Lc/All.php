@@ -11,7 +11,7 @@ class All extends AbstractDataType
         return new Search($this->services->get('Omeka\HttpClient'), '');
     }
 
-    public function getName()
+    public function getData()
     {
         return 'valuesuggest:lc:all';
     }

@@ -11,7 +11,7 @@ class Viaf extends AbstractDataType
         return new ViafSuggest($this->services->get('Omeka\HttpClient'));
     }
 
-    public function getName()
+    public function getData()
     {
         return 'valuesuggest:oclc:viaf';
     }

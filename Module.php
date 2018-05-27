@@ -2,15 +2,24 @@
 namespace ValueSuggest;
 
 use Omeka\Module\AbstractModule;
-use ValueSuggest\Service\DataTypeAbstractFactory;
 use Zend\EventManager\Event;
 use Zend\EventManager\SharedEventManagerInterface;
+use Zend\ServiceManager\ServiceLocatorInterface;
 
 class Module extends AbstractModule
 {
     public function getConfig()
     {
         return include __DIR__ . '/config/module.config.php';
+    }
+
+    public function upgrade($oldVersion, $newVersion, ServiceLocatorInterface $serviceLocator)
+    {
+        $conn = $serviceLocator->get('Omeka\Connection');
+
+        if (version_compare($oldVersion, '1.2.0', '<')) {
+            $conn->exec('UPDATE value SET data = type, type = "uri" WHERE type LIKE "valuesuggest:%"');
+        }
     }
 
     public function attachListeners(SharedEventManagerInterface $sharedEventManager)
