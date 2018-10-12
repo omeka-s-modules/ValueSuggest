@@ -5,12 +5,20 @@ use Omeka\Module\AbstractModule;
 use ValueSuggest\Service\DataTypeAbstractFactory;
 use Zend\EventManager\Event;
 use Zend\EventManager\SharedEventManagerInterface;
+use Zend\Mvc\MvcEvent;
 
 class Module extends AbstractModule
 {
     public function getConfig()
     {
         return include __DIR__ . '/config/module.config.php';
+    }
+
+    public function onBootstrap(MvcEvent $event)
+    {
+        parent::onBootstrap($event);
+        $acl = $this->getServiceLocator()->get('Omeka\Acl');
+        $acl->allow(null, 'ValueSuggest\Controller\Index', 'proxy');
     }
 
     public function attachListeners(SharedEventManagerInterface $sharedEventManager)
