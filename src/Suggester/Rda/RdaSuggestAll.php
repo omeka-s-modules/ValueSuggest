@@ -47,7 +47,7 @@ class RdaSuggestAll implements SuggesterInterface
                 'value' => $result['prefLabel']['en'],
                 'data' => [
                     'uri' => $result['@id'],
-                    'info' => $result['definition']['en'],
+                    'info' => isset($result['definition']['en']) ? $result['definition']['en'] : null,
                 ],
             ];
         }
