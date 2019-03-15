@@ -1,5 +1,5 @@
 $(document).on('o:prepare-value', function(e, type, value) {
-    if (0 === type.indexOf('valuesuggest:')) {
+    if (0 === type.indexOf('valuesuggest:') || 0 === type.indexOf('valuesuggestall:')) {
 
         var thisValue = $(value);
         var suggestInput = thisValue.find('.valuesuggest-input');
@@ -55,14 +55,8 @@ $(document).on('o:prepare-value', function(e, type, value) {
             valueInput.prop('disabled', false);
         });
 
-        suggestInput.autocomplete({
-            serviceUrl: valueSuggestProxyUrl,
-            params: {type: type},
-            deferRequestBy: 200,
-            minChars: 3,
-            // Must disable preventBadQueries or autocomplete will not fire on
-            // queries that share a root that previously returned no results.
-            preventBadQueries: false,
+        // Build the autocomplete options.
+        var options = {
             // Must disable triggerSelectOnValidInput or onSelect will be
             // triggered whether the user wants it or not. The user must
             // explicitly select the suggestion.
@@ -92,14 +86,58 @@ $(document).on('o:prepare-value', function(e, type, value) {
                     .attr('target', '_blank')
                     .text(suggestion.data.uri);
                 idContainer.show().find('.valuesuggest-id').html(link);
-            },
+            }
+        };
+
+        // For the "valuesuggestall" type, assume the first response contains
+        // all available suggestions. Do not make subsequent requests.
+        if (0 === type.indexOf('valuesuggestall:')) {
+            // Get suggestions immediately when input is first put into focus.
+            options.minChars = 0;
             // Prepare the suggestions prior to rendering them.
-            beforeRender: function(container, suggestions) {
+            options.beforeRender = function(container, suggestions) {
                 // Add title attribute to each suggestion for disambiguation.
                 container.children().each(function(index) {
                     $(this).attr('title', suggestions[index].data.info);
                 });
-            }
-        });
+                // Hide suggestions that contain no matches.
+                var hasSuggestions = container.children(':has(strong)');
+                hasSuggestions.show();
+                if (hasSuggestions.length) {
+                    container.children().not(':has(strong)').hide();
+                }
+            };
+            // Use custom lookup function to make only one request.
+            var result;
+            options.lookup = function (query, done) {
+                if (null == result) {
+                    $.get(valueSuggestProxyUrl, {query: query, type: type}, function(data) {
+                        result = data;
+                        done(result);
+                    });
+                } else {
+                    done(result);
+                }
+            };
+
+        // For the "valuesuggest" type, make requests as normal.
+        } else {
+            options.serviceUrl = valueSuggestProxyUrl;
+            options.params = {type: type};
+            options.deferRequestBy = 200;
+            options.minChars = 3;
+            // Must disable preventBadQueries or autocomplete will not fire on
+            // queries that share a root that previously returned no results.
+            options.preventBadQueries = false;
+            // Prepare the suggestions prior to rendering them.
+            options.beforeRender = function(container, suggestions) {
+                // Add title attribute to each suggestion for disambiguation.
+                container.children().each(function(index) {
+                    $(this).attr('title', suggestions[index].data.info);
+                });
+            };
+        }
+
+        suggestInput.autocomplete(options);
     }
 });
