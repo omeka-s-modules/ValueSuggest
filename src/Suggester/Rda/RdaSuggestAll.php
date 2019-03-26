@@ -51,6 +51,9 @@ class RdaSuggestAll implements SuggesterInterface
                 ],
             ];
         }
+        usort($suggestions, function ($a, $b) {
+            return strcmp($a['value'], $b['value']);
+        });
 
         return $suggestions;
     }
