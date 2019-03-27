@@ -48,3 +48,68 @@ See general end user documentation for [Installing a module](http://omeka.org/s/
 ## [Homosaurus](http://homosaurus.org/)
 
 - Homosaurus.org linked data vocabulary
+
+## [RDA Value Vocabularies](http://www.rdaregistry.info/termList/)
+
+### RDA Reference value vocabularies
+
+- Aspect Ratio Designation
+- Bibliographic Format
+- Broadcast Standard
+- Carrier Extent Unit
+- Carrier Type
+- Cartographic Data Type
+- Colour Content
+- Configuration of Playback Channels
+- Content Type
+- Conventional Collective Title
+- File Type
+- Font Size
+- Form of Musical Notation
+- Form of Notated Movement
+- Form of Tactile Notation
+- Format of Notated Music
+- Frequency
+- Generation
+- Groove Pitch of an Analog Cylinder
+- Groove Width of an Analog Disc
+- Illustrative Content
+- Layout
+- Material
+- Media Type
+- Mode of Issuance
+- Polarity
+- Presentation Format
+- Production Method
+- Recording Medium
+- Reduction Ratio Designation
+- Regional Encoding
+- Scale Designation
+- Sound Content
+- Special Playback Characteristics
+- Status of Identification
+- Terms
+- Track Configuration
+- Type of Recording
+- Video Format
+
+### RDA Local value vocabularies
+
+- Gender
+
+### RDA/ONIX Framework value vocabularies
+
+- Character
+- Extension Mode
+- Extension Requirement
+- Extension Termination
+- Housing Format
+- Image Dimensionality
+- Image Movement
+- Interaction
+- Intermediation Tool
+- Revision Mode
+- Revision Requirement
+- Revision Termination
+- Sensory Mode
+- Storage Medium Format
