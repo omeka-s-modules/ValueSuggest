@@ -21,9 +21,10 @@ class ViafSuggest implements SuggesterInterface
      *
      * @see https://platform.worldcat.org/api-explorer/apis/VIAF
      * @param string $query
+     * @param string $lang
      * @return array
      */
-    public function getSuggestions($query)
+    public function getSuggestions($query, $lang = null)
     {
         $response = $this->client
             ->setUri('http://www.viaf.org/viaf/AutoSuggest')

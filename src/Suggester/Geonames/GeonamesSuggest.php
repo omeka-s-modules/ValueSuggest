@@ -21,13 +21,20 @@ class GeonamesSuggest implements SuggesterInterface
      *
      * @see http://www.geonames.org/export/geonames-search.html
      * @param string $query
+     * @param string $lang
      * @return array
      */
-    public function getSuggestions($query)
+    public function getSuggestions($query, $lang = null)
     {
+        $params = ['q' => $query, 'maxRows' => 100, 'username' => 'kdlinfo'];
+        if ($lang) {
+            // Geonames requires an ISO-639 2-letter language code. Remove the
+            // first underscore and anything after it ("zh_CN" becomes "zh").
+            $params['lang'] = strstr($lang, '_', true) ?: $lang;
+        }
         $response = $this->client
         ->setUri('http://api.geonames.org/searchJSON')
-        ->setParameterGet(['q' => $query, 'maxRows' => 100, 'username' => 'kdlinfo'])
+        ->setParameterGet($params)
         ->send();
         if (!$response->isSuccess()) {
             return [];

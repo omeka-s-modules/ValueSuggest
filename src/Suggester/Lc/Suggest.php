@@ -31,9 +31,10 @@ class Suggest implements SuggesterInterface
      *
      * @see http://id.loc.gov/search/
      * @param string $query
+     * @param string $lang
      * @return array
      */
-    public function getSuggestions($query)
+    public function getSuggestions($query, $lang = null)
     {
         $response = $this->client
             ->setUri($this->endpoint)

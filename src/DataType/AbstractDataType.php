@@ -48,10 +48,16 @@ abstract class AbstractDataType extends BaseAbstractDataType implements DataType
             'data-value-key' => '@value',
         ]);
 
+        $languageInput = new Text('valuesuggest-language');
+        $languageInput->setAttributes([
+            'data-value-key' => '@language',
+        ]);
+
         return sprintf(
             '<span class="o-icon-vocab label" title="%1$s">%1$s</span>',
             $view->escapeHtml($this->getLabel())
         )
+        . $view->formText($languageInput)
         . '<input type="text" class="valuesuggest-input">'
         . $view->formHidden($labelInput)
         . $view->formHidden($idInput)
@@ -85,6 +91,7 @@ abstract class AbstractDataType extends BaseAbstractDataType implements DataType
     {
         $uriStr = null;
         $valueStr = null;
+        $langStr = null;
 
         if (isset($valueObject['@id'])) {
             $uriStr = $valueObject['@id'];
@@ -94,10 +101,13 @@ abstract class AbstractDataType extends BaseAbstractDataType implements DataType
         } elseif (isset($valueObject['@value'])) {
             $valueStr = $valueObject['@value'];
         }
+        if (isset($valueObject['@language'])) {
+            $langStr = $valueObject['@language'];
+        }
 
         $value->setUri($uriStr);
         $value->setValue($valueStr);
-        $value->setLang(null);
+        $value->setLang($langStr);
         $value->setValueResource(null);
     }
 
@@ -122,6 +132,9 @@ abstract class AbstractDataType extends BaseAbstractDataType implements DataType
             }
         } else {
             $jsonLd['@value'] = $value->value();
+        }
+        if ($value->lang()) {
+            $jsonLd['@language'] = $value->lang();
         }
         return $jsonLd;
     }

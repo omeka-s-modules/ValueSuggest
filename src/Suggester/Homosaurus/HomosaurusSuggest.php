@@ -21,9 +21,10 @@ class HomosaurusSuggest implements SuggesterInterface
      *
      * @see http://homosaurus.org/search
      * @param string $query
+     * @param string $lang
      * @return array
      */
-    public function getSuggestions($query)
+    public function getSuggestions($query, $lang = null)
     {
         $response = $this->client
         ->setUri('http://homosaurus.org/search.jsonld')
