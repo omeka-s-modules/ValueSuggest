@@ -51,23 +51,18 @@ abstract class AbstractDataType extends BaseAbstractDataType implements DataType
         $languageInput = new Text('valuesuggest-language');
         $languageInput->setAttributes([
             'data-value-key' => '@language',
+            'class' => 'value-language active',
         ]);
+        
+        $rdfLabel = $this->getLabel();
 
-        return sprintf(
-            '<span class="o-icon-vocab label" title="%1$s">%1$s</span>',
-            $view->escapeHtml($this->getLabel())
-        )
-        . $view->formText($languageInput)
-        . '<input type="text" class="valuesuggest-input">'
-        . $view->formHidden($labelInput)
-        . $view->formHidden($idInput)
-        . $view->formHidden($valueInput)
-        . '
-<div class="valuesuggest-id-container">
-    <span class="o-icon-uri"></span>
-    <span class="valuesuggest-id"></span>
-    <a href="#" class="valuesuggest-id-remove o-icon-close" title="' . $view->escapeHtml($view->translate('Remove URI')) . '"></a>
-</div>';
+        return $view->partial('common/data-type/suggested', [
+            'labelInput' => $labelInput,
+            'idInput' => $idInput,
+            'valueInput' => $valueInput,
+            'languageInput' => $languageInput,
+            'rdfLabel' => $rdfLabel,
+        ]);
     }
 
     public function isValid(array $valueObject)
