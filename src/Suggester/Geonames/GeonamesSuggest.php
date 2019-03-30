@@ -44,14 +44,24 @@ class GeonamesSuggest implements SuggesterInterface
         $suggestions = [];
         $results = json_decode($response->getBody(), true);
         foreach ($results['geonames'] as $result) {
-            $info = array_key_exists('fclName', $result) ? $result['fclName'] : '';
-            $info = $info . (array_key_exists('countryName', $result) ? ' in ' . $result['countryName'] : '');
-
+            $info = [];
+            if (isset($result['fcodeName']) && $result['fcodeName']) {
+                $info[] = sprintf('Feature: %s', $result['fcodeName']);
+            }
+            if (isset($result['countryName']) && $result['countryName']) {
+                $info[] = sprintf('Country: %s', $result['countryName']);
+            }
+            if (isset($result['adminName1']) && $result['adminName1']) {
+                $info[] = sprintf('Admin name: %s', $result['adminName1']);
+            }
+            if (isset($result['population']) && $result['population']) {
+                $info[] = sprintf('Population: %s', number_format($result['population']));
+            }
             $suggestions[] = [
-                'value' => $result['name'] . ' (' . $info . ')',
+                'value' => $result['name'],
                 'data' => [
                     'uri' => sprintf('http://www.geonames.org/%s', $result['geonameId']),
-                    'info' => $info,
+                    'info' => implode("\n", $info),
                 ],
             ];
         }
