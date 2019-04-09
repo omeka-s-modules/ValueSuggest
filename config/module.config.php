@@ -115,6 +115,9 @@ return [
             'valuesuggestall:rda:rofrt' => 'ValueSuggest\Service\RdaDataTypeFactory',
             'valuesuggestall:rda:rofsm' => 'ValueSuggest\Service\RdaDataTypeFactory',
             'valuesuggestall:rda:rofsf' => 'ValueSuggest\Service\RdaDataTypeFactory',
+
+            /* PeriodO */
+            'valuesuggest:periodo:periodo' => 'ValueSuggest\Service\PeriodoDataTypeFactory',
         ],
     ],
     'router' => [
