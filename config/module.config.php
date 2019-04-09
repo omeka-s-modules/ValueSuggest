@@ -15,6 +15,11 @@ return [
             ],
         ],
     ],
+    'view_manager' => [
+        'template_path_stack' => [
+            OMEKA_PATH . '/modules/ValueSuggest/view',
+        ],
+    ],
     'data_types' => [
         'factories' => [
             /* Library of Congress */

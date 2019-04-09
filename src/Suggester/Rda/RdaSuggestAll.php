@@ -27,14 +27,16 @@ class RdaSuggestAll implements SuggesterInterface
      *
      * @see http://www.rdaregistry.info/termList/
      * @param string $query
+     * @param string $lang
      * @return array
      */
-    public function getSuggestions($query)
+    public function getSuggestions($query, $lang = null)
     {
         $response = $this->client->setUri($this->url)->send();
         if (!$response->isSuccess()) {
             return [];
         }
+        $lang = $lang ?: 'en'; // set english as the default language
 
         // Parse the JSON-LD response.
         $suggestions = [];
@@ -43,11 +45,17 @@ class RdaSuggestAll implements SuggesterInterface
             if ('Concept' !== $result['@type']) {
                 continue;
             }
+            $value = isset($result['prefLabel'][$lang])
+                ? $result['prefLabel'][$lang]
+                : $result['prefLabel']['en'];
+            $info = isset($result['definition'][$lang])
+                ? $result['definition'][$lang]
+                : (isset($result['definition']['en']) ? $result['definition']['en'] : null);
             $suggestions[] = [
-                'value' => $result['prefLabel']['en'],
+                'value' => $value,
                 'data' => [
                     'uri' => $result['@id'],
-                    'info' => isset($result['definition']['en']) ? $result['definition']['en'] : null,
+                    'info' => $info,
                 ],
             ];
         }

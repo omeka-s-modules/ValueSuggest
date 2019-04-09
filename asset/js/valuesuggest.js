@@ -6,7 +6,9 @@ $(document).on('o:prepare-value', function(e, type, value) {
         var labelInput = thisValue.find('input[data-value-key="o:label"]');
         var idInput = thisValue.find('input[data-value-key="@id"]');
         var valueInput = thisValue.find('input[data-value-key="@value"]');
+        var languageInput = thisValue.find('input[data-value-key="@language"]');
         var idContainer = thisValue.find('.valuesuggest-id-container');
+        var allResults;
 
         // Literal is the default type.
         idInput.prop('disabled', true);
@@ -17,8 +19,7 @@ $(document).on('o:prepare-value', function(e, type, value) {
         // Set existing values duing initial load.
         if (idInput.val()) {
             // Set value as URI type
-            suggestInput.val(labelInput.val())
-                .attr('placeholder', labelInput.val());
+            suggestInput.val(labelInput.val()).attr('placeholder', labelInput.val());
             idInput.prop('disabled', false);
             labelInput.prop('disabled', false);
             valueInput.prop('disabled', true);
@@ -29,8 +30,7 @@ $(document).on('o:prepare-value', function(e, type, value) {
             idContainer.show().find('.valuesuggest-id').html(link);
         } else if (valueInput.val()) {
             // Set value as Literal type
-            suggestInput.val(valueInput.val())
-                .attr('placeholder', valueInput.val());
+            suggestInput.val(valueInput.val()).attr('placeholder', valueInput.val());
             idInput.prop('disabled', true);
             labelInput.prop('disabled', true);
             valueInput.prop('disabled', false);
@@ -44,6 +44,12 @@ $(document).on('o:prepare-value', function(e, type, value) {
                 valueInput.val($(this).val());
             }
         });
+
+        // Clear the cache after any modifications to the language input.
+        languageInput.on('input', function(e) {
+            suggestInput.autocomplete().clearCache();
+            allResults = null;
+        })
 
         // Remove the @id from URI type and transform it into Literal type.
         idContainer.find('.valuesuggest-id-remove').on('click', function(e) {
@@ -61,8 +67,13 @@ $(document).on('o:prepare-value', function(e, type, value) {
             // triggered whether the user wants it or not. The user must
             // explicitly select the suggestion.
             triggerSelectOnValidInput: false,
-            onSearchStart: function() {
+            // Set the lang paramater in onSearchStart so the "valuesuggest"
+            // type always uses the current language when making a query. Set
+            // the type parameter here as well for consistency.
+            onSearchStart: function(params) {
                 $(this).css('cursor', 'progress');
+                params.lang = languageInput.val();
+                params.type = type;
             },
             onSearchComplete: function(query, suggestions) {
                 $(this).css('cursor', 'default');
@@ -108,22 +119,20 @@ $(document).on('o:prepare-value', function(e, type, value) {
                 }
             };
             // Use custom lookup function to make only one request.
-            var result;
             options.lookup = function (query, done) {
-                if (null == result) {
-                    $.get(valueSuggestProxyUrl, {query: query, type: type}, function(data) {
-                        result = data;
-                        done(result);
+                if (null == allResults) {
+                    $.get(valueSuggestProxyUrl, this.params, function(data) {
+                        allResults = data; // cache the data
+                        done(allResults);
                     });
                 } else {
-                    done(result);
+                    done(allResults);
                 }
             };
 
         // For the "valuesuggest" type, make requests as normal.
         } else {
             options.serviceUrl = valueSuggestProxyUrl;
-            options.params = {type: type};
             options.deferRequestBy = 200;
             options.minChars = 3;
             // Must disable preventBadQueries or autocomplete will not fire on

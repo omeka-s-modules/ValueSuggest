@@ -1,0 +1,21 @@
+<?php 
+$translate = $this->plugin('translate');
+$escape = $this->plugin('escapeHtml');
+?>
+
+<div class="valuesuggest-language-container">
+    <span class="label o-icon-language" title="<?php echo $escape($translate('Set language')); ?>" aria-label="<?php echo $escape($translate('Set language')); ?>"></span>
+    <?php echo $this->formText($languageInput); ?>
+</div>
+<div class="valuesuggest-vocab-container">
+    <span class="o-icon-vocab label" title="<?php echo $escape($rdfLabel); ?>"><?php echo $this->escapeHtml($rdfLabel); ?></span>
+    <input type="text" class="valuesuggest-input">
+    <?php echo $this->formHidden($labelInput); ?>
+    <?php echo $this->formHidden($idInput); ?>
+    <?php echo $this->formHidden($valueInput); ?>
+</div>
+<div class="valuesuggest-id-container">
+    <span class="o-icon-uri label" title="<?php echo $escape($translate('URI')); ?>" aria-label="<?php echo $escape($translate('URI')); ?>"></span>
+    <span class="valuesuggest-id"></span>
+    <a href="#" class="valuesuggest-id-remove o-icon-close" title="<?php echo $escape($translate('Remove URI')); ?>"></a>
+</div>

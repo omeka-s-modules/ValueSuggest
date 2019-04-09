@@ -29,21 +29,30 @@ class Sparql implements SuggesterInterface
      *
      * @see http://vocab.getty.edu/
      * @param string $query
+     * @param string $lang
      * @return array
      */
-    public function getSuggestions($query)
+    public function getSuggestions($query, $lang = null)
     {
-        // Use case-insensitive fulltext search to retrieve suggestions.
-        // @see http://vocab.getty.edu/doc/queries/#Case-insensitive_Full_Text_Search_Query
+        // Use Getty's Lucene full text search to retrieve suggestions in order
+        // of relevance, filtering by the provided language, falling back on
+        // english.
+        // @see http://vocab.getty.edu/doc/#Full_Text_Search
         $sparqlQuery = sprintf('
-select ?Subject ?Term ?Parents ?ScopeNote {
-    ?Subject a skos:Concept ; luc:term "%s" ; skos:inScheme %s: ;
-        gvp:prefLabelGVP [xl:literalForm ?Term] .
-    optional {?Subject gvp:parentString ?Parents}
-    optional {?Subject skos:scopeNote [dct:language gvp_lang:en; rdf:value ?ScopeNote]}
-} order by asc(lcase(str(?Term))) limit 500',
+SELECT ?Subject ?Term ?Parents ?ScopeNote ?ScopeNoteEn {
+    ?Subject a skos:Concept ;
+    luc:text "%s" ;
+    skos:inScheme %s: ;
+    skosxl:prefLabel [xl:literalForm ?Term] .
+    OPTIONAL {?Subject gvp:parentString ?Parents}
+    OPTIONAL {?Subject skos:scopeNote [dct:language gvp_lang:%s; rdf:value ?ScopeNote]}
+    OPTIONAL {?Subject skos:scopeNote [dct:language gvp_lang:en; rdf:value ?ScopeNoteEn]}
+    FILTER langMatches(lang(?Term), "%s")
+} LIMIT 500',
             addslashes($query),
-            $this->scheme
+            $this->scheme,
+            $lang ?: 'en',
+            $lang ?: 'en'
         );
         $client = $this->client->setUri(self::ENDPOINT)->setParameterGet([
             'query' => $sparqlQuery,
@@ -58,13 +67,16 @@ select ?Subject ?Term ?Parents ?ScopeNote {
         }
 
         // Parse the JSON response. Getty provides disambiguating information
-        // in ScopeNote and Parents.
+        // in ScopeNote and Parents. If ScopeNote in the provided language is
+        // not available, fall back on english ScopeNoteEn, then on the Parent.
         $suggestions = [];
         $results = json_decode($response->getBody(), true);
         foreach ($results['results']['bindings'] as $result) {
             $info = null;
             if (isset($result['ScopeNote']['value'])) {
                 $info = $result['ScopeNote']['value'];
+            } elseif (isset($result['ScopeNoteEn']['value'])) {
+                $info = $result['ScopeNoteEn']['value'];
             } elseif (isset($result['Parents']['value'])) {
                 $info = $result['Parents']['value'];
             }

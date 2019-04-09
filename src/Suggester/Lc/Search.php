@@ -32,9 +32,10 @@ class Search implements SuggesterInterface
      *
      * @see http://id.loc.gov/search/
      * @param string $query
+     * @param string $lang
      * @return array
      */
-    public function getSuggestions($query)
+    public function getSuggestions($query, $lang = null)
     {
         // Must build the URL by hand because the client and http_build_query()
         // overwrite identical query keys. Note the use of two "q" keys.
@@ -54,6 +55,10 @@ class Search implements SuggesterInterface
         // disambiguating information.
         $suggestions = [];
         $results = json_decode($response->getBody(), true);
+        if (null === $results) {
+            // The response may be invalid JSON; json_decode() returns NULL.
+            return [];
+        }
         foreach ($results as $result) {
             if (isset($result[0]) && 'atom:entry' === $result[0]) {
                 $suggestions[] = [
