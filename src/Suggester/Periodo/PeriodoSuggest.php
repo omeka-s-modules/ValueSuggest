@@ -22,28 +22,35 @@ class PeriodoSuggest implements SuggesterInterface
         foreach ($results['periodCollections'] as $collectionId => $collection) {
             $sourceInfo = $this->getSourceInfo($collection);
             foreach ($collection['definitions'] as $definitionId => $definition) {
-                if (!$this->search($query, $this->getSearchAgainst($definition))) {
-                    continue;
+                $text = $this->getPeriodDefinitionText($definition);
+                if (stristr($text, $query)) {
+                    $info = [];
+                    $info[] = sprintf('Period start: %s', $definition['start']['label']);
+                    $info[] = sprintf('Period stop: %s', $definition['stop']['label']);
+                    if (isset($definition['spatialCoverageDescription'])) {
+                        $info[] = sprintf(
+                            'Spatial extent: %s',
+                            $definition['spatialCoverageDescription']
+                        );
+                    }
+                    if (isset($definition['spatialCoverage'])) {
+                        $locations = [];
+                        foreach ($definition['spatialCoverage'] as $location) {
+                            $locations[] = $location['label'];
+                        }
+                        $info[] = sprintf('Locations: %s', implode('; ', $locations));
+                    }
+                    if ($sourceInfo) {
+                        $info[] = $sourceInfo;
+                    }
+                    $suggestions[] = [
+                        'value' => $definition['label'],
+                        'data' => [
+                            'uri' => sprintf('http://n2t.net/ark:/99152/%s', $definitionId),
+                            'info' => implode("\n", $info),
+                        ],
+                    ];
                 }
-                $info = [];
-                $info[] = sprintf('Period start: %s', $definition['start']['label']);
-                $info[] = sprintf('Period stop: %s', $definition['stop']['label']);
-                if (isset($definition['spatialCoverageDescription'])) {
-                    $info[] = sprintf(
-                        'Spatial extent: %s',
-                        $definition['spatialCoverageDescription']
-                    );
-                }
-                if ($sourceInfo) {
-                    $info[] = $sourceInfo;
-                }
-                $suggestions[] = [
-                    'value' => $definition['label'],
-                    'data' => [
-                        'uri' => sprintf('http://n2t.net/ark:/99152/%s', $definitionId),
-                        'info' => implode("\n", $info),
-                    ],
-                ];
             }
         }
         usort($suggestions, function ($a, $b) {
@@ -83,35 +90,23 @@ class PeriodoSuggest implements SuggesterInterface
     }
 
     /**
-     * Get the string for the query to search against.
+     * Get the searchable text of a period definition.
      *
      * @param array A period definition
      * @return string
      */
-    public function getSearchAgainst(array $definition)
+    public function getPeriodDefinitionText(array $definition)
     {
-        $searchAgainst = [];
-        $searchAgainst[] = $definition['label'];
+        $text = [];
+        $text[] = $definition['label'];
         if (isset($definition['spatialCoverageDescription'])) {
-            $searchAgainst[] = $definition['spatialCoverageDescription'];
+            $text[] = $definition['spatialCoverageDescription'];
         }
         if (isset($definition['spatialCoverage'])) {
             foreach ($definition['spatialCoverage'] as $coverage) {
-                $searchAgainst[] = $coverage['label'];
+                $text[] = $coverage['label'];
             }
         }
-        return implode(' ', $searchAgainst);
-    }
-
-    /**
-     * Search the query against the string.
-     *
-     * @param string $query
-     * @param string $string
-     * @return bool
-     */
-    public function search($query, $string)
-    {
-        return stristr($string, $query);
+        return implode(' ', $text);
     }
 }
