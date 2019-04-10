@@ -29,7 +29,7 @@ class PeriodoSuggest implements SuggesterInterface
                     $info[] = sprintf('Period stop: %s', $definition['stop']['label']);
                     if (isset($definition['spatialCoverageDescription'])) {
                         $info[] = sprintf(
-                            'Spatial extent: %s',
+                            'Spatial description: %s',
                             $definition['spatialCoverageDescription']
                         );
                     }
@@ -38,10 +38,13 @@ class PeriodoSuggest implements SuggesterInterface
                         foreach ($definition['spatialCoverage'] as $location) {
                             $locations[] = $location['label'];
                         }
-                        $info[] = sprintf('Locations: %s', implode('; ', $locations));
+                        $info[] = sprintf('Spatial coverage: %s', implode('; ', $locations));
                     }
                     if ($sourceInfo) {
                         $info[] = $sourceInfo;
+                    }
+                    if (isset($definition['note'])) {
+                        $info[] = sprintf('Note: %s', $definition['note']);
                     }
                     $suggestions[] = [
                         'value' => $definition['label'],
@@ -106,6 +109,9 @@ class PeriodoSuggest implements SuggesterInterface
             foreach ($definition['spatialCoverage'] as $coverage) {
                 $text[] = $coverage['label'];
             }
+        }
+        if (isset($definition['note'])) {
+            $text[] = $definition['note'];
         }
         return implode(' ', $text);
     }
