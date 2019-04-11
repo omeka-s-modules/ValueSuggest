@@ -22,6 +22,19 @@ return [
     ],
     'data_types' => [
         'factories' => [
+            /* Geonames */
+            'valuesuggest:geonames:geonames' => 'ValueSuggest\Service\GeonamesDataTypeFactory',
+
+            /* Getty */
+            'valuesuggest:getty:aat' => 'ValueSuggest\Service\GettyDataTypeFactory',
+            'valuesuggest:getty:tgn' => 'ValueSuggest\Service\GettyDataTypeFactory',
+            'valuesuggest:getty:ulan' => 'ValueSuggest\Service\GettyDataTypeFactory',
+            // @todo Add "The Cultural Objects Name Authority (CONA)" once it's
+            // published (past due, fall 2015)
+
+            /* Homosaurus */
+            'valuesuggest:homosaurus:homosaurus' => 'ValueSuggest\Service\HomosaurusDataTypeFactory',
+
             /* Library of Congress */
             'valuesuggest:lc:all' => 'ValueSuggest\Service\LcDataTypeFactory',
             'valuesuggest:lc:subjects' => 'ValueSuggest\Service\LcDataTypeFactory',
@@ -43,22 +56,12 @@ return [
             'valuesuggest:lc:iso6395' => 'ValueSuggest\Service\LcDataTypeFactory',
             // @todo Add more LC data types
 
-            /* Geonames */
-            'valuesuggest:geonames:geonames' => 'ValueSuggest\Service\GeonamesDataTypeFactory',
-
-            /* Getty */
-            'valuesuggest:getty:aat' => 'ValueSuggest\Service\GettyDataTypeFactory',
-            'valuesuggest:getty:tgn' => 'ValueSuggest\Service\GettyDataTypeFactory',
-            'valuesuggest:getty:ulan' => 'ValueSuggest\Service\GettyDataTypeFactory',
-            // @todo Add "The Cultural Objects Name Authority (CONA)" once it's
-            // published (past due, fall 2015)
-
-            /* Homosaurus */
-            'valuesuggest:homosaurus:homosaurus' => 'ValueSuggest\Service\HomosaurusDataTypeFactory',
-
             /* OCLC */
             'valuesuggest:oclc:viaf' => 'ValueSuggest\Service\OclcDataTypeFactory',
             'valuesuggest:oclc:fast' => 'ValueSuggest\Service\OclcDataTypeFactory',
+
+            /* PeriodO */
+            'valuesuggest:periodo:periodo' => 'ValueSuggest\Service\PeriodoDataTypeFactory',
 
             /* RDA */
             'valuesuggestall:rda:AspectRatio' => 'ValueSuggest\Service\RdaDataTypeFactory',
@@ -115,9 +118,6 @@ return [
             'valuesuggestall:rda:rofrt' => 'ValueSuggest\Service\RdaDataTypeFactory',
             'valuesuggestall:rda:rofsm' => 'ValueSuggest\Service\RdaDataTypeFactory',
             'valuesuggestall:rda:rofsf' => 'ValueSuggest\Service\RdaDataTypeFactory',
-
-            /* PeriodO */
-            'valuesuggest:periodo:periodo' => 'ValueSuggest\Service\PeriodoDataTypeFactory',
         ],
     ],
     'router' => [
