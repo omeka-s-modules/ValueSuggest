@@ -118,6 +118,22 @@ return [
             'valuesuggestall:rda:rofrt' => 'ValueSuggest\Service\RdaDataTypeFactory',
             'valuesuggestall:rda:rofsm' => 'ValueSuggest\Service\RdaDataTypeFactory',
             'valuesuggestall:rda:rofsf' => 'ValueSuggest\Service\RdaDataTypeFactory',
+
+            /* Tesauros-Diccionarios del patrimonio cultural de España */
+            'valuesuggest:tesauros:bienesculturales' => 'ValueSuggest\Service\TesaurosDataTypeFactory',
+            'valuesuggest:tesauros:ceramica' => 'ValueSuggest\Service\TesaurosDataTypeFactory',
+            'valuesuggest:tesauros:contextosculturales' => 'ValueSuggest\Service\TesaurosDataTypeFactory',
+            'valuesuggest:tesauros:geografico' => 'ValueSuggest\Service\TesaurosDataTypeFactory',
+            'valuesuggest:tesauros:materias' => 'ValueSuggest\Service\TesaurosDataTypeFactory',
+            'valuesuggest:tesauros:mobiliario' => 'ValueSuggest\Service\TesaurosDataTypeFactory',
+            'valuesuggest:tesauros:numismatica' => 'ValueSuggest\Service\TesaurosDataTypeFactory',
+            'valuesuggest:tesauros:tecnicas' => 'ValueSuggest\Service\TesaurosDataTypeFactory',
+            'valuesuggest:tesauros:toponimiahistorica' => 'ValueSuggest\Service\TesaurosDataTypeFactory',
+
+            /* UNESCO vocabularios */
+            'valuesuggest:unesco:unescothes' => 'ValueSuggest\Service\UnescoDataTypeFactory',
+            'valuesuggest:unesco:unesco6' => 'ValueSuggest\Service\UnescoDataTypeFactory',
+            'valuesuggest:unesco:floridablanca' => 'ValueSuggest\Service\UnescoDataTypeFactory',
         ],
     ],
     'router' => [
