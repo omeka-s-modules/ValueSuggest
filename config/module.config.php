@@ -129,6 +129,10 @@ return [
             'valuesuggest:tesauros:numismatica' => 'ValueSuggest\Service\TesaurosDataTypeFactory',
             'valuesuggest:tesauros:tecnicas' => 'ValueSuggest\Service\TesaurosDataTypeFactory',
             'valuesuggest:tesauros:toponimiahistorica' => 'ValueSuggest\Service\TesaurosDataTypeFactory',
+
+            /* UNESCO vocabularies */
+            'valuesuggest:unesco:unescothes' => 'ValueSuggest\Service\UnescoDataTypeFactory',
+            'valuesuggest:unesco:unesco6' => 'ValueSuggest\Service\UnescoDataTypeFactory',
         ],
     ],
     'router' => [
