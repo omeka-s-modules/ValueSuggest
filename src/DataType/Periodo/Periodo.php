@@ -18,6 +18,6 @@ class Periodo extends AbstractDataType
 
     public function getLabel()
     {
-        return 'PeriodO: A public domain gazetteer of scholarly definitions of historical, art-historical, and archaeological periods'; // @translate
+        return 'PeriodO: A gazetteer of period definitions for linking and visualizing data'; // @translate
     }
 }
