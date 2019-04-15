@@ -1,7 +1,6 @@
 # ValueSuggest
 
-Adds auto-suggest data types to resource templates using controlled vocabulary
-services.
+Adds auto-suggest data types to resource templates using controlled vocabulary services.
 
 See the [Omeka S user manual](http://omeka.org/s/docs/user-manual/modules/valuesuggest/) for user documentation.
 
@@ -9,7 +8,35 @@ See the [Omeka S user manual](http://omeka.org/s/docs/user-manual/modules/values
 
 See general end user documentation for [Installing a module](http://omeka.org/s/docs/user-manual/modules/#installing-modules)
 
-## [Library of Congress Linked Data Service](http://id.loc.gov/)
+## Vocabularies
+
+This module includes the following vocabularies:
+
+- GeoNames
+- The Getty Vocabularies
+- Homosaurus
+- Library of Congress Linked Data Service
+- OCLC Metadata Services
+- PeriodO
+- RDA Value Vocabularies
+- Tesauros del patrimonio cultural de España
+- UNESCO
+
+### [GeoNames](http://www.geonames.org/)
+
+- The GeoNames geographical database
+
+### [The Getty Vocabularies](http://vocab.getty.edu/)
+
+- The Art & Architecture Thesaurus (AAT)
+- The Getty Thesaurus of Geographic Names (TGN)
+- The Union List of Artist Names (ULAN)
+
+### [Homosaurus](http://homosaurus.org/)
+
+- Homosaurus.org linked data vocabulary
+
+### [Library of Congress Linked Data Service](http://id.loc.gov/)
 
 - AFS Ethnographic Thesaurus
 - All
@@ -30,28 +57,18 @@ See general end user documentation for [Installing a module](http://omeka.org/s/
 - Subject Headings
 - Thesaurus for Graphic Materials
 
-## [The Getty Vocabularies](http://vocab.getty.edu/)
-
-- The Art & Architecture Thesaurus (AAT)
-- The Getty Thesaurus of Geographic Names (TGN)
-- The Union List of Artist Names (ULAN)
-
-## [OCLC Metadata Services](https://www.oclc.org/en/services/a-z.html/:F2664:/)
+### [OCLC Metadata Services](https://www.oclc.org/en/services/a-z.html/:F2664:/)
 
 - Faceted Application of Subject Terminologies (FAST)
 - The Virtual International Authority File (VIAF)
 
-## [GeoNames](http://www.geonames.org/)
+### [PeriodO](http://perio.do/en/)
 
-- The GeoNames geographical database
+- A gazetteer of period definitions for linking and visualizing data
 
-## [Homosaurus](http://homosaurus.org/)
+### [RDA Value Vocabularies](http://www.rdaregistry.info/termList/)
 
-- Homosaurus.org linked data vocabulary
-
-## [RDA Value Vocabularies](http://www.rdaregistry.info/termList/)
-
-### RDA Reference value vocabularies
+#### RDA Reference value vocabularies
 
 - Aspect Ratio Designation
 - Bibliographic Format
@@ -93,11 +110,11 @@ See general end user documentation for [Installing a module](http://omeka.org/s/
 - Type of Recording
 - Video Format
 
-### RDA Local value vocabularies
+#### RDA Local value vocabularies
 
 - Gender
 
-### RDA/ONIX Framework value vocabularies
+#### RDA/ONIX Framework value vocabularies
 
 - Character
 - Extension Mode
@@ -113,3 +130,21 @@ See general end user documentation for [Installing a module](http://omeka.org/s/
 - Revision Termination
 - Sensory Mode
 - Storage Medium Format
+
+### [Tesauros del patrimonio cultural de España](http://tesauros.mecd.es/tesauros)
+
+- Diccionario de Bienes Culturales
+- Diccionario de Materias
+- Diccionario de Técnicas
+- Diccionario de Contextos Culturales
+- Diccionario Geográfico
+- Diccionario de Toponimia Histórica
+- Diccionario de Cerámica
+- Diccionario de Numismática
+- Diccionario de Mobiliario
+
+### [UNESCO](http://skos.um.es/)
+
+- Tesauro
+- Nomenclatura de Ciencia y Tecnología
+- Biblioteca Digital Floridablanca
