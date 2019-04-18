@@ -13,6 +13,7 @@
 .valuesuggest-language-container {
     margin-top: -1px;
     margin-bottom: -1px;
+    z-index: 1;
 }
 
 .valuesuggest-id-container {
@@ -37,7 +38,7 @@ input.valuesuggest-input {
 .inputs .valuesuggest-language-container .value-language.label:not(.active) {
     left: auto;
     right: 0;
-    background-color: transparent;
+    background-color: #fff;
     cursor: pointer;
 }
 
