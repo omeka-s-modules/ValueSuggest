@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rivo Zängov <eraser@eraser.ee>, 2018
+# Rivo Zängov <eraser@eraser.ee>, 2019
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-15 10:31-0400\n"
+"POT-Creation-Date: 2019-04-18 10:50-0400\n"
 "PO-Revision-Date: 2017-09-14 20:16+0000\n"
-"Last-Translator: Rivo Zängov <eraser@eraser.ee>, 2018\n"
+"Last-Translator: Rivo Zängov <eraser@eraser.ee>, 2019\n"
 "Language-Team: Estonian (https://www.transifex.com/omeka/teams/14184/et/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,13 +21,17 @@ msgstr ""
 "Language: et\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: view/common/data-type/suggested.phtml:20
+#: view/common/data-type/suggested.phtml:9
+msgid "Remove language"
+msgstr ""
+
+#: view/common/data-type/suggested.phtml:21
 msgid "Remove URI"
 msgstr "Eemalda URI"
 
 #: src/Service/UnescoDataTypeFactory.php:12
 msgid "UNESCO: Tesauro"
-msgstr ""
+msgstr "UNESCO: Tesauro"
 
 #: src/Service/UnescoDataTypeFactory.php:16
 msgid "UNESCO: Nomenclatura de Ciencia y Tecnología"
@@ -71,7 +75,7 @@ msgstr ""
 
 #: src/Service/RdaDataTypeFactory.php:44
 msgid "RDA: Content Type"
-msgstr ""
+msgstr "RDA: Sisu liik"
 
 #: src/Service/RdaDataTypeFactory.php:48
 msgid "RDA: Conventional Collective Title"
@@ -79,11 +83,11 @@ msgstr ""
 
 #: src/Service/RdaDataTypeFactory.php:52
 msgid "RDA: File Type"
-msgstr ""
+msgstr "RDA: Failitüüp"
 
 #: src/Service/RdaDataTypeFactory.php:56
 msgid "RDA: Font Size"
-msgstr ""
+msgstr "RDA: Teksti suurus"
 
 #: src/Service/RdaDataTypeFactory.php:60
 msgid "RDA: Form of Musical Notation"
@@ -103,11 +107,11 @@ msgstr ""
 
 #: src/Service/RdaDataTypeFactory.php:76
 msgid "RDA: Frequency"
-msgstr ""
+msgstr "RDA: Sagedus"
 
 #: src/Service/RdaDataTypeFactory.php:80
 msgid "RDA: Generation"
-msgstr ""
+msgstr "RDA: Generatsioon"
 
 #: src/Service/RdaDataTypeFactory.php:84
 msgid "RDA: Groove Pitch of an Analog Cylinder"
@@ -119,19 +123,19 @@ msgstr ""
 
 #: src/Service/RdaDataTypeFactory.php:92
 msgid "RDA: Illustrative Content"
-msgstr ""
+msgstr "RDA: Illustratiivne sisu"
 
 #: src/Service/RdaDataTypeFactory.php:96
 msgid "RDA:  Layout"
-msgstr ""
+msgstr "RDA:  Paigutus"
 
 #: src/Service/RdaDataTypeFactory.php:100
 msgid "RDA: Material"
-msgstr ""
+msgstr "RDA: Materjal"
 
 #: src/Service/RdaDataTypeFactory.php:104
 msgid "RDA: Media Type"
-msgstr ""
+msgstr "RDA: Meedia liik"
 
 #: src/Service/RdaDataTypeFactory.php:108
 msgid "RDA: Mode of Issuance"
@@ -139,15 +143,15 @@ msgstr ""
 
 #: src/Service/RdaDataTypeFactory.php:112
 msgid "RDA: Polarity"
-msgstr ""
+msgstr "RDA: Polaarsus"
 
 #: src/Service/RdaDataTypeFactory.php:116
 msgid "RDA: Presentation Format"
-msgstr ""
+msgstr "RDA: Esitlus vorming"
 
 #: src/Service/RdaDataTypeFactory.php:120
 msgid "RDA: Production Method"
-msgstr ""
+msgstr "RDA: Tootmismeetod"
 
 #: src/Service/RdaDataTypeFactory.php:124
 msgid "RDA: Recording Medium"
@@ -159,7 +163,7 @@ msgstr ""
 
 #: src/Service/RdaDataTypeFactory.php:132
 msgid "RDA: Regional Encoding"
-msgstr ""
+msgstr "RDA: Regionaalne kodeerimine"
 
 #: src/Service/RdaDataTypeFactory.php:136
 msgid "RDA: Scale Designation"
@@ -167,7 +171,7 @@ msgstr ""
 
 #: src/Service/RdaDataTypeFactory.php:140
 msgid "RDA: Sound Content"
-msgstr ""
+msgstr "RDA: Heli sisu"
 
 #: src/Service/RdaDataTypeFactory.php:144
 msgid "RDA: Special Playback Characteristics"
@@ -191,11 +195,11 @@ msgstr ""
 
 #: src/Service/RdaDataTypeFactory.php:164
 msgid "RDA: Video Format"
-msgstr ""
+msgstr "RDA: Video vorming"
 
 #: src/Service/RdaDataTypeFactory.php:168
 msgid "RDA:  Gender"
-msgstr ""
+msgstr "RDA:  Sugu"
 
 #: src/Service/RdaDataTypeFactory.php:172
 msgid "RDA: Character"
