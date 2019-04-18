@@ -51,7 +51,7 @@ abstract class AbstractDataType extends BaseAbstractDataType implements DataType
         $languageInput = new Text('valuesuggest-language');
         $languageInput->setAttributes([
             'data-value-key' => '@language',
-            'class' => 'value-language active',
+            'class' => 'value-language',
         ]);
         
         $rdfLabel = $this->getLabel();

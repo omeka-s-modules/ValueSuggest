@@ -5,9 +5,15 @@
 .autocomplete-group { padding: 2px 5px; }
 .autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
 
+.valuesuggest-language-container,
 .valuesuggest-vocab-container {
     position: relative;
+}
+
+.valuesuggest-language-container {
     margin-top: -1px;
+    margin-bottom: -1px;
+    z-index: 1;
 }
 
 .valuesuggest-id-container {
@@ -17,12 +23,37 @@
     border-top: 0;
     position: relative;
 }
+
 .valuesuggest-id {
     flex-grow: 1;
     overflow: hidden;
     text-overflow: ellipsis;
     padding-left: 36px;
 }
+
 input.valuesuggest-input {
     padding-left: 42px;
+}
+
+.inputs .valuesuggest-language-container .value-language.label:not(.active) {
+    left: auto;
+    right: 0;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.inputs .valuesuggest-language-container .value-language.label.active {
+    left: 0;
+    color: #676767;
+}
+
+.inputs .valuesuggest-language-container .value-language.remove {
+    display: none;
+}
+
+.inputs .valuesuggest-language-container .value-language.remove.active {
+    display: block;
+    position: absolute;
+    right: 0;
+    left: auto;
 }

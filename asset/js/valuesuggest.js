@@ -6,7 +6,9 @@ $(document).on('o:prepare-value', function(e, type, value) {
         var labelInput = thisValue.find('input[data-value-key="o:label"]');
         var idInput = thisValue.find('input[data-value-key="@id"]');
         var valueInput = thisValue.find('input[data-value-key="@value"]');
+        var languageLabel = thisValue.find('.value-language.label');
         var languageInput = thisValue.find('input[data-value-key="@language"]');
+        var languageRemove = thisValue.find('.value-language.remove');
         var idContainer = thisValue.find('.valuesuggest-id-container');
         var allResults;
 
@@ -50,6 +52,22 @@ $(document).on('o:prepare-value', function(e, type, value) {
             suggestInput.autocomplete().clearCache();
             allResults = null;
         })
+        
+        // Remove default lanugage toggle, use cusotm behavior
+        languageLabel.unbind();
+
+        languageLabel.on('click', function(e) {
+            e.preventDefault();
+            if ($(this).hasClass('active')) {
+                return;
+            }
+            thisValue.find('.value-language').addClass('active');
+        });
+        
+        languageRemove.on('click', function(e) {
+           e.preventDefault();
+           thisValue.find('.value-language.active').removeClass('active'); 
+        });
 
         // Remove the @id from URI type and transform it into Literal type.
         idContainer.find('.valuesuggest-id-remove').on('click', function(e) {
