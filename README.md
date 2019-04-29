@@ -12,6 +12,7 @@ See general end user documentation for [Installing a module](http://omeka.org/s/
 
 This module includes the following vocabularies:
 
+- PACTOLS
 - GeoNames
 - The Getty Vocabularies
 - Homosaurus
@@ -21,6 +22,11 @@ This module includes the following vocabularies:
 - RDA Value Vocabularies
 - Tesauros del patrimonio cultural de España
 - UNESCO
+
+
+## [Opentheso](http://pactols.frantiq.fr/)
+
+- The Pactols thesaurus
 
 ### [GeoNames](http://www.geonames.org/)
 
