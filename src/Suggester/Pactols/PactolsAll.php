@@ -24,14 +24,19 @@ class PactolsAll implements SuggesterInterface
      * @return array
      */
     public function getSuggestions($query, $lang = null)
-    {			
+    {
+        $params = ['q' => $query, 'theso' => 'TH_1', 'format' => 'jsonld'];
+        if ($lang) {
+            // Pactols requires an ISO-639 2-letter language code. Remove the
+            // first underscore and anything after it ("zh_CN" becomes "zh").
+            $params['lang'] = strstr($lang, '_', true) ?: $lang;
+        }
         $response = $this->client
 	->setUri('https://pactols.frantiq.fr/opentheso/api/search')
-        ->setParameterGet(['q' => $query, 'lang' =>'fr', 'theso' => 'TH_1', 'format' => 'jsonld'])
+        ->setParameterGet($params)
         ->send();
 		
         if (!$response->isSuccess()) {
-			file_put_contents($file,"return null",FILE_APPEND | LOCK_EX);
             return [];
         }
 		
