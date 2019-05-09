@@ -12,21 +12,17 @@ See general end user documentation for [Installing a module](http://omeka.org/s/
 
 This module includes the following vocabularies:
 
-- PACTOLS
 - GeoNames
 - The Getty Vocabularies
 - Homosaurus
 - Library of Congress Linked Data Service
 - OCLC Metadata Services
+- PACTOLS
 - PeriodO
 - RDA Value Vocabularies
 - Tesauros del patrimonio cultural de España
 - UNESCO
 
-
-## [Opentheso](http://pactols.frantiq.fr/)
-
-- The Pactols thesaurus
 
 ### [GeoNames](http://www.geonames.org/)
 
@@ -67,6 +63,10 @@ This module includes the following vocabularies:
 
 - Faceted Application of Subject Terminologies (FAST)
 - The Virtual International Authority File (VIAF)
+
+## [Opentheso](http://pactols.frantiq.fr/)
+
+- The Pactols thesaurus
 
 ### [PeriodO](http://perio.do/en/)
 
