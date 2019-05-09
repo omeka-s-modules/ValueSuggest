@@ -49,7 +49,7 @@ class PactolsAll implements SuggesterInterface
             for($j=0; $j<sizeof($results[$i]["http://www.w3.org/2004/02/skos/core#prefLabel"]); $j++){
 
 
-                    if(strcasecmp(trim($results[$i]["http://www.w3.org/2004/02/skos/core#prefLabel"][$j]['@language']),'fr')==0){
+                    if(strcasecmp(trim($results[$i]["http://www.w3.org/2004/02/skos/core#prefLabel"][$j]['@language']),$lang)==0){
                             $valueLang=$results[$i]["http://www.w3.org/2004/02/skos/core#prefLabel"][$j]['@value'];
 
                             $suggestions[] = [
