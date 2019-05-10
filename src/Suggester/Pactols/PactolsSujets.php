@@ -24,13 +24,12 @@ class PactolsSujets implements SuggesterInterface
      * @return array
      */
     public function getSuggestions($query, $lang = null)
-    {			
-        $params = ['q' => $query, 'theso' => 'TH_1', 'group' => '6', 'format' => 'jsonld'];
-        if ($lang) {
-            // Pactols requires an ISO-639 2-letter language code. Remove the
-            // first underscore and anything after it ("zh_CN" becomes "zh").
-            $params['lang'] = strstr($lang, '_', true) ?: $lang;
-        }
+    {		
+        $lang1 = 'fr' ?: $lang; // set french as the default language
+        $params['lang'] = $lang1; 
+     
+        $params = ['q' => $query, 'theso' => 'TH_1',  'group' => '6', 'format' => 'jsonld'];
+        
         $response = $this->client
 	->setUri('https://pactols.frantiq.fr/opentheso/api/search')
         ->setParameterGet($params)
@@ -49,7 +48,7 @@ class PactolsSujets implements SuggesterInterface
             for($j=0; $j<sizeof($results[$i]["http://www.w3.org/2004/02/skos/core#prefLabel"]); $j++){
 
 
-                    if(strcasecmp(trim($results[$i]["http://www.w3.org/2004/02/skos/core#prefLabel"][$j]['@language']),$lang)==0){
+                    if(strcasecmp(trim($results[$i]["http://www.w3.org/2004/02/skos/core#prefLabel"][$j]['@language']),$lang1)==0){
                             $valueLang=$results[$i]["http://www.w3.org/2004/02/skos/core#prefLabel"][$j]['@value'];
 
                             $suggestions[] = [
