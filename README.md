@@ -17,7 +17,7 @@ This module includes the following vocabularies:
 - Homosaurus
 - Library of Congress Linked Data Service
 - OCLC Metadata Services
-- PACTOLS
+- PACTOLS of Frantiq
 - PeriodO
 - RDA Value Vocabularies
 - Tesauros del patrimonio cultural de España
@@ -64,9 +64,10 @@ This module includes the following vocabularies:
 - Faceted Application of Subject Terminologies (FAST)
 - The Virtual International Authority File (VIAF)
 
-## [Opentheso](http://pactols.frantiq.fr/)
+## [PACTOLS](https://pactols.frantiq.fr/) using Opentheso(https://github.com/miledrousset/opentheso)
 
-- The Pactols thesaurus
+- All the pactols thesaurus
+- The subject group only
 
 ### [PeriodO](http://perio.do/en/)
 
