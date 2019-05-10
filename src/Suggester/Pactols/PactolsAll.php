@@ -7,7 +7,7 @@ use Zend\Http\Client;
 class PactolsAll implements SuggesterInterface
 {
     /**
-     * @var Clientx
+     * @var Client
      */
     protected $client;
 
@@ -17,52 +17,47 @@ class PactolsAll implements SuggesterInterface
     }
 
     /**
-     * Retrieve suggestions from the Opentheso 
-     *
+     * Retrieve suggestions from the Opentheso
      *
      * @param string $query
      * @return array
      */
     public function getSuggestions($query, $lang = null)
     {
-        $lang1 = 'fr' ?: $lang; // set french as the default language
-        $params['lang'] = $lang1;         
-        
-        $params = ['q' => $query, 'theso' => 'TH_1', 'format' => 'jsonld'];
+        $lang = $lang ?: 'fr';
+        $params = ['q' => $query, 'lang' => $lang, 'theso' => 'TH_1', 'format' => 'jsonld'];
 
         $response = $this->client
-	->setUri('https://pactols.frantiq.fr/opentheso/api/search')
-        ->setParameterGet($params)
-        ->send();
-        
+            ->setUri('https://pactols.frantiq.fr/opentheso/api/search')
+            ->setParameterGet($params)
+            ->send();
         if (!$response->isSuccess()) {
             return [];
         }
-		
+
         // Parse the JSON response.
         $suggestions = [];
-        $results = json_decode($response->getBody(),true);
-		
-        for($i=0;$i<sizeof($results);$i++) {
-            $valueLang="";
-            for($j=0; $j<sizeof($results[$i]["http://www.w3.org/2004/02/skos/core#prefLabel"]); $j++){
-
-
-                    if(strcasecmp(trim($results[$i]["http://www.w3.org/2004/02/skos/core#prefLabel"][$j]['@language']),$lang1)==0){
-                            $valueLang=$results[$i]["http://www.w3.org/2004/02/skos/core#prefLabel"][$j]['@value'];
-
-                            $suggestions[] = [
-                                    'value' =>$valueLang,
-                                    'data' => [
-                                            'uri' => sprintf('%s', $results[$i]['@id']),
-                                            'info' =>sprintf('%s', $results[$i]['@type'][0]),
-                                    ],
-                            ];
-
+        $results = json_decode($response->getBody(), true);
+        foreach ($results as $result) {
+            foreach ($result['http://www.w3.org/2004/02/skos/core#prefLabel'] as $prefLabel) {
+                if ($lang === $prefLabel['@language']) {
+                    $info = null;
+                    if (isset($result['http://www.w3.org/2004/02/skos/core#definition'])) {
+                        // Each concept seems to have only one definition.
+                        $info = $result['http://www.w3.org/2004/02/skos/core#definition'][0]['@value'];
                     }
+                    $suggestions[] = [
+                        'value' => $prefLabel['@value'],
+                        'data' => [
+                            'uri' => $result['@id'],
+                            'info' => $info,
+                        ],
+                    ];
+                }
             }
-	}
-           return $suggestions;
+        }
+
+        return $suggestions;
     }
 }
 
