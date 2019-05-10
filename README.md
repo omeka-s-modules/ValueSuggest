@@ -64,7 +64,7 @@ This module includes the following vocabularies:
 - Faceted Application of Subject Terminologies (FAST)
 - The Virtual International Authority File (VIAF)
 
-## [PACTOLS](https://pactols.frantiq.fr/) using Opentheso(https://github.com/miledrousset/opentheso)
+## [PACTOLS](https://pactols.frantiq.fr/) using [Opentheso](https://github.com/miledrousset/opentheso)
 
 - All the pactols thesaurus
 - The subject group only
