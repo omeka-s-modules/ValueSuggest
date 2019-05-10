@@ -22,8 +22,15 @@ return [
     ],
     'data_types' => [
         'factories' => [
+            
+            /* Opentheso / Pactols */
+            'valuesuggest:pactols:all' => 'ValueSuggest\Service\PactolsDataTypeFactory',
+            'valuesuggest:pactols:sujets' => 'ValueSuggest\Service\PactolsDataTypeFactory',   
+            
             /* Geonames */
             'valuesuggest:geonames:geonames' => 'ValueSuggest\Service\GeonamesDataTypeFactory',
+            
+          
 
             /* Getty */
             'valuesuggest:getty:aat' => 'ValueSuggest\Service\GettyDataTypeFactory',
