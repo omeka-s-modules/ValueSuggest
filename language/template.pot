@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-18 10:50-0400\n"
+"POT-Creation-Date: 2019-06-18 11:45-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -399,4 +399,12 @@ msgid ""
 "Homosaurus: the International Thesaurus of Lesbian, Gay, Bisexual and "
 "Transgender Index Terms that is currently used by https://www."
 "digitaltransgenderarchive.net."
+msgstr ""
+
+#: src/DataType/Pactols/All.php:21
+msgid "Pactols: All thesaurus"
+msgstr ""
+
+#: src/DataType/Pactols/Sujets.php:21
+msgid "Pactols: Sujets (Subject)"
 msgstr ""
