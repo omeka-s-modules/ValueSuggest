@@ -110,9 +110,9 @@ abstract class AbstractDataType extends BaseAbstractDataType implements DataType
     {
         if ($value->uri()) {
             if ('' !== trim($value->value())) {
-                return $view->hyperlink($value->value(), $value->uri());
+                return $view->hyperlink($value->value(), $value->uri(), ['class' => 'uri-value-link']);
             }
-            return $view->hyperlink($value->uri(), $value->uri());
+            return $view->hyperlink($value->uri(), $value->uri(), ['class' => 'uri-value-link']);
         }
         return $value->value();
     }
