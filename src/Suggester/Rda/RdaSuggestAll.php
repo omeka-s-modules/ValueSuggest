@@ -32,6 +32,10 @@ class RdaSuggestAll implements SuggesterInterface
      */
     public function getSuggestions($query, $lang = null)
     {
+        // The RDA Registry may return a 404 Not Found error if the Accept
+        // header is not set to "application/json+ld".
+        $headers = $this->client->getRequest()->getHeaders();
+        $headers->addHeaderLine('Accept', 'application/json+ld');
         $response = $this->client->setUri($this->url)->send();
         if (!$response->isSuccess()) {
             return [];
