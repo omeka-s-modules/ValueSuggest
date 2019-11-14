@@ -22,15 +22,8 @@ return [
     ],
     'data_types' => [
         'factories' => [
-            
-            /* Opentheso / Pactols */
-            'valuesuggest:pactols:all' => 'ValueSuggest\Service\PactolsDataTypeFactory',
-            'valuesuggest:pactols:sujets' => 'ValueSuggest\Service\PactolsDataTypeFactory',   
-            
             /* Geonames */
             'valuesuggest:geonames:geonames' => 'ValueSuggest\Service\GeonamesDataTypeFactory',
-            
-          
 
             /* Getty */
             'valuesuggest:getty:aat' => 'ValueSuggest\Service\GettyDataTypeFactory',
@@ -41,6 +34,9 @@ return [
 
             /* Homosaurus */
             'valuesuggest:homosaurus:homosaurus' => 'ValueSuggest\Service\HomosaurusDataTypeFactory',
+
+            /* IdRef */
+            'valuesuggest:idref:idref' => 'ValueSuggest\Service\IdRefDataTypeFactory',
 
             /* Library of Congress */
             'valuesuggest:lc:all' => 'ValueSuggest\Service\LcDataTypeFactory',
@@ -66,6 +62,10 @@ return [
             /* OCLC */
             'valuesuggest:oclc:viaf' => 'ValueSuggest\Service\OclcDataTypeFactory',
             'valuesuggest:oclc:fast' => 'ValueSuggest\Service\OclcDataTypeFactory',
+
+            /* Opentheso / Pactols */
+            'valuesuggest:pactols:all' => 'ValueSuggest\Service\PactolsDataTypeFactory',
+            'valuesuggest:pactols:sujets' => 'ValueSuggest\Service\PactolsDataTypeFactory',
 
             /* PeriodO */
             'valuesuggest:periodo:periodo' => 'ValueSuggest\Service\PeriodoDataTypeFactory',

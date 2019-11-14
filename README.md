@@ -15,6 +15,7 @@ This module includes the following vocabularies:
 - GeoNames
 - The Getty Vocabularies
 - Homosaurus
+- IdRef
 - Library of Congress Linked Data Service
 - OCLC Metadata Services
 - PACTOLS of Frantiq
@@ -37,6 +38,10 @@ This module includes the following vocabularies:
 ### [Homosaurus](http://homosaurus.org/)
 
 - Homosaurus.org linked data vocabulary
+
+### [IdRef](https://www.idref.fr/)
+
+- The French national database for research
 
 ### [Library of Congress Linked Data Service](http://id.loc.gov/)
 
