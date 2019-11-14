@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-23 11:21-0400\n"
+"POT-Creation-Date: 2019-11-14 12:13-0500\n"
 "PO-Revision-Date: 2017-09-14 20:16+0000\n"
 "Last-Translator: Moon Ika <m8nika@gmail.com>, 2019\n"
 "Language-Team: Estonian (https://www.transifex.com/omeka/teams/14184/et/)\n"
@@ -302,6 +302,10 @@ msgstr ""
 msgid "OCLC: Faceted Application of Subject Terminologies (FAST)"
 msgstr ""
 
+#: src/DataType/IdRef/Idref.php:21
+msgid "IdRef: The French national database for research"
+msgstr ""
+
 #: src/DataType/Periodo/Periodo.php:21
 msgid ""
 "PeriodO: A gazetteer of period definitions for linking and visualizing data"
@@ -400,10 +404,7 @@ msgid "LC: Genre/Form Terms"
 msgstr "LC: Žanri/vormi terminid"
 
 #: src/DataType/Homosaurus/Homosaurus.php:21
-msgid ""
-"Homosaurus: the International Thesaurus of Lesbian, Gay, Bisexual and "
-"Transgender Index Terms that is currently used by "
-"https://www.digitaltransgenderarchive.net."
+msgid "Homosaurus: an international LGBTQ linked data vocabulary"
 msgstr ""
 
 #: src/DataType/Pactols/All.php:21
