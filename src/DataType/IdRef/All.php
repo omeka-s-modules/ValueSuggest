@@ -4,7 +4,7 @@ namespace ValueSuggest\DataType\IdRef;
 use ValueSuggest\DataType\AbstractDataType;
 use ValueSuggest\Suggester\IdRef\IdRefSuggest;
 
-class IdRef extends AbstractDataType
+class All extends AbstractDataType
 {
     public function getSuggester()
     {

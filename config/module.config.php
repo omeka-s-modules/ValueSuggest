@@ -36,7 +36,7 @@ return [
             'valuesuggest:homosaurus:homosaurus' => 'ValueSuggest\Service\HomosaurusDataTypeFactory',
 
             /* IdRef */
-            'valuesuggest:idref:all' => 'ValueSuggest\Service\IdRefDataTypeFactory',
+            'valuesuggest:idref:all' => \ValueSuggest\Service\IdRefDataTypeFactory::class,
 
             /* Library of Congress */
             'valuesuggest:lc:all' => 'ValueSuggest\Service\LcDataTypeFactory',
