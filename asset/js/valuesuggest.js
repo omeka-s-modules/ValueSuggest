@@ -69,7 +69,7 @@ $(document).on('o:prepare-value', function(e, type, value) {
             thisValue.find('.value-language.active').removeClass('active');
         });
 
-        // Remove the @id from URI type and transform it into Literal type.
+        // Remove the @id from URI type and make it appears like a "Literal" type.
         idContainer.find('.valuesuggest-id-remove').on('click', function(e) {
             e.preventDefault();
             idContainer.hide();
