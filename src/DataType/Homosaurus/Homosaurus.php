@@ -18,6 +18,6 @@ class Homosaurus extends AbstractDataType
 
     public function getLabel()
     {
-        return 'Homosaurus: the International Thesaurus of Lesbian, Gay, Bisexual and Transgender Index Terms that is currently used by https://www.digitaltransgenderarchive.net.'; // @translate
+        return 'Homosaurus: an international LGBTQ linked data vocabulary'; // @translate
     }
 }
