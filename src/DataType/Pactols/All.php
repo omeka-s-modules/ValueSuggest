@@ -21,4 +21,3 @@ class All extends AbstractDataType
         return 'Pactols: All thesaurus'; // @translate
     }
 }
-

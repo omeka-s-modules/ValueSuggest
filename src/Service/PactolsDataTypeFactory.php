@@ -13,4 +13,3 @@ class PactolsDataTypeFactory implements FactoryInterface
         return new $dataType($services);
     }
 }
-

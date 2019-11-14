@@ -21,4 +21,3 @@ class Sujets extends AbstractDataType
         return 'Pactols: Sujets (Subject)'; // @translate
     }
 }
-
