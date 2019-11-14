@@ -2,7 +2,6 @@
 namespace ValueSuggest;
 
 use Omeka\Module\AbstractModule;
-use ValueSuggest\Service\DataTypeAbstractFactory;
 use Zend\EventManager\Event;
 use Zend\EventManager\SharedEventManagerInterface;
 use Zend\Mvc\MvcEvent;
@@ -64,12 +63,15 @@ class Module extends AbstractModule
     public function prepareResourceForm(Event $event)
     {
         $view = $event->getTarget();
-        $view->headLink()->appendStylesheet($view->assetUrl('css/valuesuggest.css', 'ValueSuggest'));
-        $view->headScript()->appendFile($view->assetUrl('js/jQuery-Autocomplete/1.2.26/jquery.autocomplete.min.js', 'ValueSuggest'));
-        $view->headScript()->appendFile($view->assetUrl('js/valuesuggest.js', 'ValueSuggest'));
-        $view->headScript()->appendScript(sprintf(
-            'var valueSuggestProxyUrl = "%s";',
-            $view->escapeJs($view->url('admin/value-suggest/proxy'))
-        ));
+        $assetUrl = $view->plugin('assetUrl');
+        $view->headLink()
+            ->appendStylesheet($assetUrl('css/valuesuggest.css', 'ValueSuggest'));
+        $view->headScript()
+            ->appendFile($assetUrl('js/jQuery-Autocomplete/1.2.26/jquery.autocomplete.min.js', 'ValueSuggest'))
+            ->appendFile($assetUrl('js/valuesuggest.js', 'ValueSuggest'))
+            ->appendScript(sprintf(
+                'var valueSuggestProxyUrl = "%s";',
+                $view->escapeJs($view->url('admin/value-suggest/proxy'))
+            ));
     }
 }

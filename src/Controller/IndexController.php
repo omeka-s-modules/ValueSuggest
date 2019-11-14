@@ -6,8 +6,6 @@ use ValueSuggest\DataType\DataTypeInterface;
 use ValueSuggest\Suggester\SuggesterInterface;
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\ServiceManager\Exception\ServiceNotFoundException;
-use Zend\ServiceManager\ServiceManager;
-use Zend\View\Model\JsonModel;
 
 class IndexController extends AbstractActionController
 {
