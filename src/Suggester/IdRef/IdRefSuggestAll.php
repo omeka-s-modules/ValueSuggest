@@ -5,19 +5,22 @@ namespace ValueSuggest\Suggester\IdRef;
 use ValueSuggest\Suggester\SuggesterInterface;
 use Zend\Http\Client;
 
-class IdRefSuggest implements SuggesterInterface
+class IdRefSuggestAll implements SuggesterInterface
 {
     /**
      * @var Client
      */
     protected $client;
 
-    const IDREF_SUGGEST_URL = 'https://www.idref.fr/Sru/Solr?wt=json&version=2.2&start=0&rows=50&indent=on&fl=id,ppn_z,affcourt_r';
+    /**
+     * @var string
+     */
+    protected $url;
 
-    public function __construct(Client $client)
+    public function __construct(Client $client, $url)
     {
         $this->client = $client;
-        $this->client->setUri(self::IDREF_SUGGEST_URL);
+        $this->url = $url;
     }
 
     /**
@@ -30,11 +33,13 @@ class IdRefSuggest implements SuggesterInterface
      */
     public function getSuggestions($query, $lang = null)
     {
-        if (!isset($this->client)) {
-            $this->client = new Client(self::IDREF_SUGGEST_URL);
+        // Convert the query into a Solr query.
+        $query = str_replace('  ', ' ', trim($query));
+        if (strpos($query, ' ')) {
+            $query = '(' . implode(' AND ', explode(' ', $query)) . ')';
         }
 
-        $url = self::IDREF_SUGGEST_URL . '&q=all:' . $query;
+        $url = $this->url . $query;
 
         $response = $this->client->setUri($url)->send();
         if (!$response->isSuccess()) {
@@ -45,9 +50,17 @@ class IdRefSuggest implements SuggesterInterface
         $suggestions = [];
         $results = json_decode($response->getBody(), true);
 
+        if (empty($results['response']['docs'])) {
+            return [];
+        }
+
+        // Check "forme privilégiée".
+        $keyValue = isset($results['response']['docs'][0]['affcourt_r'])
+            ? 'affcourt_r'
+            : 'affcourt_z';
         foreach ($results['response']['docs'] as $result) {
             $suggestions[] = [
-                'value' => is_array($result['affcourt_r']) ? $result['affcourt_r'][0] : $result['affcourt_r'],
+                'value' => is_array($result[$keyValue]) ? $result[$keyValue][0] : $result[$keyValue],
                 'data' => [
                     'uri' => 'https://www.idref.fr/' . $result['ppn_z'],
                     'info' => null,
@@ -57,6 +70,4 @@ class IdRefSuggest implements SuggesterInterface
 
         return $suggestions;
     }
-
-
 }
