@@ -25,7 +25,7 @@ class IndexController extends AbstractActionController
     public function proxyAction()
     {
         $response = $this->getResponse();
-        if (!$this->getRequest()->isXmlHttpRequest()){
+        if (!$this->getRequest()->isXmlHttpRequest()) {
             return $response->setStatusCode('415')
                 ->setContent('The request must be a XMLHttpRequest.');
         }

@@ -57,6 +57,4 @@ class IdRefSuggest implements SuggesterInterface
 
         return $suggestions;
     }
-
-
 }

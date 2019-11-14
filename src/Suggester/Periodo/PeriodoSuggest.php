@@ -2,7 +2,6 @@
 namespace ValueSuggest\Suggester\Periodo;
 
 use ValueSuggest\Suggester\SuggesterInterface;
-use Zend\Http\Client;
 
 class PeriodoSuggest implements SuggesterInterface
 {
