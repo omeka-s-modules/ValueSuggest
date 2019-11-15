@@ -41,7 +41,20 @@ This module includes the following vocabularies:
 
 ### [IdRef](https://www.idref.fr/)
 
-- The French national database for research
+- The French national database of identifiers for research (all repositories)
+- Person names
+- Corporations
+- Conferences
+- Subject headings (all)
+- Subject headings [RAMEAU](https://rameau.bnf.fr), (Répertoire d’autorité-matière encyclopédique et alphabétique unifié, or Unified encyclopaedic and alphabetical list of subject authorities)
+- Subject headings [F-MeSH](http://mesh.inserm.fr/FrenchMesh) (French version of the medical subject headings)
+- Geographic names
+- Family names
+- Titles
+- Author-Titles
+- Trademarks
+- PPN (unique identifier used for any item in all the database)
+- Libraries (RCR: Répertoire des centres de ressources)
 
 ### [Library of Congress Linked Data Service](http://id.loc.gov/)
 
