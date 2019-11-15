@@ -1,6 +1,7 @@
 <?php
 
 namespace ValueSuggest\Service;
+
 use Interop\Container\ContainerInterface;
 use Zend\ServiceManager\Factory\FactoryInterface;
 
@@ -13,4 +14,3 @@ class PactolsDataTypeFactory implements FactoryInterface
         return new $dataType($services);
     }
 }
-

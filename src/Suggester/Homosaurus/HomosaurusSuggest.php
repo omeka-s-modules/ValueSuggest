@@ -41,7 +41,7 @@ class HomosaurusSuggest implements SuggesterInterface
         if (array_key_exists('@graph', $results)) {
             $results = $results['@graph'];
         } else {
-            $results = array($results);
+            $results = [$results];
         }
 
         foreach ($results as $result) {

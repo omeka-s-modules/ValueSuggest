@@ -18,7 +18,7 @@ $(document).on('o:prepare-value', function(e, type, value) {
         valueInput.prop('disabled', false);
         idContainer.hide();
 
-        // Set existing values duing initial load.
+        // Set existing values during initial load.
         if (idInput.val()) {
             // Set value as URI type
             suggestInput.val(labelInput.val()).attr('placeholder', labelInput.val());
@@ -52,8 +52,8 @@ $(document).on('o:prepare-value', function(e, type, value) {
             suggestInput.autocomplete().clearCache();
             allResults = null;
         })
-        
-        // Remove default lanugage toggle, use cusotm behavior
+
+        // Remove default language toggle, use custom behavior
         languageLabel.unbind();
 
         languageLabel.on('click', function(e) {
@@ -63,13 +63,13 @@ $(document).on('o:prepare-value', function(e, type, value) {
             }
             thisValue.find('.value-language').addClass('active');
         });
-        
+
         languageRemove.on('click', function(e) {
-           e.preventDefault();
-           thisValue.find('.value-language.active').removeClass('active'); 
+            e.preventDefault();
+            thisValue.find('.value-language.active').removeClass('active');
         });
 
-        // Remove the @id from URI type and transform it into Literal type.
+        // Remove the @id from URI type and make it appears like a "Literal" type.
         idContainer.find('.valuesuggest-id-remove').on('click', function(e) {
             e.preventDefault();
             idContainer.hide();
@@ -96,12 +96,12 @@ $(document).on('o:prepare-value', function(e, type, value) {
             onSearchComplete: function(query, suggestions) {
                 $(this).css('cursor', 'default');
             },
-            onSearchError: function (query, jqXHR, textStatus, errorThrown) {
+            onSearchError: function(query, jqXHR, textStatus, errorThrown) {
                 // Silently handle error.
                 $(this).css('cursor', 'default');
             },
             // Prepare the value when the user selects a suggestion.
-            onSelect: function (suggestion) {
+            onSelect: function(suggestion) {
                 // Set value as URI type
                 suggestInput.val(suggestion.value)
                     .attr('placeholder', suggestion.value);
@@ -137,7 +137,7 @@ $(document).on('o:prepare-value', function(e, type, value) {
                 }
             };
             // Use custom lookup function to make only one request.
-            options.lookup = function (query, done) {
+            options.lookup = function(query, done) {
                 if (null == allResults) {
                     $.get(valueSuggestProxyUrl, this.params, function(data) {
                         allResults = data; // cache the data
@@ -167,4 +167,5 @@ $(document).on('o:prepare-value', function(e, type, value) {
 
         suggestInput.autocomplete(options);
     }
+
 });

@@ -5,7 +5,6 @@ use Omeka\Api\Adapter\AbstractEntityAdapter;
 use Omeka\Api\Representation\ValueRepresentation;
 use Omeka\DataType\AbstractDataType as BaseAbstractDataType;
 use Omeka\Entity\Value;
-use ValueSuggest\DataType\DataTypeInterface;
 use Zend\Form\Element\Hidden;
 use Zend\Form\Element\Text;
 use Zend\ServiceManager\ServiceManager;
@@ -53,7 +52,7 @@ abstract class AbstractDataType extends BaseAbstractDataType implements DataType
             'data-value-key' => '@language',
             'class' => 'value-language',
         ]);
-        
+
         $rdfLabel = $this->getLabel();
 
         return $view->partial('common/data-type/suggested', [
@@ -71,7 +70,7 @@ abstract class AbstractDataType extends BaseAbstractDataType implements DataType
             && is_string($valueObject['@id'])
             && '' !== trim($valueObject['@id'])
         ) {
-             return true;
+            return true;
         }
         if (isset($valueObject['@value'])
             && is_string($valueObject['@value'])

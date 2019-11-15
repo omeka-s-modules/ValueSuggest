@@ -60,5 +60,3 @@ class PactolsSujets implements SuggesterInterface
         return $suggestions;
     }
 }
-
-
