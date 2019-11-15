@@ -37,6 +37,19 @@ return [
 
             /* IdRef */
             'valuesuggest:idref:all' => \ValueSuggest\Service\IdRefDataTypeFactory::class,
+            'valuesuggest:idref:person' => \ValueSuggest\Service\IdRefDataTypeFactory::class,
+            'valuesuggest:idref:corporation' => \ValueSuggest\Service\IdRefDataTypeFactory::class,
+            'valuesuggest:idref:conference' => \ValueSuggest\Service\IdRefDataTypeFactory::class,
+            'valuesuggest:idref:subject' => \ValueSuggest\Service\IdRefDataTypeFactory::class,
+            'valuesuggest:idref:rameau' => \ValueSuggest\Service\IdRefDataTypeFactory::class,
+            'valuesuggest:idref:fmesh' => \ValueSuggest\Service\IdRefDataTypeFactory::class,
+            'valuesuggest:idref:geo' => \ValueSuggest\Service\IdRefDataTypeFactory::class,
+            'valuesuggest:idref:family' => \ValueSuggest\Service\IdRefDataTypeFactory::class,
+            'valuesuggest:idref:title' => \ValueSuggest\Service\IdRefDataTypeFactory::class,
+            'valuesuggest:idref:authorTitle' => \ValueSuggest\Service\IdRefDataTypeFactory::class,
+            'valuesuggest:idref:trademark' => \ValueSuggest\Service\IdRefDataTypeFactory::class,
+            'valuesuggest:idref:ppn' => \ValueSuggest\Service\IdRefDataTypeFactory::class,
+            'valuesuggest:idref:library' => \ValueSuggest\Service\IdRefDataTypeFactory::class,
 
             /* Library of Congress */
             'valuesuggest:lc:all' => \ValueSuggest\Service\LcDataTypeFactory::class,
