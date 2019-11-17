@@ -105,16 +105,26 @@ $(document).on('o:prepare-value', function(e, type, value) {
                 // Set value as URI type
                 suggestInput.val(suggestion.value)
                     .attr('placeholder', suggestion.value);
-                idInput.val(suggestion.data.uri);
-                labelInput.val(suggestion.value);
-                idInput.prop('disabled', false);
-                labelInput.prop('disabled', false);
-                valueInput.prop('disabled', true);
-                var link = $('<a>')
-                    .attr('href', suggestion.data.uri)
-                    .attr('target', '_blank')
-                    .text(suggestion.data.uri);
-                idContainer.show().find('.valuesuggest-id').html(link);
+                if (suggestion.data.uri) {
+                    idInput.val(suggestion.data.uri);
+                    labelInput.val(suggestion.value);
+                    idInput.prop('disabled', false);
+                    labelInput.prop('disabled', false);
+                    valueInput.prop('disabled', true);
+                    var link = $('<a>')
+                        .attr('href', suggestion.data.uri)
+                        .attr('target', '_blank')
+                        .text(suggestion.data.uri);
+                    idContainer.show().find('.valuesuggest-id').html(link);
+                } else {
+                    idInput.val('');
+                    labelInput.val('');
+                    valueInput.val(suggestion.value);
+                    idInput.prop('disabled', true);
+                    labelInput.prop('disabled', true);
+                    valueInput.prop('disabled', false);
+                    idContainer.hide();
+                }
             }
         };
 
