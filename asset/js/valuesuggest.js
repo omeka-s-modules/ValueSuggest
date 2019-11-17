@@ -200,7 +200,9 @@ $(document).on('o:prepare-value', function(e, type, value) {
 
         suggestInput.autocomplete(options);
 
-        $('.inputs .chosen-select-list').chosen(chosenOptions);
+        if (type === 'valuesuggest:any') {
+            suggestInput.closest('.input-body').find('.chosen-select-list').chosen(chosenOptions);
+        }
     }
 
 });
