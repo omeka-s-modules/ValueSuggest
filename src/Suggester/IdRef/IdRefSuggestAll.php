@@ -34,11 +34,12 @@ class IdRefSuggestAll implements SuggesterInterface
     public function getSuggestions($query, $lang = null)
     {
         // Convert the query into a Solr query.
-        $query = str_replace('  ', ' ', trim($query));
+        $query = trim($query);
         if (strpos($query, ' ')) {
-            $query = '(' . implode(' AND ', explode(' ', $query)) . ')';
+            $query = '(' . implode('%20AND%20', array_map('urlencode', explode(' ', $query))) . ')';
+        } else {
+            $query = urlencode($query);
         }
-
         $url = $this->url . $query;
 
         $response = $this->client->setUri($url)->send();
@@ -54,10 +55,16 @@ class IdRefSuggestAll implements SuggesterInterface
             return [];
         }
 
-        // Check "forme privilégiée".
-        $keyValue = isset($results['response']['docs'][0]['affcourt_r'])
-            ? 'affcourt_r'
-            : 'affcourt_z';
+        // Check the result key.
+        if (isset($results['response']['docs'][0]['affcourt_r'])) {
+            $keyValue = 'affcourt_r';
+        } elseif (isset($results['response']['docs'][0]['affcourt_z'])) {
+            $keyValue = 'affcourt_z';
+        } elseif (isset($results['response']['docs'][0]['ppn_z'])) {
+            $keyValue = 'ppn_z';
+        } else {
+            return [];
+        }
         foreach ($results['response']['docs'] as $result) {
             $suggestions[] = [
                 'value' => is_array($result[$keyValue]) ? $result[$keyValue][0] : $result[$keyValue],
