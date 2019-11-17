@@ -57,3 +57,18 @@ input.valuesuggest-input {
     right: 0;
     left: auto;
 }
+
+.valuesuggest_any.valuesuggest_all .chosen-select-list {
+    display: block;
+}
+.valuesuggest_any .js-any-block {
+    display: none;
+}
+.valuesuggest_all .chosen-select-list {
+    display: none;
+}
+.add-values.default-selector.show {
+    display: block !important;
+    float: left;
+    margin-right: 4px;
+}

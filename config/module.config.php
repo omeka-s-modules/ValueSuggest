@@ -1,4 +1,6 @@
 <?php
+namespace ValueSuggest;
+
 return [
     'controllers' => [
         'factories' => [
@@ -22,6 +24,9 @@ return [
     ],
     'data_types' => [
         'factories' => [
+            /* ValueSuggest any */
+            'valuesuggest:any' => Service\AnyDataTypeFactory::class,
+
             /* Geonames */
             'valuesuggest:geonames:geonames' => \ValueSuggest\Service\GeonamesDataTypeFactory::class,
 
@@ -185,5 +190,8 @@ return [
                 ],
             ],
         ],
+    ],
+    'js_translate_strings' => [
+        'Suggest', // @translate
     ],
 ];
