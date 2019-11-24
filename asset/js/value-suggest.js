@@ -57,7 +57,7 @@ $(document).ready(function() {
                     suggestHidden.val(link[0].outerHTML);
                 } else {
                     suggestInput.attr('data-uri', '');
-                    suggestHidden.val(link[0].outerHTML);
+                    suggestHidden.val(suggestion.value);
                 }
             }
         };
