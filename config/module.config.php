@@ -1,8 +1,11 @@
 <?php
+namespace ValueSuggest;
+
 return [
     'controllers' => [
         'factories' => [
-            'ValueSuggest\Controller\Index' => \ValueSuggest\Service\IndexControllerFactory::class,
+            'ValueSuggest\Controller\Admin\Index' => Service\Controller\Admin\IndexControllerFactory::class,
+            'ValueSuggest\Controller\Site\Index' => Service\Controller\Site\IndexControllerFactory::class,
         ],
     ],
     'translator' => [
@@ -158,6 +161,32 @@ return [
     ],
     'router' => [
         'routes' => [
+            'site' => [
+                'child_routes' => [
+                    'value-suggest' => [
+                        'type' => \Zend\Router\Http\Literal::class,
+                        'options' => [
+                            'route' => '/value-suggest',
+                            'defaults' => [
+                                '__NAMESPACE__' => 'ValueSuggest\Controller\Site',
+                                'controller' => 'Index',
+                            ],
+                        ],
+                        'may_terminate' => false,
+                        'child_routes' => [
+                            'proxy' => [
+                                'type' => \Zend\Router\Http\Literal::class,
+                                'options' => [
+                                    'route' => '/proxy',
+                                    'defaults' => [
+                                        'action' => 'proxy',
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
+            ],
             'admin' => [
                 'child_routes' => [
                     'value-suggest' => [
@@ -165,7 +194,7 @@ return [
                         'options' => [
                             'route' => '/value-suggest',
                             'defaults' => [
-                                '__NAMESPACE__' => 'ValueSuggest\Controller',
+                                '__NAMESPACE__' => 'ValueSuggest\Controller\Admin',
                                 'controller' => 'Index',
                             ],
                         ],

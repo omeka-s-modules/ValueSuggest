@@ -17,7 +17,11 @@ class Module extends AbstractModule
     {
         parent::onBootstrap($event);
         $acl = $this->getServiceLocator()->get('Omeka\Acl');
-        $acl->allow(null, 'ValueSuggest\Controller\Index', 'proxy');
+        $acl->allow(
+            null,
+            ['ValueSuggest\Controller\Site\Index', 'ValueSuggest\Controller\Admin\Index'],
+            ['proxy']
+        );
     }
 
     public function attachListeners(SharedEventManagerInterface $sharedEventManager)

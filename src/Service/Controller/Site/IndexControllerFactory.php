@@ -1,7 +1,7 @@
 <?php
-namespace ValueSuggest\Service;
+namespace ValueSuggest\Service\Controller\Site;
 
-use ValueSuggest\Controller\IndexController;
+use ValueSuggest\Controller\Site\IndexController;
 use Zend\ServiceManager\Factory\FactoryInterface;
 use Interop\Container\ContainerInterface;
 
