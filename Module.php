@@ -67,8 +67,8 @@ class Module extends AbstractModule
         $view->headLink()
             ->appendStylesheet($assetUrl('css/value-suggest.css', 'ValueSuggest'));
         $view->headScript()
-            ->appendFile($assetUrl('js/jQuery-Autocomplete/1.2.26/jquery.autocomplete.min.js', 'ValueSuggest'))
-            ->appendFile($assetUrl('js/value-suggest-admin.js', 'ValueSuggest'))
+            ->appendFile($assetUrl('js/jQuery-Autocomplete/1.2.26/jquery.autocomplete.min.js', 'ValueSuggest'), 'text/javascript', ['defer' => 'defer'])
+            ->appendFile($assetUrl('js/value-suggest-admin.js', 'ValueSuggest'), 'text/javascript', ['defer' => 'defer'])
             ->appendScript(sprintf(
                 'var valueSuggestProxyUrl = "%s";',
                 $view->escapeJs($view->url('admin/value-suggest/proxy'))
