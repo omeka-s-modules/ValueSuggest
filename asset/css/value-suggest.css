@@ -6,7 +6,7 @@
 .autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
 
 .autocomplete-suggestion.autocomplete-selected {
-    background-color: #e5e5e5;
+    background-color: #e5e5e5 !important;
 }
 .autocomplete-suggestion .suggest-info {
     color: #666666;
