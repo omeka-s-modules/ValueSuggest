@@ -15,12 +15,13 @@ function valueSuggestAutocomplete(suggestInput) {
     }
 
     // Use an hidden value to simplify submission.
-    // TODO Move this to the prompt element with Zend validator.
+    // TODO Move this hack to the prompt element with Zend validator/filter.
     var suggestHidden = $('<input>')
         .attr('type', 'hidden')
         .attr('name', suggestInput.attr('name'))
         .val('');
     suggestInput.after(suggestHidden);
+    suggestInput.prop('name', '_' + suggestInput.prop('name'));
 
     var allResults;
 
