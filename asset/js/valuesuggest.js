@@ -1,11 +1,15 @@
 $(window).on('load', function () {
 
     $('.resource-values.field').each(function () {
-        var single_selector = $(this).find('.add-values.single-selector a');
-        single_selector.html(Omeka.jsTranslate('Suggest'));
+        var singleSelector = $(this).find('.add-values.single-selector a');
+        singleSelector.html(Omeka.jsTranslate('Suggest'));
 
-        $(single_selector).on('click', function (e) {
+        $(singleSelector).on('click', function (e) {
             e.preventDefault();
+            var isAnyVocabulary = $(singleSelector[0].closest('.inputs')).find('.values .value').hasClass('valuesuggest_any');
+            if (!isAnyVocabulary) {
+                return;
+            }
             var delay = 100;
             setTimeout(function () {
                 $('.inputs .chosen-select-list').chosen(chosenOptions);
