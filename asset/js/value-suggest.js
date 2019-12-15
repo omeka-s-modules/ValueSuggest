@@ -23,6 +23,14 @@ function valueSuggestAutocomplete(suggestInput) {
     suggestInput.after(suggestHidden);
     suggestInput.prop('name', '_' + suggestInput.prop('name'));
 
+    // In case of a failed submission, the value suggest input should be prepared.
+    if (suggestInput.val() !== 'undefined' && suggestInput.val() !== '') {
+        suggestHidden.val(suggestInput.val());
+        var submittedText = $(suggestInput.val()).text();
+        // var submittedUrl = $(suggestInput.val()).attr('href');
+        suggestInput.val(submittedText);
+    }
+
     var allResults;
 
     // Build the autocomplete options.
