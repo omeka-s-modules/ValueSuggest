@@ -8,6 +8,9 @@
 .autocomplete-suggestion.autocomplete-selected {
     background-color: #e5e5e5 !important;
 }
+.autocomplete-suggestion .suggest-data {
+    white-space: initial;
+}
 .autocomplete-suggestion .suggest-info {
     color: #666666;
 }

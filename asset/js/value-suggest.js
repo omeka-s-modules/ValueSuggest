@@ -83,6 +83,7 @@ function valueSuggestAutocomplete(suggestInput) {
         options.minChars = 0;
         // Prepare the suggestions prior to rendering them.
         options.beforeRender = function(container, suggestions) {
+            container.find('.autocomplete-suggestion').wrapInner('<div class="suggest-data"></div>');
             // Add available info to each suggestion for disambiguation.
             container.children().each(function(index) {
                 if (suggestions[index].data.info) {
@@ -119,6 +120,7 @@ function valueSuggestAutocomplete(suggestInput) {
         options.preventBadQueries = false;
         // Prepare the suggestions prior to rendering them.
         options.beforeRender = function(container, suggestions) {
+            container.find('.autocomplete-suggestion').wrapInner('<div class="suggest-data"></div>');
             // Add available info to each suggestion for disambiguation.
             container.children().each(function(index) {
                 if (suggestions[index].data.info) {
