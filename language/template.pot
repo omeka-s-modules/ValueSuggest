@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-14 12:13-0500\n"
+"POT-Creation-Date: 2020-05-01 16:41-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,6 +23,62 @@ msgstr ""
 
 #: view/common/data-type/suggested.phtml:21
 msgid "Remove URI"
+msgstr ""
+
+#: src/Service/IdRefDataTypeFactory.php:14
+msgid "IdRef: All"
+msgstr ""
+
+#: src/Service/IdRefDataTypeFactory.php:18
+msgid "IdRef: Person names"
+msgstr ""
+
+#: src/Service/IdRefDataTypeFactory.php:22
+msgid "IdRef: Collectivities"
+msgstr ""
+
+#: src/Service/IdRefDataTypeFactory.php:26
+msgid "IdRef: Conferences"
+msgstr ""
+
+#: src/Service/IdRefDataTypeFactory.php:30
+msgid "IdRef: Subjects"
+msgstr ""
+
+#: src/Service/IdRefDataTypeFactory.php:34
+msgid "IdRef: Subjects Rameau"
+msgstr ""
+
+#: src/Service/IdRefDataTypeFactory.php:38
+msgid "IdRef: Subjects F-MeSH"
+msgstr ""
+
+#: src/Service/IdRefDataTypeFactory.php:42
+msgid "IdRef: Geography"
+msgstr ""
+
+#: src/Service/IdRefDataTypeFactory.php:46
+msgid "IdRef: Family names"
+msgstr ""
+
+#: src/Service/IdRefDataTypeFactory.php:50
+msgid "IdRef: Uniform titles"
+msgstr ""
+
+#: src/Service/IdRefDataTypeFactory.php:54
+msgid "IdRef: Authors-Titles"
+msgstr ""
+
+#: src/Service/IdRefDataTypeFactory.php:58
+msgid "IdRef: Trademarks"
+msgstr ""
+
+#: src/Service/IdRefDataTypeFactory.php:62
+msgid "IdRef: PPN id"
+msgstr ""
+
+#: src/Service/IdRefDataTypeFactory.php:66
+msgid "IdRef: Library registry (RCR)"
 msgstr ""
 
 #: src/Service/UnescoDataTypeFactory.php:12
@@ -297,10 +353,6 @@ msgstr ""
 msgid "OCLC: Faceted Application of Subject Terminologies (FAST)"
 msgstr ""
 
-#: src/DataType/IdRef/Idref.php:21
-msgid "IdRef: The French national database for research"
-msgstr ""
-
 #: src/DataType/Periodo/Periodo.php:21
 msgid ""
 "PeriodO: A gazetteer of period definitions for linking and visualizing data"
@@ -318,7 +370,7 @@ msgstr ""
 msgid "Getty: The Union List of Artist Names (ULAN)"
 msgstr ""
 
-#: src/DataType/AbstractDataType.php:31
+#: src/DataType/AbstractDataType.php:30
 msgid "Value Suggest"
 msgstr ""
 
