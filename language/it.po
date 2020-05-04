@@ -4,7 +4,8 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Naosuke Okamoto, 2018
+# Simone Falteri <s.falteri@ifnet.it>, 2018
+# Giorgio Comai <g@giorgiocomai.eu>, 2019
 # 
 #, fuzzy
 msgid ""
@@ -13,21 +14,21 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-01 16:41-0400\n"
 "PO-Revision-Date: 2017-09-14 20:16+0000\n"
-"Last-Translator: Naosuke Okamoto, 2018\n"
-"Language-Team: Japanese (https://www.transifex.com/omeka/teams/14184/ja/)\n"
+"Last-Translator: Giorgio Comai <g@giorgiocomai.eu>, 2019\n"
+"Language-Team: Italian (https://www.transifex.com/omeka/teams/14184/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: it\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: view/common/data-type/suggested.phtml:9
 msgid "Remove language"
-msgstr ""
+msgstr "Elimina lingua"
 
 #: view/common/data-type/suggested.phtml:21
 msgid "Remove URI"
-msgstr "URIを削除"
+msgstr "Elimina URI"
 
 #: src/Service/IdRefDataTypeFactory.php:14
 msgid "IdRef: All"
@@ -351,11 +352,11 @@ msgstr ""
 
 #: src/DataType/Oclc/Viaf.php:21
 msgid "OCLC: The Virtual International Authority File (VIAF)"
-msgstr "OCLC: The Virtual International Authority File (VIAF)"
+msgstr "OCLC: VIAF (Virtual International Authority File)"
 
 #: src/DataType/Oclc/Fast.php:21
 msgid "OCLC: Faceted Application of Subject Terminologies (FAST)"
-msgstr "OCLC: Faceted Application of Subject Terminologies (FAST)"
+msgstr "OCLC: FAST (Faceted Application of Subject Terminologies)"
 
 #: src/DataType/Periodo/Periodo.php:21
 msgid ""
@@ -364,95 +365,95 @@ msgstr ""
 
 #: src/DataType/Getty/Tgn.php:21
 msgid "Getty: The Getty Thesaurus of Geographic Names (TGN)"
-msgstr "Getty: The Getty Thesaurus of Geographic Names (TGN)"
+msgstr "Getty: Thesaurus dei Nomi Geografici (TGN)"
 
 #: src/DataType/Getty/Aat.php:21
 msgid "Getty: The Art & Architecture Thesaurus (AAT)"
-msgstr "Getty: The Art & Architecture Thesaurus (AAT)"
+msgstr "Getty: Thesaurus per Arte e Architettura (AAT)"
 
 #: src/DataType/Getty/Ulan.php:21
 msgid "Getty: The Union List of Artist Names (ULAN)"
-msgstr "Getty: The Union List of Artist Names (ULAN)"
+msgstr "Getty: Lista Unificata dei Nomi degli Artisti (ULAN)"
 
 #: src/DataType/AbstractDataType.php:30
 msgid "Value Suggest"
-msgstr "推奨値"
+msgstr "Valore consigliato"
 
 #: src/DataType/Geonames/Geonames.php:21
 msgid "Geonames: The GeoNames geographical database"
-msgstr ""
+msgstr "Geonames: il database geografico GeoNames"
 
 #: src/DataType/Lc/Countries.php:24
 msgid "LC: MARC Countries"
-msgstr "LC: MARC Countries"
+msgstr "LC: Paese (MARC)"
 
 #: src/DataType/Lc/Relators.php:24
 msgid "LC: MARC Relators"
-msgstr "LC: MARC Relators"
+msgstr "LC: Responsabilità (MARC)"
 
 #: src/DataType/Lc/Performancemediums.php:24
 msgid "LC: Medium of Performance Thesaurus for Music"
-msgstr "LC: Medium of Performance Thesaurus for Music"
+msgstr "LC: Thesaurus per i Mezzi di Esecuzione Musicale"
 
 #: src/DataType/Lc/Ethnographicterms.php:24
 msgid "LC: AFS Ethnographic Thesaurus"
-msgstr "LC: AFS Ethnographic Thesaurus"
+msgstr "LC: Thesaurus Etnografico AFS"
 
 #: src/DataType/Lc/All.php:21
 msgid "LC: All"
-msgstr "LC: All"
+msgstr "LC: Tutti"
 
 #: src/DataType/Lc/Names.php:24
 msgid "LC: Name Authority File"
-msgstr "LC: Name Authority File"
+msgstr "LC: Authority File dei Nomi"
 
 #: src/DataType/Lc/Iso6392.php:24
 msgid "LC: ISO639-2 Languages"
-msgstr "LC: ISO639-2 Languages"
+msgstr "LC: Codici Lingua ISO639-2"
 
 #: src/DataType/Lc/Demographicterms.php:24
 msgid "LC: Demographic Group Terms"
-msgstr "LC: Demographic Group Terms"
+msgstr "LC: Gruppo Demografico"
 
 #: src/DataType/Lc/Iso6391.php:24
 msgid "LC: ISO639-1 Languages"
-msgstr "LC: ISO639-1 Languages"
+msgstr "LC: Codici Lingua ISO639-1"
 
 #: src/DataType/Lc/Subjects.php:24
 msgid "LC: Subject Headings"
-msgstr "LC: Subject Headings"
+msgstr "LC: Soggettario"
 
 #: src/DataType/Lc/Classification.php:24
 msgid "LC: Classification"
-msgstr "LC: Classification"
+msgstr "LC: Classificazione"
 
 #: src/DataType/Lc/Languages.php:24
 msgid "LC: MARC Languages"
-msgstr "LC: MARC Languages"
+msgstr "LC: Lingua (MARC)"
 
 #: src/DataType/Lc/Iso6395.php:24
 msgid "LC: ISO639-5 Languages"
-msgstr "LC: ISO639-5 Languages"
+msgstr "LC: Codici Lingua ISO639-5"
 
 #: src/DataType/Lc/Geographicareas.php:24
 msgid "LC: MARC Geographic Areas"
-msgstr "LC: MARC Geographic Areas"
+msgstr "LC: Area Geografica (MARC)"
 
 #: src/DataType/Lc/Childrenssubjects.php:24
 msgid "LC: Children's Subject Headings"
-msgstr "LC: Children's Subject Headings"
+msgstr "LC: Soggettario per Bambini e Ragazzi"
 
 #: src/DataType/Lc/Graphicmaterials.php:24
 msgid "LC: Thesaurus for Graphic Materials"
-msgstr "LC: Thesaurus for Graphic Materials"
+msgstr "LC: Thesaurus per Materiale Grafico"
 
 #: src/DataType/Lc/Organizations.php:24
 msgid "LC: Cultural Heritage Organizations"
-msgstr "LC: Cultural Heritage Organizations"
+msgstr "LC: Organizzazioni Culturali"
 
 #: src/DataType/Lc/Genreforms.php:24
 msgid "LC: Genre/Form Terms"
-msgstr "LC: Genre/Form Terms"
+msgstr "LC: Genere/Forma"
 
 #: src/DataType/Homosaurus/Homosaurus.php:21
 msgid "Homosaurus: an international LGBTQ linked data vocabulary"

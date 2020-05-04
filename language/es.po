@@ -4,7 +4,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Naosuke Okamoto, 2018
+# Darío Hereñú, 2019
 # 
 #, fuzzy
 msgid ""
@@ -13,13 +13,13 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-01 16:41-0400\n"
 "PO-Revision-Date: 2017-09-14 20:16+0000\n"
-"Last-Translator: Naosuke Okamoto, 2018\n"
-"Language-Team: Japanese (https://www.transifex.com/omeka/teams/14184/ja/)\n"
+"Last-Translator: Darío Hereñú, 2019\n"
+"Language-Team: Spanish (https://www.transifex.com/omeka/teams/14184/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: view/common/data-type/suggested.phtml:9
 msgid "Remove language"
@@ -27,7 +27,7 @@ msgstr ""
 
 #: view/common/data-type/suggested.phtml:21
 msgid "Remove URI"
-msgstr "URIを削除"
+msgstr "Quitar URI"
 
 #: src/Service/IdRefDataTypeFactory.php:14
 msgid "IdRef: All"
@@ -376,7 +376,7 @@ msgstr "Getty: The Union List of Artist Names (ULAN)"
 
 #: src/DataType/AbstractDataType.php:30
 msgid "Value Suggest"
-msgstr "推奨値"
+msgstr "Valor sugerido"
 
 #: src/DataType/Geonames/Geonames.php:21
 msgid "Geonames: The GeoNames geographical database"
@@ -384,11 +384,11 @@ msgstr ""
 
 #: src/DataType/Lc/Countries.php:24
 msgid "LC: MARC Countries"
-msgstr "LC: MARC Countries"
+msgstr "LC: Países MARC"
 
 #: src/DataType/Lc/Relators.php:24
 msgid "LC: MARC Relators"
-msgstr "LC: MARC Relators"
+msgstr "LC: Relatores MARC"
 
 #: src/DataType/Lc/Performancemediums.php:24
 msgid "LC: Medium of Performance Thesaurus for Music"
@@ -396,47 +396,47 @@ msgstr "LC: Medium of Performance Thesaurus for Music"
 
 #: src/DataType/Lc/Ethnographicterms.php:24
 msgid "LC: AFS Ethnographic Thesaurus"
-msgstr "LC: AFS Ethnographic Thesaurus"
+msgstr "LC: Tesauro Etnográfico AFS"
 
 #: src/DataType/Lc/All.php:21
 msgid "LC: All"
-msgstr "LC: All"
+msgstr "LC: Todo"
 
 #: src/DataType/Lc/Names.php:24
 msgid "LC: Name Authority File"
-msgstr "LC: Name Authority File"
+msgstr "LC: Nombre del archivo de autoridad"
 
 #: src/DataType/Lc/Iso6392.php:24
 msgid "LC: ISO639-2 Languages"
-msgstr "LC: ISO639-2 Languages"
+msgstr "LC: Idiomas ISO639-2"
 
 #: src/DataType/Lc/Demographicterms.php:24
 msgid "LC: Demographic Group Terms"
-msgstr "LC: Demographic Group Terms"
+msgstr "LC: Términos de grupo demográfico"
 
 #: src/DataType/Lc/Iso6391.php:24
 msgid "LC: ISO639-1 Languages"
-msgstr "LC: ISO639-1 Languages"
+msgstr "LC: Idiomas ISO639-1 "
 
 #: src/DataType/Lc/Subjects.php:24
 msgid "LC: Subject Headings"
-msgstr "LC: Subject Headings"
+msgstr "LC: Encabezados de asunto"
 
 #: src/DataType/Lc/Classification.php:24
 msgid "LC: Classification"
-msgstr "LC: Classification"
+msgstr "LC: Clasificación"
 
 #: src/DataType/Lc/Languages.php:24
 msgid "LC: MARC Languages"
-msgstr "LC: MARC Languages"
+msgstr "LC: Idiomas MARC"
 
 #: src/DataType/Lc/Iso6395.php:24
 msgid "LC: ISO639-5 Languages"
-msgstr "LC: ISO639-5 Languages"
+msgstr "LC: Idiomas ISO639-5"
 
 #: src/DataType/Lc/Geographicareas.php:24
 msgid "LC: MARC Geographic Areas"
-msgstr "LC: MARC Geographic Areas"
+msgstr "LC: Areas geográficas MARC"
 
 #: src/DataType/Lc/Childrenssubjects.php:24
 msgid "LC: Children's Subject Headings"
@@ -444,15 +444,15 @@ msgstr "LC: Children's Subject Headings"
 
 #: src/DataType/Lc/Graphicmaterials.php:24
 msgid "LC: Thesaurus for Graphic Materials"
-msgstr "LC: Thesaurus for Graphic Materials"
+msgstr "LC: Tesauro de materiales gráficos"
 
 #: src/DataType/Lc/Organizations.php:24
 msgid "LC: Cultural Heritage Organizations"
-msgstr "LC: Cultural Heritage Organizations"
+msgstr "LC: Organizaciones de Patrimonio Cultural"
 
 #: src/DataType/Lc/Genreforms.php:24
 msgid "LC: Genre/Form Terms"
-msgstr "LC: Genre/Form Terms"
+msgstr "LC: Términos de género/formulario"
 
 #: src/DataType/Homosaurus/Homosaurus.php:21
 msgid "Homosaurus: an international LGBTQ linked data vocabulary"
