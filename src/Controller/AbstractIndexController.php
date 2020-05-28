@@ -7,7 +7,7 @@ use ValueSuggest\Suggester\SuggesterInterface;
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\ServiceManager\Exception\ServiceNotFoundException;
 
-class IndexController extends AbstractActionController
+class AbstractIndexController extends AbstractActionController
 {
     protected $dataTypes;
 
