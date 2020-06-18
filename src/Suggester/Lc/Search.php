@@ -2,7 +2,7 @@
 namespace ValueSuggest\Suggester\Lc;
 
 use ValueSuggest\Suggester\SuggesterInterface;
-use Zend\Http\Client;
+use Laminas\Http\Client;
 
 class Search implements SuggesterInterface
 {

@@ -3,7 +3,7 @@ namespace ValueSuggest\Service;
 
 use Interop\Container\ContainerInterface;
 use ValueSuggest\DataType\Periodo\Periodo;
-use Zend\ServiceManager\Factory\FactoryInterface;
+use Laminas\ServiceManager\Factory\FactoryInterface;
 
 class PeriodoDataTypeFactory implements FactoryInterface
 {

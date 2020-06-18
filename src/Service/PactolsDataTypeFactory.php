@@ -3,7 +3,7 @@
 namespace ValueSuggest\Service;
 
 use Interop\Container\ContainerInterface;
-use Zend\ServiceManager\Factory\FactoryInterface;
+use Laminas\ServiceManager\Factory\FactoryInterface;
 
 class PactolsDataTypeFactory implements FactoryInterface
 {

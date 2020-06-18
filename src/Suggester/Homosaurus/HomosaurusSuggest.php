@@ -2,7 +2,7 @@
 namespace ValueSuggest\Suggester\Homosaurus;
 
 use ValueSuggest\Suggester\SuggesterInterface;
-use Zend\Http\Client;
+use Laminas\Http\Client;
 
 class HomosaurusSuggest implements SuggesterInterface
 {

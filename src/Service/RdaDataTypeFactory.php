@@ -3,7 +3,7 @@ namespace ValueSuggest\Service;
 
 use Interop\Container\ContainerInterface;
 use ValueSuggest\DataType\Rda\Rda;
-use Zend\ServiceManager\Factory\FactoryInterface;
+use Laminas\ServiceManager\Factory\FactoryInterface;
 
 class RdaDataTypeFactory implements FactoryInterface
 {

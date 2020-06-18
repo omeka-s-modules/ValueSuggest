@@ -3,7 +3,7 @@ namespace ValueSuggest\Service;
 
 use Interop\Container\ContainerInterface;
 use ValueSuggest\DataType\IdRef\IdRef;
-use Zend\ServiceManager\Factory\FactoryInterface;
+use Laminas\ServiceManager\Factory\FactoryInterface;
 
 class IdRefDataTypeFactory implements FactoryInterface
 {

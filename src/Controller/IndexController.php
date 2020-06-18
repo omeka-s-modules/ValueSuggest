@@ -4,8 +4,8 @@ namespace ValueSuggest\Controller;
 use Omeka\DataType\Manager as DataTypeManager;
 use ValueSuggest\DataType\DataTypeInterface;
 use ValueSuggest\Suggester\SuggesterInterface;
-use Zend\Mvc\Controller\AbstractActionController;
-use Zend\ServiceManager\Exception\ServiceNotFoundException;
+use Laminas\Mvc\Controller\AbstractActionController;
+use Laminas\ServiceManager\Exception\ServiceNotFoundException;
 
 class IndexController extends AbstractActionController
 {

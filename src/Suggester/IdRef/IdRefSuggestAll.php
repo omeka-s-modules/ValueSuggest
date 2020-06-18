@@ -3,7 +3,7 @@
 namespace ValueSuggest\Suggester\IdRef;
 
 use ValueSuggest\Suggester\SuggesterInterface;
-use Zend\Http\Client;
+use Laminas\Http\Client;
 
 class IdRefSuggestAll implements SuggesterInterface
 {

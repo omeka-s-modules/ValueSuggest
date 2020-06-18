@@ -2,7 +2,7 @@
 namespace ValueSuggest\Suggester\Rda;
 
 use ValueSuggest\Suggester\SuggesterInterface;
-use Zend\Http\Client;
+use Laminas\Http\Client;
 
 class RdaSuggestAll implements SuggesterInterface
 {

@@ -2,7 +2,7 @@
 namespace ValueSuggest\Suggester\Geonames;
 
 use ValueSuggest\Suggester\SuggesterInterface;
-use Zend\Http\Client;
+use Laminas\Http\Client;
 
 class GeonamesSuggest implements SuggesterInterface
 {

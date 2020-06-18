@@ -3,7 +3,7 @@ namespace ValueSuggest\Service;
 
 use Interop\Container\ContainerInterface;
 use ValueSuggest\DataType\Unesco\Unesco;
-use Zend\ServiceManager\Factory\FactoryInterface;
+use Laminas\ServiceManager\Factory\FactoryInterface;
 
 class UnescoDataTypeFactory implements FactoryInterface
 {

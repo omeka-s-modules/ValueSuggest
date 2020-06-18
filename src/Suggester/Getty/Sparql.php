@@ -2,7 +2,7 @@
 namespace ValueSuggest\Suggester\Getty;
 
 use ValueSuggest\Suggester\SuggesterInterface;
-use Zend\Http\Client;
+use Laminas\Http\Client;
 
 class Sparql implements SuggesterInterface
 {

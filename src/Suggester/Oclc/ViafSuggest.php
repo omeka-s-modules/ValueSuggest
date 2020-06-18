@@ -2,7 +2,7 @@
 namespace ValueSuggest\Suggester\Oclc;
 
 use ValueSuggest\Suggester\SuggesterInterface;
-use Zend\Http\Client;
+use Laminas\Http\Client;
 
 class ViafSuggest implements SuggesterInterface
 {

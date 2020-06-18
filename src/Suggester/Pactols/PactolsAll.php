@@ -2,7 +2,7 @@
 namespace ValueSuggest\Suggester\Pactols;
 
 use ValueSuggest\Suggester\SuggesterInterface;
-use Zend\Http\Client;
+use Laminas\Http\Client;
 
 class PactolsAll implements SuggesterInterface
 {
