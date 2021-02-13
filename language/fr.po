@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-08 16:51-0400\n"
+"POT-Creation-Date: 2021-02-12 20:47-0500\n"
 "PO-Revision-Date: 2017-09-14 20:16+0000\n"
 "Last-Translator: Daniel Berthereau <daniel.transifex@berthereau.net>, 2019\n"
 "Language-Team: French (https://www.transifex.com/omeka/teams/14184/fr/)\n"
@@ -29,61 +29,130 @@ msgstr "Supprimer la langue"
 msgid "Remove URI"
 msgstr "Supprimer l’URI"
 
-#: src/Service/IdRefDataTypeFactory.php:14
-msgid "IdRef: All"
+#: src/DataType/AbstractDataType.php:30
+msgid "Value Suggest"
+msgstr "Valeurs suggérées"
+
+#: src/DataType/Homosaurus/Homosaurus.php:21
+msgid "Homosaurus: an international LGBTQ linked data vocabulary"
+msgstr "Homosaurus : un vocabulaire international lié aux données LGBTQ"
+
+#: src/DataType/RightsStatements/Rightsstatements.php:21
+msgid ""
+"RightsStatements.org: Standardized rights statements for online cultural "
+"heritage"
 msgstr ""
 
-#: src/Service/IdRefDataTypeFactory.php:18
-msgid "IdRef: Person names"
-msgstr ""
+#: src/DataType/Pactols/Sujets.php:21
+msgid "Pactols: Sujets (Subject)"
+msgstr "Pactols : Sujets"
 
-#: src/Service/IdRefDataTypeFactory.php:22
-msgid "IdRef: Collectivities"
-msgstr ""
+#: src/DataType/Pactols/All.php:21
+msgid "Pactols: All thesaurus"
+msgstr "Pactols : Tous les thesaurus"
 
-#: src/Service/IdRefDataTypeFactory.php:26
-msgid "IdRef: Conferences"
-msgstr ""
+#: src/DataType/Lc/Childrenssubjects.php:24
+msgid "LC: Children's Subject Headings"
+msgstr "LC : Vedettes-matières pour enfants"
 
-#: src/Service/IdRefDataTypeFactory.php:30
-msgid "IdRef: Subjects"
-msgstr ""
+#: src/DataType/Lc/Graphicmaterials.php:24
+msgid "LC: Thesaurus for Graphic Materials"
+msgstr "LC : Thésaurus des matériaux graphiques"
 
-#: src/Service/IdRefDataTypeFactory.php:34
-msgid "IdRef: Subjects Rameau"
-msgstr ""
+#: src/DataType/Lc/Names.php:24
+msgid "LC: Name Authority File"
+msgstr "LC : Nom du fichier d’autorité"
 
-#: src/Service/IdRefDataTypeFactory.php:38
-msgid "IdRef: Subjects F-MeSH"
-msgstr ""
+#: src/DataType/Lc/Genreforms.php:24
+msgid "LC: Genre/Form Terms"
+msgstr "LC : Termes de genre / forme"
 
-#: src/Service/IdRefDataTypeFactory.php:42
-msgid "IdRef: Geography"
-msgstr ""
+#: src/DataType/Lc/Iso6391.php:24
+msgid "LC: ISO639-1 Languages"
+msgstr "LC : Langues ISO639-1"
 
-#: src/Service/IdRefDataTypeFactory.php:46
-msgid "IdRef: Family names"
-msgstr ""
+#: src/DataType/Lc/Subjects.php:24
+msgid "LC: Subject Headings"
+msgstr "LC : Vedettes-matières"
 
-#: src/Service/IdRefDataTypeFactory.php:50
-msgid "IdRef: Uniform titles"
-msgstr ""
+#: src/DataType/Lc/Iso6395.php:24
+msgid "LC: ISO639-5 Languages"
+msgstr "LC : Langues ISO639-5"
 
-#: src/Service/IdRefDataTypeFactory.php:54
-msgid "IdRef: Authors-Titles"
-msgstr ""
+#: src/DataType/Lc/Ethnographicterms.php:24
+msgid "LC: AFS Ethnographic Thesaurus"
+msgstr "LC : Thésaurus ethnographique AFS"
 
-#: src/Service/IdRefDataTypeFactory.php:58
-msgid "IdRef: Trademarks"
-msgstr ""
+#: src/DataType/Lc/Performancemediums.php:24
+msgid "LC: Medium of Performance Thesaurus for Music"
+msgstr "LC : Thésaurus des moyens de performance pour la musique"
 
-#: src/Service/IdRefDataTypeFactory.php:62
-msgid "IdRef: PPN id"
-msgstr ""
+#: src/DataType/Lc/Iso6392.php:24
+msgid "LC: ISO639-2 Languages"
+msgstr "LC : Langues ISO639-2"
 
-#: src/Service/IdRefDataTypeFactory.php:66
-msgid "IdRef: Library registry (RCR)"
+#: src/DataType/Lc/Demographicterms.php:24
+msgid "LC: Demographic Group Terms"
+msgstr "LC : Termes des groupes démographiques"
+
+#: src/DataType/Lc/Languages.php:24
+msgid "LC: MARC Languages"
+msgstr "LC : MARC Langues"
+
+#: src/DataType/Lc/Relators.php:24
+msgid "LC: MARC Relators"
+msgstr "LC : MARC Relations"
+
+#: src/DataType/Lc/Countries.php:24
+msgid "LC: MARC Countries"
+msgstr "LC : MARC Pays"
+
+#: src/DataType/Lc/Organizations.php:24
+msgid "LC: Cultural Heritage Organizations"
+msgstr "LC : Organisations du patrimoine culturel"
+
+#: src/DataType/Lc/Geographicareas.php:24
+msgid "LC: MARC Geographic Areas"
+msgstr "LC : MARC Zones géographiques"
+
+#: src/DataType/Lc/Classification.php:24
+msgid "LC: Classification"
+msgstr "LC : Classification"
+
+#: src/DataType/Lc/All.php:21
+msgid "LC: All"
+msgstr "LC : Tous"
+
+#: src/DataType/Periodo/Periodo.php:21
+msgid ""
+"PeriodO: A gazetteer of period definitions for linking and visualizing data"
 msgstr ""
+"PeriodO : Un répertoire géographique des définitions de période pour relier "
+"et visualiser les données"
+
+#: src/DataType/Getty/Tgn.php:21
+msgid "Getty: The Getty Thesaurus of Geographic Names (TGN)"
+msgstr "Getty : Thesaurus des noms géographiques (TGN)"
+
+#: src/DataType/Getty/Ulan.php:21
+msgid "Getty: The Union List of Artist Names (ULAN)"
+msgstr "Getty : Liste des noms d’artistes de l’Union (ULAN)"
+
+#: src/DataType/Getty/Aat.php:21
+msgid "Getty: The Art & Architecture Thesaurus (AAT)"
+msgstr "Getty : Thésaurus Art & Architecture (AAT)"
+
+#: src/DataType/Geonames/Geonames.php:21
+msgid "Geonames: The GeoNames geographical database"
+msgstr "Geonames : Base de données géographiques GeoNames"
+
+#: src/DataType/Oclc/Fast.php:21
+msgid "OCLC: Faceted Application of Subject Terminologies (FAST)"
+msgstr "OCLC : Facettes des terminologies sujets (FAST)"
+
+#: src/DataType/Oclc/Viaf.php:21
+msgid "OCLC: The Virtual International Authority File (VIAF)"
+msgstr "OCLC : Fichier d’autorité internationale virtuelle (VIAF)"
 
 #: src/Service/UnescoDataTypeFactory.php:12
 msgid "UNESCO: Tesauro"
@@ -313,6 +382,62 @@ msgstr "RDA : Mode sensoriel"
 msgid "RDA: Storage Medium Format"
 msgstr "RDA : Format du moyen de stockage"
 
+#: src/Service/IdRefDataTypeFactory.php:14
+msgid "IdRef: All"
+msgstr ""
+
+#: src/Service/IdRefDataTypeFactory.php:18
+msgid "IdRef: Person names"
+msgstr ""
+
+#: src/Service/IdRefDataTypeFactory.php:22
+msgid "IdRef: Collectivities"
+msgstr ""
+
+#: src/Service/IdRefDataTypeFactory.php:26
+msgid "IdRef: Conferences"
+msgstr ""
+
+#: src/Service/IdRefDataTypeFactory.php:30
+msgid "IdRef: Subjects"
+msgstr ""
+
+#: src/Service/IdRefDataTypeFactory.php:34
+msgid "IdRef: Subjects Rameau"
+msgstr ""
+
+#: src/Service/IdRefDataTypeFactory.php:38
+msgid "IdRef: Subjects F-MeSH"
+msgstr ""
+
+#: src/Service/IdRefDataTypeFactory.php:42
+msgid "IdRef: Geography"
+msgstr ""
+
+#: src/Service/IdRefDataTypeFactory.php:46
+msgid "IdRef: Family names"
+msgstr ""
+
+#: src/Service/IdRefDataTypeFactory.php:50
+msgid "IdRef: Uniform titles"
+msgstr ""
+
+#: src/Service/IdRefDataTypeFactory.php:54
+msgid "IdRef: Authors-Titles"
+msgstr ""
+
+#: src/Service/IdRefDataTypeFactory.php:58
+msgid "IdRef: Trademarks"
+msgstr ""
+
+#: src/Service/IdRefDataTypeFactory.php:62
+msgid "IdRef: PPN id"
+msgstr ""
+
+#: src/Service/IdRefDataTypeFactory.php:66
+msgid "IdRef: Library registry (RCR)"
+msgstr ""
+
 #: src/Service/TesaurosDataTypeFactory.php:12
 msgid "Tesauros: Diccionario de Bienes Culturales"
 msgstr "Tesauros : Dictionnaire des biens culturels"
@@ -348,122 +473,3 @@ msgstr "Tesauros : Dictionnaire de numismatique"
 #: src/Service/TesaurosDataTypeFactory.php:44
 msgid "Tesauros: Diccionario de Mobiliario"
 msgstr "Tesauros : Dictionnaire de mobilier"
-
-#: src/DataType/Oclc/Viaf.php:21
-msgid "OCLC: The Virtual International Authority File (VIAF)"
-msgstr "OCLC : Fichier d’autorité internationale virtuelle (VIAF)"
-
-#: src/DataType/Oclc/Fast.php:21
-msgid "OCLC: Faceted Application of Subject Terminologies (FAST)"
-msgstr "OCLC : Facettes des terminologies sujets (FAST)"
-
-#: src/DataType/Periodo/Periodo.php:21
-msgid ""
-"PeriodO: A gazetteer of period definitions for linking and visualizing data"
-msgstr ""
-"PeriodO : Un répertoire géographique des définitions de période pour relier "
-"et visualiser les données"
-
-#: src/DataType/Getty/Tgn.php:21
-msgid "Getty: The Getty Thesaurus of Geographic Names (TGN)"
-msgstr "Getty : Thesaurus des noms géographiques (TGN)"
-
-#: src/DataType/Getty/Aat.php:21
-msgid "Getty: The Art & Architecture Thesaurus (AAT)"
-msgstr "Getty : Thésaurus Art & Architecture (AAT)"
-
-#: src/DataType/Getty/Ulan.php:21
-msgid "Getty: The Union List of Artist Names (ULAN)"
-msgstr "Getty : Liste des noms d’artistes de l’Union (ULAN)"
-
-#: src/DataType/AbstractDataType.php:30
-msgid "Value Suggest"
-msgstr "Valeurs suggérées"
-
-#: src/DataType/Geonames/Geonames.php:21
-msgid "Geonames: The GeoNames geographical database"
-msgstr "Geonames : Base de données géographiques GeoNames"
-
-#: src/DataType/Lc/Countries.php:24
-msgid "LC: MARC Countries"
-msgstr "LC : MARC Pays"
-
-#: src/DataType/Lc/Relators.php:24
-msgid "LC: MARC Relators"
-msgstr "LC : MARC Relations"
-
-#: src/DataType/Lc/Performancemediums.php:24
-msgid "LC: Medium of Performance Thesaurus for Music"
-msgstr "LC : Thésaurus des moyens de performance pour la musique"
-
-#: src/DataType/Lc/Ethnographicterms.php:24
-msgid "LC: AFS Ethnographic Thesaurus"
-msgstr "LC : Thésaurus ethnographique AFS"
-
-#: src/DataType/Lc/All.php:21
-msgid "LC: All"
-msgstr "LC : Tous"
-
-#: src/DataType/Lc/Names.php:24
-msgid "LC: Name Authority File"
-msgstr "LC : Nom du fichier d’autorité"
-
-#: src/DataType/Lc/Iso6392.php:24
-msgid "LC: ISO639-2 Languages"
-msgstr "LC : Langues ISO639-2"
-
-#: src/DataType/Lc/Demographicterms.php:24
-msgid "LC: Demographic Group Terms"
-msgstr "LC : Termes des groupes démographiques"
-
-#: src/DataType/Lc/Iso6391.php:24
-msgid "LC: ISO639-1 Languages"
-msgstr "LC : Langues ISO639-1"
-
-#: src/DataType/Lc/Subjects.php:24
-msgid "LC: Subject Headings"
-msgstr "LC : Vedettes-matières"
-
-#: src/DataType/Lc/Classification.php:24
-msgid "LC: Classification"
-msgstr "LC : Classification"
-
-#: src/DataType/Lc/Languages.php:24
-msgid "LC: MARC Languages"
-msgstr "LC : MARC Langues"
-
-#: src/DataType/Lc/Iso6395.php:24
-msgid "LC: ISO639-5 Languages"
-msgstr "LC : Langues ISO639-5"
-
-#: src/DataType/Lc/Geographicareas.php:24
-msgid "LC: MARC Geographic Areas"
-msgstr "LC : MARC Zones géographiques"
-
-#: src/DataType/Lc/Childrenssubjects.php:24
-msgid "LC: Children's Subject Headings"
-msgstr "LC : Vedettes-matières pour enfants"
-
-#: src/DataType/Lc/Graphicmaterials.php:24
-msgid "LC: Thesaurus for Graphic Materials"
-msgstr "LC : Thésaurus des matériaux graphiques"
-
-#: src/DataType/Lc/Organizations.php:24
-msgid "LC: Cultural Heritage Organizations"
-msgstr "LC : Organisations du patrimoine culturel"
-
-#: src/DataType/Lc/Genreforms.php:24
-msgid "LC: Genre/Form Terms"
-msgstr "LC : Termes de genre / forme"
-
-#: src/DataType/Homosaurus/Homosaurus.php:21
-msgid "Homosaurus: an international LGBTQ linked data vocabulary"
-msgstr "Homosaurus : un vocabulaire international lié aux données LGBTQ"
-
-#: src/DataType/Pactols/All.php:21
-msgid "Pactols: All thesaurus"
-msgstr "Pactols : Tous les thesaurus"
-
-#: src/DataType/Pactols/Sujets.php:21
-msgid "Pactols: Sujets (Subject)"
-msgstr "Pactols : Sujets"
