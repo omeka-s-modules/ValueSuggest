@@ -21,6 +21,7 @@ This module includes the following vocabularies:
 - PACTOLS of Frantiq
 - PeriodO
 - RDA Value Vocabularies
+- RightsStatements.org
 - Tesauros del patrimonio cultural de España
 - UNESCO
 
@@ -155,6 +156,10 @@ This module includes the following vocabularies:
 - Revision Termination
 - Sensory Mode
 - Storage Medium Format
+
+### [RightsStatements.org](https://rightsstatements.org/)
+
+- Provides a set of standardized rights statements for cultural heritage institutions that can be used to communicate the copyright and re-use status of digital objects to the public
 
 ### [Tesauros del patrimonio cultural de España](http://tesauros.mecd.es/tesauros)
 

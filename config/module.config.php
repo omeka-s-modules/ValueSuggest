@@ -139,6 +139,9 @@ return [
             'valuesuggestall:rda:rofsm' => \ValueSuggest\Service\RdaDataTypeFactory::class,
             'valuesuggestall:rda:rofsf' => \ValueSuggest\Service\RdaDataTypeFactory::class,
 
+            /* RightsStatements.org */
+            'valuesuggestall:rightsstatements:rightsstatements' => \ValueSuggest\Service\RightsStatementsDataTypeFactory::class,
+
             /* Tesauros-Diccionarios del patrimonio cultural de España */
             'valuesuggest:tesauros:bienesculturales' => \ValueSuggest\Service\TesaurosDataTypeFactory::class,
             'valuesuggest:tesauros:ceramica' => \ValueSuggest\Service\TesaurosDataTypeFactory::class,
