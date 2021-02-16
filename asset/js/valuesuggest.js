@@ -1,7 +1,42 @@
+$(window).on('load', function () {
+
+    $('.resource-values.field').each(function () {
+        var singleSelector = $(this).find('.add-values.single-selector a');
+        singleSelector.html(Omeka.jsTranslate('Suggest'));
+
+        $(singleSelector).on('click', function (e) {
+            e.preventDefault();
+            var isAnyVocabulary = $(singleSelector[0].closest('.inputs')).find('.values .value').hasClass('valuesuggest_any');
+            if (!isAnyVocabulary) {
+                return;
+            }
+            var delay = 100;
+            setTimeout(function () {
+                $('.inputs .chosen-select-list').chosen(chosenOptions);
+            }, delay);
+        })
+    });
+
+    $('.chosen-select-list').change(function () {
+        var data_type = $(this).val();
+        $(this).parent().find('.js-any-block').show();
+        $(this).parent().parent().addClass('any');
+        $(this).parent().parent().attr('data-data-type', data_type);
+        $(this).parent().parent().find('input.type').val(data_type);
+    });
+
+});
+
 $(document).on('o:prepare-value', function(e, type, value) {
+
+    var thisValue = $(value);
+    var type_name_for_class = type.replace(/\:/g, '_');
+
+    thisValue.addClass(type_name_for_class);
+    thisValue.addClass('valuesuggest_all');
+
     if (0 === type.indexOf('valuesuggest:') || 0 === type.indexOf('valuesuggestall:')) {
 
-        var thisValue = $(value);
         var suggestInput = thisValue.find('.valuesuggest-input');
         var labelInput = thisValue.find('input[data-value-key="o:label"]');
         var idInput = thisValue.find('input[data-value-key="@id"]');
@@ -89,6 +124,8 @@ $(document).on('o:prepare-value', function(e, type, value) {
             // type always uses the current language when making a query. Set
             // the type parameter here as well for consistency.
             onSearchStart: function(params) {
+
+                type = $(this).parent().parent().parent().parent().attr('data-data-type');
                 $(this).css('cursor', 'progress');
                 params.lang = languageInput.val();
                 params.type = type;
@@ -176,6 +213,10 @@ $(document).on('o:prepare-value', function(e, type, value) {
         }
 
         suggestInput.autocomplete(options);
+
+        if (type === 'valuesuggest:any') {
+            suggestInput.closest('.input-body').find('.chosen-select-list').chosen(chosenOptions);
+        }
     }
 
 });
