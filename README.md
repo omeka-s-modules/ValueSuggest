@@ -12,6 +12,7 @@ See general end user documentation for [Installing a module](http://omeka.org/s/
 
 This module includes the following vocabularies:
 
+- Dublin Core
 - GeoNames
 - The Getty Vocabularies
 - Homosaurus
@@ -25,6 +26,12 @@ This module includes the following vocabularies:
 - Tesauros del patrimonio cultural de España
 - UNESCO
 
+### [Dublin Core](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/) (DCMI Metadata Terms)
+
+- Classes
+- Elements
+- Terms
+- Types
 
 ### [GeoNames](http://www.geonames.org/)
 

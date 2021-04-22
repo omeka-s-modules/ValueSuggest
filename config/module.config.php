@@ -22,6 +22,13 @@ return [
     ],
     'data_types' => [
         'factories' => [
+
+            /* Dublin Core */
+            'valuesuggestall:dc:classes' => \ValueSuggest\Service\DcDataTypeFactory::class,
+            'valuesuggestall:dc:elements' => \ValueSuggest\Service\DcDataTypeFactory::class,
+            'valuesuggestall:dc:terms' => \ValueSuggest\Service\DcDataTypeFactory::class,
+            'valuesuggestall:dc:types' => \ValueSuggest\Service\DcDataTypeFactory::class,
+
             /* Geonames */
             'valuesuggest:geonames:geonames' => \ValueSuggest\Service\GeonamesDataTypeFactory::class,
 
