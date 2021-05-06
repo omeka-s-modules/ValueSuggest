@@ -56,18 +56,20 @@ class IdRefSuggestAll implements SuggesterInterface
         }
 
         // Check the result key.
-        if (isset($results['response']['docs'][0]['affcourt_r'])) {
-            $keyValue = 'affcourt_r';
-        } elseif (isset($results['response']['docs'][0]['affcourt_z'])) {
-            $keyValue = 'affcourt_z';
-        } elseif (isset($results['response']['docs'][0]['ppn_z'])) {
-            $keyValue = 'ppn_z';
-        } else {
-            return [];
-        }
         foreach ($results['response']['docs'] as $result) {
+            if (empty($result['ppn_z'])) {
+                continue;
+            }
+            // "affcourt" may be not present in some results (empty words).
+            if (isset($result['affcourt_r'])) {
+                $value = is_array($result['affcourt_r']) ? reset($result['affcourt_r']) : $result['affcourt_r'];
+            } elseif (isset($result['affcourt_z'])) {
+                $value = is_array($result['affcourt_z']) ? reset($result['affcourt_z']) : $result['affcourt_z'];
+            } else {
+                $value = $result['ppn_z'];
+            }
             $suggestions[] = [
-                'value' => is_array($result[$keyValue]) ? $result[$keyValue][0] : $result[$keyValue],
+                'value' => $value,
                 'data' => [
                     'uri' => 'https://www.idref.fr/' . $result['ppn_z'],
                     'info' => null,
