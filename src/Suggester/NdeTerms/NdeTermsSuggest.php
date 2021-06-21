@@ -10,18 +10,12 @@ use ValueSuggest\Suggester\SuggesterInterface;
 class NdeTermsSuggest implements SuggesterInterface
 {
     /**
-     * @var Client
-     */
-    protected $client;
-
-    /**
      * @var string The term source URI.
      */
     protected $source;
 
-    public function __construct(Client $client, $source)
+    public function __construct($source)
     {
-        $this->client = $client;
         $this->source = $source;
     }
 
@@ -40,16 +34,15 @@ class NdeTermsSuggest implements SuggesterInterface
             return [];
         }
 
-        $agent = "Omeka S ValueSuggest / x.x (dev-fork by xentropics.nl)"; // @todo remove latter part for production
+        $agent = "Omeka S ValueSuggest";
         $endpoint = "https://termennetwerk-api.netwerkdigitaalerfgoed.nl/graphql";
         $graphqlQuery = $this->buildQuery($query, $this->source);
         $result = $this->graphqlExecute($endpoint, $agent, $graphqlQuery);
         $suggestions = $this->parseResult($result);
         return $suggestions;
-        // return [['value' => var_export("Hi", true), 'data' => ['uri' => "https://hi", 'info' => null]]]; // @todo remove
     }
 
-    /**s
+    /**
      * Generate the GraphQL query
      * @param string $searchphrase search phrase we will try to find terms for
      * @param string $source URI of the terms source we are retrieving results from
@@ -81,7 +74,6 @@ class NdeTermsSuggest implements SuggesterInterface
 
     /**
      * Execute a GraphQL query and retrieve the result as an PHP array structure or an empty array if an I/O error occured
-     * @todo refactor in order to make use of the Laminas HTTP client.
      * @param string $endpoint NDE Termennetwerk GraphQL endpoint URI
      * @param string $agent agent string for the HTTP request
      * @param string $query GraphQL query to execute
