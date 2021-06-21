@@ -85,6 +85,25 @@ This module includes the following vocabularies:
 - Subject Headings
 - Thesaurus for Graphic Materials
 
+### [Dutch Digital Heritage Network of Terms: NDE Termennetwerk](https://termennetwerk.netwerkdigitaalerfgoed.nl/)
+
+- Archeologisch Basisregister
+- Brinkman trefwoordenthesaurus
+- Cultuurhistorische Thesaurus
+- GTAA: genres
+- GTAA: onderwerpen
+- Muziek: genres en stijlen
+- Muziek: personen en groepen
+- Muziekschatten: onderwerpen
+- Nederlandse Thesaurus van Auteursnamen
+- RKDartists
+- Thesaurus Nationaal Museum van Wereldculturen
+- Thesaurus Tweede Wereldoorlog Nederland
+- Wikidata: alle entiteiten
+- Wikidata: personen
+- Wikidata: plaatsen in Nederland en België
+- Wikidata: straten in Nederland
+
 ### [OCLC Metadata Services](https://www.oclc.org/en/services/a-z.html/:F2664:/)
 
 - Faceted Application of Subject Terminologies (FAST)
