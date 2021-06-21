@@ -96,9 +96,6 @@ return [
             'valuesuggest:ndeterms:wikipers' => \ValueSuggest\Service\NdeTermsDataTypeFactory::class,
             'valuesuggest:ndeterms:wikiplacenlbe' => \ValueSuggest\Service\NdeTermsDataTypeFactory::class,
             'valuesuggest:ndeterms:wikistrnl' => \ValueSuggest\Service\NdeTermsDataTypeFactory::class,
-            // Redundant... these are already present in other services
-            // 'valuesuggest:ndeterms:aatl' => \ValueSuggest\Service\NdeTermsDataTypeFactory::class,
-            // 'valuesuggest:ndeterms:gtaageo' => \ValueSuggest\Service\NdeTermsDataTypeFactory::class,
 
             /* OCLC */
             'valuesuggest:oclc:viaf' => \ValueSuggest\Service\OclcDataTypeFactory::class,
