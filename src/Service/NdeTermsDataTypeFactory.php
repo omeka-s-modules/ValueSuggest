@@ -5,6 +5,10 @@ use Interop\Container\ContainerInterface;
 use Laminas\ServiceManager\Factory\FactoryInterface;
 use ValueSuggest\DataType\NdeTerms\NdeTerms;
 
+/*
+* @todo implement or remove @translate tags
+*/
+
 class NdeTermsDataTypeFactory implements FactoryInterface
 {
     protected $types = [
@@ -72,15 +76,6 @@ class NdeTermsDataTypeFactory implements FactoryInterface
             'label' => 'NDE: Wikidata: straten in Nederland', // @translate
             'source' => 'https://query.wikidata.org/sparql#entities-streets',
         ],
-        /* redundant... these are already present in other services
-        'valuesuggest:ndeterms:aat' => [
-            'label' => 'Art & Architecture Thesaurus', // @translate
-            'source' => 'http://vocab.getty.edu/aat/sparql',
-        ],
-        'valuesuggest:ndeterms:gtaageo' => [
-            'label' => 'NDE: GTAA: geografische namen', // @translate
-            'source' => 'https://data.netwerkdigitaalerfgoed.nl/beeldengeluid/gtaa-geografischenamen/sparql',
-        ],*/
     ];
 
     public function __invoke(ContainerInterface $services, $requestedName, array $options = null)
