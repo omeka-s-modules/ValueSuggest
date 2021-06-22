@@ -13,12 +13,12 @@ See general end user documentation for [Installing a module](http://omeka.org/s/
 This module includes the following vocabularies:
 
 - Dublin Core
+- Dutch Digital Heritage Network of Terms
 - GeoNames
 - The Getty Vocabularies
 - Homosaurus
 - IdRef
 - Library of Congress Linked Data Service
-- Dutch Digital Heritage Network of Terms
 - OCLC Metadata Services
 - PACTOLS of Frantiq
 - PeriodO
@@ -33,6 +33,25 @@ This module includes the following vocabularies:
 - Elements
 - Terms
 - Types
+
+### [Dutch Digital Heritage Network of Terms: NDE Termennetwerk](https://termennetwerk.netwerkdigitaalerfgoed.nl/)
+
+- Archeologisch Basisregister
+- Brinkman trefwoordenthesaurus
+- Cultuurhistorische Thesaurus
+- GTAA: genres
+- GTAA: onderwerpen
+- Muziek: genres en stijlen
+- Muziek: personen en groepen
+- Muziekschatten: onderwerpen
+- Nederlandse Thesaurus van Auteursnamen
+- RKDartists
+- Thesaurus Nationaal Museum van Wereldculturen
+- Thesaurus Tweede Wereldoorlog Nederland
+- Wikidata: alle entiteiten
+- Wikidata: personen
+- Wikidata: plaatsen in Nederland en België
+- Wikidata: straten in Nederland
 
 ### [GeoNames](http://www.geonames.org/)
 
@@ -85,25 +104,6 @@ This module includes the following vocabularies:
 - Name Authority File
 - Subject Headings
 - Thesaurus for Graphic Materials
-
-### [Dutch Digital Heritage Network of Terms: NDE Termennetwerk](https://termennetwerk.netwerkdigitaalerfgoed.nl/)
-
-- Archeologisch Basisregister
-- Brinkman trefwoordenthesaurus
-- Cultuurhistorische Thesaurus
-- GTAA: genres
-- GTAA: onderwerpen
-- Muziek: genres en stijlen
-- Muziek: personen en groepen
-- Muziekschatten: onderwerpen
-- Nederlandse Thesaurus van Auteursnamen
-- RKDartists
-- Thesaurus Nationaal Museum van Wereldculturen
-- Thesaurus Tweede Wereldoorlog Nederland
-- Wikidata: alle entiteiten
-- Wikidata: personen
-- Wikidata: plaatsen in Nederland en België
-- Wikidata: straten in Nederland
 
 ### [OCLC Metadata Services](https://www.oclc.org/en/services/a-z.html/:F2664:/)
 
