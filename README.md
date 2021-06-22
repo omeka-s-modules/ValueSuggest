@@ -18,6 +18,7 @@ This module includes the following vocabularies:
 - Homosaurus
 - IdRef
 - Library of Congress Linked Data Service
+- Dutch Digital Heritage Network of Terms
 - OCLC Metadata Services
 - PACTOLS of Frantiq
 - PeriodO
