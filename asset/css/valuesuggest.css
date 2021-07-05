@@ -5,6 +5,13 @@
 .autocomplete-group { padding: 2px 5px; }
 .autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
 
+.autocomplete-suggestion.autocomplete-selected {
+    background-color: #e5e5e5;
+}
+.autocomplete-suggestion .suggest-info {
+    color: #666666;
+}
+
 .valuesuggest-language-container,
 .valuesuggest-vocab-container {
     position: relative;

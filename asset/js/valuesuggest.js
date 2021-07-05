@@ -135,9 +135,12 @@ $(document).on('o:prepare-value', function(e, type, value) {
             options.minChars = 0;
             // Prepare the suggestions prior to rendering them.
             options.beforeRender = function(container, suggestions) {
-                // Add title attribute to each suggestion for disambiguation.
+                // Add available info to each suggestion for disambiguation.
                 container.children().each(function(index) {
-                    $(this).attr('title', suggestions[index].data.info);
+                    if (suggestions[index].data.info) {
+                        $(this).append('<div class="suggest-info"></div>')
+                            .find('.suggest-info').append(suggestions[index].data.info);
+                    }
                 });
                 // Hide suggestions that contain no matches.
                 var hasSuggestions = container.children(':has(strong)');
@@ -168,9 +171,12 @@ $(document).on('o:prepare-value', function(e, type, value) {
             options.preventBadQueries = false;
             // Prepare the suggestions prior to rendering them.
             options.beforeRender = function(container, suggestions) {
-                // Add title attribute to each suggestion for disambiguation.
+                // Add available info to each suggestion for disambiguation.
                 container.children().each(function(index) {
-                    $(this).attr('title', suggestions[index].data.info);
+                    if (suggestions[index].data.info) {
+                        $(this).append('<div class="suggest-info"></div>')
+                            .find('.suggest-info').append(suggestions[index].data.info);
+                    }
                 });
             };
         }
