@@ -47,12 +47,13 @@ SELECT ?Subject ?Term ?Parents ?ScopeNote ?ScopeNoteEn {
     OPTIONAL {?Subject gvp:parentString ?Parents}
     OPTIONAL {?Subject skos:scopeNote [dct:language gvp_lang:%s; rdf:value ?ScopeNote]}
     OPTIONAL {?Subject skos:scopeNote [dct:language gvp_lang:en; rdf:value ?ScopeNoteEn]}
-    FILTER langMatches(lang(?Term), "%s")
+    %s
 } LIMIT 500',
             addslashes($query),
             $this->scheme,
             $lang ?: 'en',
-            $lang ?: 'en'
+            // Do not filter by language when querying names from ULAN.
+            'ulan' === $this->scheme ? '' : sprintf('FILTER langMatches(lang(?Term), "%s")', $lang ?: 'en')
         );
         $client = $this->client->setUri(self::ENDPOINT)->setParameterGet([
             'query' => $sparqlQuery,
