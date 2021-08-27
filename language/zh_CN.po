@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-22 11:57-0400\n"
+"POT-Creation-Date: 2021-08-27 12:07-0400\n"
 "PO-Revision-Date: 2017-09-14 20:16+0000\n"
 "Last-Translator: Hong Zhang <zhangh@unlv.nevada.edu>, 2021\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/omeka/teams/14184/zh_CN/)\n"
@@ -95,42 +95,6 @@ msgstr ""
 
 #: src/Service/IdRefDataTypeFactory.php:66
 msgid "IdRef: Library registry (RCR)"
-msgstr ""
-
-#: src/Service/TesaurosDataTypeFactory.php:12
-msgid "Tesauros: Diccionario de Bienes Culturales"
-msgstr ""
-
-#: src/Service/TesaurosDataTypeFactory.php:16
-msgid "Tesauros: Diccionario de Materias"
-msgstr ""
-
-#: src/Service/TesaurosDataTypeFactory.php:20
-msgid "Tesauros: Diccionario de Técnicas"
-msgstr ""
-
-#: src/Service/TesaurosDataTypeFactory.php:24
-msgid "Tesauros: Diccionario de Contextos Culturales"
-msgstr ""
-
-#: src/Service/TesaurosDataTypeFactory.php:28
-msgid "Tesauros: Diccionario Geográfico"
-msgstr ""
-
-#: src/Service/TesaurosDataTypeFactory.php:32
-msgid "Tesauros: Diccionario de Toponimia Histórica"
-msgstr ""
-
-#: src/Service/TesaurosDataTypeFactory.php:36
-msgid "Tesauros: Diccionario de Cerámica"
-msgstr ""
-
-#: src/Service/TesaurosDataTypeFactory.php:40
-msgid "Tesauros: Diccionario de Numismática"
-msgstr ""
-
-#: src/Service/TesaurosDataTypeFactory.php:44
-msgid "Tesauros: Diccionario de Mobiliario"
 msgstr ""
 
 #: src/Service/RdaDataTypeFactory.php:12
@@ -349,41 +313,135 @@ msgstr ""
 msgid "RDA: Storage Medium Format"
 msgstr "资源描述与检索（RDA）：储存媒介格式"
 
+#: src/Service/TesaurosDataTypeFactory.php:12
+msgid "Tesauros: Diccionario de Bienes Culturales"
+msgstr ""
+
+#: src/Service/TesaurosDataTypeFactory.php:16
+msgid "Tesauros: Diccionario de Materias"
+msgstr ""
+
+#: src/Service/TesaurosDataTypeFactory.php:20
+msgid "Tesauros: Diccionario de Técnicas"
+msgstr ""
+
+#: src/Service/TesaurosDataTypeFactory.php:24
+msgid "Tesauros: Diccionario de Contextos Culturales"
+msgstr ""
+
+#: src/Service/TesaurosDataTypeFactory.php:28
+msgid "Tesauros: Diccionario Geográfico"
+msgstr ""
+
+#: src/Service/TesaurosDataTypeFactory.php:32
+msgid "Tesauros: Diccionario de Toponimia Histórica"
+msgstr ""
+
+#: src/Service/TesaurosDataTypeFactory.php:36
+msgid "Tesauros: Diccionario de Cerámica"
+msgstr ""
+
+#: src/Service/TesaurosDataTypeFactory.php:40
+msgid "Tesauros: Diccionario de Numismática"
+msgstr ""
+
+#: src/Service/TesaurosDataTypeFactory.php:44
+msgid "Tesauros: Diccionario de Mobiliario"
+msgstr ""
+
+#: src/DataType/Lc/Genreforms.php:24
+msgid "LC: Genre/Form Terms"
+msgstr "美国国会图书馆：体裁/形式术语"
+
+#: src/DataType/Lc/Geographicareas.php:24
+msgid "LC: MARC Geographic Areas"
+msgstr "美国国会图书馆：MARC地理区域"
+
+#: src/DataType/Lc/Names.php:24
+msgid "LC: Name Authority File"
+msgstr "美国国会图书馆：名称规范文档"
+
+#: src/DataType/Lc/Childrenssubjects.php:24
+msgid "LC: Children's Subject Headings"
+msgstr "美国国会图书馆：儿童标题表"
+
+#: src/DataType/Lc/Iso6391.php:24
+msgid "LC: ISO639-1 Languages"
+msgstr "美国国会图书馆：ISO639-1 语言"
+
+#: src/DataType/Lc/Graphicmaterials.php:24
+msgid "LC: Thesaurus for Graphic Materials"
+msgstr "美国国会图书馆：绘画材料辞典"
+
+#: src/DataType/Lc/Organizations.php:24
+msgid "LC: Cultural Heritage Organizations"
+msgstr "美国国会图书馆：文化遗产组织"
+
+#: src/DataType/Lc/Subjects.php:24
+msgid "LC: Subject Headings"
+msgstr "美国国会图书馆：标题表"
+
+#: src/DataType/Lc/Ethnographicterms.php:24
+msgid "LC: AFS Ethnographic Thesaurus"
+msgstr "美国国会图书馆：AFS民族志辞典"
+
+#: src/DataType/Lc/Classification.php:24
+msgid "LC: Classification"
+msgstr "美国国会图书馆：分类"
+
+#: src/DataType/Lc/Countries.php:24
+msgid "LC: MARC Countries"
+msgstr "美国国会图书馆：MARC国家"
+
+#: src/DataType/Lc/Performancemediums.php:24
+msgid "LC: Medium of Performance Thesaurus for Music"
+msgstr "美国国会图书馆：音乐的表演辞典的媒介"
+
+#: src/DataType/Lc/Relators.php:24
+msgid "LC: MARC Relators"
+msgstr "美国国会图书馆：叙述者"
+
+#: src/DataType/Lc/Languages.php:24
+msgid "LC: MARC Languages"
+msgstr "美国国会图书馆：MARC语言"
+
+#: src/DataType/Lc/Iso6392.php:24
+msgid "LC: ISO639-2 Languages"
+msgstr "美国国会图书馆：ISO639-2 语言"
+
+#: src/DataType/Lc/All.php:21
+msgid "LC: All"
+msgstr "美国国会图书馆：所有"
+
+#: src/DataType/Lc/Iso6395.php:24
+msgid "LC: ISO639-5 Languages"
+msgstr "美国国会图书馆：ISO639-5语言"
+
+#: src/DataType/Lc/Demographicterms.php:24
+msgid "LC: Demographic Group Terms"
+msgstr "美国国会图书馆：人口统计学群组术语"
+
+#: src/DataType/AbstractDataType.php:30
+msgid "Value Suggest"
+msgstr "值推荐"
+
+#: src/DataType/RightsStatements/Rightsstatements.php:21
+msgid ""
+"RightsStatements.org: Standardized rights statements for online cultural "
+"heritage"
+msgstr "RightsStatements.org：在线文化遗产的标准化版权声明"
+
 #: src/DataType/Homosaurus/Homosaurus.php:21
 msgid "Homosaurus: an international LGBTQ linked data vocabulary"
 msgstr ""
-
-#: src/DataType/Geonames/Geonames.php:21
-msgid "Geonames: The GeoNames geographical database"
-msgstr ""
-
-#: src/DataType/Getty/Ulan.php:21
-msgid "Getty: The Union List of Artist Names (ULAN)"
-msgstr "Getty：艺术家名称合并列表（ULAN）"
-
-#: src/DataType/Getty/Tgn.php:21
-msgid "Getty: The Getty Thesaurus of Geographic Names (TGN)"
-msgstr "Getty：Getty地理名称辞典（TGN）"
-
-#: src/DataType/Getty/Aat.php:21
-msgid "Getty: The Art & Architecture Thesaurus (AAT)"
-msgstr "Getty：艺术和建筑辞典（AAT）"
 
 #: src/DataType/Periodo/Periodo.php:21
 msgid ""
 "PeriodO: A gazetteer of period definitions for linking and visualizing data"
 msgstr ""
 
-#: src/DataType/AbstractDataType.php:30
-msgid "Value Suggest"
-msgstr "值推荐"
-
-#: src/DataType/Pactols/All.php:21
-msgid "Pactols: All thesaurus"
-msgstr ""
-
-#: src/DataType/Pactols/Sujets.php:21
-msgid "Pactols: Sujets (Subject)"
+#: src/DataType/Dc/Elements.php:21
+msgid "Dublin Core: Elements"
 msgstr ""
 
 #: src/DataType/Dc/Terms.php:21
@@ -394,96 +452,38 @@ msgstr ""
 msgid "Dublin Core: Types"
 msgstr ""
 
-#: src/DataType/Dc/Elements.php:21
-msgid "Dublin Core: Elements"
-msgstr ""
-
 #: src/DataType/Dc/Classes.php:21
 msgid "Dublin Core: Classes"
 msgstr ""
 
-#: src/DataType/Lc/Languages.php:24
-msgid "LC: MARC Languages"
-msgstr "美国国会图书馆：MARC语言"
+#: src/DataType/Pactols/Sujets.php:21
+msgid "Pactols: Sujets (Subject)"
+msgstr ""
 
-#: src/DataType/Lc/All.php:21
-msgid "LC: All"
-msgstr "美国国会图书馆：所有"
-
-#: src/DataType/Lc/Graphicmaterials.php:24
-msgid "LC: Thesaurus for Graphic Materials"
-msgstr "美国国会图书馆：绘画材料辞典"
-
-#: src/DataType/Lc/Iso6392.php:24
-msgid "LC: ISO639-2 Languages"
-msgstr "美国国会图书馆：ISO639-2 语言"
-
-#: src/DataType/Lc/Subjects.php:24
-msgid "LC: Subject Headings"
-msgstr "美国国会图书馆：标题表"
-
-#: src/DataType/Lc/Iso6395.php:24
-msgid "LC: ISO639-5 Languages"
-msgstr "美国国会图书馆：ISO639-5语言"
-
-#: src/DataType/Lc/Iso6391.php:24
-msgid "LC: ISO639-1 Languages"
-msgstr "美国国会图书馆：ISO639-1 语言"
-
-#: src/DataType/Lc/Classification.php:24
-msgid "LC: Classification"
-msgstr "美国国会图书馆：分类"
-
-#: src/DataType/Lc/Genreforms.php:24
-msgid "LC: Genre/Form Terms"
-msgstr "美国国会图书馆：体裁/形式术语"
-
-#: src/DataType/Lc/Relators.php:24
-msgid "LC: MARC Relators"
-msgstr "美国国会图书馆：叙述者"
-
-#: src/DataType/Lc/Organizations.php:24
-msgid "LC: Cultural Heritage Organizations"
-msgstr "美国国会图书馆：文化遗产组织"
-
-#: src/DataType/Lc/Childrenssubjects.php:24
-msgid "LC: Children's Subject Headings"
-msgstr "美国国会图书馆：儿童标题表"
-
-#: src/DataType/Lc/Geographicareas.php:24
-msgid "LC: MARC Geographic Areas"
-msgstr "美国国会图书馆：MARC地理区域"
-
-#: src/DataType/Lc/Names.php:24
-msgid "LC: Name Authority File"
-msgstr "美国国会图书馆：名称规范文档"
-
-#: src/DataType/Lc/Performancemediums.php:24
-msgid "LC: Medium of Performance Thesaurus for Music"
-msgstr "美国国会图书馆：音乐的表演辞典的媒介"
-
-#: src/DataType/Lc/Countries.php:24
-msgid "LC: MARC Countries"
-msgstr "美国国会图书馆：MARC国家"
-
-#: src/DataType/Lc/Ethnographicterms.php:24
-msgid "LC: AFS Ethnographic Thesaurus"
-msgstr "美国国会图书馆：AFS民族志辞典"
-
-#: src/DataType/Lc/Demographicterms.php:24
-msgid "LC: Demographic Group Terms"
-msgstr "美国国会图书馆：人口统计学群组术语"
-
-#: src/DataType/Oclc/Viaf.php:21
-msgid "OCLC: The Virtual International Authority File (VIAF)"
-msgstr "在线计算机图书馆中心（OCLC）：虚拟国际权威文件（VIAF）"
+#: src/DataType/Pactols/All.php:21
+msgid "Pactols: All thesaurus"
+msgstr ""
 
 #: src/DataType/Oclc/Fast.php:21
 msgid "OCLC: Faceted Application of Subject Terminologies (FAST)"
 msgstr "在线计算机图书馆中心（OCLC）：标题术语的多面应用（FAST）"
 
-#: src/DataType/RightsStatements/Rightsstatements.php:21
-msgid ""
-"RightsStatements.org: Standardized rights statements for online cultural "
-"heritage"
-msgstr "RightsStatements.org：在线文化遗产的标准化版权声明"
+#: src/DataType/Oclc/Viaf.php:21
+msgid "OCLC: The Virtual International Authority File (VIAF)"
+msgstr "在线计算机图书馆中心（OCLC）：虚拟国际权威文件（VIAF）"
+
+#: src/DataType/Getty/Aat.php:21
+msgid "Getty: The Art & Architecture Thesaurus (AAT)"
+msgstr "Getty：艺术和建筑辞典（AAT）"
+
+#: src/DataType/Getty/Tgn.php:21
+msgid "Getty: The Getty Thesaurus of Geographic Names (TGN)"
+msgstr "Getty：Getty地理名称辞典（TGN）"
+
+#: src/DataType/Getty/Ulan.php:21
+msgid "Getty: The Union List of Artist Names (ULAN)"
+msgstr "Getty：艺术家名称合并列表（ULAN）"
+
+#: src/DataType/Geonames/Geonames.php:21
+msgid "Geonames: The GeoNames geographical database"
+msgstr ""

@@ -4,17 +4,17 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Josip Ilic <josip.ilic@ericsson.com>, 2021
 # Angela-Marina Batarelo <angela-marina.batarelo@ericsson.com>, 2021
+# Josip Ilic <josip.ilic@ericsson.com>, 2021
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-22 11:57-0400\n"
+"POT-Creation-Date: 2021-08-27 12:07-0400\n"
 "PO-Revision-Date: 2017-09-14 20:16+0000\n"
-"Last-Translator: Angela-Marina Batarelo <angela-marina.batarelo@ericsson.com>, 2021\n"
+"Last-Translator: Josip Ilic <josip.ilic@ericsson.com>, 2021\n"
 "Language-Team: Croatian (https://www.transifex.com/omeka/teams/14184/hr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -241,114 +241,6 @@ msgstr ""
 " \n"
 " "
 
-#: src/Service/TesaurosDataTypeFactory.php:12
-msgid "Tesauros: Diccionario de Bienes Culturales"
-msgstr ""
-"Tezaurus: Rječnik kulturnih dobara\n"
-" \n"
-"\n"
-" \n"
-" \n"
-" \n"
-" \n"
-" "
-
-#: src/Service/TesaurosDataTypeFactory.php:16
-msgid "Tesauros: Diccionario de Materias"
-msgstr ""
-"Tezauri: Rječnik predmeta\n"
-" \n"
-"\n"
-" \n"
-" \n"
-" \n"
-" \n"
-" "
-
-#: src/Service/TesaurosDataTypeFactory.php:20
-msgid "Tesauros: Diccionario de Técnicas"
-msgstr ""
-"Tezaurus: Rječnik tehnika\n"
-" \n"
-"\n"
-" \n"
-" \n"
-" \n"
-" \n"
-" "
-
-#: src/Service/TesaurosDataTypeFactory.php:24
-msgid "Tesauros: Diccionario de Contextos Culturales"
-msgstr ""
-"Tezauri: Rječnik kulturnih konteksta\n"
-" \n"
-"\n"
-" \n"
-" \n"
-" \n"
-" \n"
-" "
-
-#: src/Service/TesaurosDataTypeFactory.php:28
-msgid "Tesauros: Diccionario Geográfico"
-msgstr ""
-"Tezaurus: Geografski rječnik\n"
-" \n"
-"\n"
-" \n"
-" \n"
-" \n"
-" \n"
-" "
-
-#: src/Service/TesaurosDataTypeFactory.php:32
-msgid "Tesauros: Diccionario de Toponimia Histórica"
-msgstr ""
-"Tezaurus: Rječnik povijesne toponimije\n"
-" \n"
-"\n"
-" \n"
-" \n"
-" \n"
-" \n"
-" "
-
-#: src/Service/TesaurosDataTypeFactory.php:36
-msgid "Tesauros: Diccionario de Cerámica"
-msgstr ""
-"Tezauros: Keramički rječnik\n"
-" \n"
-"\n"
-" \n"
-" \n"
-" \n"
-" \n"
-" "
-
-#: src/Service/TesaurosDataTypeFactory.php:40
-msgid "Tesauros: Diccionario de Numismática"
-msgstr ""
-"Tezaurus: Rječnik numizmatike\n"
-" \n"
-"\n"
-" \n"
-" \n"
-" \n"
-" \n"
-" "
-
-#: src/Service/TesaurosDataTypeFactory.php:44
-msgid "Tesauros: Diccionario de Mobiliario"
-msgstr ""
-"Tezaurus: Rječnik namještaja\n"
-" \n"
-"\n"
-" \n"
-" \n"
-" \n"
-" \n"
-" "
-
 #: src/Service/RdaDataTypeFactory.php:12
 msgid "RDA: Aspect Ratio Designation"
 msgstr ""
@@ -363,15 +255,7 @@ msgstr ""
 
 #: src/Service/RdaDataTypeFactory.php:16
 msgid "RDA: Bibliographic Format"
-msgstr ""
-"RDA: Bibliografski format\n"
-" \n"
-"\n"
-" \n"
-" \n"
-" \n"
-" \n"
-" "
+msgstr "RDA: Bibliografski format"
 
 #: src/Service/RdaDataTypeFactory.php:20
 msgid "RDA: Broadcast Standard"
@@ -507,15 +391,7 @@ msgstr ""
 
 #: src/Service/RdaDataTypeFactory.php:64
 msgid "RDA: Form of Notated Movement"
-msgstr ""
-"RDA: Oblik bilježenog pokreta\n"
-" \n"
-"\n"
-" \n"
-" \n"
-" \n"
-" \n"
-" "
+msgstr "RDA: Oblik bilježenog pokreta"
 
 #: src/Service/RdaDataTypeFactory.php:68
 msgid "RDA: Form of Tactile Notation"
@@ -981,14 +857,22 @@ msgstr ""
 " \n"
 " "
 
-#: src/DataType/Homosaurus/Homosaurus.php:21
-msgid "Homosaurus: an international LGBTQ linked data vocabulary"
-msgstr "Homosaurus: međunarodni LGBTQ vokabular povezanih podataka "
-
-#: src/DataType/Geonames/Geonames.php:21
-msgid "Geonames: The GeoNames geographical database"
+#: src/Service/TesaurosDataTypeFactory.php:12
+msgid "Tesauros: Diccionario de Bienes Culturales"
 msgstr ""
-"Geonames: Zemljopisna baza podataka GeoNames\n"
+"Tezaurus: Rječnik kulturnih dobara\n"
+" \n"
+"\n"
+" \n"
+" \n"
+" \n"
+" \n"
+" "
+
+#: src/Service/TesaurosDataTypeFactory.php:16
+msgid "Tesauros: Diccionario de Materias"
+msgstr ""
+"Tezauri: Rječnik predmeta\n"
 " \n"
 "\n"
 " \n"
@@ -997,10 +881,10 @@ msgstr ""
 " \n"
 " "
 
-#: src/DataType/Getty/Ulan.php:21
-msgid "Getty: The Union List of Artist Names (ULAN)"
+#: src/Service/TesaurosDataTypeFactory.php:20
+msgid "Tesauros: Diccionario de Técnicas"
 msgstr ""
-"Getty: Unija Popis imena izvođača (ULAN)\n"
+"Tezaurus: Rječnik tehnika\n"
 " \n"
 "\n"
 " \n"
@@ -1009,10 +893,10 @@ msgstr ""
 " \n"
 " "
 
-#: src/DataType/Getty/Tgn.php:21
-msgid "Getty: The Getty Thesaurus of Geographic Names (TGN)"
+#: src/Service/TesaurosDataTypeFactory.php:24
+msgid "Tesauros: Diccionario de Contextos Culturales"
 msgstr ""
-"Getty: Gettyjev tezaurus geografskih imena (TGN)\n"
+"Tezauri: Rječnik kulturnih konteksta\n"
 " \n"
 "\n"
 " \n"
@@ -1021,10 +905,10 @@ msgstr ""
 " \n"
 " "
 
-#: src/DataType/Getty/Aat.php:21
-msgid "Getty: The Art & Architecture Thesaurus (AAT)"
+#: src/Service/TesaurosDataTypeFactory.php:28
+msgid "Tesauros: Diccionario Geográfico"
 msgstr ""
-"Getty: Riječ o umjetnosti i arhitekturi (AAT)\n"
+"Tezaurus: Geografski rječnik\n"
 " \n"
 "\n"
 " \n"
@@ -1033,11 +917,10 @@ msgstr ""
 " \n"
 " "
 
-#: src/DataType/Periodo/Periodo.php:21
-msgid ""
-"PeriodO: A gazetteer of period definitions for linking and visualizing data"
+#: src/Service/TesaurosDataTypeFactory.php:32
+msgid "Tesauros: Diccionario de Toponimia Histórica"
 msgstr ""
-"PeriodO: Glasnik definicija razdoblja za povezivanje i vizualizaciju podataka\n"
+"Tezaurus: Rječnik povijesne toponimije\n"
 " \n"
 "\n"
 " \n"
@@ -1046,43 +929,10 @@ msgstr ""
 " \n"
 " "
 
-#: src/DataType/AbstractDataType.php:30
-msgid "Value Suggest"
+#: src/Service/TesaurosDataTypeFactory.php:36
+msgid "Tesauros: Diccionario de Cerámica"
 msgstr ""
-"Prijedlog vrijednosti\n"
-" \n"
-" \n"
-" \n"
-" "
-
-#: src/DataType/Pactols/All.php:21
-msgid "Pactols: All thesaurus"
-msgstr "Pactols: Cijeli tezaurus"
-
-#: src/DataType/Pactols/Sujets.php:21
-msgid "Pactols: Sujets (Subject)"
-msgstr "Pactols: Sujets (Subjekt)"
-
-#: src/DataType/Dc/Terms.php:21
-msgid "Dublin Core: Terms"
-msgstr ""
-
-#: src/DataType/Dc/Types.php:21
-msgid "Dublin Core: Types"
-msgstr ""
-
-#: src/DataType/Dc/Elements.php:21
-msgid "Dublin Core: Elements"
-msgstr ""
-
-#: src/DataType/Dc/Classes.php:21
-msgid "Dublin Core: Classes"
-msgstr ""
-
-#: src/DataType/Lc/Languages.php:24
-msgid "LC: MARC Languages"
-msgstr ""
-"LC: MARC jezici\n"
+"Tezauros: Keramički rječnik\n"
 " \n"
 "\n"
 " \n"
@@ -1091,106 +941,34 @@ msgstr ""
 " \n"
 " "
 
-#: src/DataType/Lc/All.php:21
-msgid "LC: All"
-msgstr "LC: Sve"
-
-#: src/DataType/Lc/Graphicmaterials.php:24
-msgid "LC: Thesaurus for Graphic Materials"
-msgstr "LC: Tezaurus za Grafičke Materijale"
-
-#: src/DataType/Lc/Iso6392.php:24
-msgid "LC: ISO639-2 Languages"
+#: src/Service/TesaurosDataTypeFactory.php:40
+msgid "Tesauros: Diccionario de Numismática"
 msgstr ""
-"LC: ISO639-2 Jezici\n"
+"Tezaurus: Rječnik numizmatike\n"
 " \n"
 "\n"
 " \n"
 " \n"
 " \n"
 " \n"
-" "
+" "
 
-#: src/DataType/Lc/Subjects.php:24
-msgid "LC: Subject Headings"
+#: src/Service/TesaurosDataTypeFactory.php:44
+msgid "Tesauros: Diccionario de Mobiliario"
 msgstr ""
-"LC: Predmeti\n"
+"Tezaurus: Rječnik namještaja\n"
 " \n"
 "\n"
 " \n"
 " \n"
 " \n"
 " \n"
-" "
-
-#: src/DataType/Lc/Iso6395.php:24
-msgid "LC: ISO639-5 Languages"
-msgstr ""
-"LC: ISO639-5 Jezici\n"
-" \n"
-"\n"
-" \n"
-" \n"
-" \n"
-" \n"
-" "
-
-#: src/DataType/Lc/Iso6391.php:24
-msgid "LC: ISO639-1 Languages"
-msgstr ""
-"LC: ISO639-1 Jezici\n"
-" \n"
-"\n"
-" \n"
-" \n"
-" \n"
-" \n"
-" "
-
-#: src/DataType/Lc/Classification.php:24
-msgid "LC: Classification"
-msgstr "LC:Klasifikacija"
+" "
 
 #: src/DataType/Lc/Genreforms.php:24
 msgid "LC: Genre/Form Terms"
 msgstr ""
 "LC: Uvjeti žanra / obrasca\n"
-" \n"
-"\n"
-" \n"
-" \n"
-" \n"
-" \n"
-" "
-
-#: src/DataType/Lc/Relators.php:24
-msgid "LC: MARC Relators"
-msgstr ""
-"LC: MARC relatori\n"
-" \n"
-"\n"
-" \n"
-" \n"
-" \n"
-" \n"
-" "
-
-#: src/DataType/Lc/Organizations.php:24
-msgid "LC: Cultural Heritage Organizations"
-msgstr ""
-"LC: Organizacije za kulturnu baštinu\n"
-" \n"
-"\n"
-" \n"
-" \n"
-" \n"
-" \n"
-" "
-
-#: src/DataType/Lc/Childrenssubjects.php:24
-msgid "LC: Children's Subject Headings"
-msgstr ""
-"LC: Predmeti za djecu\n"
 " \n"
 "\n"
 " \n"
@@ -1223,10 +1001,10 @@ msgstr ""
 " \n"
 " "
 
-#: src/DataType/Lc/Performancemediums.php:24
-msgid "LC: Medium of Performance Thesaurus for Music"
+#: src/DataType/Lc/Childrenssubjects.php:24
+msgid "LC: Children's Subject Headings"
 msgstr ""
-"LC: Glazbeni tezaurus medija izvedbe\n"
+"LC: Predmeti za djecu\n"
 " \n"
 "\n"
 " \n"
@@ -1235,10 +1013,38 @@ msgstr ""
 " \n"
 " "
 
-#: src/DataType/Lc/Countries.php:24
-msgid "LC: MARC Countries"
+#: src/DataType/Lc/Iso6391.php:24
+msgid "LC: ISO639-1 Languages"
 msgstr ""
-"LC: MARC zemlje\n"
+"LC: ISO639-1 Jezici\n"
+" \n"
+"\n"
+" \n"
+" \n"
+" \n"
+" \n"
+" "
+
+#: src/DataType/Lc/Graphicmaterials.php:24
+msgid "LC: Thesaurus for Graphic Materials"
+msgstr "LC: Tezaurus za Grafičke Materijale"
+
+#: src/DataType/Lc/Organizations.php:24
+msgid "LC: Cultural Heritage Organizations"
+msgstr ""
+"LC: Organizacije za kulturnu baštinu\n"
+" \n"
+"\n"
+" \n"
+" \n"
+" \n"
+" \n"
+" "
+
+#: src/DataType/Lc/Subjects.php:24
+msgid "LC: Subject Headings"
+msgstr ""
+"LC: Predmeti\n"
 " \n"
 "\n"
 " \n"
@@ -1259,6 +1065,86 @@ msgstr ""
 " \n"
 " "
 
+#: src/DataType/Lc/Classification.php:24
+msgid "LC: Classification"
+msgstr "LC:Klasifikacija"
+
+#: src/DataType/Lc/Countries.php:24
+msgid "LC: MARC Countries"
+msgstr ""
+"LC: MARC zemlje\n"
+" \n"
+"\n"
+" \n"
+" \n"
+" \n"
+" \n"
+" "
+
+#: src/DataType/Lc/Performancemediums.php:24
+msgid "LC: Medium of Performance Thesaurus for Music"
+msgstr ""
+"LC: Glazbeni tezaurus medija izvedbe\n"
+" \n"
+"\n"
+" \n"
+" \n"
+" \n"
+" \n"
+" "
+
+#: src/DataType/Lc/Relators.php:24
+msgid "LC: MARC Relators"
+msgstr ""
+"LC: MARC relatori\n"
+" \n"
+"\n"
+" \n"
+" \n"
+" \n"
+" \n"
+" "
+
+#: src/DataType/Lc/Languages.php:24
+msgid "LC: MARC Languages"
+msgstr ""
+"LC: MARC jezici\n"
+" \n"
+"\n"
+" \n"
+" \n"
+" \n"
+" \n"
+" "
+
+#: src/DataType/Lc/Iso6392.php:24
+msgid "LC: ISO639-2 Languages"
+msgstr ""
+"LC: ISO639-2 Jezici\n"
+" \n"
+"\n"
+" \n"
+" \n"
+" \n"
+" \n"
+" "
+
+#: src/DataType/Lc/All.php:21
+msgid "LC: All"
+msgstr "LC: Sve"
+
+#: src/DataType/Lc/Iso6395.php:24
+msgid "LC: ISO639-5 Languages"
+msgstr ""
+"LC: ISO639-5 Jezici\n"
+" \n"
+"\n"
+" \n"
+" \n"
+" \n"
+" \n"
+" "
+
 #: src/DataType/Lc/Demographicterms.php:24
 msgid "LC: Demographic Group Terms"
 msgstr ""
@@ -1270,6 +1156,68 @@ msgstr ""
 " \n"
 " \n"
 " "
+
+#: src/DataType/AbstractDataType.php:30
+msgid "Value Suggest"
+msgstr ""
+"Prijedlog vrijednosti\n"
+" \n"
+" \n"
+" \n"
+" "
+
+#: src/DataType/RightsStatements/Rightsstatements.php:21
+msgid ""
+"RightsStatements.org: Standardized rights statements for online cultural "
+"heritage"
+msgstr ""
+"RightsStatements.org: Standardizirane izjave o pravima za internetsku "
+"kulturnu baštinu "
+
+#: src/DataType/Homosaurus/Homosaurus.php:21
+msgid "Homosaurus: an international LGBTQ linked data vocabulary"
+msgstr "Homosaurus: međunarodni LGBTQ vokabular povezanih podataka "
+
+#: src/DataType/Periodo/Periodo.php:21
+msgid ""
+"PeriodO: A gazetteer of period definitions for linking and visualizing data"
+msgstr ""
+"PeriodO: Glasnik definicija razdoblja za povezivanje i vizualizaciju podataka\n"
+" \n"
+"\n"
+" \n"
+" \n"
+" \n"
+" \n"
+" "
+
+#: src/DataType/Dc/Elements.php:21
+msgid "Dublin Core: Elements"
+msgstr ""
+
+#: src/DataType/Dc/Terms.php:21
+msgid "Dublin Core: Terms"
+msgstr ""
+
+#: src/DataType/Dc/Types.php:21
+msgid "Dublin Core: Types"
+msgstr ""
+
+#: src/DataType/Dc/Classes.php:21
+msgid "Dublin Core: Classes"
+msgstr ""
+
+#: src/DataType/Pactols/Sujets.php:21
+msgid "Pactols: Sujets (Subject)"
+msgstr "Pactols: Sujets (Subjekt)"
+
+#: src/DataType/Pactols/All.php:21
+msgid "Pactols: All thesaurus"
+msgstr "Pactols: Cijeli tezaurus"
+
+#: src/DataType/Oclc/Fast.php:21
+msgid "OCLC: Faceted Application of Subject Terminologies (FAST)"
+msgstr "OCLC: facetirana primjena predmetne terminologije (FAST)"
 
 #: src/DataType/Oclc/Viaf.php:21
 msgid "OCLC: The Virtual International Authority File (VIAF)"
@@ -1283,10 +1231,10 @@ msgstr ""
 " \n"
 " "
 
-#: src/DataType/Oclc/Fast.php:21
-msgid "OCLC: Faceted Application of Subject Terminologies (FAST)"
+#: src/DataType/Getty/Aat.php:21
+msgid "Getty: The Art & Architecture Thesaurus (AAT)"
 msgstr ""
-"OCLC: facetirana primjena predmetne terminologije (FAST)\n"
+"Getty: Riječ o umjetnosti i arhitekturi (AAT)\n"
 " \n"
 "\n"
 " \n"
@@ -1295,10 +1243,38 @@ msgstr ""
 " \n"
 " "
 
-#: src/DataType/RightsStatements/Rightsstatements.php:21
-msgid ""
-"RightsStatements.org: Standardized rights statements for online cultural "
-"heritage"
+#: src/DataType/Getty/Tgn.php:21
+msgid "Getty: The Getty Thesaurus of Geographic Names (TGN)"
 msgstr ""
-"RightsStatements.org: Standardizirane izjave o pravima za internetsku "
-"kulturnu baštinu "
+"Getty: Gettyjev tezaurus geografskih imena (TGN)\n"
+" \n"
+"\n"
+" \n"
+" \n"
+" \n"
+" \n"
+" "
+
+#: src/DataType/Getty/Ulan.php:21
+msgid "Getty: The Union List of Artist Names (ULAN)"
+msgstr ""
+"Getty: Unija Popis imena izvođača (ULAN)\n"
+" \n"
+"\n"
+" \n"
+" \n"
+" \n"
+" \n"
+" "
+
+#: src/DataType/Geonames/Geonames.php:21
+msgid "Geonames: The GeoNames geographical database"
+msgstr ""
+"Geonames: Zemljopisna baza podataka GeoNames\n"
+" \n"
+"\n"
+" \n"
+" \n"
+" \n"
+" \n"
+" "

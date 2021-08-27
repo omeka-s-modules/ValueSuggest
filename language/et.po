@@ -4,17 +4,17 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rivo Zängov <eraser@eraser.ee>, 2019
 # Moon Ika, 2019
+# Rivo Zängov <eraser@eraser.ee>, 2021
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-22 11:57-0400\n"
+"POT-Creation-Date: 2021-08-27 12:07-0400\n"
 "PO-Revision-Date: 2017-09-14 20:16+0000\n"
-"Last-Translator: Moon Ika, 2019\n"
+"Last-Translator: Rivo Zängov <eraser@eraser.ee>, 2021\n"
 "Language-Team: Estonian (https://www.transifex.com/omeka/teams/14184/et/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -48,7 +48,7 @@ msgstr ""
 
 #: src/Service/IdRefDataTypeFactory.php:18
 msgid "IdRef: Person names"
-msgstr ""
+msgstr "IdRef: Isikunimed"
 
 #: src/Service/IdRefDataTypeFactory.php:22
 msgid "IdRef: Collectivities"
@@ -56,7 +56,7 @@ msgstr ""
 
 #: src/Service/IdRefDataTypeFactory.php:26
 msgid "IdRef: Conferences"
-msgstr ""
+msgstr "IdRef: Konverentsid"
 
 #: src/Service/IdRefDataTypeFactory.php:30
 msgid "IdRef: Subjects"
@@ -72,11 +72,11 @@ msgstr ""
 
 #: src/Service/IdRefDataTypeFactory.php:42
 msgid "IdRef: Geography"
-msgstr ""
+msgstr "IdRef: Geograafia"
 
 #: src/Service/IdRefDataTypeFactory.php:46
 msgid "IdRef: Family names"
-msgstr ""
+msgstr "IdRef: Perekonnanimed"
 
 #: src/Service/IdRefDataTypeFactory.php:50
 msgid "IdRef: Uniform titles"
@@ -84,11 +84,11 @@ msgstr ""
 
 #: src/Service/IdRefDataTypeFactory.php:54
 msgid "IdRef: Authors-Titles"
-msgstr ""
+msgstr "IdRef: Autorid-pealkirjad"
 
 #: src/Service/IdRefDataTypeFactory.php:58
 msgid "IdRef: Trademarks"
-msgstr ""
+msgstr "IdRef: Kaubamärgid"
 
 #: src/Service/IdRefDataTypeFactory.php:62
 msgid "IdRef: PPN id"
@@ -96,42 +96,6 @@ msgstr ""
 
 #: src/Service/IdRefDataTypeFactory.php:66
 msgid "IdRef: Library registry (RCR)"
-msgstr ""
-
-#: src/Service/TesaurosDataTypeFactory.php:12
-msgid "Tesauros: Diccionario de Bienes Culturales"
-msgstr ""
-
-#: src/Service/TesaurosDataTypeFactory.php:16
-msgid "Tesauros: Diccionario de Materias"
-msgstr ""
-
-#: src/Service/TesaurosDataTypeFactory.php:20
-msgid "Tesauros: Diccionario de Técnicas"
-msgstr ""
-
-#: src/Service/TesaurosDataTypeFactory.php:24
-msgid "Tesauros: Diccionario de Contextos Culturales"
-msgstr ""
-
-#: src/Service/TesaurosDataTypeFactory.php:28
-msgid "Tesauros: Diccionario Geográfico"
-msgstr ""
-
-#: src/Service/TesaurosDataTypeFactory.php:32
-msgid "Tesauros: Diccionario de Toponimia Histórica"
-msgstr ""
-
-#: src/Service/TesaurosDataTypeFactory.php:36
-msgid "Tesauros: Diccionario de Cerámica"
-msgstr ""
-
-#: src/Service/TesaurosDataTypeFactory.php:40
-msgid "Tesauros: Diccionario de Numismática"
-msgstr ""
-
-#: src/Service/TesaurosDataTypeFactory.php:44
-msgid "Tesauros: Diccionario de Mobiliario"
 msgstr ""
 
 #: src/Service/RdaDataTypeFactory.php:12
@@ -276,7 +240,7 @@ msgstr ""
 
 #: src/Service/RdaDataTypeFactory.php:152
 msgid "RDA: Terms"
-msgstr ""
+msgstr "RDA: Terminid"
 
 #: src/Service/RdaDataTypeFactory.php:156
 msgid "RDA: Track Configuration"
@@ -350,24 +314,126 @@ msgstr ""
 msgid "RDA: Storage Medium Format"
 msgstr ""
 
+#: src/Service/TesaurosDataTypeFactory.php:12
+msgid "Tesauros: Diccionario de Bienes Culturales"
+msgstr ""
+
+#: src/Service/TesaurosDataTypeFactory.php:16
+msgid "Tesauros: Diccionario de Materias"
+msgstr ""
+
+#: src/Service/TesaurosDataTypeFactory.php:20
+msgid "Tesauros: Diccionario de Técnicas"
+msgstr ""
+
+#: src/Service/TesaurosDataTypeFactory.php:24
+msgid "Tesauros: Diccionario de Contextos Culturales"
+msgstr ""
+
+#: src/Service/TesaurosDataTypeFactory.php:28
+msgid "Tesauros: Diccionario Geográfico"
+msgstr ""
+
+#: src/Service/TesaurosDataTypeFactory.php:32
+msgid "Tesauros: Diccionario de Toponimia Histórica"
+msgstr ""
+
+#: src/Service/TesaurosDataTypeFactory.php:36
+msgid "Tesauros: Diccionario de Cerámica"
+msgstr ""
+
+#: src/Service/TesaurosDataTypeFactory.php:40
+msgid "Tesauros: Diccionario de Numismática"
+msgstr ""
+
+#: src/Service/TesaurosDataTypeFactory.php:44
+msgid "Tesauros: Diccionario de Mobiliario"
+msgstr ""
+
+#: src/DataType/Lc/Genreforms.php:24
+msgid "LC: Genre/Form Terms"
+msgstr "LC: Žanri/vormi terminid"
+
+#: src/DataType/Lc/Geographicareas.php:24
+msgid "LC: MARC Geographic Areas"
+msgstr "LC: MARC Geograafilised alad"
+
+#: src/DataType/Lc/Names.php:24
+msgid "LC: Name Authority File"
+msgstr ""
+
+#: src/DataType/Lc/Childrenssubjects.php:24
+msgid "LC: Children's Subject Headings"
+msgstr ""
+
+#: src/DataType/Lc/Iso6391.php:24
+msgid "LC: ISO639-1 Languages"
+msgstr "LC: ISO639-1 keeled"
+
+#: src/DataType/Lc/Graphicmaterials.php:24
+msgid "LC: Thesaurus for Graphic Materials"
+msgstr ""
+
+#: src/DataType/Lc/Organizations.php:24
+msgid "LC: Cultural Heritage Organizations"
+msgstr ""
+
+#: src/DataType/Lc/Subjects.php:24
+msgid "LC: Subject Headings"
+msgstr "LC: Teemade pealkirjad"
+
+#: src/DataType/Lc/Ethnographicterms.php:24
+msgid "LC: AFS Ethnographic Thesaurus"
+msgstr ""
+
+#: src/DataType/Lc/Classification.php:24
+msgid "LC: Classification"
+msgstr "LC: Klassifikatsioon"
+
+#: src/DataType/Lc/Countries.php:24
+msgid "LC: MARC Countries"
+msgstr "LC: MARC riigid"
+
+#: src/DataType/Lc/Performancemediums.php:24
+msgid "LC: Medium of Performance Thesaurus for Music"
+msgstr ""
+
+#: src/DataType/Lc/Relators.php:24
+msgid "LC: MARC Relators"
+msgstr "LC: MARC seosed"
+
+#: src/DataType/Lc/Languages.php:24
+msgid "LC: MARC Languages"
+msgstr "LC: MARC keeled"
+
+#: src/DataType/Lc/Iso6392.php:24
+msgid "LC: ISO639-2 Languages"
+msgstr "LC: ISO639-2 keeled"
+
+#: src/DataType/Lc/All.php:21
+msgid "LC: All"
+msgstr "LC: Kõik"
+
+#: src/DataType/Lc/Iso6395.php:24
+msgid "LC: ISO639-5 Languages"
+msgstr "LC: ISO639-5 keeled"
+
+#: src/DataType/Lc/Demographicterms.php:24
+msgid "LC: Demographic Group Terms"
+msgstr "LC: Demograafilised grupi terminid"
+
+#: src/DataType/AbstractDataType.php:30
+msgid "Value Suggest"
+msgstr "Väärtuste soovitamine"
+
+#: src/DataType/RightsStatements/Rightsstatements.php:21
+msgid ""
+"RightsStatements.org: Standardized rights statements for online cultural "
+"heritage"
+msgstr ""
+
 #: src/DataType/Homosaurus/Homosaurus.php:21
 msgid "Homosaurus: an international LGBTQ linked data vocabulary"
-msgstr ""
-
-#: src/DataType/Geonames/Geonames.php:21
-msgid "Geonames: The GeoNames geographical database"
-msgstr ""
-
-#: src/DataType/Getty/Ulan.php:21
-msgid "Getty: The Union List of Artist Names (ULAN)"
-msgstr ""
-
-#: src/DataType/Getty/Tgn.php:21
-msgid "Getty: The Getty Thesaurus of Geographic Names (TGN)"
-msgstr ""
-
-#: src/DataType/Getty/Aat.php:21
-msgid "Getty: The Art & Architecture Thesaurus (AAT)"
 msgstr ""
 
 #: src/DataType/Periodo/Periodo.php:21
@@ -375,16 +441,8 @@ msgid ""
 "PeriodO: A gazetteer of period definitions for linking and visualizing data"
 msgstr ""
 
-#: src/DataType/AbstractDataType.php:30
-msgid "Value Suggest"
-msgstr "Väärtuste soovitamine"
-
-#: src/DataType/Pactols/All.php:21
-msgid "Pactols: All thesaurus"
-msgstr ""
-
-#: src/DataType/Pactols/Sujets.php:21
-msgid "Pactols: Sujets (Subject)"
+#: src/DataType/Dc/Elements.php:21
+msgid "Dublin Core: Elements"
 msgstr ""
 
 #: src/DataType/Dc/Terms.php:21
@@ -395,96 +453,38 @@ msgstr ""
 msgid "Dublin Core: Types"
 msgstr ""
 
-#: src/DataType/Dc/Elements.php:21
-msgid "Dublin Core: Elements"
-msgstr ""
-
 #: src/DataType/Dc/Classes.php:21
 msgid "Dublin Core: Classes"
 msgstr ""
 
-#: src/DataType/Lc/Languages.php:24
-msgid "LC: MARC Languages"
-msgstr "LC: MARC keeled"
-
-#: src/DataType/Lc/All.php:21
-msgid "LC: All"
-msgstr "LC: Kõik"
-
-#: src/DataType/Lc/Graphicmaterials.php:24
-msgid "LC: Thesaurus for Graphic Materials"
+#: src/DataType/Pactols/Sujets.php:21
+msgid "Pactols: Sujets (Subject)"
 msgstr ""
 
-#: src/DataType/Lc/Iso6392.php:24
-msgid "LC: ISO639-2 Languages"
-msgstr "LC: ISO639-2 keeled"
-
-#: src/DataType/Lc/Subjects.php:24
-msgid "LC: Subject Headings"
-msgstr "LC: Teemade pealkirjad"
-
-#: src/DataType/Lc/Iso6395.php:24
-msgid "LC: ISO639-5 Languages"
-msgstr "LC: ISO639-5 keeled"
-
-#: src/DataType/Lc/Iso6391.php:24
-msgid "LC: ISO639-1 Languages"
-msgstr "LC: ISO639-1 keeled"
-
-#: src/DataType/Lc/Classification.php:24
-msgid "LC: Classification"
-msgstr "LC: Klassifikatsioon"
-
-#: src/DataType/Lc/Genreforms.php:24
-msgid "LC: Genre/Form Terms"
-msgstr "LC: Žanri/vormi terminid"
-
-#: src/DataType/Lc/Relators.php:24
-msgid "LC: MARC Relators"
-msgstr "LC: MARC seosed"
-
-#: src/DataType/Lc/Organizations.php:24
-msgid "LC: Cultural Heritage Organizations"
-msgstr ""
-
-#: src/DataType/Lc/Childrenssubjects.php:24
-msgid "LC: Children's Subject Headings"
-msgstr ""
-
-#: src/DataType/Lc/Geographicareas.php:24
-msgid "LC: MARC Geographic Areas"
-msgstr "LC: MARC Geograafilised alad"
-
-#: src/DataType/Lc/Names.php:24
-msgid "LC: Name Authority File"
-msgstr ""
-
-#: src/DataType/Lc/Performancemediums.php:24
-msgid "LC: Medium of Performance Thesaurus for Music"
-msgstr ""
-
-#: src/DataType/Lc/Countries.php:24
-msgid "LC: MARC Countries"
-msgstr "LC: MARC riigid"
-
-#: src/DataType/Lc/Ethnographicterms.php:24
-msgid "LC: AFS Ethnographic Thesaurus"
-msgstr ""
-
-#: src/DataType/Lc/Demographicterms.php:24
-msgid "LC: Demographic Group Terms"
-msgstr "LC: Demograafilised grupi terminid"
-
-#: src/DataType/Oclc/Viaf.php:21
-msgid "OCLC: The Virtual International Authority File (VIAF)"
+#: src/DataType/Pactols/All.php:21
+msgid "Pactols: All thesaurus"
 msgstr ""
 
 #: src/DataType/Oclc/Fast.php:21
 msgid "OCLC: Faceted Application of Subject Terminologies (FAST)"
 msgstr ""
 
-#: src/DataType/RightsStatements/Rightsstatements.php:21
-msgid ""
-"RightsStatements.org: Standardized rights statements for online cultural "
-"heritage"
+#: src/DataType/Oclc/Viaf.php:21
+msgid "OCLC: The Virtual International Authority File (VIAF)"
+msgstr ""
+
+#: src/DataType/Getty/Aat.php:21
+msgid "Getty: The Art & Architecture Thesaurus (AAT)"
+msgstr ""
+
+#: src/DataType/Getty/Tgn.php:21
+msgid "Getty: The Getty Thesaurus of Geographic Names (TGN)"
+msgstr ""
+
+#: src/DataType/Getty/Ulan.php:21
+msgid "Getty: The Union List of Artist Names (ULAN)"
+msgstr ""
+
+#: src/DataType/Geonames/Geonames.php:21
+msgid "Geonames: The GeoNames geographical database"
 msgstr ""
