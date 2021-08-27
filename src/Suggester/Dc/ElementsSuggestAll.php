@@ -2,7 +2,6 @@
 namespace ValueSuggest\Suggester\Dc;
 
 use ValueSuggest\Suggester\SuggesterInterface;
-use Laminas\Http\Client;
 
 class ElementsSuggestAll implements SuggesterInterface
 {
@@ -124,7 +123,7 @@ class ElementsSuggestAll implements SuggesterInterface
             ],
         ];
         // Alphabetize by value.
-        usort($suggestions, function($a, $b) {
+        usort($suggestions, function ($a, $b) {
             return $a['value'] <=> $b['value'];
         });
         return $suggestions;
