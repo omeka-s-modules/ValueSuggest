@@ -29,6 +29,9 @@ return [
             'valuesuggestall:dc:terms' => \ValueSuggest\Service\DcDataTypeFactory::class,
             'valuesuggestall:dc:types' => \ValueSuggest\Service\DcDataTypeFactory::class,
 
+            /* Gemeinsame Normdatei (GND) */
+            'valuesuggest:gnd:gnd' => \ValueSuggest\Service\GndDataTypeFactory::class,
+
             /* Geonames */
             'valuesuggest:geonames:geonames' => \ValueSuggest\Service\GeonamesDataTypeFactory::class,
 

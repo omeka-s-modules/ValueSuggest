@@ -33,6 +33,10 @@ This module includes the following vocabularies:
 - Terms
 - Types
 
+### [Gemeinsame Normdatei (GND)](http://lobid.org/gnd)
+
+- The GND contains standardized entries for persons, corporations, congresses, geographical areas, key words and work titles.
+
 ### [GeoNames](http://www.geonames.org/)
 
 - The GeoNames geographical database
