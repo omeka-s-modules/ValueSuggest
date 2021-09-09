@@ -9,23 +9,35 @@ class McDataTypeFactory implements FactoryInterface
 {
     protected $types = [
         'valuesuggestall:mc:T262' => [
-            'label' => 'Ministère de la Culture: Catégories techniques et domaines', // @translate
+            'label' => "Ministère de la Culture: Catégories techniques et domaines", // @translate
             'scheme' => 'http://data.culture.fr/thesaurus/resource/ark:/67717/T262',
         ],
         'valuesuggestall:mc:01952848-4419-431e-8e81-419c1d46b30d' => [
-            'label' => 'Ministère de la Culture: Domaines archivistiques pour l\'indexation des circulaires', // @translate
+            'label' => "Ministère de la Culture: Domaines archivistiques pour l'indexation des circulaires", // @translate
             'scheme' => 'http://data.culture.fr/thesaurus/resource/ark:/67717/01952848-4419-431e-8e81-419c1d46b30d',
         ],
         'valuesuggestall:mc:T124' => [
-            'label' => 'Ministère de la Culture: Etat de conservation du patrimoine mobilier', // @translate
+            'label' => "Ministère de la Culture: Etat de conservation du patrimoine mobilier", // @translate
             'scheme' => 'http://data.culture.fr/thesaurus/resource/ark:/67717/T124',
         ],
         'valuesuggestall:mc:T529' => [
-            'label' => 'Ministère de la Culture: Inscriptions, marques, emblématique et poinçons', // @translate
+            'label' => "Ministère de la Culture: Inscriptions, marques, emblématique et poinçons", // @translate
             'scheme' => 'http://data.culture.fr/thesaurus/resource/ark:/67717/T529',
         ],
+        'valuesuggestall:mc:T2' => [
+            'label' => "Ministère de la Culture: Liste d'autorité Actions pour l'indexation des archives locales", // @translate
+            'scheme' => 'http://data.culture.fr/thesaurus/resource/ark:/67717/T2',
+        ],
+        'valuesuggestall:mc:T4' => [
+            'label' => "Ministère de la Culture: Liste d'autorité Contexte historique pour l'indexation des archives locales", // @translate
+            'scheme' => 'http://data.culture.fr/thesaurus/resource/ark:/67717/T4',
+        ],
+        'valuesuggestall:mc:T3' => [
+            'label' => "Ministère de la Culture: Liste d'autorité Typologie documentaire pour l'indexation des archives locales", // @translate
+            'scheme' => 'http://data.culture.fr/thesaurus/resource/ark:/67717/T3',
+        ],
         // 'valuesuggestall:mc:' => [
-        //     'label' => '', // @translate
+        //     'label' => "Ministère de la Culture: ", // @translate
         //     'scheme' => '',
         // ],
     ];

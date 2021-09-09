@@ -173,6 +173,9 @@ return [
             'valuesuggestall:mc:01952848-4419-431e-8e81-419c1d46b30d' => \ValueSuggest\Service\McDataTypeFactory::class,
             'valuesuggestall:mc:T124' => \ValueSuggest\Service\McDataTypeFactory::class,
             'valuesuggestall:mc:T529' => \ValueSuggest\Service\McDataTypeFactory::class,
+            'valuesuggestall:mc:T2' => \ValueSuggest\Service\McDataTypeFactory::class,
+            'valuesuggestall:mc:T4' => \ValueSuggest\Service\McDataTypeFactory::class,
+            'valuesuggestall:mc:T3' => \ValueSuggest\Service\McDataTypeFactory::class,
         ],
     ],
     'router' => [
