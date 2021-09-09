@@ -190,6 +190,48 @@ This module includes the following vocabularies:
 - Nomenclatura de Ciencia y Tecnología
 - Biblioteca Digital Floridablanca
 
+### [Les vocabulaires du Ministère de la Culture](http://data.culture.fr/thesaurus/)
+
+- Catégories techniques et domaines - Inventaire/MH
+- Domaines archivistiques pour l'indexation des circulaires
+- Etat de conservation du patrimoine mobilier - Inventaire/MH
+- Inscriptions, marques, emblématique et poinçons - Inventaire/MH
+- Liste d'autorité Actions pour l'indexation des archives locales
+- Liste d'autorité Contexte historique pour l'indexation des archives locales
+- Liste d'autorité Typologie documentaire pour l'indexation des archives locales
+- Liste d'autorités Auteurs - Joconde
+- Liste d'autorités Domaines - Joconde
+- Liste d'autorités Découverte - Joconde
+- Liste d'autorités Dénomination - Joconde
+- Liste d'autorités Genèse - Joconde
+- Liste d'autorités Inscriptions - Joconde
+- Liste d'autorités Lieux - Joconde
+- Liste d'autorités Localisation - Joconde
+- Liste d'autorités Périodes - Joconde
+- Liste d'autorités Représentation - Joconde
+- Liste d'autorités Sources de la représentation - Joconde
+- Liste d'autorités Techniques – Joconde
+- Liste d'autorités Utilisation - Joconde
+- Liste d'autorités Écoles - Joconde
+- Liste d'autorités Époques - Joconde
+- Matériau de la couverture - Inventaire/MH
+- Matériau du gros-oeuvre et mise en oeuvre - Inventaire/MH
+- Matériaux et techniques du patrimoine mobilier - Inventaire/MH
+- Nomenclatures HADOC
+- Référentiel de communicabilité des archives publiques
+- Stade de la création des objets mobiliers - Inventaire/MH
+- Statut de la propriété des Biens culturels - Inventaire/MH
+- Techniques photographiques
+- Thésaurus de la désignation des objets mobiliers
+- Thésaurus de la désignation des œuvres architecturales et des espaces aménagés
+- Thésaurus-matières pour l'indexation des archives locales
+- Type de la couverture - Inventaire/MH
+- Type de protection MH - Inventaire/MH
+- Vocabulaire des activités des entités productrices d'archives
+- Vocabulaire des altérations
+- Vocabulaire des domaines d'action ou objets des entités productrices d'archives
+- Vocabulaire pour les techniques photographiques
+
 # Copyright
 
 ValueSuggest is Copyright © 2017-present Corporation for Digital Scholarship, Vienna, Virginia, USA http://digitalscholar.org

@@ -167,6 +167,12 @@ return [
             'valuesuggest:unesco:unescothes' => \ValueSuggest\Service\UnescoDataTypeFactory::class,
             'valuesuggest:unesco:unesco6' => \ValueSuggest\Service\UnescoDataTypeFactory::class,
             'valuesuggest:unesco:floridablanca' => \ValueSuggest\Service\UnescoDataTypeFactory::class,
+
+            /* Les vocabulaires du Ministère de la Culture */
+            'valuesuggestall:mc:T262' => \ValueSuggest\Service\McDataTypeFactory::class,
+            'valuesuggestall:mc:01952848-4419-431e-8e81-419c1d46b30d' => \ValueSuggest\Service\McDataTypeFactory::class,
+            'valuesuggestall:mc:T124' => \ValueSuggest\Service\McDataTypeFactory::class,
+            'valuesuggestall:mc:T529' => \ValueSuggest\Service\McDataTypeFactory::class,
         ],
     ],
     'router' => [
