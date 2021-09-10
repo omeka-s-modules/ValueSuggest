@@ -84,6 +84,21 @@ return [
             'valuesuggest:lc:iso6395' => Service\LcDataTypeFactory::class,
             // @todo Add more LC data types
 
+            /* Nuovo Soggettario */
+            'valuesuggest:ns:ThesCF5' => Service\NsDataTypeFactory::class,
+            'valuesuggest:ns:ThesCF6' => Service\NsDataTypeFactory::class,
+            'valuesuggest:ns:ThesCF7' => Service\NsDataTypeFactory::class,
+            'valuesuggest:ns:ThesCF1' => Service\NsDataTypeFactory::class,
+            'valuesuggest:ns:ThesCF2' => Service\NsDataTypeFactory::class,
+            'valuesuggest:ns:ThesCF8' => Service\NsDataTypeFactory::class,
+            'valuesuggest:ns:ThesCF15' => Service\NsDataTypeFactory::class,
+            'valuesuggest:ns:ThesCF3' => Service\NsDataTypeFactory::class,
+            'valuesuggest:ns:ThesCF4' => Service\NsDataTypeFactory::class,
+            'valuesuggest:ns:ThesCF9' => Service\NsDataTypeFactory::class,
+            'valuesuggest:ns:ThesCF12' => Service\NsDataTypeFactory::class,
+            'valuesuggest:ns:ThesCF13' => Service\NsDataTypeFactory::class,
+            'valuesuggest:ns:ThesCF14' => Service\NsDataTypeFactory::class,
+
             /* OCLC */
             'valuesuggest:oclc:viaf' => Service\OclcDataTypeFactory::class,
             'valuesuggest:oclc:fast' => Service\OclcDataTypeFactory::class,

@@ -89,6 +89,22 @@ This module includes the following vocabularies:
 - Subject Headings
 - Thesaurus for Graphic Materials
 
+### [Nuovo Soggettario](https://thes.bncf.firenze.sbn.it/)
+
+- Agenti: Organismi
+- Agenti: Organizzazioni
+- Agenti: Persone e gruppi
+- Azioni: Attività
+- Azioni: Discipline
+- Azioni: Processi
+- Cose: Forme
+- Cose: Materia
+- Cose: Oggetti
+- Cose: Spazio
+- Cose: Strumenti
+- Cose: Strutture
+- Tempo
+
 ### [OCLC Metadata Services](https://www.oclc.org/en/services/a-z.html/:F2664:/)
 
 - Faceted Application of Subject Terminologies (FAST)
