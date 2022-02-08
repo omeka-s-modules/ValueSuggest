@@ -5,16 +5,16 @@
 # 
 # Translators:
 # Moon Ika, 2019
-# Rivo Zängov <eraser@eraser.ee>, 2021
+# Rivo Zängov <eraser@eraser.ee>, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-14 16:28-0400\n"
+"POT-Creation-Date: 2022-02-08 12:07-0500\n"
 "PO-Revision-Date: 2017-09-14 20:16+0000\n"
-"Last-Translator: Rivo Zängov <eraser@eraser.ee>, 2021\n"
+"Last-Translator: Rivo Zängov <eraser@eraser.ee>, 2022\n"
 "Language-Team: Estonian (https://www.transifex.com/omeka/teams/14184/et/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -44,7 +44,7 @@ msgstr ""
 
 #: src/Service/IdRefDataTypeFactory.php:14
 msgid "IdRef: All"
-msgstr ""
+msgstr "IdRef: Kõik"
 
 #: src/Service/IdRefDataTypeFactory.php:18
 msgid "IdRef: Person names"
@@ -92,7 +92,7 @@ msgstr "IdRef: Kaubamärgid"
 
 #: src/Service/IdRefDataTypeFactory.php:62
 msgid "IdRef: PPN id"
-msgstr ""
+msgstr "IdRef: PPN id"
 
 #: src/Service/IdRefDataTypeFactory.php:66
 msgid "IdRef: Library registry (RCR)"
@@ -686,19 +686,19 @@ msgstr ""
 
 #: src/DataType/Dc/Elements.php:21
 msgid "Dublin Core: Elements"
-msgstr ""
+msgstr "Dublin Core: Elemendid"
 
 #: src/DataType/Dc/Terms.php:21
 msgid "Dublin Core: Terms"
-msgstr ""
+msgstr "Dublin Core: Terminid"
 
 #: src/DataType/Dc/Types.php:21
 msgid "Dublin Core: Types"
-msgstr ""
+msgstr "Dublin Core: Liigid"
 
 #: src/DataType/Dc/Classes.php:21
 msgid "Dublin Core: Classes"
-msgstr ""
+msgstr "Dublin Core: Klassid"
 
 #: src/DataType/Pactols/Sujets.php:21
 msgid "Pactols: Sujets (Subject)"
