@@ -46,15 +46,15 @@ class RdaSuggestAll implements SuggesterInterface
         $suggestions = [];
         $results = json_decode($response->getBody(), true);
         foreach ($results['@graph'] as $result) {
-            if ('Concept' !== $result['@type']) {
+            if (!isset($result['inScheme'])) {
                 continue;
             }
             $value = isset($result['prefLabel'][$lang])
                 ? $result['prefLabel'][$lang]
                 : $result['prefLabel']['en'];
-            $info = isset($result['definition'][$lang])
-                ? $result['definition'][$lang]
-                : (isset($result['definition']['en']) ? $result['definition']['en'] : null);
+            $info = isset($result['ToolkitDefinition'][$lang])
+                ? $result['ToolkitDefinition'][$lang]
+                : (isset($result['ToolkitDefinition']['en']) ? $result['ToolkitDefinition']['en'] : null);
             $suggestions[] = [
                 'value' => $value,
                 'data' => [
