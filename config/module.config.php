@@ -83,6 +83,24 @@ return [
             'valuesuggest:lc:iso6392' => Service\LcDataTypeFactory::class,
             'valuesuggest:lc:iso6395' => Service\LcDataTypeFactory::class,
             // @todo Add more LC data types
+            
+            /* Network of Terms of the Dutch National Network for Digital Heritage */
+            'valuesuggest:ndeterms:abr' => \ValueSuggest\Service\NdeTermsDataTypeFactory::class,
+            'valuesuggest:ndeterms:btt' => \ValueSuggest\Service\NdeTermsDataTypeFactory::class,
+            'valuesuggest:ndeterms:cht' => \ValueSuggest\Service\NdeTermsDataTypeFactory::class,
+            'valuesuggest:ndeterms:gtaagen' => \ValueSuggest\Service\NdeTermsDataTypeFactory::class,
+            'valuesuggest:ndeterms:gtaaond' => \ValueSuggest\Service\NdeTermsDataTypeFactory::class,
+            'valuesuggest:ndeterms:muzgs' => \ValueSuggest\Service\NdeTermsDataTypeFactory::class,
+            'valuesuggest:ndeterms:muzpp' => \ValueSuggest\Service\NdeTermsDataTypeFactory::class,
+            'valuesuggest:ndeterms:muzsch' => \ValueSuggest\Service\NdeTermsDataTypeFactory::class,
+            'valuesuggest:ndeterms:nta' => \ValueSuggest\Service\NdeTermsDataTypeFactory::class,
+            'valuesuggest:ndeterms:rkdartists' => \ValueSuggest\Service\NdeTermsDataTypeFactory::class,
+            'valuesuggest:ndeterms:tnmw' => \ValueSuggest\Service\NdeTermsDataTypeFactory::class,
+            'valuesuggest:ndeterms:ttwn' => \ValueSuggest\Service\NdeTermsDataTypeFactory::class,
+            'valuesuggest:ndeterms:wikiall' => \ValueSuggest\Service\NdeTermsDataTypeFactory::class,
+            'valuesuggest:ndeterms:wikipers' => \ValueSuggest\Service\NdeTermsDataTypeFactory::class,
+            'valuesuggest:ndeterms:wikiplacenlbe' => \ValueSuggest\Service\NdeTermsDataTypeFactory::class,
+            'valuesuggest:ndeterms:wikistrnl' => \ValueSuggest\Service\NdeTermsDataTypeFactory::class,
 
             /* Nuovo Soggettario */
             'valuesuggest:ns:ThesCF5' => Service\NsDataTypeFactory::class,
