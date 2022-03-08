@@ -28,6 +28,7 @@ class NdeTerms extends AbstractDataType
     public function getSuggester()
     {
         return new NdeTermsSuggest(
+            $this->services->get('Omeka\HttpClient'),
             $this->ndeTermsSource
         );
     }
