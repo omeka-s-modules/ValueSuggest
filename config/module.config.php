@@ -83,7 +83,7 @@ return [
             'valuesuggest:lc:iso6392' => Service\LcDataTypeFactory::class,
             'valuesuggest:lc:iso6395' => Service\LcDataTypeFactory::class,
             // @todo Add more LC data types
-            
+
             /* Network of Terms of the Dutch National Network for Digital Heritage */
             'valuesuggest:ndeterms:abr' => \ValueSuggest\Service\NdeTermsDataTypeFactory::class,
             'valuesuggest:ndeterms:btt' => \ValueSuggest\Service\NdeTermsDataTypeFactory::class,

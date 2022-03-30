@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-08 12:07-0500\n"
+"POT-Creation-Date: 2022-03-30 10:29-0400\n"
 "PO-Revision-Date: 2017-09-14 20:16+0000\n"
 "Last-Translator: Rubén Alcaraz Martínez <rubenalcarazmartinez@gmail.com>, 2021\n"
 "Language-Team: Catalan (Spain) (https://www.transifex.com/omeka/teams/14184/ca_ES/)\n"
@@ -40,6 +40,70 @@ msgstr "UNESCO: Nomenclatura de Ciencia y Tecnología"
 #: src/Service/UnescoDataTypeFactory.php:20
 msgid "UNESCO: Biblioteca Digital Floridablanca"
 msgstr "UNESCO: Biblioteca Digital Floridablanca"
+
+#: src/Service/NdeTermsDataTypeFactory.php:16
+msgid "NDE: Archeologisch Basisregister"
+msgstr ""
+
+#: src/Service/NdeTermsDataTypeFactory.php:20
+msgid "NDE: Brinkman trefwoordenthesaurus"
+msgstr ""
+
+#: src/Service/NdeTermsDataTypeFactory.php:24
+msgid "NDE: Cultuurhistorische Thesaurus"
+msgstr ""
+
+#: src/Service/NdeTermsDataTypeFactory.php:28
+msgid "NDE: GTAA: genres"
+msgstr ""
+
+#: src/Service/NdeTermsDataTypeFactory.php:32
+msgid "NDE: GTAA: onderwerpen"
+msgstr ""
+
+#: src/Service/NdeTermsDataTypeFactory.php:36
+msgid "NDE: Muziek: genres en stijlen"
+msgstr ""
+
+#: src/Service/NdeTermsDataTypeFactory.php:40
+msgid "NDE: Muziek: personen en groepen"
+msgstr ""
+
+#: src/Service/NdeTermsDataTypeFactory.php:44
+msgid "NDE: Muziekschatten: onderwerpen"
+msgstr ""
+
+#: src/Service/NdeTermsDataTypeFactory.php:48
+msgid "NDE: Nederlandse Thesaurus van Auteursnamen"
+msgstr ""
+
+#: src/Service/NdeTermsDataTypeFactory.php:52
+msgid "NDE: RKDartists"
+msgstr ""
+
+#: src/Service/NdeTermsDataTypeFactory.php:56
+msgid "NDE: Thesaurus Nationaal Museum van Wereldculturen"
+msgstr ""
+
+#: src/Service/NdeTermsDataTypeFactory.php:60
+msgid "NDE: Thesaurus Tweede Wereldoorlog Nederland"
+msgstr ""
+
+#: src/Service/NdeTermsDataTypeFactory.php:64
+msgid "NDE: Wikidata: alle entiteiten"
+msgstr ""
+
+#: src/Service/NdeTermsDataTypeFactory.php:68
+msgid "NDE: Wikidata: personen"
+msgstr ""
+
+#: src/Service/NdeTermsDataTypeFactory.php:72
+msgid "NDE: Wikidata: plaatsen in Nederland en België"
+msgstr ""
+
+#: src/Service/NdeTermsDataTypeFactory.php:76
+msgid "NDE: Wikidata: straten in Nederland"
+msgstr ""
 
 #: src/Service/IdRefDataTypeFactory.php:14
 msgid "IdRef: All"
