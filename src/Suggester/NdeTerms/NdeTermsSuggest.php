@@ -129,9 +129,6 @@ EOD;
                         array_push($suggestions, ['value' => $label, 'data' => ['uri' => $uri, 'info' => null]]);
                     }
                 }
-                usort($suggestions, function ($a, $b) {
-                    return strcmp($a['value'], $b['value']);
-                });
             }
         }
         return $suggestions;
