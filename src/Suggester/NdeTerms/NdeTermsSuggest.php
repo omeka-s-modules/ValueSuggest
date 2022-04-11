@@ -125,8 +125,9 @@ EOD;
                 foreach ($baseNode as $item) {
                     $uri = @$item["uri"] ?: false;
                     $label = @$item["prefLabel"][0] ?: false;
+                    $info = @implode(" / ",$item["altlabel"]);
                     if ($uri && $label) {
-                        array_push($suggestions, ['value' => $label, 'data' => ['uri' => $uri, 'info' => null]]);
+                        array_push($suggestions, ['value' => $label, 'data' => ['uri' => $uri, 'info' => $info]]);
                     }
                 }
             }
