@@ -124,11 +124,10 @@ EOD;
             if (count($baseNode) > 0) {
                 foreach ($baseNode as $item) {
                     $uri = @$item["uri"] ?: false;
-                    $label = @$item["altLabel"][0] ?: false;
-                    $info = @implode(" / ",$item["altLabel"]);
-                   $info="Here!";
+                    $label = @$item["prefLabel"][0] ?: false;
+                    $info = @implode(" / ", $item["altLabel"]);
                     if ($uri && $label) {
-                        array_push($suggestions, ['value' => $label." i: ".$info, 'data' => ['uri' => $uri, 'info' => $info]]);
+                        array_push($suggestions, ['value' => $label . " i: " . $info, 'data' => ['uri' => $uri, 'info' => $info]]);
                     }
                 }
             }
