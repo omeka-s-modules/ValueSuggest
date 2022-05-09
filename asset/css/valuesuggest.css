@@ -10,10 +10,23 @@
     position: relative;
 }
 
+.valuesuggest-vocab-container {
+    margin-left: 35px;
+}
+
+.valuesuggest-vocab-container .label.o-icon-vocab {
+    background-color: transparent;
+}
+
+.valuesuggest-language-container.active + .valuesuggest-vocab-container {
+    margin-left: 0;
+}
+
 .valuesuggest-language-container {
     margin-top: -1px;
     margin-bottom: -1px;
     z-index: 1;
+    background-color: #fff;
 }
 
 .valuesuggest-id-container {
@@ -35,25 +48,11 @@ input.valuesuggest-input {
     padding-left: 42px;
 }
 
-.inputs .valuesuggest-language-container .value-language.label:not(.active) {
-    left: auto;
-    right: 0;
+.inputs .valuesuggest-language-container a.value-language.active {
+    border-color: #dfdfdf;
+}
+
+.inputs .valuesuggest-language-container a.value-language {
     background-color: #fff;
     cursor: pointer;
-}
-
-.inputs .valuesuggest-language-container .value-language.label.active {
-    left: 0;
-    color: #676767;
-}
-
-.inputs .valuesuggest-language-container .value-language.remove {
-    display: none;
-}
-
-.inputs .valuesuggest-language-container .value-language.remove.active {
-    display: block;
-    position: absolute;
-    right: 0;
-    left: auto;
 }
