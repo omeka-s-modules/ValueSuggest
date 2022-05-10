@@ -5,16 +5,16 @@
 # 
 # Translators:
 # Darío Hereñú, 2019
-# Alfonso Montejo <almontejor@gmail.com>, 2021
+# Alfonso Montejo <almontejor@gmail.com>, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-30 10:29-0400\n"
+"POT-Creation-Date: 2022-05-10 14:21-0400\n"
 "PO-Revision-Date: 2017-09-14 20:16+0000\n"
-"Last-Translator: Alfonso Montejo <almontejor@gmail.com>, 2021\n"
+"Last-Translator: Alfonso Montejo <almontejor@gmail.com>, 2022\n"
 "Language-Team: Spanish (https://www.transifex.com/omeka/teams/14184/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,11 +22,7 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: view/common/data-type/suggested.phtml:9
-msgid "Remove language"
-msgstr "Quitar idioma"
-
-#: view/common/data-type/suggested.phtml:21
+#: view/common/data-type/suggested.phtml:20
 msgid "Remove URI"
 msgstr "Quitar URI"
 
@@ -44,67 +40,67 @@ msgstr "UNESCO: Biblioteca Digital Floridablanca"
 
 #: src/Service/NdeTermsDataTypeFactory.php:16
 msgid "NDE: Archeologisch Basisregister"
-msgstr ""
+msgstr "NDE: Archeologisch Basisregister"
 
 #: src/Service/NdeTermsDataTypeFactory.php:20
 msgid "NDE: Brinkman trefwoordenthesaurus"
-msgstr ""
+msgstr "NDE: Brinkman trefwoordenthesaurus"
 
 #: src/Service/NdeTermsDataTypeFactory.php:24
 msgid "NDE: Cultuurhistorische Thesaurus"
-msgstr ""
+msgstr "NDE: Cultuurhistorische Thesaurus"
 
 #: src/Service/NdeTermsDataTypeFactory.php:28
 msgid "NDE: GTAA: genres"
-msgstr ""
+msgstr "NDE: GTAA: genres"
 
 #: src/Service/NdeTermsDataTypeFactory.php:32
 msgid "NDE: GTAA: onderwerpen"
-msgstr ""
+msgstr "NDE: GTAA: onderwerpen"
 
 #: src/Service/NdeTermsDataTypeFactory.php:36
 msgid "NDE: Muziek: genres en stijlen"
-msgstr ""
+msgstr "NDE: Muziek: genres en stijlen"
 
 #: src/Service/NdeTermsDataTypeFactory.php:40
 msgid "NDE: Muziek: personen en groepen"
-msgstr ""
+msgstr "NDE: Muziek: personen en groepen"
 
 #: src/Service/NdeTermsDataTypeFactory.php:44
 msgid "NDE: Muziekschatten: onderwerpen"
-msgstr ""
+msgstr "NDE: Muziekschatten: onderwerpen"
 
 #: src/Service/NdeTermsDataTypeFactory.php:48
 msgid "NDE: Nederlandse Thesaurus van Auteursnamen"
-msgstr ""
+msgstr "NDE: Nederlandse Thesaurus van Auteursnamen"
 
 #: src/Service/NdeTermsDataTypeFactory.php:52
 msgid "NDE: RKDartists"
-msgstr ""
+msgstr "NDE: RKDartists"
 
 #: src/Service/NdeTermsDataTypeFactory.php:56
 msgid "NDE: Thesaurus Nationaal Museum van Wereldculturen"
-msgstr ""
+msgstr "NDE: Thesaurus Nationaal Museum van Wereldculturen"
 
 #: src/Service/NdeTermsDataTypeFactory.php:60
 msgid "NDE: Thesaurus Tweede Wereldoorlog Nederland"
-msgstr ""
+msgstr "NDE: Thesaurus Tweede Wereldoorlog Nederland"
 
 #: src/Service/NdeTermsDataTypeFactory.php:64
 msgid "NDE: Wikidata: alle entiteiten"
-msgstr ""
+msgstr "NDE: Wikidata: alle entiteiten"
 
 #: src/Service/NdeTermsDataTypeFactory.php:68
 msgid "NDE: Wikidata: personen"
-msgstr ""
+msgstr "NDE: Wikidata: personen"
 
 #: src/Service/NdeTermsDataTypeFactory.php:72
 msgid "NDE: Wikidata: plaatsen in Nederland en België"
-msgstr ""
+msgstr "NDE: Wikidata: plaatsen in Nederland en België"
 
 #: src/Service/NdeTermsDataTypeFactory.php:76
 msgid "NDE: Wikidata: straten in Nederland"
-msgstr ""
+msgstr "NDE: Wikidata: straten in Nederland"
 
 #: src/Service/IdRefDataTypeFactory.php:14
 msgid "IdRef: All"

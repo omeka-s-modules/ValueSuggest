@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-30 10:29-0400\n"
+"POT-Creation-Date: 2022-05-10 14:21-0400\n"
 "PO-Revision-Date: 2017-09-14 20:16+0000\n"
 "Last-Translator: Hong Zhang <zhangh@unlv.nevada.edu>, 2021\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/omeka/teams/14184/zh_CN/)\n"
@@ -21,11 +21,7 @@ msgstr ""
 "Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: view/common/data-type/suggested.phtml:9
-msgid "Remove language"
-msgstr "取消语言"
-
-#: view/common/data-type/suggested.phtml:21
+#: view/common/data-type/suggested.phtml:20
 msgid "Remove URI"
 msgstr "取消URI"
 
