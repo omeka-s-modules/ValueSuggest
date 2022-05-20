@@ -1,0 +1,75 @@
+<?php
+namespace ValueSuggest\Suggester\Thub;
+
+use ValueSuggest\Suggester\SuggesterInterface;
+use Laminas\Http\Client;
+
+class Sparql implements SuggesterInterface
+{
+    const ENDPOINT = 'https://data.coeli.cat/thub';
+
+    /**
+     * @var Client
+     */
+    protected $client;
+
+    public function __construct(Client $client)
+    {
+        $this->client = $client;
+    }
+
+    /**
+     * Retrieve suggestions from the Thesaurus de la Universitat de Barcelona
+     * (THUB) SPARQL endpoint.
+     *
+     * It appears that this service has no schemes, so we're omitting the
+     * skos:inScheme clause.
+     *
+     * @param string $query
+     * @param string $lang
+     * @return array
+     */
+    public function getSuggestions($query, $lang = null)
+    {
+        $sparqlQuery = sprintf('
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT ?Subject ?Label ?Definition
+WHERE {
+    ?Subject skos:prefLabel ?Label ;
+    OPTIONAL {?Subject skos:definition ?Definition}
+    FILTER regex(?Label, "%s", "i")
+    FILTER langMatches(lang(?Label), "%s")
+}
+LIMIT 500',
+            addslashes($query),
+            addslashes($lang) ?: 'it' // The defualt lang is Italian
+        );
+
+        $client = $this->client->setUri(self::ENDPOINT)->setParameterGet([
+            'Accept' => 'application/sparql-results+json',
+            'query' => $sparqlQuery,
+        ]);
+        $response = $client->send();
+        if (!$response->isSuccess()) {
+            return [];
+        }
+
+        $suggestions = [];
+        $results = json_decode($response->getBody(), true);
+        foreach ($results['results']['bindings'] as $result) {
+            $suggestions[] = [
+                'value' => $result['Label']['value'],
+                'data' => [
+                    'uri' => $result['Subject']['value'],
+                    'info' => isset($result['Definition']['value'])
+                        ? $result['Definition']['value'] : null,
+                ],
+            ];
+        }
+        usort($suggestions, function ($a, $b) {
+            return strcmp($a['value'], $b['value']);
+        });
+
+        return $suggestions;
+    }
+}

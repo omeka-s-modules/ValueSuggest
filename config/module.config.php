@@ -243,6 +243,10 @@ return [
             'valuesuggestall:mc:37684874-0820-402d-b53e-f8ab6b9ed8ba' => Service\McDataTypeFactory::class,
             'valuesuggestall:mc:f14e8183-5885-46d6-8fc9-17ebd8f3c27e' => Service\McDataTypeFactory::class,
             'valuesuggestall:mc:2012b973-ddb2-4540-a775-9157c3c1d7fd' => Service\McDataTypeFactory::class,
+
+            /* Thesaurus de la Universitat de Barcelona (THUB) */
+            'valuesuggest:thub:thub' => Service\ThubDataTypeFactory::class,
+
         ],
     ],
     'router' => [
