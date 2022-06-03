@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-10 14:21-0400\n"
+"POT-Creation-Date: 2022-06-03 14:45-0400\n"
 "PO-Revision-Date: 2017-09-14 20:16+0000\n"
 "Last-Translator: Daniel Berthereau <daniel.transifex@berthereau.net>, 2019\n"
 "Language-Team: French (https://www.transifex.com/omeka/teams/14184/fr/)\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: view/common/data-type/suggested.phtml:20
 msgid "Remove URI"
@@ -796,3 +796,7 @@ msgstr "Getty : Liste des noms d’artistes de l’Union (ULAN)"
 #: src/DataType/Geonames/Geonames.php:21
 msgid "Geonames: The GeoNames geographical database"
 msgstr "Geonames : Base de données géographiques GeoNames"
+
+#: src/DataType/Thub/Thub.php:21
+msgid "Thesaurus de la Universitat de Barcelona (THUB)"
+msgstr ""

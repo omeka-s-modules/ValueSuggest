@@ -49,7 +49,7 @@ LIMIT 500',
             'query' => $sparqlQuery,
         ]);
         $client->setHeaders([
-            'Accept' =>'application/sparql-results+json',
+            'Accept' => 'application/sparql-results+json',
         ]);
         $response = $client->send();
         if (!$response->isSuccess()) {
