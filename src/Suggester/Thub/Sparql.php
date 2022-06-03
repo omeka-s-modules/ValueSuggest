@@ -6,7 +6,7 @@ use Laminas\Http\Client;
 
 class Sparql implements SuggesterInterface
 {
-    const ENDPOINT = 'https://data.coeli.cat/thub';
+    const ENDPOINT = 'https://data.coeli.cat/thub/sparql';
 
     /**
      * @var Client
@@ -22,8 +22,8 @@ class Sparql implements SuggesterInterface
      * Retrieve suggestions from the Thesaurus de la Universitat de Barcelona
      * (THUB) SPARQL endpoint.
      *
-     * It appears that this service has no schemes, so we're omitting the
-     * skos:inScheme clause.
+     * It appears that this service has no schemes (skos:ConceptScheme), so
+     * we're omitting the skos:inScheme clause.
      *
      * @param string $query
      * @param string $lang
@@ -33,21 +33,23 @@ class Sparql implements SuggesterInterface
     {
         $sparqlQuery = sprintf('
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-SELECT ?Subject ?Label ?Definition
+SELECT ?Subject ?Label ?ScopeNote
 WHERE {
     ?Subject skos:prefLabel ?Label ;
-    OPTIONAL {?Subject skos:definition ?Definition}
+    OPTIONAL {?Subject skos:scopeNote ?ScopeNote}
     FILTER regex(?Label, "%s", "i")
     FILTER langMatches(lang(?Label), "%s")
 }
 LIMIT 500',
             addslashes($query),
-            addslashes($lang) ?: 'it' // The defualt lang is Italian
+            addslashes($lang) ?: 'ca' // The defualt lang is Catalan
         );
 
         $client = $this->client->setUri(self::ENDPOINT)->setParameterGet([
-            'Accept' => 'application/sparql-results+json',
             'query' => $sparqlQuery,
+        ]);
+        $client->setHeaders([
+            'Accept' =>'application/sparql-results+json',
         ]);
         $response = $client->send();
         if (!$response->isSuccess()) {
@@ -61,8 +63,8 @@ LIMIT 500',
                 'value' => $result['Label']['value'],
                 'data' => [
                     'uri' => $result['Subject']['value'],
-                    'info' => isset($result['Definition']['value'])
-                        ? $result['Definition']['value'] : null,
+                    'info' => isset($result['ScopeNote']['value'])
+                        ? $result['ScopeNote']['value'] : null,
                 ],
             ];
         }
