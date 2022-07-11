@@ -26,11 +26,11 @@ class NdeTermsDataTypeFactory implements FactoryInterface
         ],
         'valuesuggest:ndeterms:gtaagen' => [
             'label' => 'NDE: GTAA: genres', // @translate
-            'source' => 'https://data.netwerkdigitaalerfgoed.nl/beeldengeluid/gtaa-genres/sparql',
+            'source' => 'https://data.beeldengeluid.nl/id/datadownload/0028',
         ],
         'valuesuggest:ndeterms:gtaaond' => [
             'label' => 'NDE: GTAA: onderwerpen', // @translate
-            'source' => 'https://data.netwerkdigitaalerfgoed.nl/beeldengeluid/gtaa-onderwerpen/sparql',
+            'source' => 'https://data.beeldengeluid.nl/id/datadownload/0031',
         ],
         'valuesuggest:ndeterms:muzgs' => [
             'label' => 'NDE: Muziek: genres en stijlen', // @translate
