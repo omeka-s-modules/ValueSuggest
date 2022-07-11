@@ -37,6 +37,7 @@ This module includes the following vocabularies:
 ### [Dutch Digital Heritage Network of Terms: NDE Termennetwerk](https://termennetwerk.netwerkdigitaalerfgoed.nl/)
 
 - Archeologisch Basisregister
+- Art & Architecture Thesaurus
 - Brinkman trefwoordenthesaurus
 - Cultuurhistorische Thesaurus
 - GTAA: genres

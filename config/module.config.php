@@ -85,6 +85,7 @@ return [
             // @todo Add more LC data types
 
             /* Network of Terms of the Dutch National Network for Digital Heritage */
+            'valuesuggest:ndeterms:aat' => \ValueSuggest\Service\NdeTermsDataTypeFactory::class,
             'valuesuggest:ndeterms:abr' => \ValueSuggest\Service\NdeTermsDataTypeFactory::class,
             'valuesuggest:ndeterms:btt' => \ValueSuggest\Service\NdeTermsDataTypeFactory::class,
             'valuesuggest:ndeterms:cht' => \ValueSuggest\Service\NdeTermsDataTypeFactory::class,

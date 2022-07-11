@@ -12,6 +12,10 @@ use ValueSuggest\DataType\NdeTerms\NdeTerms;
 class NdeTermsDataTypeFactory implements FactoryInterface
 {
     protected $types = [
+        'valuesuggest:ndeterms:aat' => [
+            'label' => 'NDE: Art & Architecture Thesaurus', // @translate
+            'source' => 'http://vocab.getty.edu/aat/sparql',
+        ],
         'valuesuggest:ndeterms:abr' => [
             'label' => 'NDE: Archeologisch Basisregister', // @translate
             'source' => 'https://data.cultureelerfgoed.nl/PoolParty/sparql/term/id/abr',
