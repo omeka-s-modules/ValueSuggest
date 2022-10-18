@@ -11,14 +11,16 @@ $escape = $this->plugin('escapeHtml');
     </label>
 </div>
 <div class="valuesuggest-vocab-container">
-    <span class="o-icon-vocab label" title="<?php echo $escape($rdfLabel); ?>"><?php echo $this->escapeHtml($rdfLabel); ?></span>
-    <input type="text" class="valuesuggest-input">
+    <label aria-label="<?php echo $this->escapeHtml($rdfLabel); ?>">
+        <span class="o-icon-vocab icon" aria-hidden="true" title="<?php echo $escape($rdfLabel); ?>"></span>
+        <input type="text" class="valuesuggest-input">
+    </label>
     <?php echo $this->formHidden($labelInput); ?>
     <?php echo $this->formHidden($idInput); ?>
     <?php echo $this->formHidden($valueInput); ?>
 </div>
 <div class="valuesuggest-id-container">
-    <span class="o-icon-uri label" title="<?php echo $escape($translate('URI')); ?>" aria-label="<?php echo $escape($translate('URI')); ?>"></span>
+    <span class="o-icon-uri icon" title="<?php echo $escape($translate('URI')); ?>" aria-label="<?php echo $escape($translate('URI')); ?>"></span>
     <span class="valuesuggest-id"></span>
-    <a href="#" class="valuesuggest-id-remove o-icon-close" title="<?php echo $escape($translate('Remove URI')); ?>"></a>
+    <button type="button" class="valuesuggest-id-remove o-icon-close" aria-label="<?php echo $escape($translate('Remove URI')); ?>" title="<?php echo $escape($translate('Remove URI')); ?>"></button>
 </div>
