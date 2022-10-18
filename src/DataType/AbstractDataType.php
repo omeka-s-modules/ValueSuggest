@@ -47,19 +47,12 @@ abstract class AbstractDataType extends BaseAbstractDataType implements DataType
             'data-value-key' => '@value',
         ]);
 
-        $languageInput = new Text('valuesuggest-language');
-        $languageInput->setAttributes([
-            'data-value-key' => '@language',
-            'class' => 'value-language',
-        ]);
-
         $rdfLabel = $this->getLabel();
 
         return $view->partial('common/data-type/suggested', [
             'labelInput' => $labelInput,
             'idInput' => $idInput,
             'valueInput' => $valueInput,
-            'languageInput' => $languageInput,
             'rdfLabel' => $rdfLabel,
         ]);
     }

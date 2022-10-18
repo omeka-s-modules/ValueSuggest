@@ -1,11 +1,14 @@
-<?php 
+<?php
 $translate = $this->plugin('translate');
 $escape = $this->plugin('escapeHtml');
 ?>
 
-<div class="valuesuggest-language-container">
-    <a class="value-language o-icon-language" title="<?php echo $escape($translate('Set language')); ?>" aria-label="<?php echo $escape($translate('Set language')); ?>"></a>
-    <?php echo $this->formText($languageInput); ?>
+<div class="language-wrapper">
+    <?php echo $this->hyperlink('', '#', ['class' => 'value-language o-icon-language', 'title' => $translate('Set language'), ]); ?>
+    <label class="language-label">
+        <span class="value-label-text"><?php echo $translate('Language'); ?></span>
+        <input class="value-language" type="text" list="value-languages" data-value-key="@language">
+    </label>
 </div>
 <div class="valuesuggest-vocab-container">
     <span class="o-icon-vocab label" title="<?php echo $escape($rdfLabel); ?>"><?php echo $this->escapeHtml($rdfLabel); ?></span>
