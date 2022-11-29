@@ -2,26 +2,26 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 # Translators:
-# Daniel Berthereau <daniel.transifex@berthereau.net>, 2019
-#
+# Daniel Berthereau <daniel.transifex@berthereau.net>, 2022
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-03 14:45-0400\n"
+"POT-Creation-Date: 2022-11-29 12:51-0500\n"
 "PO-Revision-Date: 2017-09-14 20:16+0000\n"
-"Last-Translator: Daniel Berthereau <daniel.transifex@berthereau.net>, 2019\n"
+"Last-Translator: Daniel Berthereau <daniel.transifex@berthereau.net>, 2022\n"
 "Language-Team: French (https://www.transifex.com/omeka/teams/14184/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
-#: view/common/data-type/suggested.phtml:20
+#: view/common/data-type/suggested.phtml:25
 msgid "Remove URI"
 msgstr "Supprimer l’URI"
 
@@ -103,59 +103,59 @@ msgstr ""
 
 #: src/Service/IdRefDataTypeFactory.php:14
 msgid "IdRef: All"
-msgstr ""
+msgstr "IdRef : Tout"
 
 #: src/Service/IdRefDataTypeFactory.php:18
 msgid "IdRef: Person names"
-msgstr ""
+msgstr "IdRef : Noms de personne"
 
 #: src/Service/IdRefDataTypeFactory.php:22
 msgid "IdRef: Collectivities"
-msgstr ""
+msgstr "IdRef : Noms de collectivités"
 
 #: src/Service/IdRefDataTypeFactory.php:26
 msgid "IdRef: Conferences"
-msgstr ""
+msgstr "IdRef : Congrès"
 
 #: src/Service/IdRefDataTypeFactory.php:30
 msgid "IdRef: Subjects"
-msgstr ""
+msgstr "IdRef : Noms communs"
 
 #: src/Service/IdRefDataTypeFactory.php:34
 msgid "IdRef: Subjects Rameau"
-msgstr ""
+msgstr "IdRef : Forme ou genre Rameau"
 
 #: src/Service/IdRefDataTypeFactory.php:38
 msgid "IdRef: Subjects F-MeSH"
-msgstr ""
+msgstr "IdRef : Sujets F-MeSH"
 
 #: src/Service/IdRefDataTypeFactory.php:42
 msgid "IdRef: Geography"
-msgstr ""
+msgstr "IdRef : Noms géographiques"
 
 #: src/Service/IdRefDataTypeFactory.php:46
 msgid "IdRef: Family names"
-msgstr ""
+msgstr "IdRef : Noms de famille"
 
 #: src/Service/IdRefDataTypeFactory.php:50
 msgid "IdRef: Uniform titles"
-msgstr ""
+msgstr "IdRef : Titres uniformes"
 
 #: src/Service/IdRefDataTypeFactory.php:54
 msgid "IdRef: Authors-Titles"
-msgstr ""
+msgstr "IdRef : Auteurs-titres"
 
 #: src/Service/IdRefDataTypeFactory.php:58
 msgid "IdRef: Trademarks"
-msgstr ""
+msgstr "IdRef : Noms de marque"
 
 #: src/Service/IdRefDataTypeFactory.php:62
 msgid "IdRef: PPN id"
-msgstr ""
+msgstr "IdRef : Identifiants PPN"
 
 #: src/Service/IdRefDataTypeFactory.php:66
 msgid "IdRef: Library registry (RCR)"
-msgstr ""
+msgstr "IdRef : Répertoire des centres de ressources (RCR)"
 
 #: src/Service/RdaDataTypeFactory.php:12
 msgid "RDA: Aspect Ratio Designation"
@@ -429,192 +429,227 @@ msgstr ""
 msgid ""
 "Ministère de la Culture: Catégories techniques et domaines - Inventaire/MH"
 msgstr ""
+"Ministère de la Culture : Catégories techniques et domaines - Inventaire/MH"
 
 #: src/Service/McDataTypeFactory.php:16
 msgid ""
 "Ministère de la Culture: Domaines archivistiques pour l'indexation des "
 "circulaires"
 msgstr ""
+"Ministère de la Culture : Domaines archivistiques pour l’indexation des "
+"circulaires"
 
 #: src/Service/McDataTypeFactory.php:20
 msgid ""
 "Ministère de la Culture: Etat de conservation du patrimoine mobilier - "
 "Inventaire/MH"
 msgstr ""
+"Ministère de la Culture : État de conservation du patrimoine mobilier - "
+"Inventaire/MH"
 
 #: src/Service/McDataTypeFactory.php:24
 msgid ""
 "Ministère de la Culture: Inscriptions, marques, emblématique et poinçons - "
 "Inventaire/MH"
 msgstr ""
+"Ministère de la Culture : Inscriptions, marques, emblématique et poinçons - "
+"Inventaire/MH"
 
 #: src/Service/McDataTypeFactory.php:28
 msgid ""
 "Ministère de la Culture: Liste d'autorité Actions pour l'indexation des "
 "archives locales"
 msgstr ""
+"Ministère de la Culture : Liste d’autorité Actions pour l’indexation des "
+"archives locales"
 
 #: src/Service/McDataTypeFactory.php:32
 msgid ""
 "Ministère de la Culture: Liste d'autorité Contexte historique pour "
 "l'indexation des archives locales"
 msgstr ""
+"Ministère de la Culture : Liste d’autorité Contexte historique pour "
+"l’indexation des archives locales"
 
 #: src/Service/McDataTypeFactory.php:36
 msgid ""
 "Ministère de la Culture: Liste d'autorité Typologie documentaire pour "
 "l'indexation des archives locales"
 msgstr ""
+"Ministère de la Culture : Liste d’autorité Typologie documentaire pour "
+"l’indexation des archives locales"
 
 #: src/Service/McDataTypeFactory.php:40
 msgid "Ministère de la Culture: Liste d'autorités Auteurs - Joconde"
-msgstr ""
+msgstr "Ministère de la Culture : Liste d’autorités Auteurs - Joconde"
 
 #: src/Service/McDataTypeFactory.php:44
 msgid "Ministère de la Culture: Liste d'autorités Domaines - Joconde"
-msgstr ""
+msgstr "Ministère de la Culture : Liste d’autorités Domaines - Joconde"
 
 #: src/Service/McDataTypeFactory.php:48
 msgid "Ministère de la Culture: Liste d'autorités Découverte - Joconde"
-msgstr ""
+msgstr "Ministère de la Culture : Liste d’autorités Découverte - Joconde"
 
 #: src/Service/McDataTypeFactory.php:52
 msgid "Ministère de la Culture: Liste d'autorités Dénomination - Joconde"
-msgstr ""
+msgstr "Ministère de la Culture : Liste d’autorités Dénomination - Joconde"
 
 #: src/Service/McDataTypeFactory.php:56
 msgid "Ministère de la Culture: Liste d'autorités Genèse - Joconde"
-msgstr ""
+msgstr "Ministère de la Culture : Liste d’autorités Genèse - Joconde"
 
 #: src/Service/McDataTypeFactory.php:60
 msgid "Ministère de la Culture: Liste d'autorités Inscriptions - Joconde"
-msgstr ""
+msgstr "Ministère de la Culture : Liste d’autorités Inscriptions - Joconde"
 
 #: src/Service/McDataTypeFactory.php:64
 msgid "Ministère de la Culture: Liste d'autorités Lieux - Joconde"
-msgstr ""
+msgstr "Ministère de la Culture : Liste d’autorités Lieux - Joconde"
 
 #: src/Service/McDataTypeFactory.php:68
 msgid "Ministère de la Culture: Liste d'autorités Localisation - Joconde"
-msgstr ""
+msgstr "Ministère de la Culture : Liste d’autorités Localisation - Joconde"
 
 #: src/Service/McDataTypeFactory.php:72
 msgid "Ministère de la Culture: Liste d'autorités Périodes - Joconde"
-msgstr ""
+msgstr "Ministère de la Culture : Liste d’autorités Périodes - Joconde"
 
 #: src/Service/McDataTypeFactory.php:76
 msgid "Ministère de la Culture: Liste d'autorités Représentation - Joconde"
-msgstr ""
+msgstr "Ministère de la Culture : Liste d’autorités Représentation - Joconde"
 
 #: src/Service/McDataTypeFactory.php:80
 msgid ""
 "Ministère de la Culture: Liste d'autorités Sources de la représentation - "
 "Joconde"
 msgstr ""
+"Ministère de la Culture : Liste d’autorités Sources de la représentation - "
+"Joconde"
 
 #: src/Service/McDataTypeFactory.php:84
 msgid "Ministère de la Culture: Liste d'autorités Techniques – Joconde"
-msgstr ""
+msgstr "Ministère de la Culture : Liste d’autorités Techniques – Joconde"
 
 #: src/Service/McDataTypeFactory.php:88
 msgid "Ministère de la Culture: Liste d'autorités Utilisation - Joconde"
-msgstr ""
+msgstr "Ministère de la Culture : Liste d’autorités Utilisation - Joconde"
 
 #: src/Service/McDataTypeFactory.php:92
 msgid "Ministère de la Culture: Liste d'autorités Écoles - Joconde"
-msgstr ""
+msgstr "Ministère de la Culture : Liste d’autorités Écoles - Joconde"
 
 #: src/Service/McDataTypeFactory.php:96
 msgid "Ministère de la Culture: Liste d'autorités Époques - Joconde"
-msgstr ""
+msgstr "Ministère de la Culture : Liste d’autorités Époques - Joconde"
 
 #: src/Service/McDataTypeFactory.php:100
 msgid "Ministère de la Culture: Matériau de la couverture - Inventaire/MH"
-msgstr ""
+msgstr "Ministère de la Culture : Matériau de la couverture - Inventaire/MH"
 
 #: src/Service/McDataTypeFactory.php:104
 msgid ""
 "Ministère de la Culture: Matériau du gros-oeuvre et mise en oeuvre - "
 "Inventaire/MH"
 msgstr ""
+"Ministère de la Culture : Matériau du gros-œuvre et mise en œuvre - "
+"Inventaire/MH"
 
 #: src/Service/McDataTypeFactory.php:108
 msgid ""
 "Ministère de la Culture: Matériaux et techniques du patrimoine mobilier - "
 "Inventaire/MH"
 msgstr ""
+"Ministère de la Culture : Matériaux et techniques du patrimoine mobilier - "
+"Inventaire/MH"
 
 #: src/Service/McDataTypeFactory.php:112
 msgid "Ministère de la Culture: Nomenclatures HADOC"
-msgstr ""
+msgstr "Ministère de la Culture : Nomenclatures HADOC"
 
 #: src/Service/McDataTypeFactory.php:116
 msgid ""
 "Ministère de la Culture: Référentiel de communicabilité des archives "
 "publiques"
 msgstr ""
+"Ministère de la Culture : Référentiel de communicabilité des archives "
+"publiques"
 
 #: src/Service/McDataTypeFactory.php:120
 msgid ""
 "Ministère de la Culture: Stade de la création des objets mobiliers - "
 "Inventaire/MH"
 msgstr ""
+"Ministère de la Culture : Stade de la création des objets mobiliers - "
+"Inventaire/MH"
 
 #: src/Service/McDataTypeFactory.php:124
 msgid ""
 "Ministère de la Culture: Statut de la propriété des Biens culturels - "
 "Inventaire/MH"
 msgstr ""
+"Ministère de la Culture : Statut de la propriété des Biens culturels - "
+"Inventaire/MH"
 
 #: src/Service/McDataTypeFactory.php:128
 msgid "Ministère de la Culture: Techniques photographiques"
-msgstr ""
+msgstr "Ministère de la Culture : Techniques photographiques"
 
 #: src/Service/McDataTypeFactory.php:132
 msgid ""
 "Ministère de la Culture: Thésaurus de la désignation des objets mobiliers"
 msgstr ""
+"Ministère de la Culture : Thésaurus de la désignation des objets mobiliers"
 
 #: src/Service/McDataTypeFactory.php:136
 msgid ""
 "Ministère de la Culture: Thésaurus de la désignation des œuvres "
 "architecturales et des espaces aménagés"
 msgstr ""
+"Ministère de la Culture : Thésaurus de la désignation des œuvres "
+"architecturales et des espaces aménagés"
 
 #: src/Service/McDataTypeFactory.php:140
 msgid ""
 "Ministère de la Culture: Thésaurus-matières pour l'indexation des archives "
 "locales"
 msgstr ""
+"Ministère de la Culture : Thésaurus-matières pour l’indexation des archives "
+"locales"
 
 #: src/Service/McDataTypeFactory.php:144
 msgid "Ministère de la Culture: Type de la couverture - Inventaire/MH"
-msgstr ""
+msgstr "Ministère de la Culture : Type de la couverture - Inventaire/MH"
 
 #: src/Service/McDataTypeFactory.php:148
 msgid "Ministère de la Culture: Type de protection MH - Inventaire/MH"
-msgstr ""
+msgstr "Ministère de la Culture : Type de protection MH - Inventaire/MH"
 
 #: src/Service/McDataTypeFactory.php:152
 msgid ""
 "Ministère de la Culture: Vocabulaire des activités des entités productrices "
 "d'archives"
 msgstr ""
+"Ministère de la Culture : Vocabulaire des activités des entités productrices"
+" d’archives"
 
 #: src/Service/McDataTypeFactory.php:156
 msgid "Ministère de la Culture: Vocabulaire des altérations"
-msgstr ""
+msgstr "Ministère de la Culture : Vocabulaire des altérations"
 
 #: src/Service/McDataTypeFactory.php:160
 msgid ""
 "Ministère de la Culture: Vocabulaire des domaines d'action ou objets des "
 "entités productrices d'archives"
 msgstr ""
+"Ministère de la Culture : Vocabulaire des domaines d’action ou objets des "
+"entités productrices d’archives"
 
 #: src/Service/McDataTypeFactory.php:164
 msgid ""
 "Ministère de la Culture: Vocabulaire pour les techniques photographiques"
 msgstr ""
+"Ministère de la Culture : Vocabulaire pour les techniques photographiques"
 
 #: src/Service/TesaurosDataTypeFactory.php:12
 msgid "Tesauros: Diccionario de Bienes Culturales"
@@ -698,7 +733,7 @@ msgstr "LC : MARC Pays"
 
 #: src/DataType/Lc/Performancemediums.php:24
 msgid "LC: Medium of Performance Thesaurus for Music"
-msgstr "LC : Thésaurus des moyens de performance pour la musique"
+msgstr "LC : Thésaurus des moyens d’expression pour la musique"
 
 #: src/DataType/Lc/Relators.php:24
 msgid "LC: MARC Relators"
@@ -733,6 +768,8 @@ msgid ""
 "RightsStatements.org: Standardized rights statements for online cultural "
 "heritage"
 msgstr ""
+"RightsStatements.org : déclarations normalisées des droits pour le "
+"patrimoine culturel en ligne"
 
 #: src/DataType/Homosaurus/Homosaurus.php:21
 msgid "Homosaurus: an international LGBTQ linked data vocabulary"
@@ -747,19 +784,19 @@ msgstr ""
 
 #: src/DataType/Dc/Elements.php:21
 msgid "Dublin Core: Elements"
-msgstr ""
+msgstr "Dublin Core : Éléments"
 
 #: src/DataType/Dc/Terms.php:21
 msgid "Dublin Core: Terms"
-msgstr ""
+msgstr "Dublin Core : Termes"
 
 #: src/DataType/Dc/Types.php:21
 msgid "Dublin Core: Types"
-msgstr ""
+msgstr "Dublin Core : Types"
 
 #: src/DataType/Dc/Classes.php:21
 msgid "Dublin Core: Classes"
-msgstr ""
+msgstr "Dublin Core : Classes"
 
 #: src/DataType/Pactols/Sujets.php:21
 msgid "Pactols: Sujets (Subject)"
@@ -771,7 +808,7 @@ msgstr "Pactols : Tous les thesaurus"
 
 #: src/DataType/Gnd/Gnd.php:21
 msgid "GND: Die Gemeinsame Normdatei"
-msgstr ""
+msgstr "GND: Die Gemeinsame Normdatei"
 
 #: src/DataType/Oclc/Fast.php:21
 msgid "OCLC: Faceted Application of Subject Terminologies (FAST)"
@@ -799,4 +836,4 @@ msgstr "Geonames : Base de données géographiques GeoNames"
 
 #: src/DataType/Thub/Thub.php:21
 msgid "Thesaurus de la Universitat de Barcelona (THUB)"
-msgstr ""
+msgstr "Thésaurus de l’Université de Barcelone (THUB)"

@@ -2,27 +2,27 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 # Translators:
 # Simone Falteri <s.falteri@ifnet.it>, 2018
-# Giorgio Comai <g@giorgiocomai.eu>, 2019
-#
+# Giorgio Comai <g@giorgiocomai.eu>, 2022
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-03 14:45-0400\n"
+"POT-Creation-Date: 2022-11-29 12:51-0500\n"
 "PO-Revision-Date: 2017-09-14 20:16+0000\n"
-"Last-Translator: Giorgio Comai <g@giorgiocomai.eu>, 2019\n"
+"Last-Translator: Giorgio Comai <g@giorgiocomai.eu>, 2022\n"
 "Language-Team: Italian (https://www.transifex.com/omeka/teams/14184/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: it\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
-#: view/common/data-type/suggested.phtml:20
+#: view/common/data-type/suggested.phtml:25
 msgid "Remove URI"
 msgstr "Elimina URI"
 
@@ -92,35 +92,35 @@ msgstr ""
 
 #: src/Service/NdeTermsDataTypeFactory.php:68
 msgid "NDE: Wikidata: personen"
-msgstr ""
+msgstr "NDE: Wikidata: persone"
 
 #: src/Service/NdeTermsDataTypeFactory.php:72
 msgid "NDE: Wikidata: plaatsen in Nederland en België"
-msgstr ""
+msgstr "NDE: Wikidata: luoghi nei Paesi Bassi e in Belgio"
 
 #: src/Service/NdeTermsDataTypeFactory.php:76
 msgid "NDE: Wikidata: straten in Nederland"
-msgstr ""
+msgstr "NDE: Wikidata: strade nei Paesi Bassi"
 
 #: src/Service/IdRefDataTypeFactory.php:14
 msgid "IdRef: All"
-msgstr ""
+msgstr "IdRef: Tutti"
 
 #: src/Service/IdRefDataTypeFactory.php:18
 msgid "IdRef: Person names"
-msgstr ""
+msgstr "IdRef: Nomi di persona"
 
 #: src/Service/IdRefDataTypeFactory.php:22
 msgid "IdRef: Collectivities"
-msgstr ""
+msgstr "IdRef: Collettività"
 
 #: src/Service/IdRefDataTypeFactory.php:26
 msgid "IdRef: Conferences"
-msgstr ""
+msgstr "IdRef: Conferenze"
 
 #: src/Service/IdRefDataTypeFactory.php:30
 msgid "IdRef: Subjects"
-msgstr ""
+msgstr "IdRef: Soggetti"
 
 #: src/Service/IdRefDataTypeFactory.php:34
 msgid "IdRef: Subjects Rameau"
@@ -132,11 +132,11 @@ msgstr ""
 
 #: src/Service/IdRefDataTypeFactory.php:42
 msgid "IdRef: Geography"
-msgstr ""
+msgstr "IdRef: Geografia"
 
 #: src/Service/IdRefDataTypeFactory.php:46
 msgid "IdRef: Family names"
-msgstr ""
+msgstr "IdRef: Cognomi"
 
 #: src/Service/IdRefDataTypeFactory.php:50
 msgid "IdRef: Uniform titles"
@@ -144,7 +144,7 @@ msgstr ""
 
 #: src/Service/IdRefDataTypeFactory.php:54
 msgid "IdRef: Authors-Titles"
-msgstr ""
+msgstr "IdRef: Autori-titoli"
 
 #: src/Service/IdRefDataTypeFactory.php:58
 msgid "IdRef: Trademarks"
@@ -164,11 +164,11 @@ msgstr ""
 
 #: src/Service/RdaDataTypeFactory.php:16
 msgid "RDA: Bibliographic Format"
-msgstr ""
+msgstr "RDA: Formato bibliografico"
 
 #: src/Service/RdaDataTypeFactory.php:20
 msgid "RDA: Broadcast Standard"
-msgstr ""
+msgstr "RDA: Standard di trasmissione"
 
 #: src/Service/RdaDataTypeFactory.php:24
 msgid "RDA: Carrier Extent Unit"
@@ -200,11 +200,11 @@ msgstr ""
 
 #: src/Service/RdaDataTypeFactory.php:52
 msgid "RDA: File Type"
-msgstr ""
+msgstr "RDA: Formato del file"
 
 #: src/Service/RdaDataTypeFactory.php:56
 msgid "RDA: Font Size"
-msgstr ""
+msgstr "RDA: Dimensione del font"
 
 #: src/Service/RdaDataTypeFactory.php:60
 msgid "RDA: Form of Musical Notation"
@@ -224,7 +224,7 @@ msgstr ""
 
 #: src/Service/RdaDataTypeFactory.php:76
 msgid "RDA: Frequency"
-msgstr ""
+msgstr "RDA: Frequenza"
 
 #: src/Service/RdaDataTypeFactory.php:80
 msgid "RDA: Generation"
@@ -248,7 +248,7 @@ msgstr ""
 
 #: src/Service/RdaDataTypeFactory.php:100
 msgid "RDA: Material"
-msgstr ""
+msgstr "RDA: Materiale"
 
 #: src/Service/RdaDataTypeFactory.php:104
 msgid "RDA: Media Type"
@@ -288,7 +288,7 @@ msgstr ""
 
 #: src/Service/RdaDataTypeFactory.php:140
 msgid "RDA: Sound Content"
-msgstr ""
+msgstr "RDA: Contenuto sonoro"
 
 #: src/Service/RdaDataTypeFactory.php:144
 msgid "RDA: Special Playback Characteristics"
@@ -300,23 +300,23 @@ msgstr ""
 
 #: src/Service/RdaDataTypeFactory.php:152
 msgid "RDA: Terms"
-msgstr ""
+msgstr "RDA: Termini"
 
 #: src/Service/RdaDataTypeFactory.php:156
 msgid "RDA: Track Configuration"
-msgstr ""
+msgstr "RDA: Configurazione della traccia"
 
 #: src/Service/RdaDataTypeFactory.php:160
 msgid "RDA: Type of Recording"
-msgstr ""
+msgstr "RDA: Tipo di registrazione"
 
 #: src/Service/RdaDataTypeFactory.php:164
 msgid "RDA: Video Format"
-msgstr ""
+msgstr "RDA: Formato video"
 
 #: src/Service/RdaDataTypeFactory.php:168
 msgid "RDA:  Gender"
-msgstr ""
+msgstr "RDA:  Genere"
 
 #: src/Service/RdaDataTypeFactory.php:172
 msgid "RDA: Character"
@@ -376,55 +376,55 @@ msgstr ""
 
 #: src/Service/NsDataTypeFactory.php:12
 msgid "Nuovo soggettario: Agenti: Organismi"
-msgstr ""
+msgstr "Nuovo soggettario: Agenti: Organismi"
 
 #: src/Service/NsDataTypeFactory.php:16
 msgid "Nuovo soggettario: Agenti: Organizzazioni"
-msgstr ""
+msgstr "Nuovo soggettario: Agenti: Organizzazioni"
 
 #: src/Service/NsDataTypeFactory.php:20
 msgid "Nuovo soggettario: Agenti: Persone e gruppi"
-msgstr ""
+msgstr "Nuovo soggettario: Agenti: Persone e gruppi"
 
 #: src/Service/NsDataTypeFactory.php:24
 msgid "Nuovo soggettario: Azioni: Attività"
-msgstr ""
+msgstr "Nuovo soggettario: Azioni: Attività"
 
 #: src/Service/NsDataTypeFactory.php:28
 msgid "Nuovo soggettario: Azioni: Discipline"
-msgstr ""
+msgstr "Nuovo soggettario: Azioni: Discipline"
 
 #: src/Service/NsDataTypeFactory.php:32
 msgid "Nuovo soggettario: Azioni: Processi"
-msgstr ""
+msgstr "Nuovo soggettario: Azioni: Processi"
 
 #: src/Service/NsDataTypeFactory.php:36
 msgid "Nuovo soggettario: Cose: Forme"
-msgstr ""
+msgstr "Nuovo soggettario: Cose: Forme"
 
 #: src/Service/NsDataTypeFactory.php:40
 msgid "Nuovo soggettario: Cose: Materia"
-msgstr ""
+msgstr "Nuovo soggettario: Cose: Materia"
 
 #: src/Service/NsDataTypeFactory.php:44
 msgid "Nuovo soggettario: Cose: Oggetti"
-msgstr ""
+msgstr "Nuovo soggettario: Cose: Oggetti"
 
 #: src/Service/NsDataTypeFactory.php:48
 msgid "Nuovo soggettario: Cose: Spazio"
-msgstr ""
+msgstr "Nuovo soggettario: Cose: Spazio"
 
 #: src/Service/NsDataTypeFactory.php:52
 msgid "Nuovo soggettario: Cose: Strumenti"
-msgstr ""
+msgstr "Nuovo soggettario: Cose: Strumenti"
 
 #: src/Service/NsDataTypeFactory.php:56
 msgid "Nuovo soggettario: Cose: Strutture"
-msgstr ""
+msgstr "Nuovo soggettario: Cose: Strutture"
 
 #: src/Service/NsDataTypeFactory.php:60
 msgid "Nuovo soggettario: Tempo"
-msgstr ""
+msgstr "Nuovo soggettario: Tempo"
 
 #: src/Service/McDataTypeFactory.php:12
 msgid ""
@@ -746,19 +746,19 @@ msgstr ""
 
 #: src/DataType/Dc/Elements.php:21
 msgid "Dublin Core: Elements"
-msgstr ""
+msgstr "Dublin Core: Elementi"
 
 #: src/DataType/Dc/Terms.php:21
 msgid "Dublin Core: Terms"
-msgstr ""
+msgstr "Dublin Core: Termini"
 
 #: src/DataType/Dc/Types.php:21
 msgid "Dublin Core: Types"
-msgstr ""
+msgstr "Dublin Core: Tipi"
 
 #: src/DataType/Dc/Classes.php:21
 msgid "Dublin Core: Classes"
-msgstr ""
+msgstr "Dublin Core: Classi"
 
 #: src/DataType/Pactols/Sujets.php:21
 msgid "Pactols: Sujets (Subject)"

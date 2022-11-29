@@ -2,17 +2,17 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 # Translators:
 # Darío Hereñú, 2019
 # Alfonso Montejo <almontejor@gmail.com>, 2022
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-03 14:45-0400\n"
+"POT-Creation-Date: 2022-11-29 12:51-0500\n"
 "PO-Revision-Date: 2017-09-14 20:16+0000\n"
 "Last-Translator: Alfonso Montejo <almontejor@gmail.com>, 2022\n"
 "Language-Team: Spanish (https://www.transifex.com/omeka/teams/14184/es/)\n"
@@ -20,9 +20,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: es\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
-#: view/common/data-type/suggested.phtml:20
+#: view/common/data-type/suggested.phtml:25
 msgid "Remove URI"
 msgstr "Quitar URI"
 
@@ -316,7 +316,7 @@ msgstr "RDA: Video Format"
 
 #: src/Service/RdaDataTypeFactory.php:168
 msgid "RDA:  Gender"
-msgstr "RDA:  Gender"
+msgstr "RDA: Gender"
 
 #: src/Service/RdaDataTypeFactory.php:172
 msgid "RDA: Character"
@@ -654,39 +654,45 @@ msgstr ""
 
 #: src/Service/TesaurosDataTypeFactory.php:12
 msgid "Tesauros: Diccionario de Bienes Culturales"
-msgstr "Tesauros: Diccionario de Bienes Culturales"
+msgstr ""
+"Tesauros del Patrimonio Cultural de España: Diccionario de Bienes Culturales"
 
 #: src/Service/TesaurosDataTypeFactory.php:16
 msgid "Tesauros: Diccionario de Materias"
-msgstr "Tesauros: Diccionario de Materias"
+msgstr "Tesauros del Patrimonio Cultural de España: Diccionario de Materias"
 
 #: src/Service/TesaurosDataTypeFactory.php:20
 msgid "Tesauros: Diccionario de Técnicas"
-msgstr "Tesauros: Diccionario de Técnicas"
+msgstr "Tesauros del Patrimonio Cultural de España: Diccionario de Técnicas"
 
 #: src/Service/TesaurosDataTypeFactory.php:24
 msgid "Tesauros: Diccionario de Contextos Culturales"
-msgstr "Tesauros: Diccionario de Contextos Culturales"
+msgstr ""
+"Tesauros del Patrimonio Cultural de España: Diccionario de Contextos "
+"Culturales"
 
 #: src/Service/TesaurosDataTypeFactory.php:28
 msgid "Tesauros: Diccionario Geográfico"
-msgstr "Tesauros: Diccionario Geográfico"
+msgstr "Tesauros del Patrimonio Cultural de España: Diccionario Geográfico"
 
 #: src/Service/TesaurosDataTypeFactory.php:32
 msgid "Tesauros: Diccionario de Toponimia Histórica"
-msgstr "Tesauros: Diccionario de Toponimia Histórica"
+msgstr ""
+"Tesauros del Patrimonio Cultural de España: Diccionario de Toponimia "
+"Histórica"
 
 #: src/Service/TesaurosDataTypeFactory.php:36
 msgid "Tesauros: Diccionario de Cerámica"
-msgstr "Tesauros: Diccionario de Cerámica"
+msgstr "Tesauros del Patrimonio Cultural de España: Diccionario de Cerámica"
 
 #: src/Service/TesaurosDataTypeFactory.php:40
 msgid "Tesauros: Diccionario de Numismática"
-msgstr "Tesauros: Diccionario de Numismática"
+msgstr ""
+"Tesauros del Patrimonio Cultural de España: Diccionario de Numismática"
 
 #: src/Service/TesaurosDataTypeFactory.php:44
 msgid "Tesauros: Diccionario de Mobiliario"
-msgstr "Tesauros: Diccionario de Mobiliario"
+msgstr "Tesauros del Patrimonio Cultural de España: Diccionario de Mobiliario"
 
 #: src/DataType/Lc/Genreforms.php:24
 msgid "LC: Genre/Form Terms"
@@ -836,4 +842,4 @@ msgstr "Geonames: The GeoNames geographical database"
 
 #: src/DataType/Thub/Thub.php:21
 msgid "Thesaurus de la Universitat de Barcelona (THUB)"
-msgstr ""
+msgstr "Thesaurus de la Universitat de Barcelona (THUB)"
