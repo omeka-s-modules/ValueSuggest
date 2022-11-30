@@ -63,8 +63,7 @@ LIMIT 500',
                 'value' => $result['Label']['value'],
                 'data' => [
                     'uri' => $result['Subject']['value'],
-                    'info' => isset($result['ScopeNote']['value'])
-                        ? $result['ScopeNote']['value'] : null,
+                    'info' => $result['ScopeNote']['value'] ?? null,
                 ],
             ];
         }

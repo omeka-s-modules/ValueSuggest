@@ -49,12 +49,10 @@ class RdaSuggestAll implements SuggesterInterface
             if (!isset($result['inScheme'])) {
                 continue;
             }
-            $value = isset($result['prefLabel'][$lang])
-                ? $result['prefLabel'][$lang]
-                : $result['prefLabel']['en'];
-            $info = isset($result['ToolkitDefinition'][$lang])
-                ? $result['ToolkitDefinition'][$lang]
-                : (isset($result['ToolkitDefinition']['en']) ? $result['ToolkitDefinition']['en'] : null);
+            $value = $result['prefLabel'][$lang]
+                ?? $result['prefLabel']['en'];
+            $info = $result['ToolkitDefinition'][$lang]
+                ?? ($result['ToolkitDefinition']['en'] ?? null);
             $suggestions[] = [
                 'value' => $value,
                 'data' => [

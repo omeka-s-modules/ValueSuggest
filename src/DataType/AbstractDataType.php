@@ -6,7 +6,6 @@ use Omeka\Api\Representation\ValueRepresentation;
 use Omeka\DataType\AbstractDataType as BaseAbstractDataType;
 use Omeka\Entity\Value;
 use Laminas\Form\Element\Hidden;
-use Laminas\Form\Element\Text;
 use Laminas\ServiceManager\ServiceManager;
 use Laminas\View\Renderer\PhpRenderer;
 
