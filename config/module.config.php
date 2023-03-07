@@ -121,6 +121,10 @@ return [
             'valuesuggest:oclc:viaf' => Service\OclcDataTypeFactory::class,
             'valuesuggest:oclc:fast' => Service\OclcDataTypeFactory::class,
 
+            /* Omeka */
+            'valuesuggest:omeka:property' => Service\OmekaPropertyDataTypeFactory::class,
+            'valuesuggest:omeka:propertyResourceTemplate' => Service\OmekaPropertyResourceTemplateDataTypeFactory::class,
+
             /* Opentheso / Pactols */
             'valuesuggest:pactols:all' => Service\PactolsDataTypeFactory::class,
             'valuesuggest:pactols:sujets' => Service\PactolsDataTypeFactory::class,

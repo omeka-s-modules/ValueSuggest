@@ -53,9 +53,13 @@ class IndexController extends AbstractActionController
                 ->setContent(sprintf('The "%s" suggester does not implement ValueSuggest\Suggester\SuggesterInterface.', $type));
         }
 
+        $options = $this->params()->fromQuery();
+        unset($options['type'], $options['query'], $options['lang']);
+
         $suggestions = $suggester->getSuggestions(
             $this->params()->fromQuery('query'),
-            $this->params()->fromQuery('lang') ?: null
+            $this->params()->fromQuery('lang') ?: null,
+            $options
         );
         if (!is_array($suggestions)) {
             return $response->setStatusCode('500')
