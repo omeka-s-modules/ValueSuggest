@@ -79,14 +79,13 @@ $(document).on('o:prepare-value', function(e, type, value) {
             // triggered whether the user wants it or not. The user must
             // explicitly select the suggestion.
             triggerSelectOnValidInput: false,
-            // Set the lang paramater in onSearchStart so the "valuesuggest"
-            // type always uses the current language when making a query. Set
-            // the type, property_id, resource_template_id, and resource_class_id
-            // parameters here as well for suggesters that may need them.
+            // Set contextual parameters for suggesters that may need them. For
+            // example, we set "lang" so the suggester always uses the current
+            // language when making a query.
             onSearchStart: function(params) {
                 $(this).css('cursor', 'progress');
-                params.lang = languageInput.val();
                 params.type = type;
+                params.lang = languageInput.val();
                 params.property_id = thisValue.closest('.field').data('property-id');
                 params.resource_template_id = $('#resource-template-select').val();
                 params.resource_class_id = $('#resource-class-select').val();

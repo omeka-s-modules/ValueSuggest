@@ -1,9 +1,9 @@
 <?php
 namespace ValueSuggest\Suggester\Omeka;
 
-use ValueSuggest\Suggester\SuggesterWithOptionsInterface;
+use ValueSuggest\Suggester\SuggesterWithContextInterface;
 
-class Omeka implements SuggesterWithOptionsInterface
+class Omeka implements SuggesterWithContextInterface
 {
     protected $services;
 
@@ -13,23 +13,23 @@ class Omeka implements SuggesterWithOptionsInterface
         $this->name = $name;
     }
 
-    public function getSuggestions($query, $lang = null, array $options = [])
+    public function getSuggestions($query, $lang = null, array $context = [])
     {
-        $propertyId = $options['property_id'] ?? null;
-        $resourceTemplateId = $options['resource_template_id'] ?? null;
-        $resourceClassId = $options['resource_class_id'] ?? null;
+        $propertyId = (int) ($context['property_id'] ?? 0);
+        $resourceTemplateId = (int) ($context['resource_template_id'] ?? 0);
+        $resourceClassId = (int) ($context['resource_class_id'] ?? 0);
 
         $em = $this->services->get('Omeka\EntityManager');
         $qb = $em->createQueryBuilder()
             ->select('v.value value, v.uri uri, COUNT(v.value) has_count')
             ->from('Omeka\Entity\Value', 'v')
             ->andWhere('v.property = :propertyId')
-                ->setParameter('propertyId', $propertyId)
             ->andWhere('LOCATE(:query, v.value) > 0')
-                ->setParameter('query', $query)
             ->groupBy('value', 'uri')
             ->orderBy('has_count', 'DESC')
-            ->addOrderBy('value', 'ASC');
+            ->addOrderBy('value', 'ASC')
+            ->setParameter('propertyId', $propertyId)
+            ->setParameter('query', $query);
 
         switch ($this->name) {
             case 'valuesuggest:omeka:propertyResourceTemplate':
