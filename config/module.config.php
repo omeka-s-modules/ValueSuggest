@@ -122,8 +122,9 @@ return [
             'valuesuggest:oclc:fast' => Service\OclcDataTypeFactory::class,
 
             /* Omeka */
-            'valuesuggest:omeka:property' => Service\OmekaPropertyDataTypeFactory::class,
-            'valuesuggest:omeka:propertyResourceTemplate' => Service\OmekaPropertyResourceTemplateDataTypeFactory::class,
+            'valuesuggest:omeka:property' => Service\OmekaDataTypeFactory::class,
+            'valuesuggest:omeka:propertyResourceTemplate' => Service\OmekaDataTypeFactory::class,
+            'valuesuggest:omeka:propertyResourceClass' => Service\OmekaDataTypeFactory::class,
 
             /* Opentheso / Pactols */
             'valuesuggest:pactols:all' => Service\PactolsDataTypeFactory::class,
