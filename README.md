@@ -60,6 +60,7 @@ This module includes the following vocabularies:
 ### [GeoNames](http://www.geonames.org/)
 
 - The GeoNames geographical database
+- GeoNames features
 
 ### [The Getty Vocabularies](http://vocab.getty.edu/)
 
