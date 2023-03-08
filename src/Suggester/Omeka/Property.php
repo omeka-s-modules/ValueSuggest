@@ -21,14 +21,13 @@ class Property implements SuggesterWithOptionsInterface
 
         $em = $this->services->get('Omeka\EntityManager');
         $qb = $em->createQueryBuilder()
-            ->select('v.value value, COUNT(v.value) has_count')
+            ->select('v.value value, v.uri uri, COUNT(v.value) has_count')
             ->from('Omeka\Entity\Value', 'v')
             ->andWhere('v.property = :propertyId')
                 ->setParameter('propertyId', $propertyId)
             ->andWhere('LOCATE(:query, v.value) > 0')
-                // Prevent wildcard injection using addcslashes.
                 ->setParameter('query', $query)
-            ->groupBy('value')
+            ->groupBy('value', 'uri')
             ->orderBy('has_count', 'DESC')
             ->addOrderBy('value', 'ASC');
 
@@ -37,8 +36,8 @@ class Property implements SuggesterWithOptionsInterface
             $suggestions[] = [
                 'value' => $result['value'],
                 'data' => [
-                    'uri' => null,
-                    'info' => null,
+                    'uri' => $result['uri'],
+                    'info' => $result['uri'] ? sprintf('%s %s', $result['value'], $result['uri']) : null,
                 ],
             ];
         }
