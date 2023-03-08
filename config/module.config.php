@@ -36,6 +36,7 @@ return [
 
             /* Geonames */
             'valuesuggest:geonames:geonames' => Service\GeonamesDataTypeFactory::class,
+            'valuesuggestall:geonames:features' => Service\GeonamesDataTypeFactory::class,
 
             /* Getty */
             'valuesuggest:getty:aat' => Service\GettyDataTypeFactory::class,
