@@ -31,6 +31,10 @@ class Omeka implements SuggesterWithContextInterface
             ->setParameter('propertyId', $propertyId)
             ->setParameter('query', $query);
 
+        if ($lang) {
+            $qb->andWhere('v.lang = :lang')->setParameter('lang', $lang);
+        }
+
         switch ($this->name) {
             case 'valuesuggest:omeka:propertyResourceTemplate':
                 $qb->join('v.resource', 'r')
