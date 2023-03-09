@@ -75,7 +75,8 @@ query FindTerm {
                 terms {
                 uri
                 prefLabel
-                altLabel}
+                altLabel
+                scopeNote}
             }
             ... on Error {
                 message
@@ -126,8 +127,20 @@ EOD;
                 foreach ($baseNode as $item) {
                     $uri = @$item["uri"] ?: false;
                     $label = @$item["prefLabel"][0] ?: false;
+					$info=null;
+					if (count(@$item["altLabel"])>0) {
+						$info=join(" | ",@$item["altLabel"]);
+					}
+					if (count(@$item["scopeNote"])>0) {
+						if ($info==null) {
+							$info='';
+						} else {
+							$info.="\n\n";
+						}
+						$info.=join("\n",@$item["scopeNote"]);
+					}
                     if ($uri && $label) {
-                        array_push($suggestions, ['value' => $label, 'data' => ['uri' => $uri, 'info' => null]]);
+                        array_push($suggestions, ['value' => $label, 'data' => ['uri' => $uri, 'info' => $info]]);
                     }
                 }
                 usort($suggestions, function ($a, $b) {
