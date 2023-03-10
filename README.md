@@ -20,6 +20,7 @@ This module includes the following vocabularies:
 - IdRef
 - Library of Congress Linked Data Service
 - OCLC Metadata Services
+- Omeka
 - PACTOLS of Frantiq
 - PeriodO
 - RDA Value Vocabularies
@@ -141,6 +142,15 @@ This module includes the following vocabularies:
 
 - Faceted Application of Subject Terminologies (FAST)
 - The Virtual International Authority File (VIAF)
+
+### Omeka
+
+Suggest values that already exist in the working Omeka installation.
+
+- Omeka: Property: suggest values using the current value's property
+- Omeka: Property / Resource template: suggest values using the current value's property and current resource's template
+- Omeka: Property / Resource class: suggest values using the current value's property and current resource's class
+
 
 ### [PACTOLS of Frantiq](https://pactols.frantiq.fr/)
 

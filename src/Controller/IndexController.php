@@ -53,9 +53,16 @@ class IndexController extends AbstractActionController
                 ->setContent(sprintf('The "%s" suggester does not implement ValueSuggest\Suggester\SuggesterInterface.', $type));
         }
 
+        // All query params except for "query" and "type" are considered
+        // contextual. Note that although "lang" is contextual, it is passed as
+        // a separate argument for legacy reasons.
+        $context = $this->params()->fromQuery();
+        unset($context['query'], $context['type']);
+
         $suggestions = $suggester->getSuggestions(
             $this->params()->fromQuery('query'),
-            $this->params()->fromQuery('lang') ?: null
+            $this->params()->fromQuery('lang') ?: null,
+            $context
         );
         if (!is_array($suggestions)) {
             return $response->setStatusCode('500')
