@@ -173,9 +173,12 @@ Suggest values that already exist in the working Omeka installation.
 - Carrier Extent Unit
 - Carrier Type
 - Cartographic Data Type
+- Collection Accrual Method
+- Collection Accrual Policy
 - Colour Content
 - Configuration of Playback Channels
 - Content Type
+- Extension Plan
 - Conventional Collective Title
 - File Type
 - Font Size
@@ -188,7 +191,9 @@ Suggest values that already exist in the working Omeka installation.
 - Groove Pitch of an Analog Cylinder
 - Groove Width of an Analog Disc
 - Illustrative Content
+- Interactivity Mode
 - Layout
+- Linked Data Work
 - Material
 - Media Type
 - Mode of Issuance
@@ -196,6 +201,8 @@ Suggest values that already exist in the working Omeka installation.
 - Presentation Format
 - Production Method
 - Recording Medium
+- Recording Methods
+- Recording Sources
 - Reduction Ratio Designation
 - Regional Encoding
 - Scale Designation
@@ -204,7 +211,10 @@ Suggest values that already exist in the working Omeka installation.
 - Status of Identification
 - Terms
 - Track Configuration
+- Type Of Binding
 - Type of Recording
+- Unit of Time
+- User Tasks
 - Video Format
 
 #### RDA Local value vocabularies
