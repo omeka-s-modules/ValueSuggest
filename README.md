@@ -120,6 +120,7 @@ This module includes the following vocabularies:
 - MARC Relators
 - Medium of Performance Thesaurus for Music
 - Name Authority File
+- Rare Materials Cataloging
 - Subject Headings
 - Thesaurus for Graphic Materials
 

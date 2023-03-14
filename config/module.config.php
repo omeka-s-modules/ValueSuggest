@@ -83,6 +83,7 @@ return [
             'valuesuggest:lc:iso6391' => Service\LcDataTypeFactory::class,
             'valuesuggest:lc:iso6392' => Service\LcDataTypeFactory::class,
             'valuesuggest:lc:iso6395' => Service\LcDataTypeFactory::class,
+            'valuesuggest:lc:rbmscv' => Service\LcDataTypeFactory::class,
             // @todo Add more LC data types
 
             /* Network of Terms of the Dutch National Network for Digital Heritage */
