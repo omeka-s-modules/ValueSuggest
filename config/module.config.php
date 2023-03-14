@@ -155,6 +155,8 @@ return [
             'valuesuggestall:rda:RDACarrierEU' => Service\RdaDataTypeFactory::class,
             'valuesuggestall:rda:RDACarrierType' => Service\RdaDataTypeFactory::class,
             'valuesuggestall:rda:RDACartoDT' => Service\RdaDataTypeFactory::class,
+            'valuesuggestall:rda:RDACollectionAccrualMethod' => Service\RdaDataTypeFactory::class,
+            'valuesuggestall:rda:RDACollectionAccrualPolicy' => Service\RdaDataTypeFactory::class,
             'valuesuggestall:rda:RDAColourContent' => Service\RdaDataTypeFactory::class,
             'valuesuggestall:rda:configPlayback' => Service\RdaDataTypeFactory::class,
             'valuesuggestall:rda:RDAContentType' => Service\RdaDataTypeFactory::class,

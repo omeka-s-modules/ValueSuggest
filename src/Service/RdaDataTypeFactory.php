@@ -32,6 +32,14 @@ class RdaDataTypeFactory implements FactoryInterface
             'label' => 'RDA: Cartographic Data Type', // @translate
             'url' => 'http://rdaregistry.info/termList/RDACartoDT.jsonld',
         ],
+        'valuesuggestall:rda:RDACollectionAccrualMethod' => [
+            'label' => 'RDA: Collection Accrual Method', // @translate
+            'url' => 'http://rdaregistry.info/termList/RDACollectionAccrualMethod.jsonld',
+        ],
+        'valuesuggestall:rda:RDACollectionAccrualPolicy' => [
+            'label' => 'RDA: Collection Accrual Policy', // @translate
+            'url' => 'http://rdaregistry.info/termList/RDACollectionAccrualPolicy.jsonld',
+        ],
         'valuesuggestall:rda:RDAColourContent' => [
             'label' => 'RDA: Colour Content', // @translate
             'url' => 'http://rdaregistry.info/termList/RDAColourContent.jsonld',
@@ -43,6 +51,10 @@ class RdaDataTypeFactory implements FactoryInterface
         'valuesuggestall:rda:RDAContentType' => [
             'label' => 'RDA: Content Type', // @translate
             'url' => 'http://rdaregistry.info/termList/RDAContentType.jsonld',
+        ],
+        'valuesuggestall:rda:RDAExtensionPlan' => [
+            'label' => 'RDA: Extension Plan', // @translate
+            'url' => 'http://rdaregistry.info/termList/RDAExtensionPlan.jsonld',
         ],
         'valuesuggestall:rda:CollTitle' => [
             'label' => 'RDA: Conventional Collective Title', // @translate
@@ -92,9 +104,17 @@ class RdaDataTypeFactory implements FactoryInterface
             'label' => 'RDA: Illustrative Content', // @translate
             'url' => 'http://rdaregistry.info/termList/IllusContent.jsonld',
         ],
+        'valuesuggestall:rda:RDAInteractivityMode' => [
+            'label' => 'RDA: Interactivity Mode', // @translate
+            'url' => 'http://rdaregistry.info/termList/RDAInteractivityMode.jsonld',
+        ],
         'valuesuggestall:rda:layout' => [
-            'label' => 'RDA:  Layout', // @translate
+            'label' => 'RDA: Layout', // @translate
             'url' => 'http://rdaregistry.info/termList/layout.jsonld',
+        ],
+        'valuesuggestall:rda:RDALinkedDataWork' => [
+            'label' => 'RDA: Linked Data Work', // @translate
+            'url' => 'http://rdaregistry.info/termList/RDALinkedDataWork.jsonld',
         ],
         'valuesuggestall:rda:RDAMaterial' => [
             'label' => 'RDA: Material', // @translate
@@ -123,6 +143,14 @@ class RdaDataTypeFactory implements FactoryInterface
         'valuesuggestall:rda:recMedium' => [
             'label' => 'RDA: Recording Medium', // @translate
             'url' => 'http://rdaregistry.info/termList/recMedium.jsonld',
+        ],
+        'valuesuggestall:rda:RDARecordingMethods' => [
+            'label' => 'RDA: Recording Methods', // @translate
+            'url' => 'http://rdaregistry.info/termList/RDARecordingMethods.jsonld',
+        ],
+        'valuesuggestall:rda:RDARecordingSources' => [
+            'label' => 'RDA: Recording Sources', // @translate
+            'url' => 'http://rdaregistry.info/termList/RDARecordingSources.jsonld',
         ],
         'valuesuggestall:rda:RDAReductionRatio' => [
             'label' => 'RDA: Reduction Ratio Designation', // @translate
@@ -156,9 +184,21 @@ class RdaDataTypeFactory implements FactoryInterface
             'label' => 'RDA: Track Configuration', // @translate
             'url' => 'http://rdaregistry.info/termList/trackConfig.jsonld',
         ],
+        'valuesuggestall:rda:RDATypeOfBinding' => [
+            'label' => 'RDA: Type Of Binding', // @translate
+            'url' => 'http://rdaregistry.info/termList/RDATypeOfBinding.jsonld',
+        ],
         'valuesuggestall:rda:typeRec' => [
             'label' => 'RDA: Type of Recording', // @translate
             'url' => 'http://rdaregistry.info/termList/typeRec.jsonld',
+        ],
+        'valuesuggestall:rda:RDAUnitOfTime' => [
+            'label' => 'RDA: Unit of Time', // @translate
+            'url' => 'http://rdaregistry.info/termList/RDAUnitOfTime.jsonld',
+        ],
+        'valuesuggestall:rda:RDATasks' => [
+            'label' => 'RDA: User Tasks', // @translate
+            'url' => 'http://rdaregistry.info/termList/RDATasks.jsonld',
         ],
         'valuesuggestall:rda:videoFormat' => [
             'label' => 'RDA: Video Format', // @translate
