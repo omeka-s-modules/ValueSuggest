@@ -28,6 +28,7 @@ class Omeka implements SuggesterWithContextInterface
             ->groupBy('value', 'uri')
             ->orderBy('has_count', 'DESC')
             ->addOrderBy('value', 'ASC')
+            ->setMaxResults(1000)
             ->setParameter('propertyId', $propertyId)
             ->setParameter('query', $query);
 
