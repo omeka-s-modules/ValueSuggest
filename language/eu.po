@@ -4,7 +4,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Hong Zhang <zhangh@unlv.nevada.edu>, 2021
+# Iametza Interaktiboa, 2022
 # 
 #, fuzzy
 msgid ""
@@ -13,29 +13,29 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-15 12:42-0400\n"
 "PO-Revision-Date: 2017-09-14 20:16+0000\n"
-"Last-Translator: Hong Zhang <zhangh@unlv.nevada.edu>, 2021\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/omeka/teams/14184/zh_CN/)\n"
+"Last-Translator: Iametza Interaktiboa, 2022\n"
+"Language-Team: Basque (https://www.transifex.com/omeka/teams/14184/eu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: zh_CN\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: eu\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: view/common/data-type/suggested.phtml:25
 msgid "Remove URI"
-msgstr "取消URI"
+msgstr "Kendu URIa"
 
 #: src/Service/UnescoDataTypeFactory.php:12
 msgid "UNESCO: Tesauro"
-msgstr ""
+msgstr "UNESCO: Tesauroa"
 
 #: src/Service/UnescoDataTypeFactory.php:16
 msgid "UNESCO: Nomenclatura de Ciencia y Tecnología"
-msgstr ""
+msgstr "UNESCO: Nomenclatura de Ciencia y Tecnología"
 
 #: src/Service/UnescoDataTypeFactory.php:20
 msgid "UNESCO: Biblioteca Digital Floridablanca"
-msgstr ""
+msgstr "UNESCO: Biblioteca Digital Floridablanca"
 
 #: src/Service/NdeTermsDataTypeFactory.php:16
 msgid "NDE: Art & Architecture Thesaurus - materialen"
@@ -51,7 +51,7 @@ msgstr ""
 
 #: src/Service/NdeTermsDataTypeFactory.php:28
 msgid "NDE: Archeologisch Basisregister"
-msgstr ""
+msgstr "NDE: Archeologisch Basisregister"
 
 #: src/Service/NdeTermsDataTypeFactory.php:32
 msgid "NDE: Adamlink: straten in Amsterdam"
@@ -59,11 +59,11 @@ msgstr ""
 
 #: src/Service/NdeTermsDataTypeFactory.php:36
 msgid "NDE: Brinkman trefwoordenthesaurus"
-msgstr ""
+msgstr "NDE: Brinkman trefwoordenthesaurus"
 
 #: src/Service/NdeTermsDataTypeFactory.php:40
 msgid "NDE: Cultuurhistorische Thesaurus"
-msgstr ""
+msgstr "NDE: Cultuurhistorische Thesaurus"
 
 #: src/Service/NdeTermsDataTypeFactory.php:44
 msgid "NDE: Cultuurhistorische Thesaurus - Materialen"
@@ -87,11 +87,11 @@ msgstr ""
 
 #: src/Service/NdeTermsDataTypeFactory.php:64
 msgid "NDE: GTAA: genres"
-msgstr ""
+msgstr "NDE: GTAA: genres"
 
 #: src/Service/NdeTermsDataTypeFactory.php:68
 msgid "NDE: GTAA: onderwerpen"
-msgstr ""
+msgstr "NDE: GTAA: onderwerpen"
 
 #: src/Service/NdeTermsDataTypeFactory.php:72
 msgid "NDE: Homosaurus"
@@ -107,23 +107,23 @@ msgstr ""
 
 #: src/Service/NdeTermsDataTypeFactory.php:84
 msgid "NDE: Muziek: genres en stijlen"
-msgstr ""
+msgstr "NDE: Muziek: genres en stijlen"
 
 #: src/Service/NdeTermsDataTypeFactory.php:88
 msgid "NDE: Muziek: personen en groepen"
-msgstr ""
+msgstr "NDE: Muziek: personen en groepen"
 
 #: src/Service/NdeTermsDataTypeFactory.php:92
 msgid "NDE: Muziekschatten: onderwerpen"
-msgstr ""
+msgstr "NDE: Muziekschatten: onderwerpen"
 
 #: src/Service/NdeTermsDataTypeFactory.php:96
 msgid "NDE: Nederlandse Thesaurus van Auteursnamen"
-msgstr ""
+msgstr "NDE: Nederlandse Thesaurus van Auteursnamen"
 
 #: src/Service/NdeTermsDataTypeFactory.php:100
 msgid "NDE: RKDartists"
-msgstr ""
+msgstr "NDE: RKDartists"
 
 #: src/Service/NdeTermsDataTypeFactory.php:104
 msgid "NDE: STCN: drukkers"
@@ -131,107 +131,107 @@ msgstr ""
 
 #: src/Service/NdeTermsDataTypeFactory.php:108
 msgid "NDE: Thesaurus Nationaal Museum van Wereldculturen"
-msgstr ""
+msgstr "NDE: Thesaurus Nationaal Museum van Wereldculturen"
 
 #: src/Service/NdeTermsDataTypeFactory.php:112
 msgid "NDE: Thesaurus Tweede Wereldoorlog Nederland"
-msgstr ""
+msgstr "NDE: Thesaurus Tweede Wereldoorlog Nederland"
 
 #: src/Service/NdeTermsDataTypeFactory.php:116
 msgid "NDE: Wikidata: alle entiteiten"
-msgstr ""
+msgstr "NDE: Wikidata: alle entiteiten"
 
 #: src/Service/NdeTermsDataTypeFactory.php:120
 msgid "NDE: Wikidata: personen"
-msgstr ""
+msgstr "NDE: Wikidata: personen"
 
 #: src/Service/NdeTermsDataTypeFactory.php:124
 msgid "NDE: Wikidata: plaatsen in Nederland en België"
-msgstr ""
+msgstr "NDE: Wikidata: plaatsen in Nederland en België"
 
 #: src/Service/NdeTermsDataTypeFactory.php:128
 msgid "NDE: Wikidata: straten in Nederland"
-msgstr ""
+msgstr "NDE: Wikidata: straten in Nederland"
 
 #: src/Service/IdRefDataTypeFactory.php:14
 msgid "IdRef: All"
-msgstr "IdRef：所有"
+msgstr "IdRef: All"
 
 #: src/Service/IdRefDataTypeFactory.php:18
 msgid "IdRef: Person names"
-msgstr "IdRef：个人名字"
+msgstr "IdRef: Person names"
 
 #: src/Service/IdRefDataTypeFactory.php:22
 msgid "IdRef: Collectivities"
-msgstr ""
+msgstr "IdRef: Collectivities"
 
 #: src/Service/IdRefDataTypeFactory.php:26
 msgid "IdRef: Conferences"
-msgstr ""
+msgstr "IdRef: Conferences"
 
 #: src/Service/IdRefDataTypeFactory.php:30
 msgid "IdRef: Subjects"
-msgstr "IdRef：主题"
+msgstr "IdRef: Subjects"
 
 #: src/Service/IdRefDataTypeFactory.php:34
 msgid "IdRef: Subjects Rameau"
-msgstr ""
+msgstr "IdRef: Subjects Rameau"
 
 #: src/Service/IdRefDataTypeFactory.php:38
 msgid "IdRef: Subjects F-MeSH"
-msgstr ""
+msgstr "IdRef: Subjects F-MeSH"
 
 #: src/Service/IdRefDataTypeFactory.php:42
 msgid "IdRef: Geography"
-msgstr ""
+msgstr "IdRef: Geography"
 
 #: src/Service/IdRefDataTypeFactory.php:46
 msgid "IdRef: Family names"
-msgstr "IdRef：姓氏"
+msgstr "IdRef: Family names"
 
 #: src/Service/IdRefDataTypeFactory.php:50
 msgid "IdRef: Uniform titles"
-msgstr ""
+msgstr "IdRef: Uniform titles"
 
 #: src/Service/IdRefDataTypeFactory.php:54
 msgid "IdRef: Authors-Titles"
-msgstr ""
+msgstr "IdRef: Authors-Titles"
 
 #: src/Service/IdRefDataTypeFactory.php:58
 msgid "IdRef: Trademarks"
-msgstr "IdRef：商标"
+msgstr "IdRef: Trademarks"
 
 #: src/Service/IdRefDataTypeFactory.php:62
 msgid "IdRef: PPN id"
-msgstr ""
+msgstr "IdRef: PPN id"
 
 #: src/Service/IdRefDataTypeFactory.php:66
 msgid "IdRef: Library registry (RCR)"
-msgstr ""
+msgstr "IdRef: Library registry (RCR)"
 
 #: src/Service/RdaDataTypeFactory.php:12
 msgid "RDA: Aspect Ratio Designation"
-msgstr ""
+msgstr "RDA: Aspect Ratio Designation"
 
 #: src/Service/RdaDataTypeFactory.php:16
 msgid "RDA: Bibliographic Format"
-msgstr "资源描述与检索（RDA）：文献格式"
+msgstr "RDA: Bibliographic Format"
 
 #: src/Service/RdaDataTypeFactory.php:20
 msgid "RDA: Broadcast Standard"
-msgstr "资源描述与检索（RDA）：播放标准"
+msgstr "RDA: Broadcast Standard"
 
 #: src/Service/RdaDataTypeFactory.php:24
 msgid "RDA: Carrier Extent Unit"
-msgstr ""
+msgstr "RDA: Carrier Extent Unit"
 
 #: src/Service/RdaDataTypeFactory.php:28
 msgid "RDA: Carrier Type"
-msgstr ""
+msgstr "RDA: Carrier Type"
 
 #: src/Service/RdaDataTypeFactory.php:32
 msgid "RDA: Cartographic Data Type"
-msgstr ""
+msgstr "RDA: Cartographic Data Type"
 
 #: src/Service/RdaDataTypeFactory.php:36
 msgid "RDA: Collection Accrual Method"
@@ -243,15 +243,15 @@ msgstr ""
 
 #: src/Service/RdaDataTypeFactory.php:44
 msgid "RDA: Colour Content"
-msgstr "资源描述与检索（RDA）：色彩内容"
+msgstr "RDA: Kolore Edukia"
 
 #: src/Service/RdaDataTypeFactory.php:48
 msgid "RDA: Configuration of Playback Channels"
-msgstr "资源描述与检索（RDA）：回放频道的设置"
+msgstr "RDA: Configuration of Playback Channels"
 
 #: src/Service/RdaDataTypeFactory.php:52
 msgid "RDA: Content Type"
-msgstr "资源描述与检索（RDA）：内容类型"
+msgstr "RDA: Eduki Mota"
 
 #: src/Service/RdaDataTypeFactory.php:56
 msgid "RDA: Extension Plan"
@@ -259,51 +259,51 @@ msgstr ""
 
 #: src/Service/RdaDataTypeFactory.php:60
 msgid "RDA: Conventional Collective Title"
-msgstr ""
+msgstr "RDA: Conventional Collective Title"
 
 #: src/Service/RdaDataTypeFactory.php:64
 msgid "RDA: File Type"
-msgstr "资源描述与检索（RDA）：文件类型"
+msgstr "RDA: Fitxategi Mota"
 
 #: src/Service/RdaDataTypeFactory.php:68
 msgid "RDA: Font Size"
-msgstr "资源描述与检索（RDA）：字体尺寸"
+msgstr "RDA: Testu Neurria"
 
 #: src/Service/RdaDataTypeFactory.php:72
 msgid "RDA: Form of Musical Notation"
-msgstr ""
+msgstr "RDFA: Musikako Anotazio formularioa"
 
 #: src/Service/RdaDataTypeFactory.php:76
 msgid "RDA: Form of Notated Movement"
-msgstr ""
+msgstr "RDA: Form of Notated Movement"
 
 #: src/Service/RdaDataTypeFactory.php:80
 msgid "RDA: Form of Tactile Notation"
-msgstr ""
+msgstr "RDA: Form of Tactile Notation"
 
 #: src/Service/RdaDataTypeFactory.php:84
 msgid "RDA: Format of Notated Music"
-msgstr "资源描述与检索（RDA）：注释乐谱格式"
+msgstr "RDA: Format of Notated Music"
 
 #: src/Service/RdaDataTypeFactory.php:88
 msgid "RDA: Frequency"
-msgstr "资源描述与检索（RDA）：频率"
+msgstr "RDA: Frequency"
 
 #: src/Service/RdaDataTypeFactory.php:92
 msgid "RDA: Generation"
-msgstr ""
+msgstr "RDA: Generation"
 
 #: src/Service/RdaDataTypeFactory.php:96
 msgid "RDA: Groove Pitch of an Analog Cylinder"
-msgstr "资源描述与检索（RDA）：模拟螺圈的声槽间距"
+msgstr "RDA: Groove Pitch of an Analog Cylinder"
 
 #: src/Service/RdaDataTypeFactory.php:100
 msgid "RDA: Groove Width of an Analog Disc"
-msgstr "资源描述与检索（RDA）：模拟碟片的声槽宽度"
+msgstr "RDA: Groove Width of an Analog Disc"
 
 #: src/Service/RdaDataTypeFactory.php:104
 msgid "RDA: Illustrative Content"
-msgstr ""
+msgstr "RDA: Illustrative Content"
 
 #: src/Service/RdaDataTypeFactory.php:108
 msgid "RDA: Interactivity Mode"
@@ -319,31 +319,31 @@ msgstr ""
 
 #: src/Service/RdaDataTypeFactory.php:120
 msgid "RDA: Material"
-msgstr "资源描述与检索（RDA）：材料"
+msgstr "RDA: Material"
 
 #: src/Service/RdaDataTypeFactory.php:124
 msgid "RDA: Media Type"
-msgstr "资源描述与检索（RDA）：媒介类型"
+msgstr "RDA: Media Type"
 
 #: src/Service/RdaDataTypeFactory.php:128
 msgid "RDA: Mode of Issuance"
-msgstr ""
+msgstr "RDA: Mode of Issuance"
 
 #: src/Service/RdaDataTypeFactory.php:132
 msgid "RDA: Polarity"
-msgstr ""
+msgstr "RDA: Polarity"
 
 #: src/Service/RdaDataTypeFactory.php:136
 msgid "RDA: Presentation Format"
-msgstr ""
+msgstr "RDA: Presentation Format"
 
 #: src/Service/RdaDataTypeFactory.php:140
 msgid "RDA: Production Method"
-msgstr ""
+msgstr "RDA: Production Method"
 
 #: src/Service/RdaDataTypeFactory.php:144
 msgid "RDA: Recording Medium"
-msgstr "资源描述与检索（RDA）：记录媒介"
+msgstr "RDA: Recording Medium"
 
 #: src/Service/RdaDataTypeFactory.php:148
 msgid "RDA: Recording Methods"
@@ -355,35 +355,35 @@ msgstr ""
 
 #: src/Service/RdaDataTypeFactory.php:156
 msgid "RDA: Reduction Ratio Designation"
-msgstr ""
+msgstr "RDA: Reduction Ratio Designation"
 
 #: src/Service/RdaDataTypeFactory.php:160
 msgid "RDA: Regional Encoding"
-msgstr "资源描述与检索（RDA）：区域编码"
+msgstr "RDA: Regional Encoding"
 
 #: src/Service/RdaDataTypeFactory.php:164
 msgid "RDA: Scale Designation"
-msgstr ""
+msgstr "RDA: Scale Designation"
 
 #: src/Service/RdaDataTypeFactory.php:168
 msgid "RDA: Sound Content"
-msgstr "资源描述与检索（RDA）：音响内容"
+msgstr "RDA: Sound Content"
 
 #: src/Service/RdaDataTypeFactory.php:172
 msgid "RDA: Special Playback Characteristics"
-msgstr "资源描述与检索（RDA）：特殊回放特性"
+msgstr "RDA: Special Playback Characteristics"
 
 #: src/Service/RdaDataTypeFactory.php:176
 msgid "RDA: Status of Identification"
-msgstr ""
+msgstr "RDA: Status of Identification"
 
 #: src/Service/RdaDataTypeFactory.php:180
 msgid "RDA: Terms"
-msgstr "资源描述与检索（RDA）：术语"
+msgstr "RDA: Terms"
 
 #: src/Service/RdaDataTypeFactory.php:184
 msgid "RDA: Track Configuration"
-msgstr ""
+msgstr "RDA: Track Configuration"
 
 #: src/Service/RdaDataTypeFactory.php:188
 msgid "RDA: Type Of Binding"
@@ -391,7 +391,7 @@ msgstr ""
 
 #: src/Service/RdaDataTypeFactory.php:192
 msgid "RDA: Type of Recording"
-msgstr "资源描述与检索（RDA）：记录类型"
+msgstr "RDA: Type of Recording"
 
 #: src/Service/RdaDataTypeFactory.php:196
 msgid "RDA: Unit of Time"
@@ -403,67 +403,67 @@ msgstr ""
 
 #: src/Service/RdaDataTypeFactory.php:204
 msgid "RDA: Video Format"
-msgstr "资源描述与检索（RDA）：视频格式"
+msgstr "RDA: Video Format"
 
 #: src/Service/RdaDataTypeFactory.php:208
 msgid "RDA:  Gender"
-msgstr "资源描述与检索（RDA）：性别"
+msgstr "RDA:  Gender"
 
 #: src/Service/RdaDataTypeFactory.php:212
 msgid "RDA: Character"
-msgstr ""
+msgstr "RDA: Character"
 
 #: src/Service/RdaDataTypeFactory.php:216
 msgid "RDA: Extension Mode"
-msgstr ""
+msgstr "RDA: Extension Mode"
 
 #: src/Service/RdaDataTypeFactory.php:220
 msgid "RDA: Extension Requirement"
-msgstr ""
+msgstr "RDA: Extension Requirement"
 
 #: src/Service/RdaDataTypeFactory.php:224
 msgid "RDA: Extension Termination"
-msgstr ""
+msgstr "RDA: Extension Termination"
 
 #: src/Service/RdaDataTypeFactory.php:228
 msgid "RDA: Housing Format"
-msgstr ""
+msgstr "RDA: Housing Format"
 
 #: src/Service/RdaDataTypeFactory.php:232
 msgid "RDA: Image Dimensionality"
-msgstr ""
+msgstr "RDA: Image Dimensionality"
 
 #: src/Service/RdaDataTypeFactory.php:236
 msgid "RDA: Image Movement"
-msgstr ""
+msgstr "RDA: Image Movement"
 
 #: src/Service/RdaDataTypeFactory.php:240
 msgid "RDA: Interaction"
-msgstr "资源描述与检索（RDA）：互相作用"
+msgstr "RDA: Interaction"
 
 #: src/Service/RdaDataTypeFactory.php:244
 msgid "RDA: Intermediation Tool"
-msgstr ""
+msgstr "RDA: Intermediation Tool"
 
 #: src/Service/RdaDataTypeFactory.php:248
 msgid "RDA: Revision Mode"
-msgstr "资源描述与检索（RDA）：版本模式"
+msgstr "RDA: Revision Mode"
 
 #: src/Service/RdaDataTypeFactory.php:252
 msgid "RDA: Revision Requirement"
-msgstr "资源描述与检索（RDA）：版本要求"
+msgstr "RDA: Revision Requirement"
 
 #: src/Service/RdaDataTypeFactory.php:256
 msgid "RDA: Revision Termination"
-msgstr "资源描述与检索（RDA）：版本终结"
+msgstr "RDA: Revision Termination"
 
 #: src/Service/RdaDataTypeFactory.php:260
 msgid "RDA: Sensory Mode"
-msgstr ""
+msgstr "RDA: Sensory Mode"
 
 #: src/Service/RdaDataTypeFactory.php:264
 msgid "RDA: Storage Medium Format"
-msgstr "资源描述与检索（RDA）：储存媒介格式"
+msgstr "RDA: Storage Medium Format"
 
 #: src/Service/OmekaDataTypeFactory.php:12
 msgid "Omeka: Property"
@@ -479,306 +479,341 @@ msgstr ""
 
 #: src/Service/NsDataTypeFactory.php:12
 msgid "Nuovo soggettario: Agenti: Organismi"
-msgstr ""
+msgstr "Nuovo soggettario: Agenti: Organismi"
 
 #: src/Service/NsDataTypeFactory.php:16
 msgid "Nuovo soggettario: Agenti: Organizzazioni"
-msgstr ""
+msgstr "Nuovo soggettario: Agenti: Organizzazioni"
 
 #: src/Service/NsDataTypeFactory.php:20
 msgid "Nuovo soggettario: Agenti: Persone e gruppi"
-msgstr ""
+msgstr "Nuovo soggettario: Agenti: Persone e gruppi"
 
 #: src/Service/NsDataTypeFactory.php:24
 msgid "Nuovo soggettario: Azioni: Attività"
-msgstr ""
+msgstr "Nuovo soggettario: Azioni: Attività"
 
 #: src/Service/NsDataTypeFactory.php:28
 msgid "Nuovo soggettario: Azioni: Discipline"
-msgstr ""
+msgstr "Nuovo soggettario: Azioni: Discipline"
 
 #: src/Service/NsDataTypeFactory.php:32
 msgid "Nuovo soggettario: Azioni: Processi"
-msgstr ""
+msgstr "Nuovo soggettario: Azioni: Processi"
 
 #: src/Service/NsDataTypeFactory.php:36
 msgid "Nuovo soggettario: Cose: Forme"
-msgstr ""
+msgstr "Nuovo soggettario: Cose: Forme"
 
 #: src/Service/NsDataTypeFactory.php:40
 msgid "Nuovo soggettario: Cose: Materia"
-msgstr ""
+msgstr "Nuovo soggettario: Cose: Materia"
 
 #: src/Service/NsDataTypeFactory.php:44
 msgid "Nuovo soggettario: Cose: Oggetti"
-msgstr ""
+msgstr "Nuovo soggettario: Cose: Oggetti"
 
 #: src/Service/NsDataTypeFactory.php:48
 msgid "Nuovo soggettario: Cose: Spazio"
-msgstr ""
+msgstr "Nuovo soggettario: Cose: Spazio"
 
 #: src/Service/NsDataTypeFactory.php:52
 msgid "Nuovo soggettario: Cose: Strumenti"
-msgstr ""
+msgstr "Nuovo soggettario: Cose: Strumenti"
 
 #: src/Service/NsDataTypeFactory.php:56
 msgid "Nuovo soggettario: Cose: Strutture"
-msgstr ""
+msgstr "Nuovo soggettario: Cose: Strutture"
 
 #: src/Service/NsDataTypeFactory.php:60
 msgid "Nuovo soggettario: Tempo"
-msgstr ""
+msgstr "Nuovo soggettario: Tempo"
 
 #: src/Service/McDataTypeFactory.php:12
 msgid ""
 "Ministère de la Culture: Catégories techniques et domaines - Inventaire/MH"
 msgstr ""
+"Ministère de la Culture: Catégories techniques et domaines - Inventaire/MH"
 
 #: src/Service/McDataTypeFactory.php:16
 msgid ""
 "Ministère de la Culture: Domaines archivistiques pour l'indexation des "
 "circulaires"
 msgstr ""
+"Ministère de la Culture: Domaines archivistiques pour l'indexation des "
+"circulaires"
 
 #: src/Service/McDataTypeFactory.php:20
 msgid ""
 "Ministère de la Culture: Etat de conservation du patrimoine mobilier - "
 "Inventaire/MH"
 msgstr ""
+"Ministère de la Culture: Etat de conservation du patrimoine mobilier - "
+"Inventaire/MH"
 
 #: src/Service/McDataTypeFactory.php:24
 msgid ""
 "Ministère de la Culture: Inscriptions, marques, emblématique et poinçons - "
 "Inventaire/MH"
 msgstr ""
+"Ministère de la Culture: Inscriptions, marques, emblématique et poinçons - "
+"Inventaire/MH"
 
 #: src/Service/McDataTypeFactory.php:28
 msgid ""
 "Ministère de la Culture: Liste d'autorité Actions pour l'indexation des "
 "archives locales"
 msgstr ""
+"Ministère de la Culture: Liste d'autorité Actions pour l'indexation des "
+"archives locales"
 
 #: src/Service/McDataTypeFactory.php:32
 msgid ""
 "Ministère de la Culture: Liste d'autorité Contexte historique pour "
 "l'indexation des archives locales"
 msgstr ""
+"Ministère de la Culture: Liste d'autorité Contexte historique pour "
+"l'indexation des archives locales"
 
 #: src/Service/McDataTypeFactory.php:36
 msgid ""
 "Ministère de la Culture: Liste d'autorité Typologie documentaire pour "
 "l'indexation des archives locales"
 msgstr ""
+"Ministère de la Culture: Liste d'autorité Typologie documentaire pour "
+"l'indexation des archives locales"
 
 #: src/Service/McDataTypeFactory.php:40
 msgid "Ministère de la Culture: Liste d'autorités Auteurs - Joconde"
-msgstr ""
+msgstr "Ministère de la Culture: Liste d'autorités Auteurs - Joconde"
 
 #: src/Service/McDataTypeFactory.php:44
 msgid "Ministère de la Culture: Liste d'autorités Domaines - Joconde"
-msgstr ""
+msgstr "Ministère de la Culture: Liste d'autorités Domaines - Joconde"
 
 #: src/Service/McDataTypeFactory.php:48
 msgid "Ministère de la Culture: Liste d'autorités Découverte - Joconde"
-msgstr ""
+msgstr "Ministère de la Culture: Liste d'autorités Découverte - Joconde"
 
 #: src/Service/McDataTypeFactory.php:52
 msgid "Ministère de la Culture: Liste d'autorités Dénomination - Joconde"
-msgstr ""
+msgstr "Ministère de la Culture: Liste d'autorités Dénomination - Joconde"
 
 #: src/Service/McDataTypeFactory.php:56
 msgid "Ministère de la Culture: Liste d'autorités Genèse - Joconde"
-msgstr ""
+msgstr "Ministère de la Culture: Liste d'autorités Genèse - Joconde"
 
 #: src/Service/McDataTypeFactory.php:60
 msgid "Ministère de la Culture: Liste d'autorités Inscriptions - Joconde"
-msgstr ""
+msgstr "Ministère de la Culture: Liste d'autorités Inscriptions - Joconde"
 
 #: src/Service/McDataTypeFactory.php:64
 msgid "Ministère de la Culture: Liste d'autorités Lieux - Joconde"
-msgstr ""
+msgstr "Ministère de la Culture: Liste d'autorités Lieux - Joconde"
 
 #: src/Service/McDataTypeFactory.php:68
 msgid "Ministère de la Culture: Liste d'autorités Localisation - Joconde"
-msgstr ""
+msgstr "Ministère de la Culture: Liste d'autorités Localisation - Joconde"
 
 #: src/Service/McDataTypeFactory.php:72
 msgid "Ministère de la Culture: Liste d'autorités Périodes - Joconde"
-msgstr ""
+msgstr "Ministère de la Culture: Liste d'autorités Périodes - Joconde"
 
 #: src/Service/McDataTypeFactory.php:76
 msgid "Ministère de la Culture: Liste d'autorités Représentation - Joconde"
-msgstr ""
+msgstr "Ministère de la Culture: Liste d'autorités Représentation - Joconde"
 
 #: src/Service/McDataTypeFactory.php:80
 msgid ""
 "Ministère de la Culture: Liste d'autorités Sources de la représentation - "
 "Joconde"
 msgstr ""
+"Ministère de la Culture: Liste d'autorités Sources de la représentation - "
+"Joconde"
 
 #: src/Service/McDataTypeFactory.php:84
 msgid "Ministère de la Culture: Liste d'autorités Techniques – Joconde"
-msgstr ""
+msgstr "Ministère de la Culture: Liste d'autorités Techniques – Joconde"
 
 #: src/Service/McDataTypeFactory.php:88
 msgid "Ministère de la Culture: Liste d'autorités Utilisation - Joconde"
-msgstr ""
+msgstr "Ministère de la Culture: Liste d'autorités Utilisation - Joconde"
 
 #: src/Service/McDataTypeFactory.php:92
 msgid "Ministère de la Culture: Liste d'autorités Écoles - Joconde"
-msgstr ""
+msgstr "Ministère de la Culture: Liste d'autorités Écoles - Joconde"
 
 #: src/Service/McDataTypeFactory.php:96
 msgid "Ministère de la Culture: Liste d'autorités Époques - Joconde"
-msgstr ""
+msgstr "Ministère de la Culture: Liste d'autorités Époques - Joconde"
 
 #: src/Service/McDataTypeFactory.php:100
 msgid "Ministère de la Culture: Matériau de la couverture - Inventaire/MH"
-msgstr ""
+msgstr "Ministère de la Culture: Matériau de la couverture - Inventaire/MH"
 
 #: src/Service/McDataTypeFactory.php:104
 msgid ""
 "Ministère de la Culture: Matériau du gros-oeuvre et mise en oeuvre - "
 "Inventaire/MH"
 msgstr ""
+"Ministère de la Culture: Matériau du gros-oeuvre et mise en oeuvre - "
+"Inventaire/MH"
 
 #: src/Service/McDataTypeFactory.php:108
 msgid ""
 "Ministère de la Culture: Matériaux et techniques du patrimoine mobilier - "
 "Inventaire/MH"
 msgstr ""
+"Ministère de la Culture: Matériaux et techniques du patrimoine mobilier - "
+"Inventaire/MH"
 
 #: src/Service/McDataTypeFactory.php:112
 msgid "Ministère de la Culture: Nomenclatures HADOC"
-msgstr ""
+msgstr "Ministère de la Culture: Nomenclatures HADOC"
 
 #: src/Service/McDataTypeFactory.php:116
 msgid ""
 "Ministère de la Culture: Référentiel de communicabilité des archives "
 "publiques"
 msgstr ""
+"Ministère de la Culture: Référentiel de communicabilité des archives "
+"publiques"
 
 #: src/Service/McDataTypeFactory.php:120
 msgid ""
 "Ministère de la Culture: Stade de la création des objets mobiliers - "
 "Inventaire/MH"
 msgstr ""
+"Ministère de la Culture: Stade de la création des objets mobiliers - "
+"Inventaire/MH"
 
 #: src/Service/McDataTypeFactory.php:124
 msgid ""
 "Ministère de la Culture: Statut de la propriété des Biens culturels - "
 "Inventaire/MH"
 msgstr ""
+"Ministère de la Culture: Statut de la propriété des Biens culturels - "
+"Inventaire/MH"
 
 #: src/Service/McDataTypeFactory.php:128
 msgid "Ministère de la Culture: Techniques photographiques"
-msgstr ""
+msgstr "Ministère de la Culture: Techniques photographiques"
 
 #: src/Service/McDataTypeFactory.php:132
 msgid ""
 "Ministère de la Culture: Thésaurus de la désignation des objets mobiliers"
 msgstr ""
+"Ministère de la Culture: Thésaurus de la désignation des objets mobiliers"
 
 #: src/Service/McDataTypeFactory.php:136
 msgid ""
 "Ministère de la Culture: Thésaurus de la désignation des œuvres "
 "architecturales et des espaces aménagés"
 msgstr ""
+"Ministère de la Culture: Thésaurus de la désignation des œuvres "
+"architecturales et des espaces aménagés"
 
 #: src/Service/McDataTypeFactory.php:140
 msgid ""
 "Ministère de la Culture: Thésaurus-matières pour l'indexation des archives "
 "locales"
 msgstr ""
+"Ministère de la Culture: Thésaurus-matières pour l'indexation des archives "
+"locales"
 
 #: src/Service/McDataTypeFactory.php:144
 msgid "Ministère de la Culture: Type de la couverture - Inventaire/MH"
-msgstr ""
+msgstr "Ministère de la Culture: Type de la couverture - Inventaire/MH"
 
 #: src/Service/McDataTypeFactory.php:148
 msgid "Ministère de la Culture: Type de protection MH - Inventaire/MH"
-msgstr ""
+msgstr "Ministère de la Culture: Type de protection MH - Inventaire/MH"
 
 #: src/Service/McDataTypeFactory.php:152
 msgid ""
 "Ministère de la Culture: Vocabulaire des activités des entités productrices "
 "d'archives"
 msgstr ""
+"Ministère de la Culture: Vocabulaire des activités des entités productrices "
+"d'archives"
 
 #: src/Service/McDataTypeFactory.php:156
 msgid "Ministère de la Culture: Vocabulaire des altérations"
-msgstr ""
+msgstr "Ministère de la Culture: Vocabulaire des altérations"
 
 #: src/Service/McDataTypeFactory.php:160
 msgid ""
 "Ministère de la Culture: Vocabulaire des domaines d'action ou objets des "
 "entités productrices d'archives"
 msgstr ""
+"Ministère de la Culture: Vocabulaire des domaines d'action ou objets des "
+"entités productrices d'archives"
 
 #: src/Service/McDataTypeFactory.php:164
 msgid ""
 "Ministère de la Culture: Vocabulaire pour les techniques photographiques"
 msgstr ""
+"Ministère de la Culture: Vocabulaire pour les techniques photographiques"
 
 #: src/Service/TesaurosDataTypeFactory.php:12
 msgid "Tesauros: Diccionario de Bienes Culturales"
-msgstr ""
+msgstr "Tesauros: Diccionario de Bienes Culturales"
 
 #: src/Service/TesaurosDataTypeFactory.php:16
 msgid "Tesauros: Diccionario de Materias"
-msgstr ""
+msgstr "Tesauros: Diccionario de Materias"
 
 #: src/Service/TesaurosDataTypeFactory.php:20
 msgid "Tesauros: Diccionario de Técnicas"
-msgstr ""
+msgstr "Tesauros: Diccionario de Técnicas"
 
 #: src/Service/TesaurosDataTypeFactory.php:24
 msgid "Tesauros: Diccionario de Contextos Culturales"
-msgstr ""
+msgstr "Tesauros: Diccionario de Contextos Culturales"
 
 #: src/Service/TesaurosDataTypeFactory.php:28
 msgid "Tesauros: Diccionario Geográfico"
-msgstr ""
+msgstr "Tesauros: Diccionario Geográfico"
 
 #: src/Service/TesaurosDataTypeFactory.php:32
 msgid "Tesauros: Diccionario de Toponimia Histórica"
-msgstr ""
+msgstr "Tesauros: Diccionario de Toponimia Histórica"
 
 #: src/Service/TesaurosDataTypeFactory.php:36
 msgid "Tesauros: Diccionario de Cerámica"
-msgstr ""
+msgstr "Tesauros: Diccionario de Cerámica"
 
 #: src/Service/TesaurosDataTypeFactory.php:40
 msgid "Tesauros: Diccionario de Numismática"
-msgstr ""
+msgstr "Tesauros: Diccionario de Numismática"
 
 #: src/Service/TesaurosDataTypeFactory.php:44
 msgid "Tesauros: Diccionario de Mobiliario"
-msgstr ""
+msgstr "Tesauros: Diccionario de Mobiliario"
 
 #: src/DataType/Lc/Genreforms.php:24
 msgid "LC: Genre/Form Terms"
-msgstr "美国国会图书馆：体裁/形式术语"
+msgstr "LC: Genre/Form Terms"
 
 #: src/DataType/Lc/Geographicareas.php:24
 msgid "LC: MARC Geographic Areas"
-msgstr "美国国会图书馆：MARC地理区域"
+msgstr "LC: MARC Geographic Areas"
 
 #: src/DataType/Lc/Names.php:24
 msgid "LC: Name Authority File"
-msgstr "美国国会图书馆：名称规范文档"
+msgstr "LC: Name Authority File"
 
 #: src/DataType/Lc/Childrenssubjects.php:24
 msgid "LC: Children's Subject Headings"
-msgstr "美国国会图书馆：儿童标题表"
+msgstr "LC: Children's Subject Headings"
 
 #: src/DataType/Lc/Iso6391.php:24
 msgid "LC: ISO639-1 Languages"
-msgstr "美国国会图书馆：ISO639-1 语言"
+msgstr "LC: ISO639-1 Languages"
 
 #: src/DataType/Lc/Graphicmaterials.php:24
 msgid "LC: Thesaurus for Graphic Materials"
-msgstr "美国国会图书馆：绘画材料辞典"
+msgstr "LC: Thesaurus for Graphic Materials"
 
 #: src/DataType/Lc/Rbmscv.php:24
 msgid "LC: Rare Materials Cataloging"
@@ -786,122 +821,125 @@ msgstr ""
 
 #: src/DataType/Lc/Organizations.php:24
 msgid "LC: Cultural Heritage Organizations"
-msgstr "美国国会图书馆：文化遗产组织"
+msgstr "LC: Cultural Heritage Organizations"
 
 #: src/DataType/Lc/Subjects.php:24
 msgid "LC: Subject Headings"
-msgstr "美国国会图书馆：标题表"
+msgstr "LC: Subject Headings"
 
 #: src/DataType/Lc/Ethnographicterms.php:24
 msgid "LC: AFS Ethnographic Thesaurus"
-msgstr "美国国会图书馆：AFS民族志辞典"
+msgstr "LC: AFS Ethnographic Thesaurus"
 
 #: src/DataType/Lc/Classification.php:24
 msgid "LC: Classification"
-msgstr "美国国会图书馆：分类"
+msgstr "LC: Classification"
 
 #: src/DataType/Lc/Countries.php:24
 msgid "LC: MARC Countries"
-msgstr "美国国会图书馆：MARC国家"
+msgstr "LC: MARC Countries"
 
 #: src/DataType/Lc/Performancemediums.php:24
 msgid "LC: Medium of Performance Thesaurus for Music"
-msgstr "美国国会图书馆：音乐的表演辞典的媒介"
+msgstr "LC: Medium of Performance Thesaurus for Music"
 
 #: src/DataType/Lc/Relators.php:24
 msgid "LC: MARC Relators"
-msgstr "美国国会图书馆：叙述者"
+msgstr "LC: MARC Relators"
 
 #: src/DataType/Lc/Languages.php:24
 msgid "LC: MARC Languages"
-msgstr "美国国会图书馆：MARC语言"
+msgstr "LC: MARC Languages"
 
 #: src/DataType/Lc/Iso6392.php:24
 msgid "LC: ISO639-2 Languages"
-msgstr "美国国会图书馆：ISO639-2 语言"
+msgstr "LC: ISO639-2 Languages"
 
 #: src/DataType/Lc/All.php:21
 msgid "LC: All"
-msgstr "美国国会图书馆：所有"
+msgstr "LC: All"
 
 #: src/DataType/Lc/Iso6395.php:24
 msgid "LC: ISO639-5 Languages"
-msgstr "美国国会图书馆：ISO639-5语言"
+msgstr "LC: ISO639-5 Languages"
 
 #: src/DataType/Lc/Demographicterms.php:24
 msgid "LC: Demographic Group Terms"
-msgstr "美国国会图书馆：人口统计学群组术语"
+msgstr "LC: Demographic Group Terms"
 
 #: src/DataType/AbstractDataType.php:29
 msgid "Value Suggest"
-msgstr "值推荐"
+msgstr "Value Suggest"
 
 #: src/DataType/RightsStatements/Rightsstatements.php:21
 msgid ""
 "RightsStatements.org: Standardized rights statements for online cultural "
 "heritage"
-msgstr "RightsStatements.org：在线文化遗产的标准化版权声明"
+msgstr ""
+"RightsStatements.org: Standardized rights statements for online cultural "
+"heritage"
 
 #: src/DataType/Homosaurus/Homosaurus.php:21
 msgid "Homosaurus: an international LGBTQ linked data vocabulary"
-msgstr ""
+msgstr "Homosaurus: an international LGBTQ linked data vocabulary"
 
 #: src/DataType/Periodo/Periodo.php:21
 msgid ""
 "PeriodO: A gazetteer of period definitions for linking and visualizing data"
 msgstr ""
+"PeriodO: A gazetteer of period definitions for linking and visualizing data"
 
 #: src/DataType/Dc/Elements.php:21
 msgid "Dublin Core: Elements"
-msgstr ""
+msgstr "Dublin Core: Elements"
 
 #: src/DataType/Dc/Terms.php:21
 msgid "Dublin Core: Terms"
-msgstr ""
+msgstr "Dublin Core: Terms"
 
 #: src/DataType/Dc/Types.php:21
 msgid "Dublin Core: Types"
-msgstr ""
+msgstr "Dublin Core: Types"
 
 #: src/DataType/Dc/Classes.php:21
 msgid "Dublin Core: Classes"
-msgstr ""
+msgstr "Dublin Core: Classes"
 
 #: src/DataType/Pactols/Sujets.php:21
 msgid "Pactols: Sujets (Subject)"
-msgstr ""
+msgstr "Pactols: Sujets (Subject)"
 
 #: src/DataType/Pactols/All.php:21
 msgid "Pactols: All thesaurus"
-msgstr ""
+msgstr "Pactols: All thesaurus"
 
 #: src/DataType/Gnd/Gnd.php:21
 msgid "GND: Die Gemeinsame Normdatei"
-msgstr ""
+msgstr "GND: Die Gemeinsame Normdatei"
 
 #: src/DataType/Oclc/Fast.php:21
 msgid "OCLC: Faceted Application of Subject Terminologies (FAST)"
-msgstr "在线计算机图书馆中心（OCLC）：标题术语的多面应用（FAST）"
+msgstr "OCLC: Faceted Application of Subject Terminologies (FAST)"
 
 #: src/DataType/Oclc/Viaf.php:21
 msgid "OCLC: The Virtual International Authority File (VIAF)"
-msgstr "在线计算机图书馆中心（OCLC）：虚拟国际权威文件（VIAF）"
+msgstr "OCLC: The Virtual International Authority File (VIAF)"
 
 #: src/DataType/Getty/Aat.php:21
 msgid "Getty: The Art & Architecture Thesaurus (AAT)"
-msgstr "Getty：艺术和建筑辞典（AAT）"
+msgstr "Getty: The Art & Architecture Thesaurus (AAT)"
 
 #: src/DataType/Getty/Tgn.php:21
 msgid "Getty: The Getty Thesaurus of Geographic Names (TGN)"
-msgstr "Getty：Getty地理名称辞典（TGN）"
+msgstr "Getty: The Getty Thesaurus of Geographic Names (TGN)"
 
 #: src/DataType/Getty/Ulan.php:21
 msgid "Getty: The Union List of Artist Names (ULAN)"
-msgstr "Getty：艺术家名称合并列表（ULAN）"
+msgstr "Getty: The Union List of Artist Names (ULAN)"
 
 #: src/DataType/Geonames/Geonames.php:21
 msgid "Geonames: The GeoNames geographical database"
-msgstr ""
+msgstr "Geonames: The GeoNames geographical database"
 
 #: src/DataType/Geonames/Features.php:21
 msgid "Geonames: GeoNames features"
@@ -909,4 +947,4 @@ msgstr ""
 
 #: src/DataType/Thub/Thub.php:21
 msgid "Thesaurus de la Universitat de Barcelona (THUB)"
-msgstr ""
+msgstr "Thesaurus de la Universitat de Barcelona (THUB)"

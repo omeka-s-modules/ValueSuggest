@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Deidson Rafael <drafael@usp.br>, 2020
+# Deidson Rafael Trindade <drafael@usp.br>, 2020
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-12 16:29-0500\n"
+"POT-Creation-Date: 2023-03-15 12:42-0400\n"
 "PO-Revision-Date: 2017-09-14 20:16+0000\n"
-"Last-Translator: Deidson Rafael <drafael@usp.br>, 2020\n"
+"Last-Translator: Deidson Rafael Trindade <drafael@usp.br>, 2020\n"
 "Language-Team: Portuguese (Brazil) (https://www.transifex.com/omeka/teams/14184/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -38,66 +38,118 @@ msgid "UNESCO: Biblioteca Digital Floridablanca"
 msgstr "UNESCO: Biblioteca Digital Floridablanca"
 
 #: src/Service/NdeTermsDataTypeFactory.php:16
-msgid "NDE: Archeologisch Basisregister"
+msgid "NDE: Art & Architecture Thesaurus - materialen"
 msgstr ""
 
 #: src/Service/NdeTermsDataTypeFactory.php:20
-msgid "NDE: Brinkman trefwoordenthesaurus"
+msgid "NDE: Art & Architecture Thesaurus - processen en technieken"
 msgstr ""
 
 #: src/Service/NdeTermsDataTypeFactory.php:24
-msgid "NDE: Cultuurhistorische Thesaurus"
+msgid "NDE: Art & Architecture Thesaurus - stijlen en periodes"
 msgstr ""
 
 #: src/Service/NdeTermsDataTypeFactory.php:28
-msgid "NDE: GTAA: genres"
+msgid "NDE: Archeologisch Basisregister"
 msgstr ""
 
 #: src/Service/NdeTermsDataTypeFactory.php:32
-msgid "NDE: GTAA: onderwerpen"
+msgid "NDE: Adamlink: straten in Amsterdam"
 msgstr ""
 
 #: src/Service/NdeTermsDataTypeFactory.php:36
-msgid "NDE: Muziek: genres en stijlen"
+msgid "NDE: Brinkman trefwoordenthesaurus"
 msgstr ""
 
 #: src/Service/NdeTermsDataTypeFactory.php:40
-msgid "NDE: Muziek: personen en groepen"
+msgid "NDE: Cultuurhistorische Thesaurus"
 msgstr ""
 
 #: src/Service/NdeTermsDataTypeFactory.php:44
-msgid "NDE: Muziekschatten: onderwerpen"
+msgid "NDE: Cultuurhistorische Thesaurus - Materialen"
 msgstr ""
 
 #: src/Service/NdeTermsDataTypeFactory.php:48
-msgid "NDE: Nederlandse Thesaurus van Auteursnamen"
+msgid "NDE: Cultuurhistorische Thesaurus - Stijlen en periodes"
 msgstr ""
 
 #: src/Service/NdeTermsDataTypeFactory.php:52
-msgid "NDE: RKDartists"
+msgid "NDE: EuroVoc - thesaurus van de Europese Unie"
 msgstr ""
 
 #: src/Service/NdeTermsDataTypeFactory.php:56
-msgid "NDE: Thesaurus Nationaal Museum van Wereldculturen"
+msgid "NDE: GeoNames: geografische namen in Nederland, België en Duitsland"
 msgstr ""
 
 #: src/Service/NdeTermsDataTypeFactory.php:60
-msgid "NDE: Thesaurus Tweede Wereldoorlog Nederland"
+msgid "NDE: Goudse straten"
 msgstr ""
 
 #: src/Service/NdeTermsDataTypeFactory.php:64
-msgid "NDE: Wikidata: alle entiteiten"
+msgid "NDE: GTAA: genres"
 msgstr ""
 
 #: src/Service/NdeTermsDataTypeFactory.php:68
-msgid "NDE: Wikidata: personen"
+msgid "NDE: GTAA: onderwerpen"
 msgstr ""
 
 #: src/Service/NdeTermsDataTypeFactory.php:72
-msgid "NDE: Wikidata: plaatsen in Nederland en België"
+msgid "NDE: Homosaurus"
 msgstr ""
 
 #: src/Service/NdeTermsDataTypeFactory.php:76
+msgid "NDE: Iconclass"
+msgstr ""
+
+#: src/Service/NdeTermsDataTypeFactory.php:80
+msgid "NDE: Indisch Erfgoed Thesaurus"
+msgstr ""
+
+#: src/Service/NdeTermsDataTypeFactory.php:84
+msgid "NDE: Muziek: genres en stijlen"
+msgstr ""
+
+#: src/Service/NdeTermsDataTypeFactory.php:88
+msgid "NDE: Muziek: personen en groepen"
+msgstr ""
+
+#: src/Service/NdeTermsDataTypeFactory.php:92
+msgid "NDE: Muziekschatten: onderwerpen"
+msgstr ""
+
+#: src/Service/NdeTermsDataTypeFactory.php:96
+msgid "NDE: Nederlandse Thesaurus van Auteursnamen"
+msgstr ""
+
+#: src/Service/NdeTermsDataTypeFactory.php:100
+msgid "NDE: RKDartists"
+msgstr ""
+
+#: src/Service/NdeTermsDataTypeFactory.php:104
+msgid "NDE: STCN: drukkers"
+msgstr ""
+
+#: src/Service/NdeTermsDataTypeFactory.php:108
+msgid "NDE: Thesaurus Nationaal Museum van Wereldculturen"
+msgstr ""
+
+#: src/Service/NdeTermsDataTypeFactory.php:112
+msgid "NDE: Thesaurus Tweede Wereldoorlog Nederland"
+msgstr ""
+
+#: src/Service/NdeTermsDataTypeFactory.php:116
+msgid "NDE: Wikidata: alle entiteiten"
+msgstr ""
+
+#: src/Service/NdeTermsDataTypeFactory.php:120
+msgid "NDE: Wikidata: personen"
+msgstr ""
+
+#: src/Service/NdeTermsDataTypeFactory.php:124
+msgid "NDE: Wikidata: plaatsen in Nederland en België"
+msgstr ""
+
+#: src/Service/NdeTermsDataTypeFactory.php:128
 msgid "NDE: Wikidata: straten in Nederland"
 msgstr ""
 
@@ -182,196 +234,248 @@ msgid "RDA: Cartographic Data Type"
 msgstr "RDA: Tipo de dados cartográficos"
 
 #: src/Service/RdaDataTypeFactory.php:36
+msgid "RDA: Collection Accrual Method"
+msgstr ""
+
+#: src/Service/RdaDataTypeFactory.php:40
+msgid "RDA: Collection Accrual Policy"
+msgstr ""
+
+#: src/Service/RdaDataTypeFactory.php:44
 msgid "RDA: Colour Content"
 msgstr "RDA: Teor de cor"
 
-#: src/Service/RdaDataTypeFactory.php:40
+#: src/Service/RdaDataTypeFactory.php:48
 msgid "RDA: Configuration of Playback Channels"
 msgstr "RDA: Configuração dos Canais de Reprodução"
 
-#: src/Service/RdaDataTypeFactory.php:44
+#: src/Service/RdaDataTypeFactory.php:52
 msgid "RDA: Content Type"
 msgstr "RDA: tipo de conteúdo"
 
-#: src/Service/RdaDataTypeFactory.php:48
+#: src/Service/RdaDataTypeFactory.php:56
+msgid "RDA: Extension Plan"
+msgstr ""
+
+#: src/Service/RdaDataTypeFactory.php:60
 msgid "RDA: Conventional Collective Title"
 msgstr "RDA: Título coletivo convencional"
 
-#: src/Service/RdaDataTypeFactory.php:52
+#: src/Service/RdaDataTypeFactory.php:64
 msgid "RDA: File Type"
 msgstr "RDA: Tipo de arquivo"
 
-#: src/Service/RdaDataTypeFactory.php:56
+#: src/Service/RdaDataTypeFactory.php:68
 msgid "RDA: Font Size"
 msgstr "RDA: Tamanho da fonte"
 
-#: src/Service/RdaDataTypeFactory.php:60
+#: src/Service/RdaDataTypeFactory.php:72
 msgid "RDA: Form of Musical Notation"
 msgstr "RDA: Forma de Notação Musical"
 
-#: src/Service/RdaDataTypeFactory.php:64
+#: src/Service/RdaDataTypeFactory.php:76
 msgid "RDA: Form of Notated Movement"
 msgstr "RDA: Forma de Movimento Notado"
 
-#: src/Service/RdaDataTypeFactory.php:68
+#: src/Service/RdaDataTypeFactory.php:80
 msgid "RDA: Form of Tactile Notation"
 msgstr "RDA: Forma de notação tátil"
 
-#: src/Service/RdaDataTypeFactory.php:72
+#: src/Service/RdaDataTypeFactory.php:84
 msgid "RDA: Format of Notated Music"
 msgstr "RDA: Formato de Música Notada"
 
-#: src/Service/RdaDataTypeFactory.php:76
+#: src/Service/RdaDataTypeFactory.php:88
 msgid "RDA: Frequency"
 msgstr "RDA: Frequência"
 
-#: src/Service/RdaDataTypeFactory.php:80
+#: src/Service/RdaDataTypeFactory.php:92
 msgid "RDA: Generation"
 msgstr "RDA: Geração"
 
-#: src/Service/RdaDataTypeFactory.php:84
+#: src/Service/RdaDataTypeFactory.php:96
 msgid "RDA: Groove Pitch of an Analog Cylinder"
 msgstr "RDA: Passo do sulco de um cilindro analógico"
 
-#: src/Service/RdaDataTypeFactory.php:88
+#: src/Service/RdaDataTypeFactory.php:100
 msgid "RDA: Groove Width of an Analog Disc"
 msgstr "RDA: Largura da ranhura de um disco analógico"
 
-#: src/Service/RdaDataTypeFactory.php:92
+#: src/Service/RdaDataTypeFactory.php:104
 msgid "RDA: Illustrative Content"
 msgstr "RDA: Conteúdo Ilustrativo"
 
-#: src/Service/RdaDataTypeFactory.php:96
-msgid "RDA:  Layout"
-msgstr "RDA:  Layout"
+#: src/Service/RdaDataTypeFactory.php:108
+msgid "RDA: Interactivity Mode"
+msgstr ""
 
-#: src/Service/RdaDataTypeFactory.php:100
+#: src/Service/RdaDataTypeFactory.php:112
+msgid "RDA: Layout"
+msgstr ""
+
+#: src/Service/RdaDataTypeFactory.php:116
+msgid "RDA: Linked Data Work"
+msgstr ""
+
+#: src/Service/RdaDataTypeFactory.php:120
 msgid "RDA: Material"
 msgstr "RDA: Material"
 
-#: src/Service/RdaDataTypeFactory.php:104
+#: src/Service/RdaDataTypeFactory.php:124
 msgid "RDA: Media Type"
 msgstr "RDA: Tipo de mídia"
 
-#: src/Service/RdaDataTypeFactory.php:108
+#: src/Service/RdaDataTypeFactory.php:128
 msgid "RDA: Mode of Issuance"
 msgstr "RDA: Modo de Emissão"
 
-#: src/Service/RdaDataTypeFactory.php:112
+#: src/Service/RdaDataTypeFactory.php:132
 msgid "RDA: Polarity"
 msgstr "RDA: Polaridade"
 
-#: src/Service/RdaDataTypeFactory.php:116
+#: src/Service/RdaDataTypeFactory.php:136
 msgid "RDA: Presentation Format"
 msgstr "RDA: Formato de Apresentação"
 
-#: src/Service/RdaDataTypeFactory.php:120
+#: src/Service/RdaDataTypeFactory.php:140
 msgid "RDA: Production Method"
 msgstr "RDA: Método de produção"
 
-#: src/Service/RdaDataTypeFactory.php:124
+#: src/Service/RdaDataTypeFactory.php:144
 msgid "RDA: Recording Medium"
 msgstr "RDA: Meio de gravação"
 
-#: src/Service/RdaDataTypeFactory.php:128
+#: src/Service/RdaDataTypeFactory.php:148
+msgid "RDA: Recording Methods"
+msgstr ""
+
+#: src/Service/RdaDataTypeFactory.php:152
+msgid "RDA: Recording Sources"
+msgstr ""
+
+#: src/Service/RdaDataTypeFactory.php:156
 msgid "RDA: Reduction Ratio Designation"
 msgstr "RDA: Designação da relação de redução"
 
-#: src/Service/RdaDataTypeFactory.php:132
+#: src/Service/RdaDataTypeFactory.php:160
 msgid "RDA: Regional Encoding"
 msgstr "RDA: Codificação regional"
 
-#: src/Service/RdaDataTypeFactory.php:136
+#: src/Service/RdaDataTypeFactory.php:164
 msgid "RDA: Scale Designation"
 msgstr "RDA: Designação de escala"
 
-#: src/Service/RdaDataTypeFactory.php:140
+#: src/Service/RdaDataTypeFactory.php:168
 msgid "RDA: Sound Content"
 msgstr "RDA: Conteúdo sonoro"
 
-#: src/Service/RdaDataTypeFactory.php:144
+#: src/Service/RdaDataTypeFactory.php:172
 msgid "RDA: Special Playback Characteristics"
 msgstr "RDA: Características Especiais de Reprodução"
 
-#: src/Service/RdaDataTypeFactory.php:148
+#: src/Service/RdaDataTypeFactory.php:176
 msgid "RDA: Status of Identification"
 msgstr "RDA: Status de identificação"
 
-#: src/Service/RdaDataTypeFactory.php:152
+#: src/Service/RdaDataTypeFactory.php:180
 msgid "RDA: Terms"
 msgstr "RDA: Termos"
 
-#: src/Service/RdaDataTypeFactory.php:156
+#: src/Service/RdaDataTypeFactory.php:184
 msgid "RDA: Track Configuration"
 msgstr "RDA: Configuração da trilha"
 
-#: src/Service/RdaDataTypeFactory.php:160
+#: src/Service/RdaDataTypeFactory.php:188
+msgid "RDA: Type Of Binding"
+msgstr ""
+
+#: src/Service/RdaDataTypeFactory.php:192
 msgid "RDA: Type of Recording"
 msgstr "RDA: Tipo de gravação"
 
-#: src/Service/RdaDataTypeFactory.php:164
+#: src/Service/RdaDataTypeFactory.php:196
+msgid "RDA: Unit of Time"
+msgstr ""
+
+#: src/Service/RdaDataTypeFactory.php:200
+msgid "RDA: User Tasks"
+msgstr ""
+
+#: src/Service/RdaDataTypeFactory.php:204
 msgid "RDA: Video Format"
 msgstr "RDA: Formato de vídeo"
 
-#: src/Service/RdaDataTypeFactory.php:168
+#: src/Service/RdaDataTypeFactory.php:208
 msgid "RDA:  Gender"
 msgstr "RDA:  Gênero"
 
-#: src/Service/RdaDataTypeFactory.php:172
+#: src/Service/RdaDataTypeFactory.php:212
 msgid "RDA: Character"
 msgstr "RDA: Personagem"
 
-#: src/Service/RdaDataTypeFactory.php:176
+#: src/Service/RdaDataTypeFactory.php:216
 msgid "RDA: Extension Mode"
 msgstr "RDA: Modo de extensão"
 
-#: src/Service/RdaDataTypeFactory.php:180
+#: src/Service/RdaDataTypeFactory.php:220
 msgid "RDA: Extension Requirement"
 msgstr "RDA: Requisito de extensão"
 
-#: src/Service/RdaDataTypeFactory.php:184
+#: src/Service/RdaDataTypeFactory.php:224
 msgid "RDA: Extension Termination"
 msgstr "RDA: Rescisão de extensão"
 
-#: src/Service/RdaDataTypeFactory.php:188
+#: src/Service/RdaDataTypeFactory.php:228
 msgid "RDA: Housing Format"
 msgstr "RDA: Rescisão de extensão"
 
-#: src/Service/RdaDataTypeFactory.php:192
+#: src/Service/RdaDataTypeFactory.php:232
 msgid "RDA: Image Dimensionality"
 msgstr "RDA: Dimensionalidade da imagem"
 
-#: src/Service/RdaDataTypeFactory.php:196
+#: src/Service/RdaDataTypeFactory.php:236
 msgid "RDA: Image Movement"
 msgstr "RDA: Movimento da imagem"
 
-#: src/Service/RdaDataTypeFactory.php:200
+#: src/Service/RdaDataTypeFactory.php:240
 msgid "RDA: Interaction"
 msgstr "RDA: Interação"
 
-#: src/Service/RdaDataTypeFactory.php:204
+#: src/Service/RdaDataTypeFactory.php:244
 msgid "RDA: Intermediation Tool"
 msgstr "RDA: Ferramenta de intermediação"
 
-#: src/Service/RdaDataTypeFactory.php:208
+#: src/Service/RdaDataTypeFactory.php:248
 msgid "RDA: Revision Mode"
 msgstr "RDA: Modo de Revisão"
 
-#: src/Service/RdaDataTypeFactory.php:212
+#: src/Service/RdaDataTypeFactory.php:252
 msgid "RDA: Revision Requirement"
 msgstr "RDA: Requisito de Revisão"
 
-#: src/Service/RdaDataTypeFactory.php:216
+#: src/Service/RdaDataTypeFactory.php:256
 msgid "RDA: Revision Termination"
 msgstr "RDA: Rescisão de Revisão"
 
-#: src/Service/RdaDataTypeFactory.php:220
+#: src/Service/RdaDataTypeFactory.php:260
 msgid "RDA: Sensory Mode"
 msgstr "RDA: Modo sensorial"
 
-#: src/Service/RdaDataTypeFactory.php:224
+#: src/Service/RdaDataTypeFactory.php:264
 msgid "RDA: Storage Medium Format"
 msgstr "RDA: Formato médio de armazenamento"
+
+#: src/Service/OmekaDataTypeFactory.php:12
+msgid "Omeka: Property"
+msgstr ""
+
+#: src/Service/OmekaDataTypeFactory.php:15
+msgid "Omeka: Property / Resource template"
+msgstr ""
+
+#: src/Service/OmekaDataTypeFactory.php:18
+msgid "Omeka: Property / Resource class"
+msgstr ""
 
 #: src/Service/NsDataTypeFactory.php:12
 msgid "Nuovo soggettario: Agenti: Organismi"
@@ -676,6 +780,10 @@ msgstr "LC: ISO639-1 Línguas"
 msgid "LC: Thesaurus for Graphic Materials"
 msgstr "LC: Thesaurus para materiais gráficos"
 
+#: src/DataType/Lc/Rbmscv.php:24
+msgid "LC: Rare Materials Cataloging"
+msgstr ""
+
 #: src/DataType/Lc/Organizations.php:24
 msgid "LC: Cultural Heritage Organizations"
 msgstr "LC: Organizações do patrimônio cultural"
@@ -796,6 +904,10 @@ msgstr "Getty: A lista de nomes de artistas da União (ULAN)"
 #: src/DataType/Geonames/Geonames.php:21
 msgid "Geonames: The GeoNames geographical database"
 msgstr "Geonames: O banco de dados geográficos GeoNames"
+
+#: src/DataType/Geonames/Features.php:21
+msgid "Geonames: GeoNames features"
+msgstr ""
 
 #: src/DataType/Thub/Thub.php:21
 msgid "Thesaurus de la Universitat de Barcelona (THUB)"

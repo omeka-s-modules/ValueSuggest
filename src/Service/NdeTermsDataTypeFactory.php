@@ -59,7 +59,7 @@ class NdeTermsDataTypeFactory implements FactoryInterface
         'valuesuggest:ndeterms:gtm' => [
             'label' => 'NDE: Goudse straten', // @translate
             'source' => 'https://www.goudatijdmachine.nl/id/straten#streets',
-        ],		
+        ],
         'valuesuggest:ndeterms:gtaagen' => [
             'label' => 'NDE: GTAA: genres', // @translate
             'source' => 'https://data.beeldengeluid.nl/id/datadownload/0028',

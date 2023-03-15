@@ -2,7 +2,6 @@
 namespace ValueSuggest\Suggester\Geonames;
 
 use ValueSuggest\Suggester\SuggesterInterface;
-use Laminas\Http\Client;
 
 class FeaturesSuggestAll implements SuggesterInterface
 {
@@ -10,7 +9,7 @@ class FeaturesSuggestAll implements SuggesterInterface
     {
         // Load the feature codes TSV file into an array.
         $features = array_map(
-            fn($line) => str_getcsv($line, "\t"),
+            fn ($line) => str_getcsv($line, "\t"),
             file(__DIR__ . '/featureCodes_en.txt')
         );
         // Sort the array alphabetically by value.
