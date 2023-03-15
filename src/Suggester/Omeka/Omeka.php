@@ -21,13 +21,15 @@ class Omeka implements SuggesterWithContextInterface
 
         $em = $this->services->get('Omeka\EntityManager');
         $qb = $em->createQueryBuilder()
-            ->select('v.value value, v.uri uri, COUNT(v.value) has_count')
+            // Trim spaces and tabs from the values.
+            ->select("TRIM('\t' FROM TRIM(v.value)) value, v.uri uri")
             ->from('Omeka\Entity\Value', 'v')
             ->andWhere('v.property = :propertyId')
+            // Use LOCATE instead of LIKE %...% so we don't have to escape
+            // wildcards. There's no discernable difference in speed.
             ->andWhere('LOCATE(:query, v.value) > 0')
             ->groupBy('value', 'uri')
-            ->orderBy('has_count', 'DESC')
-            ->addOrderBy('value', 'ASC')
+            ->orderBy('value', 'ASC')
             ->setMaxResults(1000)
             ->setParameter('propertyId', $propertyId)
             ->setParameter('query', $query);
@@ -46,10 +48,6 @@ class Omeka implements SuggesterWithContextInterface
                 $qb->join('v.resource', 'r')
                     ->andWhere('r.resourceClass = :resourceClassId')
                     ->setParameter('resourceClassId', $resourceClassId);
-                break;
-            case 'valuesuggest:omeka:property':
-            default:
-                // Do nothing
                 break;
         }
 
