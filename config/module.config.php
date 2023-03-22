@@ -117,6 +117,19 @@ return [
             'valuesuggest:ndeterms:wikiplacenlbe' => \ValueSuggest\Service\NdeTermsDataTypeFactory::class,
             'valuesuggest:ndeterms:wikistrnl' => \ValueSuggest\Service\NdeTermsDataTypeFactory::class,
 
+            /* Nomenclature */
+            'valuesuggest:nom:all' => Service\NomDataTypeFactory::class,
+            'valuesuggest:nom:nom2' => Service\NomDataTypeFactory::class,
+            'valuesuggest:nom:nom967' => Service\NomDataTypeFactory::class,
+            'valuesuggest:nom:nom1934' => Service\NomDataTypeFactory::class,
+            'valuesuggest:nom:nom3176' => Service\NomDataTypeFactory::class,
+            'valuesuggest:nom:nom7685' => Service\NomDataTypeFactory::class,
+            'valuesuggest:nom:nom10378' => Service\NomDataTypeFactory::class,
+            'valuesuggest:nom:nom11633' => Service\NomDataTypeFactory::class,
+            'valuesuggest:nom:nom12838' => Service\NomDataTypeFactory::class,
+            'valuesuggest:nom:nom14135' => Service\NomDataTypeFactory::class,
+            'valuesuggest:nom:nom14897' => Service\NomDataTypeFactory::class,
+
             /* Nuovo Soggettario */
             'valuesuggest:ns:ThesCF5' => Service\NsDataTypeFactory::class,
             'valuesuggest:ns:ThesCF6' => Service\NsDataTypeFactory::class,

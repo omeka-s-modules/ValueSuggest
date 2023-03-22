@@ -19,6 +19,7 @@ This module includes the following vocabularies:
 - Homosaurus
 - IdRef
 - Library of Congress Linked Data Service
+- Nomenclature
 - OCLC Metadata Services
 - Omeka
 - PACTOLS of Frantiq
@@ -123,6 +124,20 @@ This module includes the following vocabularies:
 - Rare Materials Cataloging
 - Subject Headings
 - Thesaurus for Graphic Materials
+
+### [Nomenclature for Museum Cataloging](https://page.nomenclature.info/apropos-about.app?lang=en)
+
+- All
+- Category 01: Built Environment Objects
+- Category 02: Furnishings
+- Category 03: Personal Objects
+- Category 04: Tools & Equipment for Materials
+- Category 05: Tools & Equipment for Science & Technology
+- Category 06: Tools & Equipment for Communication
+- Category 07: Distribution & Transportation Objects
+- Category 08: Communication Objects
+- Category 09: Recreational Objects
+- Category 10: Unclassifiable Objects
 
 ### [Nuovo Soggettario](https://thes.bncf.firenze.sbn.it/)
 
