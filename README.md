@@ -22,6 +22,7 @@ This module includes the following vocabularies:
 - Nomenclature
 - OCLC Metadata Services
 - Omeka
+- ORCID
 - PACTOLS of Frantiq
 - PeriodO
 - RDA Value Vocabularies
@@ -168,6 +169,9 @@ Suggest values that already exist in the working Omeka installation.
 - Omeka: Property / Resource template: suggest values using the current value's property and current resource's template
 - Omeka: Property / Resource class: suggest values using the current value's property and current resource's class
 
+### [ORCID](https://info.orcid.org/)
+
+- Open Researcher and Contributor ID
 
 ### [PACTOLS of Frantiq](https://pactols.frantiq.fr/)
 

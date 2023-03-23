@@ -154,6 +154,9 @@ return [
             'valuesuggest:omeka:propertyResourceTemplate' => Service\OmekaDataTypeFactory::class,
             'valuesuggest:omeka:propertyResourceClass' => Service\OmekaDataTypeFactory::class,
 
+            /* ORCID */
+            'valuesuggest:orcid:orcid' => Service\OrcidDataTypeFactory::class,
+
             /* Opentheso / Pactols */
             'valuesuggest:pactols:all' => Service\PactolsDataTypeFactory::class,
             'valuesuggest:pactols:sujets' => Service\PactolsDataTypeFactory::class,
