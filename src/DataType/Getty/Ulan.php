@@ -18,6 +18,6 @@ class Ulan extends AbstractDataType
 
     public function getLabel()
     {
-        return 'Getty: The Union List of Artist Names (ULAN)'; // @translate
+        return 'Getty: Union List of Artist Names (ULAN)'; // @translate
     }
 }

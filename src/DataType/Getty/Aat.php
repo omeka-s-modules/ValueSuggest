@@ -18,6 +18,6 @@ class Aat extends AbstractDataType
 
     public function getLabel()
     {
-        return 'Getty: The Art & Architecture Thesaurus (AAT)'; // @translate
+        return 'Getty: Art & Architecture Thesaurus (AAT)'; // @translate
     }
 }

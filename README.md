@@ -79,9 +79,11 @@ This module includes the following vocabularies:
 
 ### [The Getty Vocabularies](http://vocab.getty.edu/)
 
-- The Art & Architecture Thesaurus (AAT)
-- The Getty Thesaurus of Geographic Names (TGN)
-- The Union List of Artist Names (ULAN)
+- Art & Architecture Thesaurus (AAT)
+- Thesaurus of Geographic Names (TGN)
+- Union List of Artist Names (ULAN)
+- Cultural Objects Name Authority (CONA)
+- Getty Iconography Authority (IA)
 
 ### [Homosaurus](http://homosaurus.org/)
 
