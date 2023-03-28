@@ -42,8 +42,8 @@ return [
             'valuesuggest:getty:aat' => Service\GettyDataTypeFactory::class,
             'valuesuggest:getty:tgn' => Service\GettyDataTypeFactory::class,
             'valuesuggest:getty:ulan' => Service\GettyDataTypeFactory::class,
-            // @todo Add "The Cultural Objects Name Authority (CONA)" once it's
-            // published (past due, fall 2015)
+            'valuesuggest:getty:cona' => Service\GettyDataTypeFactory::class,
+            'valuesuggest:getty:ia' => Service\GettyDataTypeFactory::class,
 
             /* Homosaurus */
             'valuesuggest:homosaurus:homosaurus' => Service\HomosaurusDataTypeFactory::class,
