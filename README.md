@@ -167,9 +167,9 @@ This module includes the following vocabularies:
 
 Suggest values that already exist in the working Omeka installation.
 
-- Omeka: Property: suggest values using the current value's property
-- Omeka: Property / Resource template: suggest values using the current value's property and current resource's template
-- Omeka: Property / Resource class: suggest values using the current value's property and current resource's class
+- Omeka: Property: suggest values using the current property's values
+- Omeka: Property / Resource template: suggest values using the current property's values and current resource's template
+- Omeka: Property / Resource class: suggest values using the current property's values and current resource's class
 
 ### [ORCID](https://info.orcid.org/)
 
