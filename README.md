@@ -13,7 +13,6 @@ See general end user documentation for [Installing a module](http://omeka.org/s/
 This module includes the following vocabularies:
 
 - Dublin Core
-- Dutch Digital Heritage Network of Terms
 - GeoNames
 - The Getty Vocabularies
 - Homosaurus
@@ -36,37 +35,6 @@ This module includes the following vocabularies:
 - Elements
 - Terms
 - Types
-
-### [Dutch Digital Heritage Network of Terms: NDE Termennetwerk](https://termennetwerk.netwerkdigitaalerfgoed.nl/)
-
-- Art & Architecture Thesaurus - materialen
-- Art & Architecture Thesaurus - processen en technieken
-- Art & Architecture Thesaurus - stijlen en periodes
-- Archeologisch Basisregister
-- Adamlink: straten in Amsterdam
-- Brinkman trefwoordenthesaurus
-- Cultuurhistorische Thesaurus
-- Cultuurhistorische Thesaurus - Materialen
-- Cultuurhistorische Thesaurus - Stijlen en periodes
-- EuroVoc - thesaurus van de Europese Unie
-- GeoNames: geografische namen in Nederland, België en Duitsland
-- GTAA: genres
-- GTAA: onderwerpen
-- Homosaurus
-- Iconclass
-- Indisch Erfgoed Thesaurus
-- Muziek: genres en stijlen
-- Muziek: personen en groepen
-- Muziekschatten: onderwerpen
-- Nederlandse Thesaurus van Auteursnamen
-- RKDartists
-- STCN: drukkers
-- Thesaurus Nationaal Museum van Wereldculturen
-- Thesaurus Tweede Wereldoorlog Nederland
-- Wikidata: alle entiteiten
-- Wikidata: personen
-- Wikidata: plaatsen in Nederland en België
-- Wikidata: straten in Nederland
 
 ### [Gemeinsame Normdatei (GND)](http://lobid.org/gnd)
 
