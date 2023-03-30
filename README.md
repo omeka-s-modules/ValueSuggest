@@ -8,6 +8,12 @@ See the [Omeka S user manual](http://omeka.org/s/docs/user-manual/modules/values
 
 See general end user documentation for [Installing a module](http://omeka.org/s/docs/user-manual/modules/#installing-modules)
 
+## Upgrades
+
+### Version 1.15.0
+
+In version 1.15.0, we have removed the [Dutch Digital Heritage Network of Terms](https://termennetwerk.netwerkdigitaalerfgoed.nl/) vocabularies. These are the resource template data types beginning with "NDE: ". If you are currently using these vocabularies, or want to use them in the future, please download and install the [NdeTermennetwerk](https://github.com/omeka-s-modules/NdeTermennetwerk) module.
+
 ## Vocabularies
 
 This module includes the following vocabularies:
