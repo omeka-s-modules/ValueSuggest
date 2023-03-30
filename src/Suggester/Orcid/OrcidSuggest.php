@@ -37,7 +37,6 @@ class OrcidSuggest implements SuggesterInterface
             ->setParameterGet($params)
             ->send();
         if (!$response->isSuccess()) {
-            var_dump($response->getBody());exit;
             return [];
         }
         // Parse the JSON response.

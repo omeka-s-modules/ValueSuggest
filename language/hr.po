@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-15 12:42-0400\n"
+"POT-Creation-Date: 2023-03-30 10:50-0400\n"
 "PO-Revision-Date: 2017-09-14 20:16+0000\n"
 "Last-Translator: Josip Ilic <josip.ilic@ericsson.com>, 2021\n"
 "Language-Team: Croatian (https://www.transifex.com/omeka/teams/14184/hr/)\n"
@@ -61,122 +61,6 @@ msgstr ""
 " \n"
 " \n"
 " "
-
-#: src/Service/NdeTermsDataTypeFactory.php:16
-msgid "NDE: Art & Architecture Thesaurus - materialen"
-msgstr ""
-
-#: src/Service/NdeTermsDataTypeFactory.php:20
-msgid "NDE: Art & Architecture Thesaurus - processen en technieken"
-msgstr ""
-
-#: src/Service/NdeTermsDataTypeFactory.php:24
-msgid "NDE: Art & Architecture Thesaurus - stijlen en periodes"
-msgstr ""
-
-#: src/Service/NdeTermsDataTypeFactory.php:28
-msgid "NDE: Archeologisch Basisregister"
-msgstr ""
-
-#: src/Service/NdeTermsDataTypeFactory.php:32
-msgid "NDE: Adamlink: straten in Amsterdam"
-msgstr ""
-
-#: src/Service/NdeTermsDataTypeFactory.php:36
-msgid "NDE: Brinkman trefwoordenthesaurus"
-msgstr ""
-
-#: src/Service/NdeTermsDataTypeFactory.php:40
-msgid "NDE: Cultuurhistorische Thesaurus"
-msgstr ""
-
-#: src/Service/NdeTermsDataTypeFactory.php:44
-msgid "NDE: Cultuurhistorische Thesaurus - Materialen"
-msgstr ""
-
-#: src/Service/NdeTermsDataTypeFactory.php:48
-msgid "NDE: Cultuurhistorische Thesaurus - Stijlen en periodes"
-msgstr ""
-
-#: src/Service/NdeTermsDataTypeFactory.php:52
-msgid "NDE: EuroVoc - thesaurus van de Europese Unie"
-msgstr ""
-
-#: src/Service/NdeTermsDataTypeFactory.php:56
-msgid "NDE: GeoNames: geografische namen in Nederland, België en Duitsland"
-msgstr ""
-
-#: src/Service/NdeTermsDataTypeFactory.php:60
-msgid "NDE: Goudse straten"
-msgstr ""
-
-#: src/Service/NdeTermsDataTypeFactory.php:64
-msgid "NDE: GTAA: genres"
-msgstr ""
-
-#: src/Service/NdeTermsDataTypeFactory.php:68
-msgid "NDE: GTAA: onderwerpen"
-msgstr ""
-
-#: src/Service/NdeTermsDataTypeFactory.php:72
-msgid "NDE: Homosaurus"
-msgstr ""
-
-#: src/Service/NdeTermsDataTypeFactory.php:76
-msgid "NDE: Iconclass"
-msgstr ""
-
-#: src/Service/NdeTermsDataTypeFactory.php:80
-msgid "NDE: Indisch Erfgoed Thesaurus"
-msgstr ""
-
-#: src/Service/NdeTermsDataTypeFactory.php:84
-msgid "NDE: Muziek: genres en stijlen"
-msgstr ""
-
-#: src/Service/NdeTermsDataTypeFactory.php:88
-msgid "NDE: Muziek: personen en groepen"
-msgstr ""
-
-#: src/Service/NdeTermsDataTypeFactory.php:92
-msgid "NDE: Muziekschatten: onderwerpen"
-msgstr ""
-
-#: src/Service/NdeTermsDataTypeFactory.php:96
-msgid "NDE: Nederlandse Thesaurus van Auteursnamen"
-msgstr ""
-
-#: src/Service/NdeTermsDataTypeFactory.php:100
-msgid "NDE: RKDartists"
-msgstr ""
-
-#: src/Service/NdeTermsDataTypeFactory.php:104
-msgid "NDE: STCN: drukkers"
-msgstr ""
-
-#: src/Service/NdeTermsDataTypeFactory.php:108
-msgid "NDE: Thesaurus Nationaal Museum van Wereldculturen"
-msgstr ""
-
-#: src/Service/NdeTermsDataTypeFactory.php:112
-msgid "NDE: Thesaurus Tweede Wereldoorlog Nederland"
-msgstr ""
-
-#: src/Service/NdeTermsDataTypeFactory.php:116
-msgid "NDE: Wikidata: alle entiteiten"
-msgstr ""
-
-#: src/Service/NdeTermsDataTypeFactory.php:120
-msgid "NDE: Wikidata: personen"
-msgstr ""
-
-#: src/Service/NdeTermsDataTypeFactory.php:124
-msgid "NDE: Wikidata: plaatsen in Nederland en België"
-msgstr ""
-
-#: src/Service/NdeTermsDataTypeFactory.php:128
-msgid "NDE: Wikidata: straten in Nederland"
-msgstr ""
 
 #: src/Service/IdRefDataTypeFactory.php:14
 msgid "IdRef: All"
@@ -1364,6 +1248,50 @@ msgstr ""
 " \n"
 " "
 
+#: src/Service/NomDataTypeFactory.php:12
+msgid "Nomenclature: All"
+msgstr ""
+
+#: src/Service/NomDataTypeFactory.php:16
+msgid "Nomenclature: Built Environment Objects"
+msgstr ""
+
+#: src/Service/NomDataTypeFactory.php:20
+msgid "Nomenclature: Furnishings"
+msgstr ""
+
+#: src/Service/NomDataTypeFactory.php:24
+msgid "Nomenclature: Personal Objects"
+msgstr ""
+
+#: src/Service/NomDataTypeFactory.php:28
+msgid "Nomenclature: Tools & Equipment for Materials"
+msgstr ""
+
+#: src/Service/NomDataTypeFactory.php:32
+msgid "Nomenclature: Tools & Equipment for Science & Technology"
+msgstr ""
+
+#: src/Service/NomDataTypeFactory.php:36
+msgid "Nomenclature: Tools & Equipment for Communication"
+msgstr ""
+
+#: src/Service/NomDataTypeFactory.php:40
+msgid "Nomenclature: Distribution & Transportation Objects"
+msgstr ""
+
+#: src/Service/NomDataTypeFactory.php:44
+msgid "Nomenclature: Communication Objects"
+msgstr ""
+
+#: src/Service/NomDataTypeFactory.php:48
+msgid "Nomenclature: Recreational Objects"
+msgstr ""
+
+#: src/Service/NomDataTypeFactory.php:52
+msgid "Nomenclature: Unclassifiable Objects"
+msgstr ""
+
 #: src/DataType/Lc/Genreforms.php:24
 msgid "LC: Genre/Form Terms"
 msgstr ""
@@ -1639,40 +1567,24 @@ msgstr ""
 " "
 
 #: src/DataType/Getty/Aat.php:21
-msgid "Getty: The Art & Architecture Thesaurus (AAT)"
+msgid "Getty: Art & Architecture Thesaurus (AAT)"
 msgstr ""
-"Getty: Riječ o umjetnosti i arhitekturi (AAT)\n"
-" \n"
-"\n"
-" \n"
-" \n"
-" \n"
-" \n"
-" "
 
 #: src/DataType/Getty/Tgn.php:21
-msgid "Getty: The Getty Thesaurus of Geographic Names (TGN)"
+msgid "Getty: Thesaurus of Geographic Names (TGN)"
 msgstr ""
-"Getty: Gettyjev tezaurus geografskih imena (TGN)\n"
-" \n"
-"\n"
-" \n"
-" \n"
-" \n"
-" \n"
-" "
 
 #: src/DataType/Getty/Ulan.php:21
-msgid "Getty: The Union List of Artist Names (ULAN)"
+msgid "Getty: Union List of Artist Names (ULAN)"
 msgstr ""
-"Getty: Unija Popis imena izvođača (ULAN)\n"
-" \n"
-"\n"
-" \n"
-" \n"
-" \n"
-" \n"
-" "
+
+#: src/DataType/Getty/Cona.php:21
+msgid "Getty: Cultural Objects Name Authority (CONA)"
+msgstr ""
+
+#: src/DataType/Getty/Ia.php:21
+msgid "Getty: Iconography Authority (IA)"
+msgstr ""
 
 #: src/DataType/Geonames/Geonames.php:21
 msgid "Geonames: The GeoNames geographical database"
@@ -1688,6 +1600,10 @@ msgstr ""
 
 #: src/DataType/Geonames/Features.php:21
 msgid "Geonames: GeoNames features"
+msgstr ""
+
+#: src/DataType/Orcid/Orcid.php:21
+msgid "ORCID: Open Researcher and Contributor ID"
 msgstr ""
 
 #: src/DataType/Thub/Thub.php:21

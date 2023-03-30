@@ -5,16 +5,16 @@
 # 
 # Translators:
 # Darío Hereñú, 2019
-# Alfonso Montejo <almontejor@gmail.com>, 2022
+# Alfonso Montejo <almontejor@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-15 12:42-0400\n"
+"POT-Creation-Date: 2023-03-30 10:50-0400\n"
 "PO-Revision-Date: 2017-09-14 20:16+0000\n"
-"Last-Translator: Alfonso Montejo <almontejor@gmail.com>, 2022\n"
+"Last-Translator: Alfonso Montejo <almontejor@gmail.com>, 2023\n"
 "Language-Team: Spanish (https://www.transifex.com/omeka/teams/14184/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -37,122 +37,6 @@ msgstr "UNESCO: Nomenclatura de Ciencia y Tecnología"
 #: src/Service/UnescoDataTypeFactory.php:20
 msgid "UNESCO: Biblioteca Digital Floridablanca"
 msgstr "UNESCO: Biblioteca Digital Floridablanca"
-
-#: src/Service/NdeTermsDataTypeFactory.php:16
-msgid "NDE: Art & Architecture Thesaurus - materialen"
-msgstr ""
-
-#: src/Service/NdeTermsDataTypeFactory.php:20
-msgid "NDE: Art & Architecture Thesaurus - processen en technieken"
-msgstr ""
-
-#: src/Service/NdeTermsDataTypeFactory.php:24
-msgid "NDE: Art & Architecture Thesaurus - stijlen en periodes"
-msgstr ""
-
-#: src/Service/NdeTermsDataTypeFactory.php:28
-msgid "NDE: Archeologisch Basisregister"
-msgstr "NDE: Archeologisch Basisregister"
-
-#: src/Service/NdeTermsDataTypeFactory.php:32
-msgid "NDE: Adamlink: straten in Amsterdam"
-msgstr ""
-
-#: src/Service/NdeTermsDataTypeFactory.php:36
-msgid "NDE: Brinkman trefwoordenthesaurus"
-msgstr "NDE: Brinkman trefwoordenthesaurus"
-
-#: src/Service/NdeTermsDataTypeFactory.php:40
-msgid "NDE: Cultuurhistorische Thesaurus"
-msgstr "NDE: Cultuurhistorische Thesaurus"
-
-#: src/Service/NdeTermsDataTypeFactory.php:44
-msgid "NDE: Cultuurhistorische Thesaurus - Materialen"
-msgstr ""
-
-#: src/Service/NdeTermsDataTypeFactory.php:48
-msgid "NDE: Cultuurhistorische Thesaurus - Stijlen en periodes"
-msgstr ""
-
-#: src/Service/NdeTermsDataTypeFactory.php:52
-msgid "NDE: EuroVoc - thesaurus van de Europese Unie"
-msgstr ""
-
-#: src/Service/NdeTermsDataTypeFactory.php:56
-msgid "NDE: GeoNames: geografische namen in Nederland, België en Duitsland"
-msgstr ""
-
-#: src/Service/NdeTermsDataTypeFactory.php:60
-msgid "NDE: Goudse straten"
-msgstr ""
-
-#: src/Service/NdeTermsDataTypeFactory.php:64
-msgid "NDE: GTAA: genres"
-msgstr "NDE: GTAA: genres"
-
-#: src/Service/NdeTermsDataTypeFactory.php:68
-msgid "NDE: GTAA: onderwerpen"
-msgstr "NDE: GTAA: onderwerpen"
-
-#: src/Service/NdeTermsDataTypeFactory.php:72
-msgid "NDE: Homosaurus"
-msgstr ""
-
-#: src/Service/NdeTermsDataTypeFactory.php:76
-msgid "NDE: Iconclass"
-msgstr ""
-
-#: src/Service/NdeTermsDataTypeFactory.php:80
-msgid "NDE: Indisch Erfgoed Thesaurus"
-msgstr ""
-
-#: src/Service/NdeTermsDataTypeFactory.php:84
-msgid "NDE: Muziek: genres en stijlen"
-msgstr "NDE: Muziek: genres en stijlen"
-
-#: src/Service/NdeTermsDataTypeFactory.php:88
-msgid "NDE: Muziek: personen en groepen"
-msgstr "NDE: Muziek: personen en groepen"
-
-#: src/Service/NdeTermsDataTypeFactory.php:92
-msgid "NDE: Muziekschatten: onderwerpen"
-msgstr "NDE: Muziekschatten: onderwerpen"
-
-#: src/Service/NdeTermsDataTypeFactory.php:96
-msgid "NDE: Nederlandse Thesaurus van Auteursnamen"
-msgstr "NDE: Nederlandse Thesaurus van Auteursnamen"
-
-#: src/Service/NdeTermsDataTypeFactory.php:100
-msgid "NDE: RKDartists"
-msgstr "NDE: RKDartists"
-
-#: src/Service/NdeTermsDataTypeFactory.php:104
-msgid "NDE: STCN: drukkers"
-msgstr ""
-
-#: src/Service/NdeTermsDataTypeFactory.php:108
-msgid "NDE: Thesaurus Nationaal Museum van Wereldculturen"
-msgstr "NDE: Thesaurus Nationaal Museum van Wereldculturen"
-
-#: src/Service/NdeTermsDataTypeFactory.php:112
-msgid "NDE: Thesaurus Tweede Wereldoorlog Nederland"
-msgstr "NDE: Thesaurus Tweede Wereldoorlog Nederland"
-
-#: src/Service/NdeTermsDataTypeFactory.php:116
-msgid "NDE: Wikidata: alle entiteiten"
-msgstr "NDE: Wikidata: alle entiteiten"
-
-#: src/Service/NdeTermsDataTypeFactory.php:120
-msgid "NDE: Wikidata: personen"
-msgstr "NDE: Wikidata: personen"
-
-#: src/Service/NdeTermsDataTypeFactory.php:124
-msgid "NDE: Wikidata: plaatsen in Nederland en België"
-msgstr "NDE: Wikidata: plaatsen in Nederland en België"
-
-#: src/Service/NdeTermsDataTypeFactory.php:128
-msgid "NDE: Wikidata: straten in Nederland"
-msgstr "NDE: Wikidata: straten in Nederland"
 
 #: src/Service/IdRefDataTypeFactory.php:14
 msgid "IdRef: All"
@@ -236,11 +120,11 @@ msgstr "RDA: Cartographic Data Type"
 
 #: src/Service/RdaDataTypeFactory.php:36
 msgid "RDA: Collection Accrual Method"
-msgstr ""
+msgstr "RDA: Collection Accrual Method"
 
 #: src/Service/RdaDataTypeFactory.php:40
 msgid "RDA: Collection Accrual Policy"
-msgstr ""
+msgstr "RDA: Collection Accrual Policy"
 
 #: src/Service/RdaDataTypeFactory.php:44
 msgid "RDA: Colour Content"
@@ -256,7 +140,7 @@ msgstr "RDA: Content Type"
 
 #: src/Service/RdaDataTypeFactory.php:56
 msgid "RDA: Extension Plan"
-msgstr ""
+msgstr "RDA: Extension Plan"
 
 #: src/Service/RdaDataTypeFactory.php:60
 msgid "RDA: Conventional Collective Title"
@@ -308,15 +192,15 @@ msgstr "RDA: Illustrative Content"
 
 #: src/Service/RdaDataTypeFactory.php:108
 msgid "RDA: Interactivity Mode"
-msgstr ""
+msgstr "RDA: Interactivity Mode"
 
 #: src/Service/RdaDataTypeFactory.php:112
 msgid "RDA: Layout"
-msgstr ""
+msgstr "RDA: Layout"
 
 #: src/Service/RdaDataTypeFactory.php:116
 msgid "RDA: Linked Data Work"
-msgstr ""
+msgstr "RDA: Linked Data Work"
 
 #: src/Service/RdaDataTypeFactory.php:120
 msgid "RDA: Material"
@@ -348,11 +232,11 @@ msgstr "RDA: Recording Medium"
 
 #: src/Service/RdaDataTypeFactory.php:148
 msgid "RDA: Recording Methods"
-msgstr ""
+msgstr "RDA: Métodos de grabación"
 
 #: src/Service/RdaDataTypeFactory.php:152
 msgid "RDA: Recording Sources"
-msgstr ""
+msgstr "RDA: Fuentes de grabación"
 
 #: src/Service/RdaDataTypeFactory.php:156
 msgid "RDA: Reduction Ratio Designation"
@@ -388,7 +272,7 @@ msgstr "RDA: Track Configuration"
 
 #: src/Service/RdaDataTypeFactory.php:188
 msgid "RDA: Type Of Binding"
-msgstr ""
+msgstr "RDA: Tipo de encuadernación"
 
 #: src/Service/RdaDataTypeFactory.php:192
 msgid "RDA: Type of Recording"
@@ -396,11 +280,11 @@ msgstr "RDA: Type of Recording"
 
 #: src/Service/RdaDataTypeFactory.php:196
 msgid "RDA: Unit of Time"
-msgstr ""
+msgstr "RDA: Unidad de tiempo"
 
 #: src/Service/RdaDataTypeFactory.php:200
 msgid "RDA: User Tasks"
-msgstr ""
+msgstr "RDA: Tareas de usuario/a"
 
 #: src/Service/RdaDataTypeFactory.php:204
 msgid "RDA: Video Format"
@@ -468,15 +352,15 @@ msgstr "RDA: Storage Medium Format"
 
 #: src/Service/OmekaDataTypeFactory.php:12
 msgid "Omeka: Property"
-msgstr ""
+msgstr "Omeka: Propiedad"
 
 #: src/Service/OmekaDataTypeFactory.php:15
 msgid "Omeka: Property / Resource template"
-msgstr ""
+msgstr "Omeka: Propiedad / Platilla de recursos"
 
 #: src/Service/OmekaDataTypeFactory.php:18
 msgid "Omeka: Property / Resource class"
-msgstr ""
+msgstr "Omeka: Propiedad / Clase de recurso"
 
 #: src/Service/NsDataTypeFactory.php:12
 msgid "Nuovo soggettario: Agenti: Organismi"
@@ -798,6 +682,50 @@ msgstr ""
 msgid "Tesauros: Diccionario de Mobiliario"
 msgstr "Tesauros del Patrimonio Cultural de España: Diccionario de Mobiliario"
 
+#: src/Service/NomDataTypeFactory.php:12
+msgid "Nomenclature: All"
+msgstr ""
+
+#: src/Service/NomDataTypeFactory.php:16
+msgid "Nomenclature: Built Environment Objects"
+msgstr ""
+
+#: src/Service/NomDataTypeFactory.php:20
+msgid "Nomenclature: Furnishings"
+msgstr ""
+
+#: src/Service/NomDataTypeFactory.php:24
+msgid "Nomenclature: Personal Objects"
+msgstr ""
+
+#: src/Service/NomDataTypeFactory.php:28
+msgid "Nomenclature: Tools & Equipment for Materials"
+msgstr ""
+
+#: src/Service/NomDataTypeFactory.php:32
+msgid "Nomenclature: Tools & Equipment for Science & Technology"
+msgstr ""
+
+#: src/Service/NomDataTypeFactory.php:36
+msgid "Nomenclature: Tools & Equipment for Communication"
+msgstr ""
+
+#: src/Service/NomDataTypeFactory.php:40
+msgid "Nomenclature: Distribution & Transportation Objects"
+msgstr ""
+
+#: src/Service/NomDataTypeFactory.php:44
+msgid "Nomenclature: Communication Objects"
+msgstr ""
+
+#: src/Service/NomDataTypeFactory.php:48
+msgid "Nomenclature: Recreational Objects"
+msgstr ""
+
+#: src/Service/NomDataTypeFactory.php:52
+msgid "Nomenclature: Unclassifiable Objects"
+msgstr ""
+
 #: src/DataType/Lc/Genreforms.php:24
 msgid "LC: Genre/Form Terms"
 msgstr "LC: Genre/Form Terms"
@@ -824,7 +752,7 @@ msgstr "LC: Thesaurus for Graphic Materials"
 
 #: src/DataType/Lc/Rbmscv.php:24
 msgid "LC: Rare Materials Cataloging"
-msgstr ""
+msgstr "LC: Catalogación de materiales raros"
 
 #: src/DataType/Lc/Organizations.php:24
 msgid "LC: Cultural Heritage Organizations"
@@ -933,16 +861,24 @@ msgid "OCLC: The Virtual International Authority File (VIAF)"
 msgstr "OCLC: The Virtual International Authority File (VIAF)"
 
 #: src/DataType/Getty/Aat.php:21
-msgid "Getty: The Art & Architecture Thesaurus (AAT)"
-msgstr "Getty: The Art & Architecture Thesaurus (AAT)"
+msgid "Getty: Art & Architecture Thesaurus (AAT)"
+msgstr ""
 
 #: src/DataType/Getty/Tgn.php:21
-msgid "Getty: The Getty Thesaurus of Geographic Names (TGN)"
-msgstr "Getty: The Getty Thesaurus of Geographic Names (TGN)"
+msgid "Getty: Thesaurus of Geographic Names (TGN)"
+msgstr ""
 
 #: src/DataType/Getty/Ulan.php:21
-msgid "Getty: The Union List of Artist Names (ULAN)"
-msgstr "Getty: The Union List of Artist Names (ULAN)"
+msgid "Getty: Union List of Artist Names (ULAN)"
+msgstr ""
+
+#: src/DataType/Getty/Cona.php:21
+msgid "Getty: Cultural Objects Name Authority (CONA)"
+msgstr ""
+
+#: src/DataType/Getty/Ia.php:21
+msgid "Getty: Iconography Authority (IA)"
+msgstr ""
 
 #: src/DataType/Geonames/Geonames.php:21
 msgid "Geonames: The GeoNames geographical database"
@@ -950,6 +886,10 @@ msgstr "Geonames: The GeoNames geographical database"
 
 #: src/DataType/Geonames/Features.php:21
 msgid "Geonames: GeoNames features"
+msgstr "Geonames: características de GeoNames"
+
+#: src/DataType/Orcid/Orcid.php:21
+msgid "ORCID: Open Researcher and Contributor ID"
 msgstr ""
 
 #: src/DataType/Thub/Thub.php:21
