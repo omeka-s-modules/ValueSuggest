@@ -113,7 +113,7 @@ abstract class AbstractDataType extends BaseAbstractDataType implements DataType
         $jsonLd = [];
         if ($value->uri()) {
             $jsonLd['@id'] = $value->uri();
-            if ('' !== trim($value->value())) {
+            if ('' !== trim((string) $value->value())) {
                 $jsonLd['o:label'] = $value->value();
             }
         } else {
