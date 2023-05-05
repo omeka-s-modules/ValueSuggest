@@ -194,6 +194,9 @@ return [
             /* RightsStatements.org */
             'valuesuggestall:rightsstatements:rightsstatements' => Service\RightsStatementsDataTypeFactory::class,
 
+            /* ROR */
+            'valuesuggest:ror:ror' => Service\RorDataTypeFactory::class,
+
             /* Tesauros-Diccionarios del patrimonio cultural de España */
             'valuesuggest:tesauros:bienesculturales' => Service\TesaurosDataTypeFactory::class,
             'valuesuggest:tesauros:ceramica' => Service\TesaurosDataTypeFactory::class,

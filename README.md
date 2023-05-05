@@ -237,6 +237,10 @@ Suggest values that already exist in the working Omeka installation.
 
 - Provides a set of standardized rights statements for cultural heritage institutions that can be used to communicate the copyright and re-use status of digital objects to the public
 
+### [ROR](https://ror.org/)
+
+- Research Organization Registry
+
 ### [Tesauros del patrimonio cultural de España](http://tesauros.mecd.es/tesauros)
 
 - Diccionario de Bienes Culturales
