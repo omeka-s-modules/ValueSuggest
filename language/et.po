@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-03 14:12-0400\n"
+"POT-Creation-Date: 2023-05-08 15:03-0400\n"
 "PO-Revision-Date: 2017-09-14 20:16+0000\n"
 "Last-Translator: Rivo Zängov <eraser@eraser.ee>, 2022\n"
 "Language-Team: Estonian (https://app.transifex.com/omeka/teams/14184/et/)\n"
@@ -768,6 +768,10 @@ msgstr "Väärtuste soovitamine"
 msgid ""
 "RightsStatements.org: Standardized rights statements for online cultural "
 "heritage"
+msgstr ""
+
+#: src/DataType/Ror/Ror.php:21
+msgid "ROR: Research Organization Registry"
 msgstr ""
 
 #: src/DataType/Homosaurus/Homosaurus.php:21
