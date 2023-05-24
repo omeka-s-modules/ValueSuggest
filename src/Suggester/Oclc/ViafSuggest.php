@@ -41,7 +41,7 @@ class ViafSuggest implements SuggesterInterface
             $suggestions[] = [
                 'value' => $result['term'],
                 'data' => [
-                    'uri' => sprintf('http://www.viaf.org/viaf/%s', $result['viafid']),
+                    'uri' => sprintf('http://viaf.org/viaf/%s', $result['viafid']),
                     'info' => null,
                 ],
             ];
