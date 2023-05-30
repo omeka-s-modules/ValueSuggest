@@ -19,21 +19,26 @@ In version 1.15.0, we have removed the [Dutch Digital Heritage Network of Terms]
 This module includes the following vocabularies:
 
 - Dublin Core
+- Gemeinsame Normdatie (GND)
 - GeoNames
 - The Getty Vocabularies
 - Homosaurus
 - IdRef
 - Library of Congress Linked Data Service
 - Nomenclature
+- Nuovo Soggettario
 - OCLC Metadata Services
 - Omeka
-- ORCID
+- ORCID (Open Researcher and Contributor ID)
 - PACTOLS of Frantiq
 - PeriodO
 - RDA Value Vocabularies
 - RightsStatements.org
+- Research Organization Registry (ROR)
 - Tesauros del patrimonio cultural de España
 - UNESCO
+- Les vocabulaires du Ministère de la Culture
+- Thesaurus de la Universitat de Barcelona (THUB)
 
 ### [Dublin Core](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/) (DCMI Metadata Terms)
 
@@ -300,6 +305,10 @@ Suggest values that already exist in the working Omeka installation.
 - Vocabulaire des altérations
 - Vocabulaire des domaines d'action ou objets des entités productrices d'archives
 - Vocabulaire pour les techniques photographiques
+
+### [Thesaurus de la Universitat de Barcelona (THUB)](https://vocabularis.crai.ub.edu/ca/thub){target=_blank} (`es`)
+ 
+- Thesaurus de la Universitat de Barcelona (THUB)
 
 # Copyright
 
