@@ -306,7 +306,7 @@ Suggest values that already exist in the working Omeka installation.
 - Vocabulaire des domaines d'action ou objets des entités productrices d'archives
 - Vocabulaire pour les techniques photographiques
 
-### [Thesaurus de la Universitat de Barcelona (THUB)](https://vocabularis.crai.ub.edu/ca/thub){target=_blank} (`es`)
+### [Thesaurus de la Universitat de Barcelona (THUB)](https://vocabularis.crai.ub.edu/ca/thub)
  
 - Thesaurus de la Universitat de Barcelona (THUB)
 
