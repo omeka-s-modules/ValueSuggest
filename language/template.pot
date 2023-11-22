@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-24 09:18-0400\n"
+"POT-Creation-Date: 2023-11-22 09:56-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -678,6 +678,58 @@ msgstr ""
 
 #: src/Service/NomDataTypeFactory.php:52
 msgid "Nomenclature: Unclassifiable Objects"
+msgstr ""
+
+#: src/Service/PbcoreDataTypeFactory.php:12
+msgid "PBCore: pbcoreAssetType"
+msgstr ""
+
+#: src/Service/PbcoreDataTypeFactory.php:16
+msgid "PBCore: @dateType"
+msgstr ""
+
+#: src/Service/PbcoreDataTypeFactory.php:20
+msgid "PBCore: @titleType"
+msgstr ""
+
+#: src/Service/PbcoreDataTypeFactory.php:24
+msgid "PBCore: @descriptionType"
+msgstr ""
+
+#: src/Service/PbcoreDataTypeFactory.php:28
+msgid "PBCore: pbcoreRelationType"
+msgstr ""
+
+#: src/Service/PbcoreDataTypeFactory.php:32
+msgid "PBCore: instantiationRelationType"
+msgstr ""
+
+#: src/Service/PbcoreDataTypeFactory.php:36
+msgid "PBCore: creatorRole and contributorRole"
+msgstr ""
+
+#: src/Service/PbcoreDataTypeFactory.php:40
+msgid "PBCore: publisherRole"
+msgstr ""
+
+#: src/Service/PbcoreDataTypeFactory.php:44
+msgid "PBCore: instantiationPhysical: Audio"
+msgstr ""
+
+#: src/Service/PbcoreDataTypeFactory.php:48
+msgid "PBCore: instantiationPhysical: Film"
+msgstr ""
+
+#: src/Service/PbcoreDataTypeFactory.php:52
+msgid "PBCore: instantiationPhysical: Video"
+msgstr ""
+
+#: src/Service/PbcoreDataTypeFactory.php:56
+msgid "PBCore: instantiationMediaType"
+msgstr ""
+
+#: src/Service/PbcoreDataTypeFactory.php:60
+msgid "PBCore: instantiationGenerations"
 msgstr ""
 
 #: src/DataType/Lc/Genreforms.php:24

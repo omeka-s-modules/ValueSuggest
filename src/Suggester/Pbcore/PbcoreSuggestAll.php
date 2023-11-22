@@ -2,7 +2,6 @@
 namespace ValueSuggest\Suggester\Pbcore;
 
 use ValueSuggest\Suggester\SuggesterInterface;
-use Laminas\Http\Client;
 
 class PbcoreSuggestAll implements SuggesterInterface
 {
