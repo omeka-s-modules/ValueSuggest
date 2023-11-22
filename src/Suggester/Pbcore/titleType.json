@@ -1,0 +1,42 @@
+[
+    {
+     "Term": "Album",
+     "Definition": "The title of a collection of recordings issued as a single item on CD, record, or another medium.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/titletype-vocabulary\/#Album"
+    },
+    {
+     "Term": "Collection",
+     "Definition": "The title naming a group of materials with some unifying characteristic, such as the materials assembled by a person, organization, or repository from a variety of sources; an artificial collection.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/titletype-vocabulary\/#Collection"
+    },
+    {
+     "Term": "Episode",
+     "Definition": "The title of a single installment of a television or radio series.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/titletype-vocabulary\/#Episode"
+    },
+    {
+     "Term": "Miniseries",
+     "Definition": "The title of a multi-episode asset of limited duration, aired daily or weekly, usually with a total running time of less than 15 hours.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/titletype-vocabulary\/#Miniseries"
+    },
+    {
+     "Term": "Program",
+     "Definition": "The title of a single asset that has been broadcast on a on a specific occasion.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/titletype-vocabulary\/#Program"
+    },
+    {
+     "Term": "Segment",
+     "Definition": "The title of a self-contained portion of a program\/episode, which serves its own function, but operates within the larger program\/episode.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/titletype-vocabulary\/#Segment"
+    },
+    {
+     "Term": "Series",
+     "Definition": "The title of a set of episodes broadcast in sequence, usually conceived without a definite end and aired on a regular schedule. Typically all episodes within a single series follow a specific theme or continuous storyline, and are all broadcast under the same series title and branding.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/titletype-vocabulary\/#Series"
+    },
+    {
+     "Term": "Subseries",
+     "Definition": "The title of set of episodes that makes up its own series, which is broadcast under an umbrella series with its own branding.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/titletype-vocabulary\/#Subseries"
+    }
+   ]

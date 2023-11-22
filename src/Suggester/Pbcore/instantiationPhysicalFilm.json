@@ -1,0 +1,52 @@
+[
+    {
+     "Term": "Film",
+     "Definition": "A general term for unknown moving image celluloid formats. If more specific format information is known, please use the appropriate term from the list.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-film-vocabulary\/#Film"
+    },
+    {
+     "Term": "8mm film",
+     "Definition": "A gauge of moving image printed on celluloid, 8mm in width.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-film-vocabulary\/#8mmFilm"
+    },
+    {
+     "Term": "9.5mm film",
+     "Definition": "A gauge of moving image printed on celluloid, 9.5mm in width.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-film-vocabulary\/#9andaHalfmmFilm"
+    },
+    {
+     "Term": "Super 8mm film",
+     "Definition": "A gauge of moving image printed on celluloid, 8mm in width, with an expanded picture area.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-film-vocabulary\/#Super8mmFilm"
+    },
+    {
+     "Term": "16mm film",
+     "Definition": "A gauge of moving image printed on celluloid, 16mm in width.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-film-vocabulary\/#16mmFilm"
+    },
+    {
+     "Term": "Super 16mm film",
+     "Definition": "A gauge of moving image printed on celluloid, 16mm in width, with an expanded picture area.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-film-vocabulary\/#Super16mmFilm"
+    },
+    {
+     "Term": "22mm film",
+     "Definition": "A gauge of moving image printed on celluloid, 22mm in width.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-film-vocabulary\/#22mmFilm"
+    },
+    {
+     "Term": "28mm film",
+     "Definition": "A gauge of moving image printed on celluloid, 28mm in width.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-film-vocabulary\/#28mmFilm"
+    },
+    {
+     "Term": "35mm film",
+     "Definition": "A gauge of moving image printed on celluloid, 35mm in width. Some 35mm films may be printed on paper.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-film-vocabulary\/#35mmFilm"
+    },
+    {
+     "Term": "70mm film",
+     "Definition": "A gauge of moving image printed on celluloid, 70mm in width.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-film-vocabulary\/#70mmFilm"
+    }
+   ]

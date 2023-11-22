@@ -1,0 +1,147 @@
+[
+    {
+     "Term": "Open reel audiotape",
+     "Definition": "A general term for unknown open reel audio formats. If more specific format information is known, please use the appropriate term from the list.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-audio-vocabulary\/#OpenReelAudiotape"
+    },
+    {
+     "Term": "Grooved analog disc",
+     "Definition": "A general term for unknown grooved audio formats. If more specific format information is known, please use the appropriate term from the list.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-audio-vocabulary\/#GroovedAnalogDisc"
+    },
+    {
+     "Term": "1 inch audio tape",
+     "Definition": "An open reel analog audiotape format.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-audio-vocabulary\/#1InchAudioTape"
+    },
+    {
+     "Term": "1\/2 inch audio cassette",
+     "Definition": "An open reel analog audiotape format.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-audio-vocabulary\/#HalfInchAudioTape"
+    },
+    {
+     "Term": "1\/4 inch audio cassette",
+     "Definition": "A cassette-based analog audiotape format.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-audio-vocabulary\/#QuarterInchAudioCassette"
+    },
+    {
+     "Term": "1\/4 inch audio tape",
+     "Definition": "An open reel analog audiotape format.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-audio-vocabulary\/#QuarterInchAudioTape"
+    },
+    {
+     "Term": "2 inch audio tape",
+     "Definition": "An open reel analog audiotape format.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-audio-vocabulary\/#2InchAudioTape"
+    },
+    {
+     "Term": "8-track",
+     "Definition": "A cartridge-based 1\/4-inch analog audiotape format. May also be known as Stereo 8.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-audio-vocabulary\/#8Track"
+    },
+    {
+     "Term": "Aluminum disc",
+     "Definition": "A grooved aluminum analog disc format.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-audio-vocabulary\/#AluminumDisc"
+    },
+    {
+     "Term": "Audio cassette",
+     "Definition": "A cassette-based 1\/8-inch analog audiotape format. If desired, format information can be included after a colon, for example \"Audio cassette: Type I.\" Types of audio cassette include Type I, Type II, Type III and Type IV.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-audio-vocabulary\/#AudioCassette"
+    },
+    {
+     "Term": "Audio CD",
+     "Definition": "An optical disc-based digital audio format.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-audio-vocabulary\/#AudioCD"
+    },
+    {
+     "Term": "DAT",
+     "Definition": "A cassette-based 4mm digital audiotape format.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-audio-vocabulary\/#DAT"
+    },
+    {
+     "Term": "DDS",
+     "Definition": "A cassette-based digital data format that can also be used to record audio data.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-audio-vocabulary\/#DDS"
+    },
+    {
+     "Term": "DTRS",
+     "Definition": "A cassette-based 8mm digital audiotape format. May also be known as DARS. Types of DTRS include DA-88. This information can be included after a colon, as “DTRS: DA-88.”",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-audio-vocabulary\/#DTRS"
+    },
+    {
+     "Term": "Flexi Disc",
+     "Definition": "A grooved vinyl analog disc format.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-audio-vocabulary\/#FlexiDisc"
+    },
+    {
+     "Term": "Grooved Dictabelt",
+     "Definition": "A grooved plastic analog format.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-audio-vocabulary\/#GroovedDictabelt"
+    },
+    {
+     "Term": "Lacquer disc",
+     "Definition": "A grooved lacquer analog disc format. Types of lacquer discs may include those with aluminum base, glass base, cardboard base, and steel base. More specific format information can be included in an annotation.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-audio-vocabulary\/#LacquerDisc"
+    },
+    {
+     "Term": "Magnetic Dictabelt",
+     "Definition": "A magnetic plastic analog format.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-audio-vocabulary\/#MagneticDictabelt"
+    },
+    {
+     "Term": "Mini-cassette",
+     "Definition": "A cassette-based 1\/8-inch analog audiotape format.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-audio-vocabulary\/#MiniCassette"
+    },
+    {
+     "Term": "PCM Betamax",
+     "Definition": "A cassette-based digital audiotape format recorded onto Betamax videotape.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-audio-vocabulary\/#PCMBetamax"
+    },
+    {
+     "Term": "PCM U-matic",
+     "Definition": "A cassette-based digital audiotape format recorded onto U-matic videotape.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-audio-vocabulary\/#PCMUmatic"
+    },
+    {
+     "Term": "PCM VHS",
+     "Definition": "A cassette-based digital audiotape format recorded onto VHS videotape.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-audio-vocabulary\/#PCMVHS"
+    },
+    {
+     "Term": "Piano roll",
+     "Definition": "A paper-based musical storage format used to operate a player piano.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-audio-vocabulary\/#PianoRoll"
+    },
+    {
+     "Term": "Plastic cylinder",
+     "Definition": "A grooved plastic analog phonograph cylinder format.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-audio-vocabulary\/#PlasticCylinder"
+    },
+    {
+     "Term": "Shellac disc",
+     "Definition": "A grooved shellac analog disc format.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-audio-vocabulary\/#ShellacDisc"
+    },
+    {
+     "Term": "Super Audio CD",
+     "Definition": "An optical disc-based digital audio format.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-audio-vocabulary\/#SuperAudioCD"
+    },
+    {
+     "Term": "Vinyl recording",
+     "Definition": "A grooved vinyl analog disc format. If desired, format information can be included after a colon, for example: “Vinyl record: EP.” Types of records may include EP, LP, 45, 78. LP may also be known as 33 1\/3.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-audio-vocabulary\/#VinylRecording"
+    },
+    {
+     "Term": "Wax cylinder",
+     "Definition": "A grooved wax analog phonograph cylinder format.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-audio-vocabulary\/#WaxCylinder"
+    },
+    {
+     "Term": "Wire recording",
+     "Definition": "A wire-based magnetic analog audio format.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-audio-vocabulary\/#WireRecording"
+    }
+   ]

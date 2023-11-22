@@ -1,0 +1,42 @@
+[
+    {
+     "Term": "Has Derivative",
+     "Definition": "The asset being described is the source for another asset which is based upon it (for example, a film and then a documentary about the making of that film).",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/pbcorerelationtype-vocabulary\/#HasDerivative"
+    },
+    {
+     "Term": "Derived From",
+     "Definition": "The asset being described has another asset as its source (for example, a documentary about the making of a film).",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/pbcorerelationtype-vocabulary\/#DerivedFrom"
+    },
+    {
+     "Term": "References",
+     "Definition": "The asset being described mentions, uses or discusses another asset (for example, a review program that discusses a recorded theatrical work).",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/pbcorerelationtype-vocabulary\/#References"
+    },
+    {
+     "Term": "Is Referenced By",
+     "Definition": "The asset being described is mentioned, used or discussed by another asset (for example, a recorded theatrical performance that is reviewed in another program).",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/pbcorerelationtype-vocabulary\/#IsReferencedBy"
+    },
+    {
+     "Term": "Is Related To",
+     "Definition": "The asset being described is related somehow to the asset being pointed to in this relation element (for example, two programs related to the same topic). This should be used as a default if the specific relationship is unknown.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/pbcorerelationtype-vocabulary\/#IsRelatedTo"
+    },
+    {
+     "Term": "Is Part Of",
+     "Definition": "The asset being described is part of the asset being pointed to in this relation element (for example, one segment of a multi-segment television program.) This relationship can also be described using pbcorePart.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/pbcorerelationtype-vocabulary\/#IsPartOf"
+    },
+    {
+     "Term": "Has Version",
+     "Definition": "The asset being described has an alternate intellectual version (for example, a different edit, or in a different language) which is being pointed to by this relation element. Use this when the asset being described is the ‘official’ or ‘master’ version of the asset; if not, use ‘Is Version Of’ to point to the master.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/pbcorerelationtype-vocabulary\/#HasVersion"
+    },
+    {
+     "Term": "Is Version Of",
+     "Definition": "The asset being described is an alternate intellectual version (for example, a different edit, or in a different language) of the resource being pointed to by this relation element. Use this if the asset being described is not the ‘official’ or ‘master’ version of the asset; if it is the master version, use ‘Has Version.’",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/pbcorerelationtype-vocabulary\/#IsVersionOf"
+    }
+   ]

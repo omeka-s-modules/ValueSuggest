@@ -1,0 +1,182 @@
+[
+    {
+     "Term": "A-B rolls",
+     "Definition": "Reels of film used as an intermediate step in the production process to create transitions, fades and dissolves in the final production. Each roll contains distinct shots, with black leader in between to account for shots which will be dissolved in from other reels of film for the final production. Some film productions may utilize several such reels, labeled as A, B, C, D, etc. ‘A-B rolls’ should be used as a broad term for any such reels.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationgenerations-vocabulary\/#ABRolls"
+    },
+    {
+     "Term": "Answer print",
+     "Definition": "The version of a film that is printed to film after color correction and with the sound properly synced to the picture, generally used as the last production element before final approval for release.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationgenerations-vocabulary\/#AnswerPrint"
+    },
+    {
+     "Term": "Composite",
+     "Definition": "Refers to the combination of several original rolls or elements in one print or negative — for example, a reel with the combined sound and image or a composite track that includes music, effects and dialog.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationgenerations-vocabulary\/#Composite"
+    },
+    {
+     "Term": "Copy",
+     "Definition": "A general term for an item that has been reproduced or duplicated from an original instantiation.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationgenerations-vocabulary\/#Copy"
+    },
+    {
+     "Term": "Copy: Access",
+     "Definition": "An instantiation of an asset, typically of low quality, that is designated by an archive or library for use by patrons, researchers, etc.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationgenerations-vocabulary\/#CopyAccess"
+    },
+    {
+     "Term": "Dub",
+     "Definition": "An analog copy from a film, videotape or audiotape master instantiation or earlier generation, typically involving some generation loss.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationgenerations-vocabulary\/#Dub"
+    },
+    {
+     "Term": "Duplicate",
+     "Definition": "An exact copy of another instantiation of an asset, generally digital, and involving no generation loss.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationgenerations-vocabulary\/#Duplicate"
+    },
+    {
+     "Term": "Fine cut",
+     "Definition": "A working edit of a film or program which contains the correct sequences in the correct order, but may still undergo revisions in scene and sequence order to refine the final visuals.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationgenerations-vocabulary\/#FineCut"
+    },
+    {
+     "Term": "Intermediate",
+     "Definition": "A broad term for a reel of motion picture film, such as an intermediate positive or intermediate negative, that exists as a generational step between the original negative and a release print. This term should be used in conjunction with a generation element reading ‘positive’ or ‘negative’. More specific terms may also be used, such as interpositive, IP or master positive for intermediate positive; internegative for intermediate negative; or CRI for color reversal intermediate.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationgenerations-vocabulary\/#Intermediate"
+    },
+    {
+     "Term": "Kinescope",
+     "Definition": "A recording of a live television program on motion picture film, used for the purpose of recording programs before the wide adoption of videotape.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationgenerations-vocabulary\/#Kinescope"
+    },
+    {
+     "Term": "Line cut",
+     "Definition": "A working edit of a program which is created by the use of a video-switcher to make an in-the-moment edited version of the live show.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationgenerations-vocabulary\/#LineCut"
+    },
+    {
+     "Term": "Magnetic track",
+     "Definition": "An analog sound recording stored on a reel of film with a magnetic coating.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationgenerations-vocabulary\/#MagneticTrack"
+    },
+    {
+     "Term": "Master",
+     "Definition": "A final product or item which is considered the highest quality version. A production master is intended for distribution; a preservation master is the designated highest-quality version of an item maintained in a library or archive for the purposes of long-term preservation.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationgenerations-vocabulary\/#Master"
+    },
+    {
+     "Term": "Master: distribution",
+     "Definition": "A version of an asset which is packaged for a specific form of distribution, and may include packaging elements such as trailers, teasers, logos, credits, opens, closes, etc.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationgenerations-vocabulary\/#MasterDistribution"
+    },
+    {
+     "Term": "Master: production",
+     "Definition": "The final edit of a given asset in its highest-quality format, which can be re-packaged for broadcast and distribution.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationgenerations-vocabulary\/#MasterProduction"
+    },
+    {
+     "Term": "Mezzanine",
+     "Definition": "A version of an asset which is not the master, but is of high enough quality to be used for editing and to generate access copies.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationgenerations-vocabulary\/#Mezzanine"
+    },
+    {
+     "Term": "Negative",
+     "Definition": "A version of a film asset recorded with colors inverted. Most motion picture film is originally shot in negative.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationgenerations-vocabulary\/#Negative"
+    },
+    {
+     "Term": "Optical track",
+     "Definition": "An analog sound recording stored on film by printing a waveform on a film strip.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationgenerations-vocabulary\/#OpticalTrack"
+    },
+    {
+     "Term": "Original",
+     "Definition": "The first generation of an instantiation — either the material that came directly from the camera, in the case of raw footage, or, in the case of an edited master, the first master version created.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationgenerations-vocabulary\/#Original"
+    },
+    {
+     "Term": "Original footage",
+     "Definition": "Raw footage that was shot directly on camera, before dubbing, editing, or reformatting.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationgenerations-vocabulary\/#OriginalFootage"
+    },
+    {
+     "Term": "Original recording",
+     "Definition": "Raw audio that was captured directly, before dubbing, editing or reformatting.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationgenerations-vocabulary\/#OriginalRecording"
+    },
+    {
+     "Term": "Outs and trims",
+     "Definition": "Negative or positive prints of materials used for the production of a motion picture film but not included in the final version, such as outtakes, second takes, tests, sound and dialogue tracks, etc.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationgenerations-vocabulary\/#OutsandTrims"
+    },
+    {
+     "Term": "Picture lock",
+     "Definition": "A near-final edit of a film or program which contains the correct scenes and sequences in the correct order for the final version, but has not yet undergone post-production work.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationgenerations-vocabulary\/#PictureLock"
+    },
+    {
+     "Term": "Positive",
+     "Definition": "Film printed on stock that matches the colors and\/or tonal values of those in the original subject matter.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationgenerations-vocabulary\/#Positive"
+    },
+    {
+     "Term": "Preservation",
+     "Definition": "Typically the highest-quality version of an asset in the possession of a library or archive, which is not accessed, but instead kept for the purposes of long-term preservation. A preservation instantiation may be a preservation master, which is considered the original or most important version to preserve, or a preservation copy, which exists as an exact or near-exact duplicate of the preservation master in case of destruction or damage, and which is often used to make mezzanine or access copies.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationgenerations-vocabulary\/#Preservation"
+    },
+    {
+     "Term": "Print",
+     "Definition": "A film that contains a positive image printed from a duplicate negative or a reversal film, intended for projection.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationgenerations-vocabulary\/#Print"
+    },
+    {
+     "Term": "Proxy file",
+     "Definition": "A lower-quality instantiation of an asset, such as a preview, that is provided to allow users to review files before accessing the original. May be the same as an access copy.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationgenerations-vocabulary\/#ProxyFile"
+    },
+    {
+     "Term": "Reversal",
+     "Definition": "A type of moving image film that directly produces a positive image on the camera original, rather than a negative.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationgenerations-vocabulary\/#Reversal"
+    },
+    {
+     "Term": "Rough cut",
+     "Definition": "An early edit of a film or program which contains the approximate shot selection and timing that will be used for the final version, but may still require significant editing for sound, color, titles, etc.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationgenerations-vocabulary\/#RoughCut"
+    },
+    {
+     "Term": "Separation master",
+     "Definition": "A preservation instantiation for motion picture film which consists of three black-and-white copies, each filtered for one of the RGB spectrums.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationgenerations-vocabulary\/#SeparationMaster"
+    },
+    {
+     "Term": "Stock footage",
+     "Definition": "Film or video footage that was not created specifically for a program, but repurposed by the filmmakers from a pre-existing source. Generally licensed from a stock footage library or archive.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationgenerations-vocabulary\/#StockFootage"
+    },
+    {
+     "Term": "Submaster",
+     "Definition": "A full master version of a program that was copied from an existing video master, and may be used to create specialized master versions, such as a foreign language master or syndication master.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationgenerations-vocabulary\/#Submaster"
+    },
+    {
+     "Term": "Transcription disc",
+     "Definition": "A phonograph record intended for, or recorded from, a radio broadcast; used within the radio industry to distribute syndicated programs and preserve live broadcasts.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationgenerations-vocabulary\/#TranscriptionDisc"
+    },
+    {
+     "Term": "Work print",
+     "Definition": "A rough edit of a motion picture film used during the editing process, which contains the approximate shot selection and timing that will be used for the final version, but may still include placeholder clips and require significant editing for sound, animation, special effects, etc.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationgenerations-vocabulary\/#WorkPrint"
+    },
+    {
+     "Term": "Work tapes",
+     "Definition": "Unedited or partly edited pre-release or pre-broadcast audio or video recordings generated as part of the production process. Work tapes generally correspond to master material of original footage or stock footage. Recommended usage should be in conjunction with Original Footage or Original Recording.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationgenerations-vocabulary\/#WorkTapes"
+    },
+    {
+     "Term": "Work track",
+     "Definition": "A rough edit of a soundtrack which the editor uses to develop the final soundtrack.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationgenerations-vocabulary\/#WorkTrack"
+    }
+   ]

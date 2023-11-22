@@ -1,0 +1,122 @@
+[
+    {
+     "Term": "Abstract",
+     "Definition": "A summary of the contents of an asset.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/descriptiontype-vocabulary\/#Abstract"
+    },
+    {
+     "Term": "Awards",
+     "Definition": "A listing of any awards (i.e. Emmy, Golden Globe, Peabody) received by a production or asset.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/descriptiontype-vocabulary\/#Awards"
+    },
+    {
+     "Term": "Chapter",
+     "Definition": "A main division of an asset, typically with a number or title.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/descriptiontype-vocabulary\/#Chapter"
+    },
+    {
+     "Term": "Collection",
+     "Definition": "A description of a group of materials with some unifying characteristic, such as materials assembled by a person, organization, or repository from a variety of sources.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/descriptiontype-vocabulary\/#Collection"
+    },
+    {
+     "Term": "Comments",
+     "Definition": "More colloquial description, anecdotal comments, or reflections not typically viewable by staff outside the archives.  Could include comments about the preservation process (this asset was difficult to digitize, the two tape instantiations are damaged, etc.) or also include informal comments about the content (someone curses at minute 20, the content may upset some people, John Smith really likes this, etc.)",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/descriptiontype-vocabulary\/#Comments"
+    },
+    {
+     "Term": "Description",
+     "Definition": "A general term for a description of the asset.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/descriptiontype-vocabulary\/#Description"
+    },
+    {
+     "Term": "Episode Description",
+     "Definition": "A description of a single installment of a television or radio series.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/descriptiontype-vocabulary\/#EpisodeDescription"
+    },
+    {
+     "Term": "Event",
+     "Definition": "A thing that happens in the intellectual content of an asset, especially one of importance.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/descriptiontype-vocabulary\/#Event"
+    },
+    {
+     "Term": "Excerpt",
+     "Definition": "A description of a short clip taken from a moving image or audio resource. An exerpt may not convey a complete intellectual concept.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/descriptiontype-vocabulary\/#Excerpt"
+    },
+    {
+     "Term": "Item",
+     "Definition": "A description of a thing that can be distinguished from a group and that is complete in itself. An item may consist of several pieces, but is treated as a whole.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/descriptiontype-vocabulary\/#Item"
+    },
+    {
+     "Term": "Movement",
+     "Definition": "A principal division of a longer musical work, self-sufficient in terms of key, tempo, and structure.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/descriptiontype-vocabulary\/#Movement"
+    },
+    {
+     "Term": "Number",
+     "Definition": "A song, dance, piece of music, etc., especially one of several in a performance.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/descriptiontype-vocabulary\/#Number"
+    },
+    {
+     "Term": "Playlist",
+     "Definition": "A list of the recordings to be played on the radio during a particular program or time period, often including their sequence, duration, etc.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/descriptiontype-vocabulary\/#Playlist"
+    },
+    {
+     "Term": "Program",
+     "Definition": "A description of an asset that has been prepared for broadcast\/publication and is presented as a single work.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/descriptiontype-vocabulary\/#Program"
+    },
+    {
+     "Term": "Reviews",
+     "Definition": "Evaluations, opinions, or critical appraisals of a program or asset.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/descriptiontype-vocabulary\/#Reviews"
+    },
+    {
+     "Term": "Rundown",
+     "Definition": "A timeline or production cue-sheet for a TV or radio program.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/descriptiontype-vocabulary\/#Rundown"
+    },
+    {
+     "Term": "Script",
+     "Definition": "A document of the dialogue and direction used in the production of a program or asset.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/descriptiontype-vocabulary\/#Script"
+    },
+    {
+     "Term": "Segment",
+     "Definition": "A description of a self-contained portion of a program\/episode, which serves its own function, but operates within the larger program\/episode.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/descriptiontype-vocabulary\/#Segment"
+    },
+    {
+     "Term": "Series",
+     "Definition": "A description of a set of episodes broadcast in sequence, usually conceived without a definte end and aired on a regular schedule. Typically all episodes within a single series follow a specific theme or continuous storyline, and are all broadcast under the same series title and branding.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/descriptiontype-vocabulary\/#Series"
+    },
+    {
+     "Term": "Shot List",
+     "Definition": "A document that lists, in chronological order, the sequences of footage used in the production of a program or asset.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/descriptiontype-vocabulary\/#ShotList"
+    },
+    {
+     "Term": "Song",
+     "Definition": "A short poem or other set of words set to music or meant to be sung.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/descriptiontype-vocabulary\/#Song"
+    },
+    {
+     "Term": "Story",
+     "Definition": "A report of an item of news in a newspaper, magazine, or news broadcast; may also be used to refer to a plot or story line.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/descriptiontype-vocabulary\/#Story"
+    },
+    {
+     "Term": "Summary",
+     "Definition": "A brief statement or account of the main points of something.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/descriptiontype-vocabulary\/#Summary"
+    },
+    {
+     "Term": "Transcript",
+     "Definition": "A written document of the audio component of an audio or audiovisual asset.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/descriptiontype-vocabulary\/#Transcript"
+    }
+   ]

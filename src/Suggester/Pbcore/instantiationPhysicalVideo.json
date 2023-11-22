@@ -1,0 +1,202 @@
+[
+    {
+     "Term": "Videocassette",
+     "Definition": "A general term for unknown video cassette formats. If more specific format information is known, please use the appropriate term from the list below.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-video-vocabulary\/#Videocassette"
+    },
+    {
+     "Term": "Open reel videotape",
+     "Definition": "A general term for unknown open reel video formats. If more specific format information is known, please use the appropriate term from the list below.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-video-vocabulary\/#OpenReelVideoTape"
+    },
+    {
+     "Term": "Optical video disc",
+     "Definition": "A general term for unknown optical video formats. If more specific format information is known, please use the appropriate term from the list below.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-video-vocabulary\/#OpticalVideoDisc"
+    },
+    {
+     "Term": "1 inch videotape",
+     "Definition": "An open reel analog videotape format. If desired, format information can be included after a colon, for example: “1 inch videotape: MVC-10.” Types of 1 inch videotape include MVC-10, PI-3V, EV-200, EL-3400, IVC-700, IVC-800, IVC-900, UV-340, EV-210, BVH-1000, HDV-1000, HDD-1000, SMPTE Type A, SMPTE Type B, and SMPTE Type C.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-video-vocabulary\/#1InchVideotape"
+    },
+    {
+     "Term": "1\/2 inch videotape",
+     "Definition": "An open reel analog videotape format. May also be known as helical scan tape. If desired, format information can be included after a colon, for example: “1\/2 inch videotape: EIAJ Type 1.” Types of 1\/2 inch video tape include: CV, EIAJ Type 1, Hawkeye, Recam, V200, and VCR.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-video-vocabulary\/#HalfInchVideotape"
+    },
+    {
+     "Term": "1\/4 inch videotape",
+     "Definition": "An open reel analog videotape format. May also be known as Akai.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-video-vocabulary\/#QuarterInchVideotape"
+    },
+    {
+     "Term": "2 inch videotape",
+     "Definition": "An open reel analog videotape format. If desired, format information can be included after a colon, for example: “2 inch videotape: Quadruplex.” Types of 2 inch videotape include: Quadruplex, Octaplex, VR-1500, VR-1600, IVC-9000, Helical SV-201, and ACR 25.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-video-vocabulary\/#2InchVideotape"
+    },
+    {
+     "Term": "Betacam",
+     "Definition": "A cassette-based 1\/2-inch analog videotape format. Types of Betacam also include the higher-quality Betacam SP. This information can be included after a colon, as “Betacam: SP.”",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-video-vocabulary\/#Betacam"
+    },
+    {
+     "Term": "Betacam SX",
+     "Definition": "A cassette-based 1\/2-inch digital videotape format. Betacam SX is a digital version of Betacam SP.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-video-vocabulary\/#BetacamSX"
+    },
+    {
+     "Term": "Betamax",
+     "Definition": "A cassette-based 1\/2-inch analog videotape format. May also be know as Beta. If desired, format information can be included after a colon, for example: “Betamax: ED.” Types of Betamax also include Beta Hi-Fi, ED Betamax and Super Betamax.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-video-vocabulary\/#Betamax"
+    },
+    {
+     "Term": "Blu-ray disc",
+     "Definition": "An optical disc-based digital video format.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-video-vocabulary\/#BluRayDisc"
+    },
+    {
+     "Term": "Catrivision",
+     "Definition": "A cassette-based 1\/2-inch analog videotape format.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-video-vocabulary\/#Catrivision"
+    },
+    {
+     "Term": "D1",
+     "Definition": "A cassette-based 3\/4-inch digital videotape format. Different “D” formats are not necessarily backwards compatible: for example, a D-2 tape cannot be played on a D-1 machine.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-video-vocabulary\/#D1"
+    },
+    {
+     "Term": "D2",
+     "Definition": "A cassette-based 3\/4-inch digital videotape format. Different “D” formats are not necessarily backwards compatible: for example, a D-2 tape cannot be played on a D-1 machine.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-video-vocabulary\/#D2"
+    },
+    {
+     "Term": "D3",
+     "Definition": "A cassette-based 1\/2-inch digital videotape format. Different “D” formats are not necessarily backwards compatible: for example, a D-2 tape cannot be played on a D-1 machine.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-video-vocabulary\/#D3"
+    },
+    {
+     "Term": "D5",
+     "Definition": "A cassette-based 1\/2-inch digital videotape format. Types of D5 also include D5 HD. This information can be included after a colon, as “D5: HD.” Different “D” formats are not necessarily backwards compatible: for example, a D-2 tape cannot be played on a D-1 machine.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-video-vocabulary\/#D5"
+    },
+    {
+     "Term": "D6",
+     "Definition": "A cassette-based 3\/4-inch digital videotape format. Different “D” formats are not necessarily backwards compatible: for example, a D-2 tape cannot be played on a D-1 machine.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-video-vocabulary\/#D6"
+    },
+    {
+     "Term": "D9",
+     "Definition": "A cassette-based 1\/2-inch digital videotape format. Types of D9 also include D9 HD. This information can be included after a colon, as “D9: HD.” Different “D” formats are not necessarily backwards compatible: for example, a D-2 tape cannot be played on a D-1 machine.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-video-vocabulary\/#D9"
+    },
+    {
+     "Term": "DCT",
+     "Definition": "A cassette-based 3\/4-inch digital videotape format.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-video-vocabulary\/#DCT"
+    },
+    {
+     "Term": "Digital Betacam",
+     "Definition": "A cassette-based 1\/2-inch digital videotape format. May also be known as DigiBeta or D-Beta. Digital Betacam is a digital version of Betacam SP.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-video-vocabulary\/#DigitalBetacam"
+    },
+    {
+     "Term": "Digital8",
+     "Definition": "A cassette-based 8mm digital videotape format. Digital Betacam is a digital version of Hi8.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-video-vocabulary\/#Digital8"
+    },
+    {
+     "Term": "DV",
+     "Definition": "A cassette-based 1\/4-inch digital videotape format.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-video-vocabulary\/#DV"
+    },
+    {
+     "Term": "DVCAM",
+     "Definition": "A cassette-based 1\/4-inch digital videotape format.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-video-vocabulary\/#DVCAM"
+    },
+    {
+     "Term": "DVCPRO",
+     "Definition": "A cassette-based 1\/4-inch digital videotape format. If desired, format information can be included after a colon, for example: “DVCPro: 25.” Types of DVCPro include DVCPro 25, DVCPro 50, DVCPro Progressive, and DVCPro HD.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-video-vocabulary\/#DVCPRO"
+    },
+    {
+     "Term": "DVD",
+     "Definition": "A digital optical disc video format. If desired, format information can be included after a colon, for example: “DVD: DVD-R.” Types of DVD also include DVD+R, DVD+R DL, DVD-R, DVD-RW, and DVD+RW.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-video-vocabulary\/#DVD"
+    },
+    {
+     "Term": "EIAJ",
+     "Definition": "Cartridge A cartridge-based 1\/2-inch analog videotape format.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-video-vocabulary\/#EIAJ"
+    },
+    {
+     "Term": "EVD",
+     "Definition": "Videodisc A digital optical disc video format.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-video-vocabulary\/#EVD"
+    },
+    {
+     "Term": "HDCAM",
+     "Definition": "A cassette-based 1\/2-inch digital videotape format. Types of HDCAM also include HDCAM SR. This information can be included after a colon, as “HDCAM: SR.”",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-video-vocabulary\/#HDCAM"
+    },
+    {
+     "Term": "HDV",
+     "Definition": "A cassette-based 1\/4-inch digital videotape format. This is a high-definition version of MiniDV.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-video-vocabulary\/#HDV"
+    },
+    {
+     "Term": "Hi8",
+     "Definition": "A cassette-based 8mm analog videotape format. Hi8 is a high-band version of Video8.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-video-vocabulary\/#Hi8"
+    },
+    {
+     "Term": "LaserDisc",
+     "Definition": "A digital optical disc video format. May also be known as DiscoVision. If desired, format information can be included after a colon, for example: “LaserDisc: CAV.” Types of LaserDisc include CAV, CLV, and CAA.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-video-vocabulary\/#LaserDisc"
+    },
+    {
+     "Term": "MII",
+     "Definition": "A cassette-based 1\/2-inch analog videotape format.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-video-vocabulary\/#MII"
+    },
+    {
+     "Term": "MiniDV",
+     "Definition": "A cassette-based 1\/4-inch digital videotape format. May also be known as DVC.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-video-vocabulary\/#MiniDV"
+    },
+    {
+     "Term": "Super Video CD",
+     "Definition": "A digital optical disc video format.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-video-vocabulary\/#SuperVideoCD"
+    },
+    {
+     "Term": "U-matic",
+     "Definition": "A cassette-based 3\/4-inch analog videotape format. May also be known as 3\/4-inch tape. If desired, format information can be included after a colon, for example: “U-matic: S.” Types of U-matic include the smaller U-matic S and the high-quality U-matic SP.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-video-vocabulary\/#Umatic"
+    },
+    {
+     "Term": "Universal Media Disc",
+     "Definition": "A digital optical disc video format.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-video-vocabulary\/#UniversalMediaDisc"
+    },
+    {
+     "Term": "V-Cord",
+     "Definition": "A cassette-based 1\/2-inch analog videotape format. If desired, format informatio can be included after a colon, for example: “V-Cord: I.” Types of V-Cord include V-Cord I and V-Cord II.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-video-vocabulary\/#Vcord"
+    },
+    {
+     "Term": "VHS",
+     "Definition": "A cassette-based 1\/2-inch analog videotape format. If desired, format information can be included after a colon, for example: “VHS: S-VHS.” Types of VHS include S-VHS, W-VHS and VHS-C.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-video-vocabulary\/#VHS"
+    },
+    {
+     "Term": "Video8",
+     "Definition": "A cassette-based 8mm analog videotape format.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-video-vocabulary\/#Video8"
+    },
+    {
+     "Term": "VX",
+     "Definition": "A cassette-based 1\/2-inch analog videotape format.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationphysical-video-vocabulary\/#VX"
+    }
+   ]

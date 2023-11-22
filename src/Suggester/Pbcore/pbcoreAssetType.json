@@ -1,0 +1,72 @@
+[
+  {
+   "Term": "Album",
+   "Definition": "A collection of recordings issued as a single item on CD, record, or another medium.",
+   "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/pbcoreassettype-vocabulary\/#Album"
+  },
+  {
+   "Term": "Animation",
+   "Definition": "A moving image production element created from static drawings or objects.",
+   "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/pbcoreassettype-vocabulary\/#Animation"
+  },
+  {
+   "Term": "Clip",
+   "Definition": "A short excerpt taken from a moving image or audio resource. A clip may not convey a complete intellectual concept.",
+   "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/pbcoreassettype-vocabulary\/#Clip"
+  },
+  {
+   "Term": "Collection",
+   "Definition": "A group of materials with some unifying characteristic. – 2. Materials assembled by a person, organization, or repository from a variety of sources; an artificial collection.",
+   "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/pbcoreassettype-vocabulary\/#Collection"
+  },
+  {
+   "Term": "Compilation",
+   "Definition": "A single asset containing multiple different sub-assets; for example, a reel with programs, clips, and raw footage.",
+   "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/pbcoreassettype-vocabulary\/#Compilation"
+  },
+  {
+   "Term": "Episode",
+   "Definition": "A single installment of a series, whether linearly relate to other episodes in the series, or simply presented under the same branding.",
+   "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/pbcoreassettype-vocabulary\/#Episode"
+  },
+  {
+   "Term": "Miniseries",
+   "Definition": "A multi-episode resource of limited duration, aired daily or weekly, usually with a total running time of less than 15 hours.",
+   "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/pbcoreassettype-vocabulary\/#Miniseries"
+  },
+  {
+   "Term": "Program",
+   "Definition": "A resource that has been prepared for broadcast\/publication and is presented as a single work, with no series branding.",
+   "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/pbcoreassettype-vocabulary\/#Program"
+  },
+  {
+   "Term": "Promo",
+   "Definition": "An edited piece of audio or video announcing an upcoming work (like a program or series).",
+   "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/pbcoreassettype-vocabulary\/#Promo"
+  },
+  {
+   "Term": "Raw Footage",
+   "Definition": "Originally captured footage or other unedited content, not intended for broadcast in its current form.",
+   "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/pbcoreassettype-vocabulary\/#RawFootage"
+  },
+  {
+   "Term": "Segment",
+   "Definition": "A self-contained portion of a program\/episode, which serves its own function, but operates within the larger program\/episode.",
+   "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/pbcoreassettype-vocabulary\/#Segment"
+  },
+  {
+   "Term": "Series",
+   "Definition": "A set of episodes broadcast in sequence, usually conceived without a definte end and aired on a regular schedule. Typically all episodes within a single series follow a specific theme or continuous storyline, or are all broadcast under the same series title and branding.",
+   "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/pbcoreassettype-vocabulary\/#Series"
+  },
+  {
+   "Term": "Season",
+   "Definition": "A set of episodes from a series, which were all aired in the same broadcast period.",
+   "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/pbcoreassettype-vocabulary\/#Season"
+  },
+  {
+   "Term": "Subseries",
+   "Definition": "A set of episodes that makes up its own series, which is broadcast under an umbrella series with its own branding.",
+   "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/pbcoreassettype-vocabulary\/#Subseries"
+  }
+ ]

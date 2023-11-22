@@ -1,0 +1,12 @@
+[
+    {
+     "Term": "Audio",
+     "Definition": "Time-based media material experienced through sound, without a visual component, such as music recordings or radio programs.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationmediatype-vocabulary\/#Audio"
+    },
+    {
+     "Term": "Moving Image",
+     "Definition": "Time-based media material experienced primarily visually, such as motion pictures or video recordings; may also include audio.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationmediatype-vocabulary\/#MovingImage"
+    }
+   ]

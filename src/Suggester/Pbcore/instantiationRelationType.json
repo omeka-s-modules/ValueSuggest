@@ -1,0 +1,52 @@
+[
+    {
+     "Term": "Is Clone Of",
+     "Definition": "The instantiation being described was digitally or losslessly copied from another instantiation, which is being pointed to in this relation element.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationrelationtype-vocabulary\/#IsCloneOf"
+    },
+    {
+     "Term": "Cloned To",
+     "Definition": "The instantiation being described has been digitally or losslessly copied to another instantiation, which is being pointed to in this relation element.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationrelationtype-vocabulary\/#ClonedTo"
+    },
+    {
+     "Term": "Is Dub Of",
+     "Definition": "The instantiation being described was physically duplicated from another instantiation, which is being pointed to in this relation element.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationrelationtype-vocabulary\/#IsDubOf"
+    },
+    {
+     "Term": "Dubbed To",
+     "Definition": "The instantiation being described has been physically duplicated onto another instantiation, which is being pointed to in this relation element.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationrelationtype-vocabulary\/#DubbedTo"
+    },
+    {
+     "Term": "Is Format Of",
+     "Definition": "The instantiation being described is an alternate format of an original instantiation (for example, a digital file which was created from an analog video) which is being pointed to in this relation element.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationrelationtype-vocabulary\/#IsFormatOf"
+    },
+    {
+     "Term": "Has Format",
+     "Definition": "The instantiation being described exists in an alternate format (for example, an analog video which also exists as a digital file) which is being pointed to in this relation element.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationrelationtype-vocabulary\/#HasFormat"
+    },
+    {
+     "Term": "Is Part Of",
+     "Definition": "The instantiation being described is part of the asset or instantiation being pointed to in this relation element (for example, a clip that has been taken from a longer piece.)",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationrelationtype-vocabulary\/#IsPartOf"
+    },
+    {
+     "Term": "Has Part",
+     "Definition": "A portion of the instatiation being described exists as an independent instantiation (for example, a clip) which is pointed to in this relation element.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationrelationtype-vocabulary\/#HasPart"
+    },
+    {
+     "Term": "Replaces",
+     "Definition": "The instantiation being described is a substitution for the instantiation being pointed to in the relation element (for example, because the original instantiation has been deaccessioned.)",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationrelationtype-vocabulary\/#Replaces"
+    },
+    {
+     "Term": "Is Replaced By",
+     "Definition": "The instantiation being described is being substituted for by the instantiation being pointed to in the relation element (for example, because it has been deaccessioned.)",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/instantiationrelationtype-vocabulary\/#IsReplacedBy"
+    }
+   ]

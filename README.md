@@ -154,6 +154,22 @@ Suggest values that already exist in the working Omeka installation.
 
 - Open Researcher and Contributor ID
 
+### [PBCore Vocabularies](https://pbcore.org/pbcore-controlled-vocabularies)
+
+- pbcoreAssetType
+- @dateType
+- @titleType
+- @descriptionType
+- pbcoreRelationType
+- instantiationRelationType
+- creatorRole and contributorRole
+- publisherRole
+- instantiationPhysical: Audio
+- instantiationPhysical: Film
+- instantiationPhysical: Video
+- instantiationMediaType
+- instantiationGenerations
+
 ### [PACTOLS of Frantiq](https://pactols.frantiq.fr/)
 
 - The entire pactols thesaurus

@@ -1,0 +1,172 @@
+[
+    {
+     "Term": "accepted",
+     "Definition": "Date of acceptance of an asset or instantiation.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/datetype-vocabulary\/#accepted"
+    },
+    {
+     "Term": "available",
+     "Definition": "Date (often a range) that the asset or instantiation became or will become available.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/datetype-vocabulary\/#available"
+    },
+    {
+     "Term": "available end",
+     "Definition": "Date that the asset or instantiation became or will become unavailable.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/datetype-vocabulary\/#availableend"
+    },
+    {
+     "Term": "available start",
+     "Definition": "Date that the asset or instantiation became or will become available.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/datetype-vocabulary\/#availablestart"
+    },
+    {
+     "Term": "broadcast",
+     "Definition": "Date the asset or instantiation was broadcast.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/datetype-vocabulary\/#broadcast"
+    },
+    {
+     "Term": "captured",
+     "Definition": "Date that the asset or instantiation was digitized or a subsequent snapshot was taken.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/datetype-vocabulary\/#captured"
+    },
+    {
+     "Term": "created",
+     "Definition": "Date on which the asset or instantiation was created.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/datetype-vocabulary\/#created"
+    },
+    {
+     "Term": "copyright",
+     "Definition": "Date associated with a claim of protection under copyright or a similar regime for the asset or instantiation.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/datetype-vocabulary\/#copyright"
+    },
+    {
+     "Term": "deletion",
+     "Definition": "Date an asset or instantiation was deleted.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/datetype-vocabulary\/#deletion"
+    },
+    {
+     "Term": "digitized",
+     "Definition": "Date an asset or instantiation was digitized.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/datetype-vocabulary\/#digitized"
+    },
+    {
+     "Term": "distributed",
+     "Definition": "Date on which the asset or instantiation was distributed or released.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/datetype-vocabulary\/#distributed"
+    },
+    {
+     "Term": "dubbed",
+     "Definition": "Date an asset or instantiation was dubbed.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/datetype-vocabulary\/#dubbed"
+    },
+    {
+     "Term": "edited",
+     "Definition": "Date on which the asset or instantiation was edited.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/datetype-vocabulary\/#edited"
+    },
+    {
+     "Term": "encoded",
+     "Definition": "Date an asset or instantiation was encoded.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/datetype-vocabulary\/#encoded"
+    },
+    {
+     "Term": "encrypted",
+     "Definition": "Date on which the asset or instantiation was encrypted.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/datetype-vocabulary\/#encrypted"
+    },
+    {
+     "Term": "event",
+     "Definition": "Date, time or period of an event related to an asset or instantiation.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/datetype-vocabulary\/#event"
+    },
+    {
+     "Term": "ingested",
+     "Definition": "Date an asset or instantiation was added to a preservation repository. This is a PREMIS event suggestion.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/datetype-vocabulary\/#ingested"
+    },
+    {
+     "Term": "issued",
+     "Definition": "Date of formal issuance (e.g. publication) of an asset or instantiation.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/datetype-vocabulary\/#issued"
+    },
+    {
+     "Term": "licensed",
+     "Definition": "Date on which the asset or instantiation was licensed.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/datetype-vocabulary\/#licensed"
+    },
+    {
+     "Term": "mastered",
+     "Definition": "Date on which the asset or instantiation’s final master was created.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/datetype-vocabulary\/#mastered"
+    },
+    {
+     "Term": "migrated",
+     "Definition": "Date an asset or instantiation was migrated to a new format. This is a PREMIS event suggestion.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/datetype-vocabulary\/#migrated"
+    },
+    {
+     "Term": "mixed",
+     "Definition": "Date on which the asset or instantiation’s final mix was created.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/datetype-vocabulary\/#mixed"
+    },
+    {
+     "Term": "modified",
+     "Definition": "Date on which the asset or instantiation was last changed.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/datetype-vocabulary\/#modified"
+    },
+    {
+     "Term": "normalized",
+     "Definition": "Date an asset or instantiation was normalized to a preservation standard. This is a PREMIS event suggestion.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/datetype-vocabulary\/#normalized"
+    },
+    {
+     "Term": "performed",
+     "Definition": "Date on which the intellectual content of an asset was performed live.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/datetype-vocabulary\/#performed"
+    },
+    {
+     "Term": "podcast",
+     "Definition": "Date on which the asset or instantiation was webcast.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/datetype-vocabulary\/#podcast"
+    },
+    {
+     "Term": "published",
+     "Definition": "Date on which the asset or instantiation was published.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/datetype-vocabulary\/#published"
+    },
+    {
+     "Term": "released",
+     "Definition": "The official release date of an asset or instantiation.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/datetype-vocabulary\/#released"
+    },
+    {
+     "Term": "restored",
+     "Definition": "Date on which the asset or instantiation was restored.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/datetype-vocabulary\/#restored"
+    },
+    {
+     "Term": "revised",
+     "Definition": "Date on which the asset or instantiation was revised.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/datetype-vocabulary\/#revised"
+    },
+    {
+     "Term": "transferred",
+     "Definition": "Date on which the asset or instantiation was transferred from one location to another.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/datetype-vocabulary\/#transferred"
+    },
+    {
+     "Term": "valid",
+     "Definition": "A date during which the content of an asset or instantiation is valid.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/datetype-vocabulary\/#valid"
+    },
+    {
+     "Term": "validated",
+     "Definition": "Date an asset or instantiation was confirmed to comply with documented information about the instantiation. This is a PREMIS event suggestion.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/datetype-vocabulary\/#validated"
+    },
+    {
+     "Term": "webcast",
+     "Definition": "Date on which the asset or instantiation was webcast.",
+     "URI": "http:\/\/pbcore.org\/pbcore-controlled-vocabularies\/datetype-vocabulary\/#webcast"
+    }
+   ]

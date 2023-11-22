@@ -130,6 +130,21 @@ return [
             'valuesuggest:pactols:all' => Service\PactolsDataTypeFactory::class,
             'valuesuggest:pactols:sujets' => Service\PactolsDataTypeFactory::class,
 
+            /* PBCore */
+            'valuesuggestall:pbcore:pbcoreAssetType' => Service\PbcoreDataTypeFactory::class,
+            'valuesuggestall:pbcore:dateType' => Service\PbcoreDataTypeFactory::class,
+            'valuesuggestall:pbcore:titleType' => Service\PbcoreDataTypeFactory::class,
+            'valuesuggestall:pbcore:descriptionType' => Service\PbcoreDataTypeFactory::class,
+            'valuesuggestall:pbcore:pbcoreRelationType' => Service\PbcoreDataTypeFactory::class,
+            'valuesuggestall:pbcore:instantiationRelationType' => Service\PbcoreDataTypeFactory::class,
+            'valuesuggestall:pbcore:creatorRoleContributorRole' => Service\PbcoreDataTypeFactory::class,
+            'valuesuggestall:pbcore:publisherRole' => Service\PbcoreDataTypeFactory::class,
+            'valuesuggestall:pbcore:instantiationPhysicalAudio' => Service\PbcoreDataTypeFactory::class,
+            'valuesuggestall:pbcore:instantiationPhysicalFilm' => Service\PbcoreDataTypeFactory::class,
+            'valuesuggestall:pbcore:instantiationPhysicalVideo' => Service\PbcoreDataTypeFactory::class,
+            'valuesuggestall:pbcore:instantiationMediaType' => Service\PbcoreDataTypeFactory::class,
+            'valuesuggestall:pbcore:instantiationGenerations' => Service\PbcoreDataTypeFactory::class,
+
             /* PeriodO */
             'valuesuggest:periodo:periodo' => Service\PeriodoDataTypeFactory::class,
 
