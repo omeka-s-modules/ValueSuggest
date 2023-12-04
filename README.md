@@ -30,6 +30,7 @@ This module includes the following vocabularies:
 - OCLC Metadata Services
 - Omeka
 - ORCID (Open Researcher and Contributor ID)
+- PBCore
 - PACTOLS of Frantiq
 - PeriodO
 - RDA Value Vocabularies
