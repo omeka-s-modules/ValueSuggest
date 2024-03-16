@@ -263,7 +263,7 @@ Suggest values that already exist in the working Omeka installation.
 
 - Research Organization Registry
 
-### [Tesauros del patrimonio cultural de España](http://tesauros.mecd.es/tesauros)
+### [Tesauros del patrimonio cultural de España](http://tesauros.cultura.gob.es/tesauros)
 
 - Diccionario de Bienes Culturales
 - Diccionario de Materias
@@ -324,7 +324,7 @@ Suggest values that already exist in the working Omeka installation.
 - Vocabulaire pour les techniques photographiques
 
 ### [Thesaurus de la Universitat de Barcelona (THUB)](https://vocabularis.crai.ub.edu/ca/thub)
- 
+
 - Thesaurus de la Universitat de Barcelona (THUB)
 
 # Copyright
