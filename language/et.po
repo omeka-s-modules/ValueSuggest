@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rivo Zängov <eraser@eraser.ee>, 2022
+# Rivo Zängov <eraser@eraser.ee>, 2024
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-22 09:56-0500\n"
+"POT-Creation-Date: 2024-03-18 14:15-0400\n"
 "PO-Revision-Date: 2017-09-14 20:16+0000\n"
-"Last-Translator: Rivo Zängov <eraser@eraser.ee>, 2022\n"
+"Last-Translator: Rivo Zängov <eraser@eraser.ee>, 2024\n"
 "Language-Team: Estonian (https://app.transifex.com/omeka/teams/14184/et/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -55,7 +55,7 @@ msgstr "IdRef: Konverentsid"
 
 #: src/Service/IdRefDataTypeFactory.php:30
 msgid "IdRef: Subjects"
-msgstr ""
+msgstr "IdRef: Teemad"
 
 #: src/Service/IdRefDataTypeFactory.php:34
 msgid "IdRef: Subjects Rameau"
@@ -99,7 +99,7 @@ msgstr ""
 
 #: src/Service/RdaDataTypeFactory.php:16
 msgid "RDA: Bibliographic Format"
-msgstr ""
+msgstr "RDA: Bibliograafiline vorming"
 
 #: src/Service/RdaDataTypeFactory.php:20
 msgid "RDA: Broadcast Standard"
@@ -127,7 +127,7 @@ msgstr ""
 
 #: src/Service/RdaDataTypeFactory.php:44
 msgid "RDA: Colour Content"
-msgstr ""
+msgstr "RDA: Värvi sisu"
 
 #: src/Service/RdaDataTypeFactory.php:48
 msgid "RDA: Configuration of Playback Channels"
@@ -195,7 +195,7 @@ msgstr ""
 
 #: src/Service/RdaDataTypeFactory.php:112
 msgid "RDA: Layout"
-msgstr ""
+msgstr "RDA: Paigutus"
 
 #: src/Service/RdaDataTypeFactory.php:116
 msgid "RDA: Linked Data Work"
@@ -279,11 +279,11 @@ msgstr ""
 
 #: src/Service/RdaDataTypeFactory.php:196
 msgid "RDA: Unit of Time"
-msgstr ""
+msgstr "RDA: Ajaühik"
 
 #: src/Service/RdaDataTypeFactory.php:200
 msgid "RDA: User Tasks"
-msgstr ""
+msgstr "RDA: Kasutaja ülesanded"
 
 #: src/Service/RdaDataTypeFactory.php:204
 msgid "RDA: Video Format"
@@ -351,15 +351,15 @@ msgstr ""
 
 #: src/Service/OmekaDataTypeFactory.php:12
 msgid "Omeka: Property"
-msgstr ""
+msgstr "Omeka: Omadus"
 
 #: src/Service/OmekaDataTypeFactory.php:15
 msgid "Omeka: Property / Resource template"
-msgstr ""
+msgstr "Omeka: Omadus / Ressursi mall"
 
 #: src/Service/OmekaDataTypeFactory.php:18
 msgid "Omeka: Property / Resource class"
-msgstr ""
+msgstr "Omeka: Omadus / Ressursi klass"
 
 #: src/Service/NsDataTypeFactory.php:12
 msgid "Nuovo soggettario: Agenti: Organismi"
@@ -686,55 +686,55 @@ msgstr ""
 
 #: src/Service/PbcoreDataTypeFactory.php:12
 msgid "PBCore: pbcoreAssetType"
-msgstr ""
+msgstr "PBCore: pbcoreAssetType"
 
 #: src/Service/PbcoreDataTypeFactory.php:16
 msgid "PBCore: @dateType"
-msgstr ""
+msgstr "PBCore: @dateType"
 
 #: src/Service/PbcoreDataTypeFactory.php:20
 msgid "PBCore: @titleType"
-msgstr ""
+msgstr "PBCore: @titleType"
 
 #: src/Service/PbcoreDataTypeFactory.php:24
 msgid "PBCore: @descriptionType"
-msgstr ""
+msgstr "PBCore: @descriptionType"
 
 #: src/Service/PbcoreDataTypeFactory.php:28
 msgid "PBCore: pbcoreRelationType"
-msgstr ""
+msgstr "PBCore: pbcoreRelationType"
 
 #: src/Service/PbcoreDataTypeFactory.php:32
 msgid "PBCore: instantiationRelationType"
-msgstr ""
+msgstr "PBCore: instantiationRelationType"
 
 #: src/Service/PbcoreDataTypeFactory.php:36
 msgid "PBCore: creatorRole and contributorRole"
-msgstr ""
+msgstr "PBCore: creatorRole and contributorRole"
 
 #: src/Service/PbcoreDataTypeFactory.php:40
 msgid "PBCore: publisherRole"
-msgstr ""
+msgstr "PBCore: publisherRole"
 
 #: src/Service/PbcoreDataTypeFactory.php:44
 msgid "PBCore: instantiationPhysical: Audio"
-msgstr ""
+msgstr "PBCore: instantiationPhysical: Audio"
 
 #: src/Service/PbcoreDataTypeFactory.php:48
 msgid "PBCore: instantiationPhysical: Film"
-msgstr ""
+msgstr "PBCore: instantiationPhysical: Film"
 
 #: src/Service/PbcoreDataTypeFactory.php:52
 msgid "PBCore: instantiationPhysical: Video"
-msgstr ""
+msgstr "PBCore: instantiationPhysical: Video"
 
 #: src/Service/PbcoreDataTypeFactory.php:56
 msgid "PBCore: instantiationMediaType"
-msgstr ""
+msgstr "PBCore: instantiationMediaType"
 
 #: src/Service/PbcoreDataTypeFactory.php:60
 msgid "PBCore: instantiationGenerations"
-msgstr ""
+msgstr "PBCore: instantiationGenerations"
 
 #: src/DataType/Lc/Genreforms.php:24
 msgid "LC: Genre/Form Terms"
