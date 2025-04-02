@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-18 14:15-0400\n"
+"POT-Creation-Date: 2025-04-02 16:59-0400\n"
 "PO-Revision-Date: 2017-09-14 20:16+0000\n"
 "Last-Translator: Josip Ilic <josip.ilic@ericsson.com>, 2021\n"
 "Language-Team: Croatian (https://app.transifex.com/omeka/teams/14184/hr/)\n"
@@ -62,180 +62,69 @@ msgstr ""
 " \n"
 " "
 
-#: src/Service/IdRefDataTypeFactory.php:14
-msgid "IdRef: All"
+#: src/Service/OmekaDataTypeFactory.php:12
+msgid "Omeka: Property"
 msgstr ""
-"IdRef: Sve\n"
-" \n"
-"\n"
-" \n"
-" \n"
-" \n"
-" \n"
-" "
 
-#: src/Service/IdRefDataTypeFactory.php:18
-msgid "IdRef: Person names"
+#: src/Service/OmekaDataTypeFactory.php:15
+msgid "Omeka: Property / Resource template"
 msgstr ""
-"IdRef: Imena osoba\n"
-" \n"
-"\n"
-" \n"
-" \n"
-" \n"
-" \n"
-" "
 
-#: src/Service/IdRefDataTypeFactory.php:22
-msgid "IdRef: Collectivities"
+#: src/Service/OmekaDataTypeFactory.php:18
+msgid "Omeka: Property / Resource class"
 msgstr ""
-"IdRef: Kolektivnosti\n"
-" \n"
-"\n"
-" \n"
-" \n"
-" \n"
-" \n"
-" "
 
-#: src/Service/IdRefDataTypeFactory.php:26
-msgid "IdRef: Conferences"
+#: src/Service/PbcoreDataTypeFactory.php:12
+msgid "PBCore: pbcoreAssetType"
 msgstr ""
-"IdRef: Konferencije\n"
-" \n"
-"\n"
-" \n"
-" \n"
-" \n"
-" \n"
-" "
 
-#: src/Service/IdRefDataTypeFactory.php:30
-msgid "IdRef: Subjects"
+#: src/Service/PbcoreDataTypeFactory.php:16
+msgid "PBCore: @dateType"
 msgstr ""
-"IdRef: Ispitanici\n"
-" \n"
-"\n"
-" \n"
-" \n"
-" \n"
-" \n"
-" "
 
-#: src/Service/IdRefDataTypeFactory.php:34
-msgid "IdRef: Subjects Rameau"
+#: src/Service/PbcoreDataTypeFactory.php:20
+msgid "PBCore: @titleType"
 msgstr ""
-"IdRef: Ispitanici Rameau\n"
-" \n"
-"\n"
-" \n"
-" \n"
-" \n"
-" \n"
-" "
 
-#: src/Service/IdRefDataTypeFactory.php:38
-msgid "IdRef: Subjects F-MeSH"
+#: src/Service/PbcoreDataTypeFactory.php:24
+msgid "PBCore: @descriptionType"
 msgstr ""
-"IdRef: Ispitanici F-MeSH\n"
-" \n"
-"\n"
-" \n"
-" \n"
-" \n"
-" \n"
-" "
 
-#: src/Service/IdRefDataTypeFactory.php:42
-msgid "IdRef: Geography"
+#: src/Service/PbcoreDataTypeFactory.php:28
+msgid "PBCore: pbcoreRelationType"
 msgstr ""
-"IdRef: Geografija\n"
-" \n"
-"\n"
-" \n"
-" \n"
-" \n"
-" \n"
-" "
 
-#: src/Service/IdRefDataTypeFactory.php:46
-msgid "IdRef: Family names"
+#: src/Service/PbcoreDataTypeFactory.php:32
+msgid "PBCore: instantiationRelationType"
 msgstr ""
-"IdRef: Prezime\n"
-" \n"
-"\n"
-" \n"
-" \n"
-" \n"
-" \n"
-" "
 
-#: src/Service/IdRefDataTypeFactory.php:50
-msgid "IdRef: Uniform titles"
+#: src/Service/PbcoreDataTypeFactory.php:36
+msgid "PBCore: creatorRole and contributorRole"
 msgstr ""
-"IdRef: Jedinstveni naslovi\n"
-" \n"
-"\n"
-" \n"
-" \n"
-" \n"
-" \n"
-" "
 
-#: src/Service/IdRefDataTypeFactory.php:54
-msgid "IdRef: Authors-Titles"
+#: src/Service/PbcoreDataTypeFactory.php:40
+msgid "PBCore: publisherRole"
 msgstr ""
-"IdRef: Autori-naslovi\n"
-" \n"
-"\n"
-" \n"
-" \n"
-" \n"
-" \n"
-" "
 
-#: src/Service/IdRefDataTypeFactory.php:58
-msgid "IdRef: Trademarks"
+#: src/Service/PbcoreDataTypeFactory.php:44
+msgid "PBCore: instantiationPhysical: Audio"
 msgstr ""
-"IdRef: Zaštitni znakovi\n"
-" \n"
-"\n"
-" \n"
-" \n"
-" \n"
-" \n"
-" \n"
-" \n"
-"\n"
-" \n"
-" \n"
-" \n"
-" \n"
-" "
 
-#: src/Service/IdRefDataTypeFactory.php:62
-msgid "IdRef: PPN id"
+#: src/Service/PbcoreDataTypeFactory.php:48
+msgid "PBCore: instantiationPhysical: Film"
 msgstr ""
-"IdRef: PDV ID\n"
-" \n"
-"\n"
-" \n"
-" \n"
-" \n"
-" \n"
-" "
 
-#: src/Service/IdRefDataTypeFactory.php:66
-msgid "IdRef: Library registry (RCR)"
+#: src/Service/PbcoreDataTypeFactory.php:52
+msgid "PBCore: instantiationPhysical: Video"
 msgstr ""
-"IdRef: Registar knjižnice (RCR)\n"
-" \n"
-"\n"
-" \n"
-" \n"
-" \n"
-" \n"
-" "
+
+#: src/Service/PbcoreDataTypeFactory.php:56
+msgid "PBCore: instantiationMediaType"
+msgstr ""
+
+#: src/Service/PbcoreDataTypeFactory.php:60
+msgid "PBCore: instantiationGenerations"
+msgstr ""
 
 #: src/Service/RdaDataTypeFactory.php:12
 msgid "RDA: Aspect Ratio Designation"
@@ -885,69 +774,180 @@ msgstr ""
 " \n"
 " "
 
-#: src/Service/OmekaDataTypeFactory.php:12
-msgid "Omeka: Property"
+#: src/Service/IdRefDataTypeFactory.php:14
+msgid "IdRef: All"
 msgstr ""
+"IdRef: Sve\n"
+" \n"
+"\n"
+" \n"
+" \n"
+" \n"
+" \n"
+" "
 
-#: src/Service/OmekaDataTypeFactory.php:15
-msgid "Omeka: Property / Resource template"
+#: src/Service/IdRefDataTypeFactory.php:18
+msgid "IdRef: Person names"
 msgstr ""
+"IdRef: Imena osoba\n"
+" \n"
+"\n"
+" \n"
+" \n"
+" \n"
+" \n"
+" "
 
-#: src/Service/OmekaDataTypeFactory.php:18
-msgid "Omeka: Property / Resource class"
+#: src/Service/IdRefDataTypeFactory.php:22
+msgid "IdRef: Collectivities"
 msgstr ""
+"IdRef: Kolektivnosti\n"
+" \n"
+"\n"
+" \n"
+" \n"
+" \n"
+" \n"
+" "
 
-#: src/Service/NsDataTypeFactory.php:12
-msgid "Nuovo soggettario: Agenti: Organismi"
+#: src/Service/IdRefDataTypeFactory.php:26
+msgid "IdRef: Conferences"
 msgstr ""
+"IdRef: Konferencije\n"
+" \n"
+"\n"
+" \n"
+" \n"
+" \n"
+" \n"
+" "
 
-#: src/Service/NsDataTypeFactory.php:16
-msgid "Nuovo soggettario: Agenti: Organizzazioni"
+#: src/Service/IdRefDataTypeFactory.php:30
+msgid "IdRef: Subjects"
 msgstr ""
+"IdRef: Ispitanici\n"
+" \n"
+"\n"
+" \n"
+" \n"
+" \n"
+" \n"
+" "
 
-#: src/Service/NsDataTypeFactory.php:20
-msgid "Nuovo soggettario: Agenti: Persone e gruppi"
+#: src/Service/IdRefDataTypeFactory.php:34
+msgid "IdRef: Subjects Rameau"
 msgstr ""
+"IdRef: Ispitanici Rameau\n"
+" \n"
+"\n"
+" \n"
+" \n"
+" \n"
+" \n"
+" "
 
-#: src/Service/NsDataTypeFactory.php:24
-msgid "Nuovo soggettario: Azioni: Attività"
+#: src/Service/IdRefDataTypeFactory.php:38
+msgid "IdRef: Subjects F-MeSH"
 msgstr ""
+"IdRef: Ispitanici F-MeSH\n"
+" \n"
+"\n"
+" \n"
+" \n"
+" \n"
+" \n"
+" "
 
-#: src/Service/NsDataTypeFactory.php:28
-msgid "Nuovo soggettario: Azioni: Discipline"
+#: src/Service/IdRefDataTypeFactory.php:42
+msgid "IdRef: Geography"
 msgstr ""
+"IdRef: Geografija\n"
+" \n"
+"\n"
+" \n"
+" \n"
+" \n"
+" \n"
+" "
 
-#: src/Service/NsDataTypeFactory.php:32
-msgid "Nuovo soggettario: Azioni: Processi"
+#: src/Service/IdRefDataTypeFactory.php:46
+msgid "IdRef: Family names"
 msgstr ""
+"IdRef: Prezime\n"
+" \n"
+"\n"
+" \n"
+" \n"
+" \n"
+" \n"
+" "
 
-#: src/Service/NsDataTypeFactory.php:36
-msgid "Nuovo soggettario: Cose: Forme"
+#: src/Service/IdRefDataTypeFactory.php:50
+msgid "IdRef: Uniform titles"
 msgstr ""
+"IdRef: Jedinstveni naslovi\n"
+" \n"
+"\n"
+" \n"
+" \n"
+" \n"
+" \n"
+" "
 
-#: src/Service/NsDataTypeFactory.php:40
-msgid "Nuovo soggettario: Cose: Materia"
+#: src/Service/IdRefDataTypeFactory.php:54
+msgid "IdRef: Authors-Titles"
 msgstr ""
+"IdRef: Autori-naslovi\n"
+" \n"
+"\n"
+" \n"
+" \n"
+" \n"
+" \n"
+" "
 
-#: src/Service/NsDataTypeFactory.php:44
-msgid "Nuovo soggettario: Cose: Oggetti"
+#: src/Service/IdRefDataTypeFactory.php:58
+msgid "IdRef: Trademarks"
 msgstr ""
+"IdRef: Zaštitni znakovi\n"
+" \n"
+"\n"
+" \n"
+" \n"
+" \n"
+" \n"
+" \n"
+" \n"
+"\n"
+" \n"
+" \n"
+" \n"
+" \n"
+" "
 
-#: src/Service/NsDataTypeFactory.php:48
-msgid "Nuovo soggettario: Cose: Spazio"
+#: src/Service/IdRefDataTypeFactory.php:62
+msgid "IdRef: PPN id"
 msgstr ""
+"IdRef: PDV ID\n"
+" \n"
+"\n"
+" \n"
+" \n"
+" \n"
+" \n"
+" "
 
-#: src/Service/NsDataTypeFactory.php:52
-msgid "Nuovo soggettario: Cose: Strumenti"
+#: src/Service/IdRefDataTypeFactory.php:66
+msgid "IdRef: Library registry (RCR)"
 msgstr ""
-
-#: src/Service/NsDataTypeFactory.php:56
-msgid "Nuovo soggettario: Cose: Strutture"
-msgstr ""
-
-#: src/Service/NsDataTypeFactory.php:60
-msgid "Nuovo soggettario: Tempo"
-msgstr ""
+"IdRef: Registar knjižnice (RCR)\n"
+" \n"
+"\n"
+" \n"
+" \n"
+" \n"
+" \n"
+" "
 
 #: src/Service/McDataTypeFactory.php:12
 msgid ""
@@ -1140,6 +1140,102 @@ msgid ""
 "Ministère de la Culture: Vocabulaire pour les techniques photographiques"
 msgstr ""
 
+#: src/Service/NomDataTypeFactory.php:12
+msgid "Nomenclature: All"
+msgstr ""
+
+#: src/Service/NomDataTypeFactory.php:16
+msgid "Nomenclature: Built Environment Objects"
+msgstr ""
+
+#: src/Service/NomDataTypeFactory.php:20
+msgid "Nomenclature: Furnishings"
+msgstr ""
+
+#: src/Service/NomDataTypeFactory.php:24
+msgid "Nomenclature: Personal Objects"
+msgstr ""
+
+#: src/Service/NomDataTypeFactory.php:28
+msgid "Nomenclature: Tools & Equipment for Materials"
+msgstr ""
+
+#: src/Service/NomDataTypeFactory.php:32
+msgid "Nomenclature: Tools & Equipment for Science & Technology"
+msgstr ""
+
+#: src/Service/NomDataTypeFactory.php:36
+msgid "Nomenclature: Tools & Equipment for Communication"
+msgstr ""
+
+#: src/Service/NomDataTypeFactory.php:40
+msgid "Nomenclature: Distribution & Transportation Objects"
+msgstr ""
+
+#: src/Service/NomDataTypeFactory.php:44
+msgid "Nomenclature: Communication Objects"
+msgstr ""
+
+#: src/Service/NomDataTypeFactory.php:48
+msgid "Nomenclature: Recreational Objects"
+msgstr ""
+
+#: src/Service/NomDataTypeFactory.php:52
+msgid "Nomenclature: Unclassifiable Objects"
+msgstr ""
+
+#: src/Service/NsDataTypeFactory.php:12
+msgid "Nuovo soggettario: Agenti: Organismi"
+msgstr ""
+
+#: src/Service/NsDataTypeFactory.php:16
+msgid "Nuovo soggettario: Agenti: Organizzazioni"
+msgstr ""
+
+#: src/Service/NsDataTypeFactory.php:20
+msgid "Nuovo soggettario: Agenti: Persone e gruppi"
+msgstr ""
+
+#: src/Service/NsDataTypeFactory.php:24
+msgid "Nuovo soggettario: Azioni: Attività"
+msgstr ""
+
+#: src/Service/NsDataTypeFactory.php:28
+msgid "Nuovo soggettario: Azioni: Discipline"
+msgstr ""
+
+#: src/Service/NsDataTypeFactory.php:32
+msgid "Nuovo soggettario: Azioni: Processi"
+msgstr ""
+
+#: src/Service/NsDataTypeFactory.php:36
+msgid "Nuovo soggettario: Cose: Forme"
+msgstr ""
+
+#: src/Service/NsDataTypeFactory.php:40
+msgid "Nuovo soggettario: Cose: Materia"
+msgstr ""
+
+#: src/Service/NsDataTypeFactory.php:44
+msgid "Nuovo soggettario: Cose: Oggetti"
+msgstr ""
+
+#: src/Service/NsDataTypeFactory.php:48
+msgid "Nuovo soggettario: Cose: Spazio"
+msgstr ""
+
+#: src/Service/NsDataTypeFactory.php:52
+msgid "Nuovo soggettario: Cose: Strumenti"
+msgstr ""
+
+#: src/Service/NsDataTypeFactory.php:56
+msgid "Nuovo soggettario: Cose: Strutture"
+msgstr ""
+
+#: src/Service/NsDataTypeFactory.php:60
+msgid "Nuovo soggettario: Tempo"
+msgstr ""
+
 #: src/Service/TesaurosDataTypeFactory.php:12
 msgid "Tesauros: Diccionario de Bienes Culturales"
 msgstr ""
@@ -1248,106 +1344,26 @@ msgstr ""
 " \n"
 " "
 
-#: src/Service/NomDataTypeFactory.php:12
-msgid "Nomenclature: All"
-msgstr ""
+#: src/DataType/Pactols/All.php:21
+msgid "Pactols: All thesaurus"
+msgstr "Pactols: Cijeli tezaurus"
 
-#: src/Service/NomDataTypeFactory.php:16
-msgid "Nomenclature: Built Environment Objects"
-msgstr ""
+#: src/DataType/Pactols/Sujets.php:21
+msgid "Pactols: Sujets (Subject)"
+msgstr "Pactols: Sujets (Subjekt)"
 
-#: src/Service/NomDataTypeFactory.php:20
-msgid "Nomenclature: Furnishings"
+#: src/DataType/RightsStatements/Rightsstatements.php:21
+msgid ""
+"RightsStatements.org: Standardized rights statements for online cultural "
+"heritage"
 msgstr ""
+"RightsStatements.org: Standardizirane izjave o pravima za internetsku "
+"kulturnu baštinu "
 
-#: src/Service/NomDataTypeFactory.php:24
-msgid "Nomenclature: Personal Objects"
+#: src/DataType/Lc/Relators.php:24
+msgid "LC: MARC Relators"
 msgstr ""
-
-#: src/Service/NomDataTypeFactory.php:28
-msgid "Nomenclature: Tools & Equipment for Materials"
-msgstr ""
-
-#: src/Service/NomDataTypeFactory.php:32
-msgid "Nomenclature: Tools & Equipment for Science & Technology"
-msgstr ""
-
-#: src/Service/NomDataTypeFactory.php:36
-msgid "Nomenclature: Tools & Equipment for Communication"
-msgstr ""
-
-#: src/Service/NomDataTypeFactory.php:40
-msgid "Nomenclature: Distribution & Transportation Objects"
-msgstr ""
-
-#: src/Service/NomDataTypeFactory.php:44
-msgid "Nomenclature: Communication Objects"
-msgstr ""
-
-#: src/Service/NomDataTypeFactory.php:48
-msgid "Nomenclature: Recreational Objects"
-msgstr ""
-
-#: src/Service/NomDataTypeFactory.php:52
-msgid "Nomenclature: Unclassifiable Objects"
-msgstr ""
-
-#: src/Service/PbcoreDataTypeFactory.php:12
-msgid "PBCore: pbcoreAssetType"
-msgstr ""
-
-#: src/Service/PbcoreDataTypeFactory.php:16
-msgid "PBCore: @dateType"
-msgstr ""
-
-#: src/Service/PbcoreDataTypeFactory.php:20
-msgid "PBCore: @titleType"
-msgstr ""
-
-#: src/Service/PbcoreDataTypeFactory.php:24
-msgid "PBCore: @descriptionType"
-msgstr ""
-
-#: src/Service/PbcoreDataTypeFactory.php:28
-msgid "PBCore: pbcoreRelationType"
-msgstr ""
-
-#: src/Service/PbcoreDataTypeFactory.php:32
-msgid "PBCore: instantiationRelationType"
-msgstr ""
-
-#: src/Service/PbcoreDataTypeFactory.php:36
-msgid "PBCore: creatorRole and contributorRole"
-msgstr ""
-
-#: src/Service/PbcoreDataTypeFactory.php:40
-msgid "PBCore: publisherRole"
-msgstr ""
-
-#: src/Service/PbcoreDataTypeFactory.php:44
-msgid "PBCore: instantiationPhysical: Audio"
-msgstr ""
-
-#: src/Service/PbcoreDataTypeFactory.php:48
-msgid "PBCore: instantiationPhysical: Film"
-msgstr ""
-
-#: src/Service/PbcoreDataTypeFactory.php:52
-msgid "PBCore: instantiationPhysical: Video"
-msgstr ""
-
-#: src/Service/PbcoreDataTypeFactory.php:56
-msgid "PBCore: instantiationMediaType"
-msgstr ""
-
-#: src/Service/PbcoreDataTypeFactory.php:60
-msgid "PBCore: instantiationGenerations"
-msgstr ""
-
-#: src/DataType/Lc/Genreforms.php:24
-msgid "LC: Genre/Form Terms"
-msgstr ""
-"LC: Uvjeti žanra / obrasca\n"
+"LC: MARC relatori\n"
 " \n"
 "\n"
 " \n"
@@ -1356,10 +1372,14 @@ msgstr ""
 " \n"
 " "
 
-#: src/DataType/Lc/Geographicareas.php:24
-msgid "LC: MARC Geographic Areas"
+#: src/DataType/Lc/All.php:21
+msgid "LC: All"
+msgstr "LC: Sve"
+
+#: src/DataType/Lc/Languages.php:24
+msgid "LC: MARC Languages"
 msgstr ""
-"LC: MARC zemljopisna područja\n"
+"LC: MARC jezici\n"
 " \n"
 "\n"
 " \n"
@@ -1368,54 +1388,10 @@ msgstr ""
 " \n"
 " "
 
-#: src/DataType/Lc/Names.php:24
-msgid "LC: Name Authority File"
+#: src/DataType/Lc/Performancemediums.php:24
+msgid "LC: Medium of Performance Thesaurus for Music"
 msgstr ""
-"LC: Datoteka ovlaštenja za ime\n"
-" \n"
-"\n"
-" \n"
-" \n"
-" \n"
-" \n"
-" "
-
-#: src/DataType/Lc/Childrenssubjects.php:24
-msgid "LC: Children's Subject Headings"
-msgstr ""
-"LC: Predmeti za djecu\n"
-" \n"
-"\n"
-" \n"
-" \n"
-" \n"
-" \n"
-" "
-
-#: src/DataType/Lc/Iso6391.php:24
-msgid "LC: ISO639-1 Languages"
-msgstr ""
-"LC: ISO639-1 Jezici\n"
-" \n"
-"\n"
-" \n"
-" \n"
-" \n"
-" \n"
-" "
-
-#: src/DataType/Lc/Graphicmaterials.php:24
-msgid "LC: Thesaurus for Graphic Materials"
-msgstr "LC: Tezaurus za Grafičke Materijale"
-
-#: src/DataType/Lc/Rbmscv.php:24
-msgid "LC: Rare Materials Cataloging"
-msgstr ""
-
-#: src/DataType/Lc/Organizations.php:24
-msgid "LC: Cultural Heritage Organizations"
-msgstr ""
-"LC: Organizacije za kulturnu baštinu\n"
+"LC: Glazbeni tezaurus medija izvedbe\n"
 " \n"
 "\n"
 " \n"
@@ -1436,10 +1412,122 @@ msgstr ""
 " \n"
 " "
 
+#: src/DataType/Lc/Names.php:24
+msgid "LC: Name Authority File"
+msgstr ""
+"LC: Datoteka ovlaštenja za ime\n"
+" \n"
+"\n"
+" \n"
+" \n"
+" \n"
+" \n"
+" "
+
+#: src/DataType/Lc/Iso6392.php:24
+msgid "LC: ISO639-2 Languages"
+msgstr ""
+"LC: ISO639-2 Jezici\n"
+" \n"
+"\n"
+" \n"
+" \n"
+" \n"
+" \n"
+" "
+
+#: src/DataType/Lc/Geographicareas.php:24
+msgid "LC: MARC Geographic Areas"
+msgstr ""
+"LC: MARC zemljopisna područja\n"
+" \n"
+"\n"
+" \n"
+" \n"
+" \n"
+" \n"
+" "
+
+#: src/DataType/Lc/Iso6391.php:24
+msgid "LC: ISO639-1 Languages"
+msgstr ""
+"LC: ISO639-1 Jezici\n"
+" \n"
+"\n"
+" \n"
+" \n"
+" \n"
+" \n"
+" "
+
 #: src/DataType/Lc/Ethnographicterms.php:24
 msgid "LC: AFS Ethnographic Thesaurus"
 msgstr ""
 "LC: AFS Etnografski tezaurus\n"
+" \n"
+"\n"
+" \n"
+" \n"
+" \n"
+" \n"
+" "
+
+#: src/DataType/Lc/Graphicmaterials.php:24
+msgid "LC: Thesaurus for Graphic Materials"
+msgstr "LC: Tezaurus za Grafičke Materijale"
+
+#: src/DataType/Lc/Demographicterms.php:24
+msgid "LC: Demographic Group Terms"
+msgstr ""
+"LC: ISO639-2 Jezici\n"
+" \n"
+"\n"
+" \n"
+" \n"
+" \n"
+" \n"
+" "
+
+#: src/DataType/Lc/Organizations.php:24
+msgid "LC: Cultural Heritage Organizations"
+msgstr ""
+"LC: Organizacije za kulturnu baštinu\n"
+" \n"
+"\n"
+" \n"
+" \n"
+" \n"
+" \n"
+" "
+
+#: src/DataType/Lc/Childrenssubjects.php:24
+msgid "LC: Children's Subject Headings"
+msgstr ""
+"LC: Predmeti za djecu\n"
+" \n"
+"\n"
+" \n"
+" \n"
+" \n"
+" \n"
+" "
+
+#: src/DataType/Lc/Genreforms.php:24
+msgid "LC: Genre/Form Terms"
+msgstr ""
+"LC: Uvjeti žanra / obrasca\n"
+" \n"
+"\n"
+" \n"
+" \n"
+" \n"
+" \n"
+" "
+
+#: src/DataType/Lc/Iso6395.php:24
+msgid "LC: ISO639-5 Languages"
+msgstr ""
+"LC: ISO639-5 Jezici\n"
 " \n"
 "\n"
 " \n"
@@ -1464,10 +1552,26 @@ msgstr ""
 " \n"
 " "
 
-#: src/DataType/Lc/Performancemediums.php:24
-msgid "LC: Medium of Performance Thesaurus for Music"
+#: src/DataType/Lc/Rbmscv.php:24
+msgid "LC: Rare Materials Cataloging"
 msgstr ""
-"LC: Glazbeni tezaurus medija izvedbe\n"
+
+#: src/DataType/Thub/Thub.php:21
+msgid "Thesaurus de la Universitat de Barcelona (THUB)"
+msgstr ""
+
+#: src/DataType/Orcid/Orcid.php:21
+msgid "ORCID: Open Researcher and Contributor ID"
+msgstr ""
+
+#: src/DataType/Geonames/Features.php:21
+msgid "Geonames: GeoNames features"
+msgstr ""
+
+#: src/DataType/Geonames/Geonames.php:21
+msgid "Geonames: The GeoNames geographical database"
+msgstr ""
+"Geonames: Zemljopisna baza podataka GeoNames\n"
 " \n"
 "\n"
 " \n"
@@ -1476,62 +1580,11 @@ msgstr ""
 " \n"
 " "
 
-#: src/DataType/Lc/Relators.php:24
-msgid "LC: MARC Relators"
+#: src/DataType/Periodo/Periodo.php:21
+msgid ""
+"PeriodO: A gazetteer of period definitions for linking and visualizing data"
 msgstr ""
-"LC: MARC relatori\n"
-" \n"
-"\n"
-" \n"
-" \n"
-" \n"
-" \n"
-" "
-
-#: src/DataType/Lc/Languages.php:24
-msgid "LC: MARC Languages"
-msgstr ""
-"LC: MARC jezici\n"
-" \n"
-"\n"
-" \n"
-" \n"
-" \n"
-" \n"
-" "
-
-#: src/DataType/Lc/Iso6392.php:24
-msgid "LC: ISO639-2 Languages"
-msgstr ""
-"LC: ISO639-2 Jezici\n"
-" \n"
-"\n"
-" \n"
-" \n"
-" \n"
-" \n"
-" "
-
-#: src/DataType/Lc/All.php:21
-msgid "LC: All"
-msgstr "LC: Sve"
-
-#: src/DataType/Lc/Iso6395.php:24
-msgid "LC: ISO639-5 Languages"
-msgstr ""
-"LC: ISO639-5 Jezici\n"
-" \n"
-"\n"
-" \n"
-" \n"
-" \n"
-" \n"
-" "
-
-#: src/DataType/Lc/Demographicterms.php:24
-msgid "LC: Demographic Group Terms"
-msgstr ""
-"LC: ISO639-2 Jezici\n"
+"PeriodO: Glasnik definicija razdoblja za povezivanje i vizualizaciju podataka\n"
 " \n"
 "\n"
 " \n"
@@ -1549,14 +1602,6 @@ msgstr ""
 " \n"
 " "
 
-#: src/DataType/RightsStatements/Rightsstatements.php:21
-msgid ""
-"RightsStatements.org: Standardized rights statements for online cultural "
-"heritage"
-msgstr ""
-"RightsStatements.org: Standardizirane izjave o pravima za internetsku "
-"kulturnu baštinu "
-
 #: src/DataType/Ror/Ror.php:21
 msgid "ROR: Research Organization Registry"
 msgstr ""
@@ -1565,45 +1610,24 @@ msgstr ""
 msgid "Homosaurus: an international LGBTQ linked data vocabulary"
 msgstr "Homosaurus: međunarodni LGBTQ vokabular povezanih podataka "
 
-#: src/DataType/Periodo/Periodo.php:21
-msgid ""
-"PeriodO: A gazetteer of period definitions for linking and visualizing data"
-msgstr ""
-"PeriodO: Glasnik definicija razdoblja za povezivanje i vizualizaciju podataka\n"
-" \n"
-"\n"
-" \n"
-" \n"
-" \n"
-" \n"
-" "
-
-#: src/DataType/Dc/Elements.php:21
-msgid "Dublin Core: Elements"
+#: src/DataType/Getty/Tgn.php:21
+msgid "Getty: Thesaurus of Geographic Names (TGN)"
 msgstr ""
 
-#: src/DataType/Dc/Terms.php:21
-msgid "Dublin Core: Terms"
+#: src/DataType/Getty/Ulan.php:21
+msgid "Getty: Union List of Artist Names (ULAN)"
 msgstr ""
 
-#: src/DataType/Dc/Types.php:21
-msgid "Dublin Core: Types"
+#: src/DataType/Getty/Ia.php:21
+msgid "Getty: Iconography Authority (IA)"
 msgstr ""
 
-#: src/DataType/Dc/Classes.php:21
-msgid "Dublin Core: Classes"
+#: src/DataType/Getty/Cona.php:21
+msgid "Getty: Cultural Objects Name Authority (CONA)"
 msgstr ""
 
-#: src/DataType/Pactols/Sujets.php:21
-msgid "Pactols: Sujets (Subject)"
-msgstr "Pactols: Sujets (Subjekt)"
-
-#: src/DataType/Pactols/All.php:21
-msgid "Pactols: All thesaurus"
-msgstr "Pactols: Cijeli tezaurus"
-
-#: src/DataType/Gnd/Gnd.php:21
-msgid "GND: Die Gemeinsame Normdatei"
+#: src/DataType/Getty/Aat.php:21
+msgid "Getty: Art & Architecture Thesaurus (AAT)"
 msgstr ""
 
 #: src/DataType/Oclc/Fast.php:21
@@ -1622,46 +1646,22 @@ msgstr ""
 " \n"
 " "
 
-#: src/DataType/Getty/Aat.php:21
-msgid "Getty: Art & Architecture Thesaurus (AAT)"
+#: src/DataType/Dc/Classes.php:21
+msgid "Dublin Core: Classes"
 msgstr ""
 
-#: src/DataType/Getty/Tgn.php:21
-msgid "Getty: Thesaurus of Geographic Names (TGN)"
+#: src/DataType/Dc/Types.php:21
+msgid "Dublin Core: Types"
 msgstr ""
 
-#: src/DataType/Getty/Ulan.php:21
-msgid "Getty: Union List of Artist Names (ULAN)"
+#: src/DataType/Dc/Elements.php:21
+msgid "Dublin Core: Elements"
 msgstr ""
 
-#: src/DataType/Getty/Cona.php:21
-msgid "Getty: Cultural Objects Name Authority (CONA)"
+#: src/DataType/Dc/Terms.php:21
+msgid "Dublin Core: Terms"
 msgstr ""
 
-#: src/DataType/Getty/Ia.php:21
-msgid "Getty: Iconography Authority (IA)"
-msgstr ""
-
-#: src/DataType/Geonames/Geonames.php:21
-msgid "Geonames: The GeoNames geographical database"
-msgstr ""
-"Geonames: Zemljopisna baza podataka GeoNames\n"
-" \n"
-"\n"
-" \n"
-" \n"
-" \n"
-" \n"
-" "
-
-#: src/DataType/Geonames/Features.php:21
-msgid "Geonames: GeoNames features"
-msgstr ""
-
-#: src/DataType/Orcid/Orcid.php:21
-msgid "ORCID: Open Researcher and Contributor ID"
-msgstr ""
-
-#: src/DataType/Thub/Thub.php:21
-msgid "Thesaurus de la Universitat de Barcelona (THUB)"
+#: src/DataType/Gnd/Gnd.php:21
+msgid "GND: Die Gemeinsame Normdatei"
 msgstr ""

@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rivo Zängov <eraser@eraser.ee>, 2024
+# Rivo Zängov <eraser@eraser.ee>, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-18 14:15-0400\n"
+"POT-Creation-Date: 2025-04-02 16:59-0400\n"
 "PO-Revision-Date: 2017-09-14 20:16+0000\n"
-"Last-Translator: Rivo Zängov <eraser@eraser.ee>, 2024\n"
+"Last-Translator: Rivo Zängov <eraser@eraser.ee>, 2025\n"
 "Language-Team: Estonian (https://app.transifex.com/omeka/teams/14184/et/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -37,61 +37,69 @@ msgstr ""
 msgid "UNESCO: Biblioteca Digital Floridablanca"
 msgstr ""
 
-#: src/Service/IdRefDataTypeFactory.php:14
-msgid "IdRef: All"
-msgstr "IdRef: Kõik"
+#: src/Service/OmekaDataTypeFactory.php:12
+msgid "Omeka: Property"
+msgstr "Omeka: Omadus"
 
-#: src/Service/IdRefDataTypeFactory.php:18
-msgid "IdRef: Person names"
-msgstr "IdRef: Isikunimed"
+#: src/Service/OmekaDataTypeFactory.php:15
+msgid "Omeka: Property / Resource template"
+msgstr "Omeka: Omadus / Ressursi mall"
 
-#: src/Service/IdRefDataTypeFactory.php:22
-msgid "IdRef: Collectivities"
-msgstr ""
+#: src/Service/OmekaDataTypeFactory.php:18
+msgid "Omeka: Property / Resource class"
+msgstr "Omeka: Omadus / Ressursi klass"
 
-#: src/Service/IdRefDataTypeFactory.php:26
-msgid "IdRef: Conferences"
-msgstr "IdRef: Konverentsid"
+#: src/Service/PbcoreDataTypeFactory.php:12
+msgid "PBCore: pbcoreAssetType"
+msgstr "PBCore: pbcoreAssetType"
 
-#: src/Service/IdRefDataTypeFactory.php:30
-msgid "IdRef: Subjects"
-msgstr "IdRef: Teemad"
+#: src/Service/PbcoreDataTypeFactory.php:16
+msgid "PBCore: @dateType"
+msgstr "PBCore: @dateType"
 
-#: src/Service/IdRefDataTypeFactory.php:34
-msgid "IdRef: Subjects Rameau"
-msgstr ""
+#: src/Service/PbcoreDataTypeFactory.php:20
+msgid "PBCore: @titleType"
+msgstr "PBCore: @titleType"
 
-#: src/Service/IdRefDataTypeFactory.php:38
-msgid "IdRef: Subjects F-MeSH"
-msgstr ""
+#: src/Service/PbcoreDataTypeFactory.php:24
+msgid "PBCore: @descriptionType"
+msgstr "PBCore: @descriptionType"
 
-#: src/Service/IdRefDataTypeFactory.php:42
-msgid "IdRef: Geography"
-msgstr "IdRef: Geograafia"
+#: src/Service/PbcoreDataTypeFactory.php:28
+msgid "PBCore: pbcoreRelationType"
+msgstr "PBCore: pbcoreRelationType"
 
-#: src/Service/IdRefDataTypeFactory.php:46
-msgid "IdRef: Family names"
-msgstr "IdRef: Perekonnanimed"
+#: src/Service/PbcoreDataTypeFactory.php:32
+msgid "PBCore: instantiationRelationType"
+msgstr "PBCore: instantiationRelationType"
 
-#: src/Service/IdRefDataTypeFactory.php:50
-msgid "IdRef: Uniform titles"
-msgstr ""
+#: src/Service/PbcoreDataTypeFactory.php:36
+msgid "PBCore: creatorRole and contributorRole"
+msgstr "PBCore: creatorRole and contributorRole"
 
-#: src/Service/IdRefDataTypeFactory.php:54
-msgid "IdRef: Authors-Titles"
-msgstr "IdRef: Autorid-pealkirjad"
+#: src/Service/PbcoreDataTypeFactory.php:40
+msgid "PBCore: publisherRole"
+msgstr "PBCore: publisherRole"
 
-#: src/Service/IdRefDataTypeFactory.php:58
-msgid "IdRef: Trademarks"
-msgstr "IdRef: Kaubamärgid"
+#: src/Service/PbcoreDataTypeFactory.php:44
+msgid "PBCore: instantiationPhysical: Audio"
+msgstr "PBCore: instantiationPhysical: Audio"
 
-#: src/Service/IdRefDataTypeFactory.php:62
-msgid "IdRef: PPN id"
-msgstr "IdRef: PPN id"
+#: src/Service/PbcoreDataTypeFactory.php:48
+msgid "PBCore: instantiationPhysical: Film"
+msgstr "PBCore: instantiationPhysical: Film"
 
-#: src/Service/IdRefDataTypeFactory.php:66
-msgid "IdRef: Library registry (RCR)"
-msgstr ""
+#: src/Service/PbcoreDataTypeFactory.php:52
+msgid "PBCore: instantiationPhysical: Video"
+msgstr "PBCore: instantiationPhysical: Video"
+
+#: src/Service/PbcoreDataTypeFactory.php:56
+msgid "PBCore: instantiationMediaType"
+msgstr "PBCore: instantiationMediaType"
+
+#: src/Service/PbcoreDataTypeFactory.php:60
+msgid "PBCore: instantiationGenerations"
+msgstr "PBCore: instantiationGenerations"
 
 #: src/Service/RdaDataTypeFactory.php:12
 msgid "RDA: Aspect Ratio Designation"
@@ -191,7 +199,7 @@ msgstr "RDA: Illustratiivne sisu"
 
 #: src/Service/RdaDataTypeFactory.php:108
 msgid "RDA: Interactivity Mode"
-msgstr ""
+msgstr "RDA: Interaktiivne režiim"
 
 #: src/Service/RdaDataTypeFactory.php:112
 msgid "RDA: Layout"
@@ -235,7 +243,7 @@ msgstr ""
 
 #: src/Service/RdaDataTypeFactory.php:152
 msgid "RDA: Recording Sources"
-msgstr ""
+msgstr "RDA: Salvestamise allikad"
 
 #: src/Service/RdaDataTypeFactory.php:156
 msgid "RDA: Reduction Ratio Designation"
@@ -349,68 +357,60 @@ msgstr ""
 msgid "RDA: Storage Medium Format"
 msgstr ""
 
-#: src/Service/OmekaDataTypeFactory.php:12
-msgid "Omeka: Property"
-msgstr "Omeka: Omadus"
+#: src/Service/IdRefDataTypeFactory.php:14
+msgid "IdRef: All"
+msgstr "IdRef: Kõik"
 
-#: src/Service/OmekaDataTypeFactory.php:15
-msgid "Omeka: Property / Resource template"
-msgstr "Omeka: Omadus / Ressursi mall"
+#: src/Service/IdRefDataTypeFactory.php:18
+msgid "IdRef: Person names"
+msgstr "IdRef: Isikunimed"
 
-#: src/Service/OmekaDataTypeFactory.php:18
-msgid "Omeka: Property / Resource class"
-msgstr "Omeka: Omadus / Ressursi klass"
-
-#: src/Service/NsDataTypeFactory.php:12
-msgid "Nuovo soggettario: Agenti: Organismi"
+#: src/Service/IdRefDataTypeFactory.php:22
+msgid "IdRef: Collectivities"
 msgstr ""
 
-#: src/Service/NsDataTypeFactory.php:16
-msgid "Nuovo soggettario: Agenti: Organizzazioni"
+#: src/Service/IdRefDataTypeFactory.php:26
+msgid "IdRef: Conferences"
+msgstr "IdRef: Konverentsid"
+
+#: src/Service/IdRefDataTypeFactory.php:30
+msgid "IdRef: Subjects"
+msgstr "IdRef: Teemad"
+
+#: src/Service/IdRefDataTypeFactory.php:34
+msgid "IdRef: Subjects Rameau"
 msgstr ""
 
-#: src/Service/NsDataTypeFactory.php:20
-msgid "Nuovo soggettario: Agenti: Persone e gruppi"
+#: src/Service/IdRefDataTypeFactory.php:38
+msgid "IdRef: Subjects F-MeSH"
 msgstr ""
 
-#: src/Service/NsDataTypeFactory.php:24
-msgid "Nuovo soggettario: Azioni: Attività"
+#: src/Service/IdRefDataTypeFactory.php:42
+msgid "IdRef: Geography"
+msgstr "IdRef: Geograafia"
+
+#: src/Service/IdRefDataTypeFactory.php:46
+msgid "IdRef: Family names"
+msgstr "IdRef: Perekonnanimed"
+
+#: src/Service/IdRefDataTypeFactory.php:50
+msgid "IdRef: Uniform titles"
 msgstr ""
 
-#: src/Service/NsDataTypeFactory.php:28
-msgid "Nuovo soggettario: Azioni: Discipline"
-msgstr ""
+#: src/Service/IdRefDataTypeFactory.php:54
+msgid "IdRef: Authors-Titles"
+msgstr "IdRef: Autorid-pealkirjad"
 
-#: src/Service/NsDataTypeFactory.php:32
-msgid "Nuovo soggettario: Azioni: Processi"
-msgstr ""
+#: src/Service/IdRefDataTypeFactory.php:58
+msgid "IdRef: Trademarks"
+msgstr "IdRef: Kaubamärgid"
 
-#: src/Service/NsDataTypeFactory.php:36
-msgid "Nuovo soggettario: Cose: Forme"
-msgstr ""
+#: src/Service/IdRefDataTypeFactory.php:62
+msgid "IdRef: PPN id"
+msgstr "IdRef: PPN id"
 
-#: src/Service/NsDataTypeFactory.php:40
-msgid "Nuovo soggettario: Cose: Materia"
-msgstr ""
-
-#: src/Service/NsDataTypeFactory.php:44
-msgid "Nuovo soggettario: Cose: Oggetti"
-msgstr ""
-
-#: src/Service/NsDataTypeFactory.php:48
-msgid "Nuovo soggettario: Cose: Spazio"
-msgstr ""
-
-#: src/Service/NsDataTypeFactory.php:52
-msgid "Nuovo soggettario: Cose: Strumenti"
-msgstr ""
-
-#: src/Service/NsDataTypeFactory.php:56
-msgid "Nuovo soggettario: Cose: Strutture"
-msgstr ""
-
-#: src/Service/NsDataTypeFactory.php:60
-msgid "Nuovo soggettario: Tempo"
+#: src/Service/IdRefDataTypeFactory.php:66
+msgid "IdRef: Library registry (RCR)"
 msgstr ""
 
 #: src/Service/McDataTypeFactory.php:12
@@ -604,42 +604,6 @@ msgid ""
 "Ministère de la Culture: Vocabulaire pour les techniques photographiques"
 msgstr ""
 
-#: src/Service/TesaurosDataTypeFactory.php:12
-msgid "Tesauros: Diccionario de Bienes Culturales"
-msgstr ""
-
-#: src/Service/TesaurosDataTypeFactory.php:16
-msgid "Tesauros: Diccionario de Materias"
-msgstr ""
-
-#: src/Service/TesaurosDataTypeFactory.php:20
-msgid "Tesauros: Diccionario de Técnicas"
-msgstr ""
-
-#: src/Service/TesaurosDataTypeFactory.php:24
-msgid "Tesauros: Diccionario de Contextos Culturales"
-msgstr ""
-
-#: src/Service/TesaurosDataTypeFactory.php:28
-msgid "Tesauros: Diccionario Geográfico"
-msgstr ""
-
-#: src/Service/TesaurosDataTypeFactory.php:32
-msgid "Tesauros: Diccionario de Toponimia Histórica"
-msgstr ""
-
-#: src/Service/TesaurosDataTypeFactory.php:36
-msgid "Tesauros: Diccionario de Cerámica"
-msgstr ""
-
-#: src/Service/TesaurosDataTypeFactory.php:40
-msgid "Tesauros: Diccionario de Numismática"
-msgstr ""
-
-#: src/Service/TesaurosDataTypeFactory.php:44
-msgid "Tesauros: Diccionario de Mobiliario"
-msgstr ""
-
 #: src/Service/NomDataTypeFactory.php:12
 msgid "Nomenclature: All"
 msgstr ""
@@ -684,97 +648,171 @@ msgstr ""
 msgid "Nomenclature: Unclassifiable Objects"
 msgstr ""
 
-#: src/Service/PbcoreDataTypeFactory.php:12
-msgid "PBCore: pbcoreAssetType"
-msgstr "PBCore: pbcoreAssetType"
-
-#: src/Service/PbcoreDataTypeFactory.php:16
-msgid "PBCore: @dateType"
-msgstr "PBCore: @dateType"
-
-#: src/Service/PbcoreDataTypeFactory.php:20
-msgid "PBCore: @titleType"
-msgstr "PBCore: @titleType"
-
-#: src/Service/PbcoreDataTypeFactory.php:24
-msgid "PBCore: @descriptionType"
-msgstr "PBCore: @descriptionType"
-
-#: src/Service/PbcoreDataTypeFactory.php:28
-msgid "PBCore: pbcoreRelationType"
-msgstr "PBCore: pbcoreRelationType"
-
-#: src/Service/PbcoreDataTypeFactory.php:32
-msgid "PBCore: instantiationRelationType"
-msgstr "PBCore: instantiationRelationType"
-
-#: src/Service/PbcoreDataTypeFactory.php:36
-msgid "PBCore: creatorRole and contributorRole"
-msgstr "PBCore: creatorRole and contributorRole"
-
-#: src/Service/PbcoreDataTypeFactory.php:40
-msgid "PBCore: publisherRole"
-msgstr "PBCore: publisherRole"
-
-#: src/Service/PbcoreDataTypeFactory.php:44
-msgid "PBCore: instantiationPhysical: Audio"
-msgstr "PBCore: instantiationPhysical: Audio"
-
-#: src/Service/PbcoreDataTypeFactory.php:48
-msgid "PBCore: instantiationPhysical: Film"
-msgstr "PBCore: instantiationPhysical: Film"
-
-#: src/Service/PbcoreDataTypeFactory.php:52
-msgid "PBCore: instantiationPhysical: Video"
-msgstr "PBCore: instantiationPhysical: Video"
-
-#: src/Service/PbcoreDataTypeFactory.php:56
-msgid "PBCore: instantiationMediaType"
-msgstr "PBCore: instantiationMediaType"
-
-#: src/Service/PbcoreDataTypeFactory.php:60
-msgid "PBCore: instantiationGenerations"
-msgstr "PBCore: instantiationGenerations"
-
-#: src/DataType/Lc/Genreforms.php:24
-msgid "LC: Genre/Form Terms"
-msgstr "LC: Žanri/vormi terminid"
-
-#: src/DataType/Lc/Geographicareas.php:24
-msgid "LC: MARC Geographic Areas"
-msgstr "LC: MARC Geograafilised alad"
-
-#: src/DataType/Lc/Names.php:24
-msgid "LC: Name Authority File"
+#: src/Service/NsDataTypeFactory.php:12
+msgid "Nuovo soggettario: Agenti: Organismi"
 msgstr ""
 
-#: src/DataType/Lc/Childrenssubjects.php:24
-msgid "LC: Children's Subject Headings"
+#: src/Service/NsDataTypeFactory.php:16
+msgid "Nuovo soggettario: Agenti: Organizzazioni"
 msgstr ""
 
-#: src/DataType/Lc/Iso6391.php:24
-msgid "LC: ISO639-1 Languages"
-msgstr "LC: ISO639-1 keeled"
-
-#: src/DataType/Lc/Graphicmaterials.php:24
-msgid "LC: Thesaurus for Graphic Materials"
+#: src/Service/NsDataTypeFactory.php:20
+msgid "Nuovo soggettario: Agenti: Persone e gruppi"
 msgstr ""
 
-#: src/DataType/Lc/Rbmscv.php:24
-msgid "LC: Rare Materials Cataloging"
+#: src/Service/NsDataTypeFactory.php:24
+msgid "Nuovo soggettario: Azioni: Attività"
 msgstr ""
 
-#: src/DataType/Lc/Organizations.php:24
-msgid "LC: Cultural Heritage Organizations"
+#: src/Service/NsDataTypeFactory.php:28
+msgid "Nuovo soggettario: Azioni: Discipline"
+msgstr ""
+
+#: src/Service/NsDataTypeFactory.php:32
+msgid "Nuovo soggettario: Azioni: Processi"
+msgstr ""
+
+#: src/Service/NsDataTypeFactory.php:36
+msgid "Nuovo soggettario: Cose: Forme"
+msgstr ""
+
+#: src/Service/NsDataTypeFactory.php:40
+msgid "Nuovo soggettario: Cose: Materia"
+msgstr ""
+
+#: src/Service/NsDataTypeFactory.php:44
+msgid "Nuovo soggettario: Cose: Oggetti"
+msgstr ""
+
+#: src/Service/NsDataTypeFactory.php:48
+msgid "Nuovo soggettario: Cose: Spazio"
+msgstr ""
+
+#: src/Service/NsDataTypeFactory.php:52
+msgid "Nuovo soggettario: Cose: Strumenti"
+msgstr ""
+
+#: src/Service/NsDataTypeFactory.php:56
+msgid "Nuovo soggettario: Cose: Strutture"
+msgstr ""
+
+#: src/Service/NsDataTypeFactory.php:60
+msgid "Nuovo soggettario: Tempo"
+msgstr ""
+
+#: src/Service/TesaurosDataTypeFactory.php:12
+msgid "Tesauros: Diccionario de Bienes Culturales"
+msgstr ""
+
+#: src/Service/TesaurosDataTypeFactory.php:16
+msgid "Tesauros: Diccionario de Materias"
+msgstr ""
+
+#: src/Service/TesaurosDataTypeFactory.php:20
+msgid "Tesauros: Diccionario de Técnicas"
+msgstr ""
+
+#: src/Service/TesaurosDataTypeFactory.php:24
+msgid "Tesauros: Diccionario de Contextos Culturales"
+msgstr ""
+
+#: src/Service/TesaurosDataTypeFactory.php:28
+msgid "Tesauros: Diccionario Geográfico"
+msgstr ""
+
+#: src/Service/TesaurosDataTypeFactory.php:32
+msgid "Tesauros: Diccionario de Toponimia Histórica"
+msgstr ""
+
+#: src/Service/TesaurosDataTypeFactory.php:36
+msgid "Tesauros: Diccionario de Cerámica"
+msgstr ""
+
+#: src/Service/TesaurosDataTypeFactory.php:40
+msgid "Tesauros: Diccionario de Numismática"
+msgstr ""
+
+#: src/Service/TesaurosDataTypeFactory.php:44
+msgid "Tesauros: Diccionario de Mobiliario"
+msgstr ""
+
+#: src/DataType/Pactols/All.php:21
+msgid "Pactols: All thesaurus"
+msgstr ""
+
+#: src/DataType/Pactols/Sujets.php:21
+msgid "Pactols: Sujets (Subject)"
+msgstr ""
+
+#: src/DataType/RightsStatements/Rightsstatements.php:21
+msgid ""
+"RightsStatements.org: Standardized rights statements for online cultural "
+"heritage"
+msgstr ""
+
+#: src/DataType/Lc/Relators.php:24
+msgid "LC: MARC Relators"
+msgstr "LC: MARC seosed"
+
+#: src/DataType/Lc/All.php:21
+msgid "LC: All"
+msgstr "LC: Kõik"
+
+#: src/DataType/Lc/Languages.php:24
+msgid "LC: MARC Languages"
+msgstr "LC: MARC keeled"
+
+#: src/DataType/Lc/Performancemediums.php:24
+msgid "LC: Medium of Performance Thesaurus for Music"
 msgstr ""
 
 #: src/DataType/Lc/Subjects.php:24
 msgid "LC: Subject Headings"
 msgstr "LC: Teemade pealkirjad"
 
+#: src/DataType/Lc/Names.php:24
+msgid "LC: Name Authority File"
+msgstr ""
+
+#: src/DataType/Lc/Iso6392.php:24
+msgid "LC: ISO639-2 Languages"
+msgstr "LC: ISO639-2 keeled"
+
+#: src/DataType/Lc/Geographicareas.php:24
+msgid "LC: MARC Geographic Areas"
+msgstr "LC: MARC Geograafilised alad"
+
+#: src/DataType/Lc/Iso6391.php:24
+msgid "LC: ISO639-1 Languages"
+msgstr "LC: ISO639-1 keeled"
+
 #: src/DataType/Lc/Ethnographicterms.php:24
 msgid "LC: AFS Ethnographic Thesaurus"
 msgstr ""
+
+#: src/DataType/Lc/Graphicmaterials.php:24
+msgid "LC: Thesaurus for Graphic Materials"
+msgstr ""
+
+#: src/DataType/Lc/Demographicterms.php:24
+msgid "LC: Demographic Group Terms"
+msgstr "LC: Demograafilised grupi terminid"
+
+#: src/DataType/Lc/Organizations.php:24
+msgid "LC: Cultural Heritage Organizations"
+msgstr ""
+
+#: src/DataType/Lc/Childrenssubjects.php:24
+msgid "LC: Children's Subject Headings"
+msgstr ""
+
+#: src/DataType/Lc/Genreforms.php:24
+msgid "LC: Genre/Form Terms"
+msgstr "LC: Žanri/vormi terminid"
+
+#: src/DataType/Lc/Iso6395.php:24
+msgid "LC: ISO639-5 Languages"
+msgstr "LC: ISO639-5 keeled"
 
 #: src/DataType/Lc/Classification.php:24
 msgid "LC: Classification"
@@ -784,50 +822,24 @@ msgstr "LC: Klassifikatsioon"
 msgid "LC: MARC Countries"
 msgstr "LC: MARC riigid"
 
-#: src/DataType/Lc/Performancemediums.php:24
-msgid "LC: Medium of Performance Thesaurus for Music"
+#: src/DataType/Lc/Rbmscv.php:24
+msgid "LC: Rare Materials Cataloging"
 msgstr ""
 
-#: src/DataType/Lc/Relators.php:24
-msgid "LC: MARC Relators"
-msgstr "LC: MARC seosed"
-
-#: src/DataType/Lc/Languages.php:24
-msgid "LC: MARC Languages"
-msgstr "LC: MARC keeled"
-
-#: src/DataType/Lc/Iso6392.php:24
-msgid "LC: ISO639-2 Languages"
-msgstr "LC: ISO639-2 keeled"
-
-#: src/DataType/Lc/All.php:21
-msgid "LC: All"
-msgstr "LC: Kõik"
-
-#: src/DataType/Lc/Iso6395.php:24
-msgid "LC: ISO639-5 Languages"
-msgstr "LC: ISO639-5 keeled"
-
-#: src/DataType/Lc/Demographicterms.php:24
-msgid "LC: Demographic Group Terms"
-msgstr "LC: Demograafilised grupi terminid"
-
-#: src/DataType/AbstractDataType.php:29
-msgid "Value Suggest"
-msgstr "Väärtuste soovitamine"
-
-#: src/DataType/RightsStatements/Rightsstatements.php:21
-msgid ""
-"RightsStatements.org: Standardized rights statements for online cultural "
-"heritage"
+#: src/DataType/Thub/Thub.php:21
+msgid "Thesaurus de la Universitat de Barcelona (THUB)"
 msgstr ""
 
-#: src/DataType/Ror/Ror.php:21
-msgid "ROR: Research Organization Registry"
+#: src/DataType/Orcid/Orcid.php:21
+msgid "ORCID: Open Researcher and Contributor ID"
 msgstr ""
 
-#: src/DataType/Homosaurus/Homosaurus.php:21
-msgid "Homosaurus: an international LGBTQ linked data vocabulary"
+#: src/DataType/Geonames/Features.php:21
+msgid "Geonames: GeoNames features"
+msgstr ""
+
+#: src/DataType/Geonames/Geonames.php:21
+msgid "Geonames: The GeoNames geographical database"
 msgstr ""
 
 #: src/DataType/Periodo/Periodo.php:21
@@ -835,44 +847,16 @@ msgid ""
 "PeriodO: A gazetteer of period definitions for linking and visualizing data"
 msgstr ""
 
-#: src/DataType/Dc/Elements.php:21
-msgid "Dublin Core: Elements"
-msgstr "Dublin Core: Elemendid"
+#: src/DataType/AbstractDataType.php:29
+msgid "Value Suggest"
+msgstr "Väärtuste soovitamine"
 
-#: src/DataType/Dc/Terms.php:21
-msgid "Dublin Core: Terms"
-msgstr "Dublin Core: Terminid"
-
-#: src/DataType/Dc/Types.php:21
-msgid "Dublin Core: Types"
-msgstr "Dublin Core: Liigid"
-
-#: src/DataType/Dc/Classes.php:21
-msgid "Dublin Core: Classes"
-msgstr "Dublin Core: Klassid"
-
-#: src/DataType/Pactols/Sujets.php:21
-msgid "Pactols: Sujets (Subject)"
+#: src/DataType/Ror/Ror.php:21
+msgid "ROR: Research Organization Registry"
 msgstr ""
 
-#: src/DataType/Pactols/All.php:21
-msgid "Pactols: All thesaurus"
-msgstr ""
-
-#: src/DataType/Gnd/Gnd.php:21
-msgid "GND: Die Gemeinsame Normdatei"
-msgstr ""
-
-#: src/DataType/Oclc/Fast.php:21
-msgid "OCLC: Faceted Application of Subject Terminologies (FAST)"
-msgstr ""
-
-#: src/DataType/Oclc/Viaf.php:21
-msgid "OCLC: The Virtual International Authority File (VIAF)"
-msgstr ""
-
-#: src/DataType/Getty/Aat.php:21
-msgid "Getty: Art & Architecture Thesaurus (AAT)"
+#: src/DataType/Homosaurus/Homosaurus.php:21
+msgid "Homosaurus: an international LGBTQ linked data vocabulary"
 msgstr ""
 
 #: src/DataType/Getty/Tgn.php:21
@@ -883,26 +867,42 @@ msgstr ""
 msgid "Getty: Union List of Artist Names (ULAN)"
 msgstr ""
 
-#: src/DataType/Getty/Cona.php:21
-msgid "Getty: Cultural Objects Name Authority (CONA)"
-msgstr ""
-
 #: src/DataType/Getty/Ia.php:21
 msgid "Getty: Iconography Authority (IA)"
 msgstr ""
 
-#: src/DataType/Geonames/Geonames.php:21
-msgid "Geonames: The GeoNames geographical database"
+#: src/DataType/Getty/Cona.php:21
+msgid "Getty: Cultural Objects Name Authority (CONA)"
 msgstr ""
 
-#: src/DataType/Geonames/Features.php:21
-msgid "Geonames: GeoNames features"
+#: src/DataType/Getty/Aat.php:21
+msgid "Getty: Art & Architecture Thesaurus (AAT)"
 msgstr ""
 
-#: src/DataType/Orcid/Orcid.php:21
-msgid "ORCID: Open Researcher and Contributor ID"
+#: src/DataType/Oclc/Fast.php:21
+msgid "OCLC: Faceted Application of Subject Terminologies (FAST)"
 msgstr ""
 
-#: src/DataType/Thub/Thub.php:21
-msgid "Thesaurus de la Universitat de Barcelona (THUB)"
+#: src/DataType/Oclc/Viaf.php:21
+msgid "OCLC: The Virtual International Authority File (VIAF)"
+msgstr ""
+
+#: src/DataType/Dc/Classes.php:21
+msgid "Dublin Core: Classes"
+msgstr "Dublin Core: Klassid"
+
+#: src/DataType/Dc/Types.php:21
+msgid "Dublin Core: Types"
+msgstr "Dublin Core: Liigid"
+
+#: src/DataType/Dc/Elements.php:21
+msgid "Dublin Core: Elements"
+msgstr "Dublin Core: Elemendid"
+
+#: src/DataType/Dc/Terms.php:21
+msgid "Dublin Core: Terms"
+msgstr "Dublin Core: Terminid"
+
+#: src/DataType/Gnd/Gnd.php:21
+msgid "GND: Die Gemeinsame Normdatei"
 msgstr ""
