@@ -52,11 +52,19 @@ class ViafSuggest implements SuggesterInterface
         $suggestions = [];
         $results = json_decode($response->getBody(), true);
         foreach ($results['result'] as $result) {
+            $info = [];
+            if ($result['nametype']) {
+                $info[] = sprintf('Type: %s', $result['nametype']);
+            }
+            if ($result['viafid']) {
+                $info[] = sprintf('VIAF ID: %s', $result['viafid']);
+            }
+
             $suggestions[] = [
                 'value' => $result['term'],
                 'data' => [
                     'uri' => sprintf('http://viaf.org/viaf/%s', $result['viafid']),
-                    'info' => null,
+                    'info' => implode("\n", $info),
                 ],
             ];
         }
