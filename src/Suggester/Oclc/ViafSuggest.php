@@ -3,6 +3,7 @@ namespace ValueSuggest\Suggester\Oclc;
 
 use ValueSuggest\Suggester\SuggesterInterface;
 use Laminas\Http\Client;
+use Laminas\Http\Client\Adapter\Curl;
 
 class ViafSuggest implements SuggesterInterface
 {
@@ -30,15 +31,16 @@ class ViafSuggest implements SuggesterInterface
             'query' => $query,
         ];
 
-        // The VIAF API is hosted on Cloudflare. The default Laminas\Http\Client\Adapter\Socket triggers a
-        // Cloudflare "security service that protect itself from online attacks", i.e. automated traffic.
-        // Let's use a fallback to the cURL adapter, as that is compatible with the Cloudflare hosted VIAF API.
+        // The VIAF API is hosted on Cloudflare. The default Socket adapter triggers
+        // a Cloudflare "security service that protect itself from online attacks",
+        // i.e. automated traffic. Here we use the cURL adapter, which is compatible
+        // with the Cloudflare hosted VIAF API.
         $response = $this->client
-            ->setAdapter('Laminas\Http\Client\Adapter\Curl')    // Fallback to cURL
+            ->setAdapter(Curl::class)
             ->setUri('https://www.viaf.org/viaf/AutoSuggest')
             ->setHeaders([
-                // Override some default headers set by Laminas\Http\Client
-                'Accept-Encoding' => 'deflate, br, identity',   // 'gzip' is not supported
+                // Override some default headers set by the client ('gzip' is not supported).
+                'Accept-Encoding' => 'deflate, br, identity',
                 'Accept' => 'application/json',
             ])
             ->setParameterGet($params)
