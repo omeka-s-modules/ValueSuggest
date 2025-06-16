@@ -3,9 +3,11 @@ namespace ValueSuggest\Controller;
 
 use Omeka\DataType\Manager as DataTypeManager;
 use ValueSuggest\DataType\DataTypeInterface;
+use ValueSuggest\Form\UpdateForm;
 use ValueSuggest\Suggester\SuggesterInterface;
 use Laminas\Mvc\Controller\AbstractActionController;
 use Laminas\ServiceManager\Exception\ServiceNotFoundException;
+use Laminas\View\Model\ViewModel;
 
 class IndexController extends AbstractActionController
 {
@@ -73,5 +75,32 @@ class IndexController extends AbstractActionController
         // @see https://github.com/devbridge/jQuery-Autocomplete#response-format
         $response->getHeaders()->addHeaderLine('Content-Type', 'application/json');
         return $response->setContent(json_encode(['suggestions' => $suggestions]));
+    }
+
+    public function updateAction()
+    {
+        $form = $this->getForm(UpdateForm::class);
+
+        if ($this->getRequest()->isPost()) {
+            $form->setData($this->params()->fromPost());
+            if ($form->isValid()) {
+                $data = $form->getData();
+
+                $this->jobDispatcher()->dispatch('ValueSuggest\Job\Update', [
+                    'data_types' => $data['data_types'] ?? [],
+                ]);
+
+                $this->messenger()->addSuccess('Updating values. This may take a while.'); // @translate
+
+                return $this->redirect()->toRoute('admin/value-suggest/update');
+            } else {
+                $this->messenger()->addFormErrors($form);
+            }
+        }
+
+        $view = new ViewModel;
+        $view->setVariable('form', $form);
+
+        return $view;
     }
 }

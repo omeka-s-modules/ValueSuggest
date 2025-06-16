@@ -1,0 +1,17 @@
+<?php
+/**
+ * @var \ValueSuggest\Form\UpdateForm $form
+ */
+?>
+
+<?= $this->pageTitle($this->translate('Update values'), 1, $this->translate('Value Suggest')) ?>
+
+<?php $form->prepare(); ?>
+<?= $this->form()->openTag($form) ?>
+
+<div id="page-actions">
+    <button type="submit"><?= $this->translate('Start update') ?></button>
+</div>
+
+<?= $this->formCollection($form) ?>
+<?= $this->form()->closeTag() ?>
