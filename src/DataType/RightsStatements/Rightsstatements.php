@@ -18,6 +18,6 @@ class Rightsstatements extends AbstractDataType
 
     public function getLabel()
     {
-        return 'RightsStatements.org: Standardized rights statements for online cultural heritage'; // @translate
+        return 'RightsStatements.org: Rights statements for online cultural heritage'; // @translate
     }
 }

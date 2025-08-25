@@ -25,6 +25,9 @@ return [
     'data_types' => [
         'factories' => [
 
+            /* Creative Commons (CC) */
+            'valuesuggestall:cc:cc' => Service\CcDataTypeFactory::class,
+
             /* Dublin Core */
             'valuesuggestall:dc:classes' => Service\DcDataTypeFactory::class,
             'valuesuggestall:dc:elements' => Service\DcDataTypeFactory::class,

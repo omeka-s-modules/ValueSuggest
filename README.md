@@ -18,6 +18,7 @@ In version 1.15.0, we have removed the [Dutch Digital Heritage Network of Terms]
 
 This module includes the following vocabularies:
 
+- Creative Commons (CC)
 - Dublin Core
 - Gemeinsame Normdatie (GND)
 - GeoNames
@@ -40,6 +41,10 @@ This module includes the following vocabularies:
 - UNESCO
 - Les vocabulaires du Ministère de la Culture
 - Thesaurus de la Universitat de Barcelona (THUB)
+
+### [Creative Commons (CC)](https://creativecommons.org/share-your-work/cclicenses/)
+
+- Provides a standardized way to grant the public permission to use their creative work under copyright law.
 
 ### [Dublin Core](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/) (DCMI Metadata Terms)
 
