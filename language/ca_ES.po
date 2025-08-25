@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rubén Alcaraz Martínez <rubenalcarazmartinez@gmail.com>, 2024
+# Rubén Alcaraz Martínez <rubenalcarazmartinez@gmail.com>, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-02 16:59-0400\n"
+"POT-Creation-Date: 2025-08-25 12:28-0400\n"
 "PO-Revision-Date: 2017-09-14 20:16+0000\n"
-"Last-Translator: Rubén Alcaraz Martínez <rubenalcarazmartinez@gmail.com>, 2024\n"
+"Last-Translator: Rubén Alcaraz Martínez <rubenalcarazmartinez@gmail.com>, 2025\n"
 "Language-Team: Catalan (Spain) (https://app.transifex.com/omeka/teams/14184/ca_ES/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -773,16 +773,14 @@ msgstr "Tesauros: Diccionario de Mobiliario"
 
 #: src/DataType/Pactols/All.php:21
 msgid "Pactols: All thesaurus"
-msgstr ""
+msgstr "Pactols: Tot el tesaurus"
 
 #: src/DataType/Pactols/Sujets.php:21
 msgid "Pactols: Sujets (Subject)"
-msgstr ""
+msgstr "Pactols: Matèries"
 
 #: src/DataType/RightsStatements/Rightsstatements.php:21
-msgid ""
-"RightsStatements.org: Standardized rights statements for online cultural "
-"heritage"
+msgid "RightsStatements.org: Rights statements for online cultural heritage"
 msgstr ""
 
 #: src/DataType/Lc/Relators.php:24
@@ -861,6 +859,10 @@ msgstr "LC: Països MARC"
 msgid "LC: Rare Materials Cataloging"
 msgstr "LC: Rare Materials Cataloging"
 
+#: src/DataType/Cc/Cc.php:21
+msgid "Creative Commons (CC): Free, easy-to-use copyright licenses"
+msgstr ""
+
 #: src/DataType/Thub/Thub.php:21
 msgid "Thesaurus de la Universitat de Barcelona (THUB)"
 msgstr "Thesaurus de la Universitat de Barcelona (THUB)"
@@ -880,7 +882,7 @@ msgstr "Geonames: La base de dades geogràfica GeoNames"
 #: src/DataType/Periodo/Periodo.php:21
 msgid ""
 "PeriodO: A gazetteer of period definitions for linking and visualizing data"
-msgstr ""
+msgstr "PeriodO: Repertori de períodes per enllaçar i visualitzar dades"
 
 #: src/DataType/AbstractDataType.php:29
 msgid "Value Suggest"

@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-02 16:59-0400\n"
+"POT-Creation-Date: 2025-08-25 12:28-0400\n"
 "PO-Revision-Date: 2017-09-14 20:16+0000\n"
 "Last-Translator: Giorgio Comai <g@giorgiocomai.eu>, 2022\n"
 "Language-Team: Italian (https://app.transifex.com/omeka/teams/14184/it/)\n"
@@ -746,9 +746,7 @@ msgid "Pactols: Sujets (Subject)"
 msgstr ""
 
 #: src/DataType/RightsStatements/Rightsstatements.php:21
-msgid ""
-"RightsStatements.org: Standardized rights statements for online cultural "
-"heritage"
+msgid "RightsStatements.org: Rights statements for online cultural heritage"
 msgstr ""
 
 #: src/DataType/Lc/Relators.php:24
@@ -825,6 +823,10 @@ msgstr "LC: Paese (MARC)"
 
 #: src/DataType/Lc/Rbmscv.php:24
 msgid "LC: Rare Materials Cataloging"
+msgstr ""
+
+#: src/DataType/Cc/Cc.php:21
+msgid "Creative Commons (CC): Free, easy-to-use copyright licenses"
 msgstr ""
 
 #: src/DataType/Thub/Thub.php:21
