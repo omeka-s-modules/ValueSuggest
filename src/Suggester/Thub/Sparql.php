@@ -42,7 +42,7 @@ WHERE {
 }
 LIMIT 500',
             addslashes($query),
-            addslashes($lang) ?: 'ca' // The defualt lang is Catalan
+            addslashes((string) $lang) ?: 'ca' // The defualt lang is Catalan
         );
 
         $client = $this->client->setUri(self::ENDPOINT)->setParameterGet([

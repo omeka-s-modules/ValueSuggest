@@ -52,9 +52,9 @@ LIMIT 500',
             addslashes($this->graph),
             addslashes($query),
             // The defualt lang is spanish.
-            addslashes($lang) ?: 'es',
-            addslashes($lang) ?: 'es',
-            addslashes($lang) ?: 'es'
+            addslashes((string) $lang) ?: 'es',
+            addslashes((string) $lang) ?: 'es',
+            addslashes((string) $lang) ?: 'es'
         );
 
         $client = $this->client->setUri(self::ENDPOINT)->setParameterGet([

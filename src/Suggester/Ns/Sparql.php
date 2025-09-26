@@ -47,7 +47,7 @@ WHERE {
 LIMIT 500',
             addslashes($this->scheme),
             addslashes($query),
-            addslashes($lang) ?: 'it' // The defualt lang is Italian
+            addslashes((string) $lang) ?: 'it' // The defualt lang is Italian
         );
 
         $client = $this->client->setUri(self::ENDPOINT)->setParameterGet([

@@ -44,7 +44,7 @@ SELECT ?concept ?label WHERE {
 }
 ORDER BY ?label',
             addslashes($this->scheme),
-            addslashes($lang) ?: 'fr-fr' // The defualt lang is french
+            addslashes((string) $lang) ?: 'fr-fr' // The defualt lang is french
         );
 
         $client = $this->client->setUri(self::ENDPOINT)->setParameterGet([
