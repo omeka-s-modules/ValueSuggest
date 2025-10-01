@@ -132,6 +132,9 @@ abstract class AbstractDataType extends BaseAbstractDataType implements DataType
 
     public function valueAnnotationForm(PhpRenderer $view)
     {
-        return $this->form($view);
+        $html = '<div class="input-body">';
+        $html .= $this->form($view);
+        $html .= '</div>';
+        return $html;
     }
 }
