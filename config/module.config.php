@@ -1,7 +1,7 @@
 <?php
 namespace ValueSuggest;
 
-$config = [
+return [
     'controllers' => [
         'factories' => [
             'ValueSuggest\Controller\Index' => Service\IndexControllerFactory::class,
@@ -308,6 +308,3 @@ $config = [
         ],
     ],
 ];
-// Register the data types as value annotating.
-$config['data_types']['value_annotating'] = array_keys($config['data_types']['factories']);
-return $config;

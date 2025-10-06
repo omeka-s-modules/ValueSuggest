@@ -63,6 +63,11 @@ class Module extends AbstractModule
             'view.edit.after',
             [$this, 'prepareResourceForm']
         );
+        $sharedEventManager->attach(
+            '*',
+            'data_types.value_annotating',
+            [$this, 'addDataTypesToValueAnnotatingConfig']
+        );
     }
 
     /**
@@ -84,5 +89,22 @@ class Module extends AbstractModule
                 'var valueSuggestProxyUrl = "%s";',
                 $view->escapeJs($view->url('admin/value-suggest/proxy'))
             ));
+    }
+
+    /**
+     * Add Value Suggest data types as value annotating.
+     *
+     * @param Event $event
+     */
+    public function addDataTypesToValueAnnotatingConfig(Event $event)
+    {
+        $valueAnnotating = $event->getParam('data_types');
+        $dataTypes = $this->getServiceLocator()->get('Omeka\DataTypeManager')->getRegisteredNames();
+        foreach ($dataTypes as $dataType) {
+            if (0 === strpos($dataType, 'valuesuggest:') || 0 === strpos($dataType, 'valuesuggestall:')) {
+                $valueAnnotating[] = $dataType;
+            }
+        }
+        $event->setParam('data_types', $valueAnnotating);
     }
 }
