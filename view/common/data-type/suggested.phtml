@@ -19,8 +19,8 @@ $escape = $this->plugin('escapeHtml');
     <?php echo $this->formHidden($idInput); ?>
     <?php echo $this->formHidden($valueInput); ?>
 </div>
-<div class="valuesuggest-id-container">
-    <span class="o-icon-uri icon" title="<?php echo $escape($translate('URI')); ?>" aria-label="<?php echo $escape($translate('URI')); ?>"></span>
+<div class="valuesuggest-id-container" role="group" aria-label="<?php echo $escape($translate('URI')); ?>">
+    <span class="o-icon-uri icon" title="<?php echo $escape($translate('URI')); ?>" aria-hidden="true"></span>
     <span class="valuesuggest-id"></span>
     <button type="button" class="valuesuggest-id-remove o-icon-close" aria-label="<?php echo $escape($translate('Remove URI')); ?>" title="<?php echo $escape($translate('Remove URI')); ?>"></button>
 </div>
