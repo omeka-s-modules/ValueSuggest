@@ -21,11 +21,18 @@
     border: 1px solid #dfdfdf;
     background-color: #fff;
     margin: 0;
-    padding: 0 0 0 6px;
     width: 100%;
     height: 36px;
     display: flex;
     align-items: center;
+}
+
+.valuesuggest-vocab-container label {
+    width: calc(100% - 35px);
+}
+
+.language-wrapper.active + .valuesuggest-vocab-container label {
+    width: 100%;
 }
 
 .valuesuggest-id-container .icon,
