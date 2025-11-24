@@ -1,4 +1,7 @@
 $(document).on('o:prepare-value o:prepare-value-annotation', function(e, type, value) {
+    if (typeof type === 'undefined') {
+        return;
+    }
     if (0 === type.indexOf('valuesuggest:') || 0 === type.indexOf('valuesuggestall:')) {
 
         var thisValue = $(value);
