@@ -19,7 +19,7 @@ class OmekaDataTypeFactory implements FactoryInterface
         ],
     ];
 
-    public function __invoke(ContainerInterface $services, $requestedName, array $options = null)
+    public function __invoke(ContainerInterface $services, $requestedName, ?array $options = null)
     {
         $dataType = new Omeka($services);
         $dataType->setName($requestedName);

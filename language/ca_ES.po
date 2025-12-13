@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-25 12:28-0400\n"
+"POT-Creation-Date: 2025-12-13 17:23-0500\n"
 "PO-Revision-Date: 2017-09-14 20:16+0000\n"
 "Last-Translator: Rubén Alcaraz Martínez <rubenalcarazmartinez@gmail.com>, 2025\n"
 "Language-Team: Catalan (Spain) (https://app.transifex.com/omeka/teams/14184/ca_ES/)\n"
@@ -782,6 +782,8 @@ msgstr "Pactols: Matèries"
 #: src/DataType/RightsStatements/Rightsstatements.php:21
 msgid "RightsStatements.org: Rights statements for online cultural heritage"
 msgstr ""
+"RightsStatements.org: declaracions de drets per al patrimoni cultural en "
+"línia"
 
 #: src/DataType/Lc/Relators.php:24
 msgid "LC: MARC Relators"
@@ -862,6 +864,8 @@ msgstr "LC: Rare Materials Cataloging"
 #: src/DataType/Cc/Cc.php:21
 msgid "Creative Commons (CC): Free, easy-to-use copyright licenses"
 msgstr ""
+"Creative Commons (CC): Llicències de drets d'autor gratuïtes i fàcils "
+"d'usar."
 
 #: src/DataType/Thub/Thub.php:21
 msgid "Thesaurus de la Universitat de Barcelona (THUB)"
@@ -884,7 +888,7 @@ msgid ""
 "PeriodO: A gazetteer of period definitions for linking and visualizing data"
 msgstr "PeriodO: Repertori de períodes per enllaçar i visualitzar dades"
 
-#: src/DataType/AbstractDataType.php:29
+#: src/DataType/AbstractDataType.php:30
 msgid "Value Suggest"
 msgstr "Value Suggest"
 
