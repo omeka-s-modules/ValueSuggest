@@ -4,13 +4,14 @@ namespace ValueSuggest\DataType;
 use Omeka\Api\Adapter\AbstractEntityAdapter;
 use Omeka\Api\Representation\ValueRepresentation;
 use Omeka\DataType\AbstractDataType as BaseAbstractDataType;
+use Omeka\DataType\ConversionTargetInterface;
 use Omeka\DataType\ValueAnnotatingInterface;
 use Omeka\Entity\Value;
 use Laminas\Form\Element\Hidden;
 use Laminas\ServiceManager\ServiceManager;
 use Laminas\View\Renderer\PhpRenderer;
 
-abstract class AbstractDataType extends BaseAbstractDataType implements DataTypeInterface, ValueAnnotatingInterface
+abstract class AbstractDataType extends BaseAbstractDataType implements DataTypeInterface, ValueAnnotatingInterface, ConversionTargetInterface
 {
     /**
      * @var ServiceManager
@@ -136,5 +137,14 @@ abstract class AbstractDataType extends BaseAbstractDataType implements DataType
         $html .= $this->form($view);
         $html .= '</div>';
         return $html;
+    }
+
+    public function convert(Value $valueObject, string $dataTypeTarget): bool
+    {
+        $value = $valueObject->getValue();
+        if (is_string($value) && '' !== trim($value)) {
+            return true;
+        }
+        return false;
     }
 }
