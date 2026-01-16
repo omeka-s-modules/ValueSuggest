@@ -142,9 +142,25 @@ abstract class AbstractDataType extends BaseAbstractDataType implements DataType
     public function convert(Value $valueObject, string $dataTypeTarget): bool
     {
         $value = $valueObject->getValue();
-        if (is_string($value) && '' !== trim($value)) {
+        $uri = $valueObject->getUri();
+
+        if (is_string($value) && '' !== trim($value) && is_string($uri) && '' !== trim($uri)) {
+            // The value object has a value and a URI.
             return true;
         }
+        if (!is_string($value) && is_string($uri) && '' !== trim($uri)) {
+            // The value object has no value, but has a URI.
+            return true;
+        }
+
+        if (is_string($value) && filter_var($value, FILTER_VALIDATE_URL) && !is_string($uri)) {
+            // The value object has a value, but has no URI. The value is a URL.
+            // Move the value to the URI.
+            $valueObject->setValue(null);
+            $valueObject->setUri($value);
+            return true;
+        }
+
         return false;
     }
 }
