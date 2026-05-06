@@ -5,16 +5,16 @@
 # 
 # Translators:
 # Simone Falteri <s.falteri@ifnet.it>, 2018
-# Giorgio Comai <g@giorgiocomai.eu>, 2022
+# Giorgio Comai <g@giorgiocomai.eu>, 2026
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-26 17:09-0500\n"
+"POT-Creation-Date: 2026-05-06 14:49-0400\n"
 "PO-Revision-Date: 2017-09-14 20:16+0000\n"
-"Last-Translator: Giorgio Comai <g@giorgiocomai.eu>, 2022\n"
+"Last-Translator: Giorgio Comai <g@giorgiocomai.eu>, 2026\n"
 "Language-Team: Italian (https://app.transifex.com/omeka/teams/14184/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -40,71 +40,71 @@ msgstr ""
 
 #: src/Service/OmekaDataTypeFactory.php:12
 msgid "Omeka: Property"
-msgstr ""
+msgstr "Omeka: Proprietà"
 
 #: src/Service/OmekaDataTypeFactory.php:15
 msgid "Omeka: Property / Resource template"
-msgstr ""
+msgstr "Omeka: Proprietà / Modello di risorsa"
 
 #: src/Service/OmekaDataTypeFactory.php:18
 msgid "Omeka: Property / Resource class"
-msgstr ""
+msgstr "Omeka: Proprietà / Classe di risorsa"
 
 #: src/Service/PbcoreDataTypeFactory.php:12
 msgid "PBCore: pbcoreAssetType"
-msgstr ""
+msgstr "PBCore: pbcoreAssetType"
 
 #: src/Service/PbcoreDataTypeFactory.php:16
 msgid "PBCore: @dateType"
-msgstr ""
+msgstr "PBCore: @dateType"
 
 #: src/Service/PbcoreDataTypeFactory.php:20
 msgid "PBCore: @titleType"
-msgstr ""
+msgstr "PBCore: @titleType"
 
 #: src/Service/PbcoreDataTypeFactory.php:24
 msgid "PBCore: @descriptionType"
-msgstr ""
+msgstr "PBCore: @descriptionType"
 
 #: src/Service/PbcoreDataTypeFactory.php:28
 msgid "PBCore: pbcoreRelationType"
-msgstr ""
+msgstr "PBCore: pbcoreRelationType"
 
 #: src/Service/PbcoreDataTypeFactory.php:32
 msgid "PBCore: instantiationRelationType"
-msgstr ""
+msgstr "PBCore: instantiationRelationType"
 
 #: src/Service/PbcoreDataTypeFactory.php:36
 msgid "PBCore: creatorRole and contributorRole"
-msgstr ""
+msgstr "PBCore: creatorRole e contributorRole"
 
 #: src/Service/PbcoreDataTypeFactory.php:40
 msgid "PBCore: publisherRole"
-msgstr ""
+msgstr "PBCore: publisherRole"
 
 #: src/Service/PbcoreDataTypeFactory.php:44
 msgid "PBCore: instantiationPhysical: Audio"
-msgstr ""
+msgstr "PBCore: instantiationPhysical: Audio"
 
 #: src/Service/PbcoreDataTypeFactory.php:48
 msgid "PBCore: instantiationPhysical: Film"
-msgstr ""
+msgstr "PBCore: instantiationPhysical: Film"
 
 #: src/Service/PbcoreDataTypeFactory.php:52
 msgid "PBCore: instantiationPhysical: Video"
-msgstr ""
+msgstr "PBCore: instantiationPhysical: Video"
 
 #: src/Service/PbcoreDataTypeFactory.php:56
 msgid "PBCore: instantiationMediaType"
-msgstr ""
+msgstr "PBCore: instantiationMediaType"
 
 #: src/Service/PbcoreDataTypeFactory.php:60
 msgid "PBCore: instantiationGenerations"
-msgstr ""
+msgstr "PBCore: instantiationGenerations"
 
 #: src/Service/RdaDataTypeFactory.php:12
 msgid "RDA: Aspect Ratio Designation"
-msgstr ""
+msgstr "RDA: Aspect Ratio Designation"
 
 #: src/Service/RdaDataTypeFactory.php:16
 msgid "RDA: Bibliographic Format"
@@ -828,6 +828,8 @@ msgstr ""
 #: src/DataType/Cc/Cc.php:21
 msgid "Creative Commons (CC): Free, easy-to-use copyright licenses"
 msgstr ""
+"Creative Commons (CC): licenze relative al copyright gratuite e facili da "
+"utilizzare"
 
 #: src/DataType/Thub/Thub.php:21
 msgid "Thesaurus de la Universitat de Barcelona (THUB)"
