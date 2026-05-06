@@ -6,7 +6,7 @@ use Laminas\Http\Client;
 
 class Sparql implements SuggesterInterface
 {
-    const ENDPOINT = 'http://vocab.getty.edu/sparql.json';
+    const ENDPOINT = 'https://vocab.getty.edu/sparql.json';
 
     /**
      * @var Client
