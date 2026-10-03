@@ -110,6 +110,12 @@ abstract class AbstractDataType extends BaseAbstractDataType implements DataType
         return nl2br($view->escapeHtml((string) $value->value()));
     }
 
+    public function getFulltextText(PhpRenderer $view, ValueRepresentation $value)
+    {
+        // Index the URI as well as the label, as core's URI data type does.
+        return trim(sprintf('%s %s', $value->uri(), $value->value()));
+    }
+
     public function getJsonLd(ValueRepresentation $value)
     {
         $jsonLd = [];
