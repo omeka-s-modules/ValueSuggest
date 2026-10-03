@@ -162,8 +162,14 @@ $(document).on('o:prepare-value o:prepare-value-annotation', function(e, type, v
                     done(allResults);
                     return;
                 }
-                if (null === allResultsRequest) {
-                    allResultsRequest = $.get(valueSuggestProxyUrl, this.params)
+                // Keep a local reference: if the request settles synchronously,
+                // its always() handler has already reset allResultsRequest.
+                var request = allResultsRequest;
+                if (null === request) {
+                    // Expect JSON, so a login page after a session expires
+                    // fails instead of being cached.
+                    request = allResultsRequest = $.get(valueSuggestProxyUrl, this.params, null, 'json');
+                    request
                         .done(function(data) {
                             allResults = data; // cache the data
                         })
@@ -171,7 +177,7 @@ $(document).on('o:prepare-value o:prepare-value-annotation', function(e, type, v
                             allResultsRequest = null;
                         });
                 }
-                allResultsRequest
+                request
                     .done(function() {
                         done(allResults);
                     })
