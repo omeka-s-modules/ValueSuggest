@@ -63,13 +63,7 @@ abstract class AbstractDataType extends BaseAbstractDataType implements DataType
         if ($this->isUsableUri($valueObject['@id'] ?? null)) {
             return true;
         }
-        if (isset($valueObject['@value'])
-            && is_string($valueObject['@value'])
-            && '' !== trim($valueObject['@value'])
-        ) {
-            return true;
-        }
-        return false;
+        return null !== $this->getLiteralValue($valueObject);
     }
 
     public function hydrate(array $valueObject, Value $value, AbstractEntityAdapter $adapter)
@@ -83,8 +77,8 @@ abstract class AbstractDataType extends BaseAbstractDataType implements DataType
             if (isset($valueObject['o:label'])) {
                 $valueStr = $valueObject['o:label'];
             }
-        } elseif (isset($valueObject['@value'])) {
-            $valueStr = $valueObject['@value'];
+        } else {
+            $valueStr = $this->getLiteralValue($valueObject);
         }
         if (isset($valueObject['@language'])) {
             $langStr = $valueObject['@language'];
@@ -102,7 +96,7 @@ abstract class AbstractDataType extends BaseAbstractDataType implements DataType
         if ($uri) {
             $label = '' !== trim((string) $value->value()) ? $value->value() : $uri;
             if (!$this->isUsableUri($uri)) {
-                // Don't link a javascript: URI saved before they were rejected.
+                // Don't link an unsafe URI saved before they were rejected.
                 return $view->escapeHtml($label);
             }
             return $view->hyperlink($label, $uri, ['class' => 'uri-value-link']);
@@ -166,7 +160,8 @@ abstract class AbstractDataType extends BaseAbstractDataType implements DataType
     }
 
     /**
-     * Check that a URI is a non-empty string that isn't a javascript: URI.
+     * Check that a URI is a non-empty string whose scheme can't run script
+     * (javascript:, data: or vbscript:).
      *
      * Browsers ignore case, tabs, newlines and control characters in a URL's
      * scheme, so they're ignored here too.
@@ -180,6 +175,29 @@ abstract class AbstractDataType extends BaseAbstractDataType implements DataType
             return false;
         }
         $normalized = strtolower(preg_replace('/[\x00-\x20]/', '', $uri));
-        return 0 !== strpos($normalized, 'javascript:');
+        return !preg_match('/^(javascript|data|vbscript):/', $normalized);
+    }
+
+    /**
+     * Get the text to save for a value without a usable URI.
+     *
+     * That's its @value or, when its URI was rejected (such as javascript:),
+     * the URI's label, so the label is kept as plain text.
+     *
+     * @param array $valueObject
+     * @return string|null
+     */
+    private function getLiteralValue(array $valueObject)
+    {
+        $keys = ['@value'];
+        if (isset($valueObject['@id']) && is_string($valueObject['@id']) && '' !== trim($valueObject['@id'])) {
+            $keys[] = 'o:label';
+        }
+        foreach ($keys as $key) {
+            if (isset($valueObject[$key]) && is_string($valueObject[$key]) && '' !== trim($valueObject[$key])) {
+                return $valueObject[$key];
+            }
+        }
+        return null;
     }
 }
