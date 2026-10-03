@@ -1,11 +1,14 @@
 <?php
 namespace ValueSuggest\Suggester\Unesco;
 
+use ValueSuggest\Suggester\PrimaryLanguageTrait;
 use ValueSuggest\Suggester\SuggesterInterface;
 use Laminas\Http\Client;
 
 class Sparql implements SuggesterInterface
 {
+    use PrimaryLanguageTrait;
+
     const ENDPOINT = 'https://skos.um.es/sparql/';
 
     /**
@@ -34,9 +37,9 @@ class Sparql implements SuggesterInterface
      */
     public function getSuggestions($query, $lang = null)
     {
-        // Labels are tagged with bare languages ("en", not "en-GB" or "en_GB"),
-        // so use the primary subtag. The defualt lang is spanish.
-        $lang = explode('-', str_replace('_', '-', strtolower((string) $lang)))[0] ?: 'es';
+        // Labels are tagged with bare languages, so use the primary subtag. The
+        // defualt lang is spanish.
+        $lang = $this->getPrimaryLanguage($lang, 'es');
 
         // Match the query literally. The endpoint strips backslash escapes
         // before running the regex, so wrap metacharacters in brackets instead.

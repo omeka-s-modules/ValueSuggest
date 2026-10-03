@@ -2,6 +2,7 @@
 namespace ValueSuggest\Suggester\Nom;
 
 use ValueSuggest\Suggester\EscapeRegexTrait;
+use ValueSuggest\Suggester\PrimaryLanguageTrait;
 use ValueSuggest\Suggester\SortSuggestionsTrait;
 use ValueSuggest\Suggester\SuggesterInterface;
 use Laminas\Http\Client;
@@ -9,6 +10,7 @@ use Laminas\Http\Client;
 class Sparql implements SuggesterInterface
 {
     use EscapeRegexTrait;
+    use PrimaryLanguageTrait;
     use SortSuggestionsTrait;
 
     const ENDPOINT = 'https://nomenclature.info/repositories/nom';
@@ -53,7 +55,7 @@ WHERE {
 }
 LIMIT 500',
             addslashes($this->escapeRegex($query)),
-            addslashes((string) $lang) ?: 'en', // The defualt lang is Italian
+            $this->getPrimaryLanguage($lang, 'en'), // The default lang is English
             $this->category ? sprintf('FILTER EXISTS {?subject skos:broader* %s}', $this->category) : null
         );
 

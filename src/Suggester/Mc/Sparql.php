@@ -1,11 +1,14 @@
 <?php
 namespace ValueSuggest\Suggester\Mc;
 
+use ValueSuggest\Suggester\PrimaryLanguageTrait;
 use ValueSuggest\Suggester\SuggesterInterface;
 use Laminas\Http\Client;
 
 class Sparql implements SuggesterInterface
 {
+    use PrimaryLanguageTrait;
+
     const ENDPOINT = 'http://data.culture.fr/thesaurus/sparql';
 
     /**
@@ -40,11 +43,11 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 SELECT ?concept ?label WHERE {
     ?concept skos:inScheme <%s> .
     ?concept skos:prefLabel ?label .
-    FILTER (lang(?label)="%s")
+    FILTER langMatches(lang(?label), "%s")
 }
 ORDER BY ?label',
             addslashes($this->scheme),
-            addslashes((string) $lang) ?: 'fr-fr' // The defualt lang is french
+            $this->getPrimaryLanguage($lang, 'fr') // The defualt lang is french
         );
 
         $client = $this->client->setUri(self::ENDPOINT)->setParameterGet([

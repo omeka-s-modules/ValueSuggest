@@ -2,6 +2,7 @@
 namespace ValueSuggest\Suggester\Tesauros;
 
 use ValueSuggest\Suggester\EscapeRegexTrait;
+use ValueSuggest\Suggester\PrimaryLanguageTrait;
 use ValueSuggest\Suggester\SortSuggestionsTrait;
 use ValueSuggest\Suggester\SuggesterInterface;
 use Laminas\Http\Client;
@@ -9,6 +10,7 @@ use Laminas\Http\Client;
 class Sparql implements SuggesterInterface
 {
     use EscapeRegexTrait;
+    use PrimaryLanguageTrait;
     use SortSuggestionsTrait;
 
     const ENDPOINT = 'https://tesauros.cultura.gob.es/tesauros/sparql';
@@ -53,7 +55,7 @@ WHERE {
 LIMIT 500',
             addslashes($this->scheme),
             addslashes($this->escapeRegex($query)),
-            addslashes((string) $lang) ?: 'es' // The defualt lang is spanish
+            $this->getPrimaryLanguage($lang, 'es') // The defualt lang is spanish
         );
 
         $client = $this->client->setUri(self::ENDPOINT)->setParameterGet([

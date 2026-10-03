@@ -1,11 +1,14 @@
 <?php
 namespace ValueSuggest\Suggester\Pactols;
 
+use ValueSuggest\Suggester\PrimaryLanguageTrait;
 use ValueSuggest\Suggester\SuggesterInterface;
 use Laminas\Http\Client;
 
 class PactolsSujets implements SuggesterInterface
 {
+    use PrimaryLanguageTrait;
+
     /**
      * @var Client
      */
@@ -24,7 +27,7 @@ class PactolsSujets implements SuggesterInterface
      */
     public function getSuggestions($query, $lang = null)
     {
-        $lang = $lang ?: 'fr';
+        $lang = $this->getPrimaryLanguage($lang, 'fr');
         $params = ['q' => $query, 'lang' => $lang, 'theso' => 'TH_1',  'group' => '6', 'format' => 'jsonld'];
 
         $response = $this->client

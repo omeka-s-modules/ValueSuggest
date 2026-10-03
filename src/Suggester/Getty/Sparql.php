@@ -1,11 +1,14 @@
 <?php
 namespace ValueSuggest\Suggester\Getty;
 
+use ValueSuggest\Suggester\PrimaryLanguageTrait;
 use ValueSuggest\Suggester\SuggesterInterface;
 use Laminas\Http\Client;
 
 class Sparql implements SuggesterInterface
 {
+    use PrimaryLanguageTrait;
+
     const ENDPOINT = 'https://vocab.getty.edu/sparql.json';
 
     /**
@@ -39,10 +42,8 @@ class Sparql implements SuggesterInterface
         // english.
         // @see http://vocab.getty.edu/doc/#Full_Text_Search
         //
-        // Terms are tagged with bare languages ("en", not "en-US"), so use the
-        // primary subtag, letters only.
-        preg_match('/^[a-z]+/', strtolower((string) $lang), $matches);
-        $lang = $matches[0] ?? 'en';
+        // Terms are tagged with bare languages, so use the primary subtag.
+        $lang = $this->getPrimaryLanguage($lang, 'en');
         $sparqlQuery = sprintf('
 SELECT ?Subject ?Term ?Parents ?ScopeNote ?ScopeNoteEn {
     ?Subject a skos:Concept ;

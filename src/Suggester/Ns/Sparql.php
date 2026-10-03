@@ -2,6 +2,7 @@
 namespace ValueSuggest\Suggester\Ns;
 
 use ValueSuggest\Suggester\EscapeRegexTrait;
+use ValueSuggest\Suggester\PrimaryLanguageTrait;
 use ValueSuggest\Suggester\SortSuggestionsTrait;
 use ValueSuggest\Suggester\SuggesterInterface;
 use Laminas\Http\Client;
@@ -9,6 +10,7 @@ use Laminas\Http\Client;
 class Sparql implements SuggesterInterface
 {
     use EscapeRegexTrait;
+    use PrimaryLanguageTrait;
     use SortSuggestionsTrait;
 
     const ENDPOINT = 'https://digitale.bncf.firenze.sbn.it/openrdf-workbench/repositories/NS/query';
@@ -52,7 +54,7 @@ WHERE {
 LIMIT 500',
             addslashes($this->scheme),
             addslashes($this->escapeRegex($query)),
-            addslashes((string) $lang) ?: 'it' // The defualt lang is Italian
+            $this->getPrimaryLanguage($lang, 'it') // The defualt lang is Italian
         );
 
         $client = $this->client->setUri(self::ENDPOINT)->setParameterGet([
