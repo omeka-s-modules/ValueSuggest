@@ -1,11 +1,14 @@
 <?php
 namespace ValueSuggest\Suggester\Nom;
 
+use ValueSuggest\Suggester\EscapeRegexTrait;
 use ValueSuggest\Suggester\SuggesterInterface;
 use Laminas\Http\Client;
 
 class Sparql implements SuggesterInterface
 {
+    use EscapeRegexTrait;
+
     const ENDPOINT = 'https://nomenclature.info/repositories/nom';
 
     /**
@@ -47,7 +50,7 @@ WHERE {
     %s
 }
 LIMIT 500',
-            addslashes($query),
+            addslashes($this->escapeRegex($query)),
             addslashes((string) $lang) ?: 'en', // The defualt lang is Italian
             $this->category ? sprintf('FILTER EXISTS {?subject skos:broader* %s}', $this->category) : null
         );

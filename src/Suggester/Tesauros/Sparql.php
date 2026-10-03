@@ -1,11 +1,14 @@
 <?php
 namespace ValueSuggest\Suggester\Tesauros;
 
+use ValueSuggest\Suggester\EscapeRegexTrait;
 use ValueSuggest\Suggester\SuggesterInterface;
 use Laminas\Http\Client;
 
 class Sparql implements SuggesterInterface
 {
+    use EscapeRegexTrait;
+
     const ENDPOINT = 'http://tesauros.cultura.gob.es/tesauros/sparql';
 
     /**
@@ -47,7 +50,7 @@ WHERE {
 }
 LIMIT 500',
             addslashes($this->scheme),
-            addslashes($query),
+            addslashes($this->escapeRegex($query)),
             addslashes((string) $lang) ?: 'es' // The defualt lang is spanish
         );
 

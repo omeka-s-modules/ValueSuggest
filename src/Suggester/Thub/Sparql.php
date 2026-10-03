@@ -1,11 +1,14 @@
 <?php
 namespace ValueSuggest\Suggester\Thub;
 
+use ValueSuggest\Suggester\EscapeRegexTrait;
 use ValueSuggest\Suggester\SuggesterInterface;
 use Laminas\Http\Client;
 
 class Sparql implements SuggesterInterface
 {
+    use EscapeRegexTrait;
+
     const ENDPOINT = 'https://data.coeli.cat/thub/sparql';
 
     /**
@@ -41,7 +44,7 @@ WHERE {
     FILTER langMatches(lang(?Label), "%s")
 }
 LIMIT 500',
-            addslashes($query),
+            addslashes($this->escapeRegex($query)),
             addslashes((string) $lang) ?: 'ca' // The defualt lang is Catalan
         );
 
