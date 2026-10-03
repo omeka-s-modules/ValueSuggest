@@ -1,11 +1,14 @@
 <?php
 namespace ValueSuggest\Suggester\Geonames;
 
+use ValueSuggest\Suggester\PrimaryLanguageTrait;
 use ValueSuggest\Suggester\SuggesterInterface;
 use Laminas\Http\Client;
 
 class GeonamesSuggest implements SuggesterInterface
 {
+    use PrimaryLanguageTrait;
+
     /**
      * @var Client
      */
@@ -27,10 +30,11 @@ class GeonamesSuggest implements SuggesterInterface
     public function getSuggestions($query, $lang = null)
     {
         $params = ['q' => $query, 'maxRows' => 100, 'username' => 'kdlinfo'];
+        // Geonames requires an ISO-639 2-letter language code, so use the
+        // primary subtag ("zh" for "zh_CN" or "zh-CN").
+        $lang = $this->getPrimaryLanguage($lang, '');
         if ($lang) {
-            // Geonames requires an ISO-639 2-letter language code. Remove the
-            // first underscore and anything after it ("zh_CN" becomes "zh").
-            $params['lang'] = strstr($lang, '_', true) ?: $lang;
+            $params['lang'] = $lang;
         }
         $response = $this->client
         ->setUri('https://secure.geonames.org/searchJSON')

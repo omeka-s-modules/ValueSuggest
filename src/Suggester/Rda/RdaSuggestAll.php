@@ -1,12 +1,14 @@
 <?php
 namespace ValueSuggest\Suggester\Rda;
 
+use ValueSuggest\Suggester\PrimaryLanguageTrait;
 use ValueSuggest\Suggester\SortSuggestionsTrait;
 use ValueSuggest\Suggester\SuggesterInterface;
 use Laminas\Http\Client;
 
 class RdaSuggestAll implements SuggesterInterface
 {
+    use PrimaryLanguageTrait;
     use SortSuggestionsTrait;
 
     /**
@@ -43,7 +45,7 @@ class RdaSuggestAll implements SuggesterInterface
         if (!$response->isSuccess()) {
             return [];
         }
-        $lang = $lang ?: 'en'; // set english as the default language
+        $lang = $this->getPrimaryLanguage($lang, 'en'); // set english as the default language
 
         // Parse the JSON-LD response.
         $suggestions = [];
