@@ -14,7 +14,7 @@ trait PrimaryLanguageTrait
      * @param string $default Returned when $lang has no primary subtag
      * @return string
      */
-    protected function getPrimaryLanguage($lang, $default)
+    private function getPrimaryLanguage($lang, $default)
     {
         preg_match('/^[a-z]+/', strtolower((string) $lang), $matches);
         return $matches[0] ?? $default;

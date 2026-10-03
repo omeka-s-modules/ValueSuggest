@@ -14,7 +14,7 @@ trait EscapeRegexTrait
      * @param string $string
      * @return string
      */
-    protected function escapeRegex($string)
+    private function escapeRegex($string)
     {
         return preg_replace('/[.\\\\+*?\[\]^$(){}|]/', '\\\\$0', (string) $string);
     }

@@ -110,7 +110,7 @@ SELECT ?Subject ?Term ?Parents ?ScopeNote ?ScopeNoteEn {
      * @param string $query
      * @return string
      */
-    protected function escapeLucene($query)
+    private function escapeLucene($query)
     {
         return preg_replace('/[+\-!(){}\[\]^"~?:\\\\\/]|&&|\|\|/', '\\\\$0', mb_strtolower((string) $query));
     }

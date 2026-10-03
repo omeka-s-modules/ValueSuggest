@@ -9,7 +9,7 @@ trait SortSuggestionsTrait
      * @param array $suggestions
      * @return array
      */
-    protected function sortSuggestions(array $suggestions)
+    private function sortSuggestions(array $suggestions)
     {
         $keys = [];
         foreach ($suggestions as $index => $suggestion) {
@@ -33,7 +33,7 @@ trait SortSuggestionsTrait
      * @param string $label
      * @return string
      */
-    protected function getSortKey($label)
+    private function getSortKey($label)
     {
         static $collator;
         if (null === $collator) {

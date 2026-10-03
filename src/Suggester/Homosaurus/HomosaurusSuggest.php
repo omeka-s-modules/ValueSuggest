@@ -120,7 +120,7 @@ class HomosaurusSuggest implements SuggesterInterface
      * @param mixed $property
      * @return array
      */
-    protected function getValuesByLanguage($property)
+    private function getValuesByLanguage($property)
     {
         if (!is_array($property) || !array_key_exists(0, $property)) {
             $property = [$property];
@@ -147,7 +147,7 @@ class HomosaurusSuggest implements SuggesterInterface
      * @param string|null $lang
      * @return string
      */
-    protected function selectLanguage(array $values, $lang)
+    private function selectLanguage(array $values, $lang)
     {
         $lang = str_replace('_', '-', strtolower((string) $lang));
         $candidates = array_filter([$lang, explode('-', $lang)[0], 'en']);
