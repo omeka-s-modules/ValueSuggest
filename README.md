@@ -70,9 +70,9 @@ This module includes the following vocabularies:
 - Cultural Objects Name Authority (CONA)
 - Getty Iconography Authority (IA)
 
-### [Homosaurus](http://homosaurus.org/)
+### [Homosaurus](https://homosaurus.org/)
 
-- Homosaurus.org linked data vocabulary
+- Homosaurus.org linked data vocabulary (version 5)
 
 ### [IdRef](https://www.idref.fr/)
 
