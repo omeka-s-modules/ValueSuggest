@@ -71,6 +71,9 @@ $(document).on('o:prepare-value o:prepare-value-annotation', function(e, type, v
             e.preventDefault();
             idContainer.hide();
             valueInput.val(labelInput.val());
+            // Clear the URI so later edits go to @value, not the disabled label.
+            idInput.val('');
+            labelInput.val('');
             idInput.prop('disabled', true);
             labelInput.prop('disabled', true);
             valueInput.prop('disabled', false);
