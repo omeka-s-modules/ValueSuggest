@@ -15,6 +15,15 @@ $(document).on('o:prepare-value o:prepare-value-annotation', function(e, type, v
         var allResults;
         var allResultsRequest = null;
 
+        // Show a URI as a link, or as text if its scheme could run script, as
+        // AbstractDataType::render() does.
+        var uriLink = function(uri) {
+            if (/^(javascript|data|vbscript):/i.test(uri.replace(/[\x00-\x20]/g, ''))) {
+                return $('<span>').text(uri);
+            }
+            return $('<a>').attr('href', uri).attr('target', '_blank').text(uri);
+        };
+
         // Literal is the default type.
         idInput.prop('disabled', true);
         labelInput.prop('disabled', true);
@@ -28,11 +37,7 @@ $(document).on('o:prepare-value o:prepare-value-annotation', function(e, type, v
             idInput.prop('disabled', false);
             labelInput.prop('disabled', false);
             valueInput.prop('disabled', true);
-            var link = $('<a>')
-                .attr('href', idInput.val())
-                .attr('target', '_blank')
-                .text(idInput.val());
-            idContainer.show().find('.valuesuggest-id').html(link);
+            idContainer.show().find('.valuesuggest-id').html(uriLink(idInput.val()));
         } else if (valueInput.val()) {
             // Set value as Literal type
             suggestInput.val(valueInput.val()).attr('placeholder', valueInput.val());
@@ -119,11 +124,7 @@ $(document).on('o:prepare-value o:prepare-value-annotation', function(e, type, v
                     idInput.prop('disabled', false);
                     labelInput.prop('disabled', false);
                     valueInput.prop('disabled', true);
-                    var link = $('<a>')
-                        .attr('href', suggestion.data.uri)
-                        .attr('target', '_blank')
-                        .text(suggestion.data.uri);
-                    idContainer.show().find('.valuesuggest-id').html(link);
+                    idContainer.show().find('.valuesuggest-id').html(uriLink(suggestion.data.uri));
                 } else {
                     idInput.val('');
                     labelInput.val('');
