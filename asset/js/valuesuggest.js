@@ -13,6 +13,7 @@ $(document).on('o:prepare-value o:prepare-value-annotation', function(e, type, v
         var languageInput = thisValue.find('input[data-value-key="@language"]');
         var idContainer = thisValue.find('.valuesuggest-id-container');
         var allResults;
+        var allResultsRequest = null;
 
         // Literal is the default type.
         idInput.prop('disabled', true);
@@ -53,6 +54,10 @@ $(document).on('o:prepare-value o:prepare-value-annotation', function(e, type, v
         languageInput.on('input', function(e) {
             suggestInput.autocomplete().clearCache();
             allResults = null;
+            // Don't cache results requested in the previous language.
+            if (allResultsRequest) {
+                allResultsRequest.abort();
+            }
         })
 
         // Remove default language toggle, use custom behavior
@@ -149,16 +154,30 @@ $(document).on('o:prepare-value o:prepare-value-annotation', function(e, type, v
                     container.children().not(':has(strong)').hide();
                 }
             };
-            // Use custom lookup function to make only one request.
+            // Use custom lookup function to make only one request. Lookups made
+            // while it's pending wait for it, and a failed request isn't cached.
             options.lookup = function(query, done) {
-                if (null == allResults) {
-                    $.get(valueSuggestProxyUrl, this.params, function(data) {
-                        allResults = data; // cache the data
-                        done(allResults);
-                    });
-                } else {
+                if (null != allResults) {
                     done(allResults);
+                    return;
                 }
+                if (null === allResultsRequest) {
+                    allResultsRequest = $.get(valueSuggestProxyUrl, this.params)
+                        .done(function(data) {
+                            allResults = data; // cache the data
+                        })
+                        .always(function() {
+                            allResultsRequest = null;
+                        });
+                }
+                allResultsRequest
+                    .done(function() {
+                        done(allResults);
+                    })
+                    .fail(function() {
+                        // Silently handle error, ending the search.
+                        done({suggestions: []});
+                    });
             };
 
         // For the "valuesuggest" type, make requests as normal.
