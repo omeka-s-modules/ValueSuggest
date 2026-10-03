@@ -28,7 +28,7 @@ class PactolsSujets implements SuggesterInterface
     public function getSuggestions($query, $lang = null)
     {
         $lang = $this->getPrimaryLanguage($lang, 'fr');
-        $params = ['q' => $query, 'lang' => $lang, 'theso' => 'TH_1',  'group' => '6', 'format' => 'jsonld'];
+        $params = ['q' => $query, 'lang' => $lang, 'theso' => 'TH_1',  'groups' => '6', 'format' => 'jsonld'];
 
         $response = $this->client
             ->setUri('https://pactols.frantiq.fr/api/search')
