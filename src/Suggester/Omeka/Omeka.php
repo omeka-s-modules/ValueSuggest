@@ -7,6 +7,8 @@ class Omeka implements SuggesterWithContextInterface
 {
     protected $services;
 
+    protected $name;
+
     public function __construct($services, $name)
     {
         $this->services = $services;
