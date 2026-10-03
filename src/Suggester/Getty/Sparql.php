@@ -38,6 +38,11 @@ class Sparql implements SuggesterInterface
         // of relevance, filtering by the provided language, falling back on
         // english.
         // @see http://vocab.getty.edu/doc/#Full_Text_Search
+        //
+        // Terms are tagged with bare languages ("en", not "en-US"), so use the
+        // primary subtag, letters only.
+        preg_match('/^[a-z]+/', strtolower((string) $lang), $matches);
+        $lang = $matches[0] ?? 'en';
         $sparqlQuery = sprintf('
 SELECT ?Subject ?Term ?Parents ?ScopeNote ?ScopeNoteEn {
     ?Subject a skos:Concept ;
@@ -51,9 +56,9 @@ SELECT ?Subject ?Term ?Parents ?ScopeNote ?ScopeNoteEn {
 } LIMIT 500',
             addslashes($this->escapeLucene($query)),
             $this->scheme,
-            $lang ?: 'en',
+            $lang,
             // Do not filter by language when querying names from ULAN.
-            'ulan' === $this->scheme ? '' : sprintf('FILTER langMatches(lang(?Term), "%s")', $lang ?: 'en')
+            'ulan' === $this->scheme ? '' : sprintf('FILTER langMatches(lang(?Term), "%s")', $lang)
         );
         $client = $this->client->setUri(self::ENDPOINT)->setParameterGet([
             'query' => $sparqlQuery,
@@ -72,7 +77,7 @@ SELECT ?Subject ?Term ?Parents ?ScopeNote ?ScopeNoteEn {
         // not available, fall back on english ScopeNoteEn, then on the Parent.
         $suggestions = [];
         $results = json_decode($response->getBody(), true);
-        foreach ($results['results']['bindings'] as $result) {
+        foreach ($results['results']['bindings'] ?? [] as $result) {
             $info = null;
             if (isset($result['ScopeNote']['value'])) {
                 $info = $result['ScopeNote']['value'];
@@ -98,12 +103,14 @@ SELECT ?Subject ?Term ?Parents ?ScopeNote ?ScopeNoteEn {
      *
      * An unbalanced parenthesis or quote makes Getty's full text search return
      * nothing. The * wildcard is left as is, since users may type it on purpose.
+     * The query is lowercased so AND, OR and NOT aren't read as operators; the
+     * full text index is lowercased, so matching is unaffected.
      *
      * @param string $query
      * @return string
      */
     protected function escapeLucene($query)
     {
-        return preg_replace('/[+\-!(){}\[\]^"~?:\\\\\/]|&&|\|\|/', '\\\\$0', (string) $query);
+        return preg_replace('/[+\-!(){}\[\]^"~?:\\\\\/]|&&|\|\|/', '\\\\$0', mb_strtolower((string) $query));
     }
 }
