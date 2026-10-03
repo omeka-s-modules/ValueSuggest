@@ -1,10 +1,13 @@
 <?php
 namespace ValueSuggest\Suggester\Periodo;
 
+use ValueSuggest\Suggester\SortSuggestionsTrait;
 use ValueSuggest\Suggester\SuggesterInterface;
 
 class PeriodoSuggest implements SuggesterInterface
 {
+    use SortSuggestionsTrait;
+
     /**
      * Retrieve suggestions from the PeriodO dataset.
      *
@@ -55,9 +58,7 @@ class PeriodoSuggest implements SuggesterInterface
                 }
             }
         }
-        usort($suggestions, function ($a, $b) {
-            return strcmp($a['value'], $b['value']);
-        });
+        $suggestions = $this->sortSuggestions($suggestions);
         return $suggestions;
     }
 

@@ -2,12 +2,14 @@
 namespace ValueSuggest\Suggester\Nom;
 
 use ValueSuggest\Suggester\EscapeRegexTrait;
+use ValueSuggest\Suggester\SortSuggestionsTrait;
 use ValueSuggest\Suggester\SuggesterInterface;
 use Laminas\Http\Client;
 
 class Sparql implements SuggesterInterface
 {
     use EscapeRegexTrait;
+    use SortSuggestionsTrait;
 
     const ENDPOINT = 'https://nomenclature.info/repositories/nom';
 
@@ -75,9 +77,7 @@ LIMIT 500',
                 ],
             ];
         }
-        usort($suggestions, function ($a, $b) {
-            return strcmp($a['value'], $b['value']);
-        });
+        $suggestions = $this->sortSuggestions($suggestions);
 
         return $suggestions;
     }

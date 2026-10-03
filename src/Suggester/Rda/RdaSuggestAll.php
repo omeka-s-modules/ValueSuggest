@@ -1,11 +1,14 @@
 <?php
 namespace ValueSuggest\Suggester\Rda;
 
+use ValueSuggest\Suggester\SortSuggestionsTrait;
 use ValueSuggest\Suggester\SuggesterInterface;
 use Laminas\Http\Client;
 
 class RdaSuggestAll implements SuggesterInterface
 {
+    use SortSuggestionsTrait;
+
     /**
      * @var Client
      */
@@ -61,9 +64,7 @@ class RdaSuggestAll implements SuggesterInterface
                 ],
             ];
         }
-        usort($suggestions, function ($a, $b) {
-            return strcmp($a['value'], $b['value']);
-        });
+        $suggestions = $this->sortSuggestions($suggestions);
 
         return $suggestions;
     }

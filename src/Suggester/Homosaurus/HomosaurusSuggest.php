@@ -1,11 +1,14 @@
 <?php
 namespace ValueSuggest\Suggester\Homosaurus;
 
+use ValueSuggest\Suggester\SortSuggestionsTrait;
 use ValueSuggest\Suggester\SuggesterInterface;
 use Laminas\Http\Client;
 
 class HomosaurusSuggest implements SuggesterInterface
 {
+    use SortSuggestionsTrait;
+
     const ENDPOINT = 'https://homosaurus.org/search/v5.jsonld';
 
     /**
@@ -89,7 +92,7 @@ class HomosaurusSuggest implements SuggesterInterface
             }
 
             $ranked[] = [
-                'sort' => [$rank, mb_strtolower($label)],
+                'rank' => $rank,
                 'suggestion' => [
                     'value' => $label,
                     'data' => [
@@ -100,7 +103,7 @@ class HomosaurusSuggest implements SuggesterInterface
             ];
         }
         usort($ranked, function ($a, $b) {
-            return $a['sort'] <=> $b['sort'];
+            return $a['rank'] <=> $b['rank'] ?: $this->compareLabels($a['suggestion']['value'], $b['suggestion']['value']);
         });
 
         return array_column($ranked, 'suggestion');
