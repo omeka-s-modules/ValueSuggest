@@ -11,31 +11,41 @@ trait SortSuggestionsTrait
      */
     protected function sortSuggestions(array $suggestions)
     {
-        usort($suggestions, function ($a, $b) {
-            return $this->compareLabels($a['value'], $b['value']);
-        });
-        return $suggestions;
+        $keys = [];
+        foreach ($suggestions as $index => $suggestion) {
+            $keys[$index] = $this->getSortKey($suggestion['value']);
+        }
+        asort($keys, SORT_STRING);
+        $sorted = [];
+        foreach (array_keys($keys) as $index) {
+            $sorted[] = $suggestions[$index];
+        }
+        return $sorted;
     }
 
     /**
-     * Compare two labels alphabetically.
+     * Get a key that sorts a label alphabetically when compared byte by byte.
      *
      * Uses the intl extension's collator when available, so accented letters
      * sort with their base letters ("Ética" before "Zoología"). Otherwise
-     * compares case-insensitively.
+     * lowercases the label and strips its accents.
      *
-     * @param string $a
-     * @param string $b
-     * @return int
+     * @param string $label
+     * @return string
      */
-    protected function compareLabels($a, $b)
+    protected function getSortKey($label)
     {
         static $collator;
         if (null === $collator) {
             $collator = class_exists('Collator') ? new \Collator('root') : false;
         }
-        return $collator
-            ? $collator->compare($a, $b)
-            : strcmp(mb_strtolower($a), mb_strtolower($b));
+        if ($collator) {
+            return (string) $collator->getSortKey((string) $label);
+        }
+        $label = mb_strtolower((string) $label);
+        if (class_exists('Normalizer')) {
+            $label = preg_replace('/\p{Mn}/u', '', (string) \Normalizer::normalize($label, \Normalizer::FORM_D));
+        }
+        return (string) $label;
     }
 }

@@ -93,6 +93,7 @@ class HomosaurusSuggest implements SuggesterInterface
 
             $ranked[] = [
                 'rank' => $rank,
+                'sortKey' => $this->getSortKey($label),
                 'suggestion' => [
                     'value' => $label,
                     'data' => [
@@ -103,7 +104,7 @@ class HomosaurusSuggest implements SuggesterInterface
             ];
         }
         usort($ranked, function ($a, $b) {
-            return $a['rank'] <=> $b['rank'] ?: $this->compareLabels($a['suggestion']['value'], $b['suggestion']['value']);
+            return $a['rank'] <=> $b['rank'] ?: strcmp($a['sortKey'], $b['sortKey']);
         });
 
         return array_column($ranked, 'suggestion');
