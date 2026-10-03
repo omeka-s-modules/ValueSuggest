@@ -11,8 +11,8 @@ $escape = $this->plugin('escapeHtml');
     </label>
 </div>
 <div class="valuesuggest-vocab-container">
-    <label aria-label="<?php echo $this->escapeHtml($rdfLabel); ?>">
-        <span class="o-icon-vocab icon" aria-hidden="true" title="<?php echo $escape($rdfLabel); ?>"></span>
+    <label aria-label="<?php echo $escape($translate($rdfLabel)); ?>">
+        <span class="o-icon-vocab icon" aria-hidden="true" title="<?php echo $escape($translate($rdfLabel)); ?>"></span>
         <input type="text" class="valuesuggest-input">
     </label>
     <?php echo $this->formHidden($labelInput); ?>
