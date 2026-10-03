@@ -11,7 +11,7 @@ class Sparql implements SuggesterInterface
     use EscapeRegexTrait;
     use SortSuggestionsTrait;
 
-    const ENDPOINT = 'http://tesauros.cultura.gob.es/tesauros/sparql';
+    const ENDPOINT = 'https://tesauros.cultura.gob.es/tesauros/sparql';
 
     /**
      * @var Client
