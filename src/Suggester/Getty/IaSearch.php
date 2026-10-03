@@ -38,12 +38,19 @@ class IaSearch implements SuggesterInterface
             return [];
         }
         // Convert XML to JSON.
-        $xml = simplexml_load_string($response->getBody());
+        $xml = simplexml_load_string($response->getBody(), 'SimpleXMLElement', LIBXML_NOERROR | LIBXML_NOWARNING);
+        if (false === $xml) {
+            return [];
+        }
         $results = json_decode(json_encode($xml), true);
 
-        if ('0' === $results['Count']) {
+        if (empty($results['Iconography'])) {
             // Response returned no results. Return no suggestions.
             return [];
+        }
+        // A single match converts to one associative array instead of a list.
+        if (!isset($results['Iconography'][0])) {
+            $results['Iconography'] = [$results['Iconography']];
         }
 
         $suggestions = [];
