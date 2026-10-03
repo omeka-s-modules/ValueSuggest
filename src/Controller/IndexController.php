@@ -32,6 +32,11 @@ class IndexController extends AbstractActionController
         if (!is_string($type) || '' === trim($type)) {
             return $this->errorResponse(400, 'The request must include a data type.');
         }
+        $query = $this->params()->fromQuery('query');
+        $lang = $this->params()->fromQuery('lang');
+        if ((null !== $query && !is_string($query)) || (null !== $lang && !is_string($lang))) {
+            return $this->errorResponse(400, 'The query and lang parameters must be strings.');
+        }
 
         try {
             $dataType = $this->dataTypes->get($type);
@@ -54,16 +59,13 @@ class IndexController extends AbstractActionController
         unset($context['query'], $context['type']);
 
         try {
-            $suggestions = $suggester->getSuggestions(
-                $this->params()->fromQuery('query'),
-                $this->params()->fromQuery('lang') ?: null,
-                $context
-            );
+            $suggestions = $suggester->getSuggestions($query, $lang ?: null, $context);
         } catch (\Exception $e) {
             // The vocabulary service failed, for example with a timeout. Log it
-            // and return no suggestions rather than an error page.
+            // and respond with an error, which the client doesn't cache, rather
+            // than an error page or an empty result it would cache.
             $this->logger()->warn(sprintf('ValueSuggest: the "%s" suggester failed: %s', $type, $e->getMessage()));
-            $suggestions = [];
+            return $this->errorResponse(502, 'The vocabulary service is unavailable.');
         }
         if (!is_array($suggestions)) {
             return $this->errorResponse(500, sprintf('The "%s" data type must return an array; %s given.', $type, gettype($suggestions)));
