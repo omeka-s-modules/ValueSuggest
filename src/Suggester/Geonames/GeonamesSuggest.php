@@ -33,7 +33,7 @@ class GeonamesSuggest implements SuggesterInterface
             $params['lang'] = strstr($lang, '_', true) ?: $lang;
         }
         $response = $this->client
-        ->setUri('http://api.geonames.org/searchJSON')
+        ->setUri('https://secure.geonames.org/searchJSON')
         ->setParameterGet($params)
         ->send();
         if (!$response->isSuccess()) {

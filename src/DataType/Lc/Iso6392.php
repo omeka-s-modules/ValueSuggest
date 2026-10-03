@@ -10,7 +10,7 @@ class Iso6392 extends AbstractDataType
     {
         return new Suggest(
             $this->services->get('Omeka\HttpClient'),
-            'http://id.loc.gov/vocabulary/iso639-2/suggest'
+            'https://id.loc.gov/vocabulary/iso639-2/suggest'
         );
     }
 

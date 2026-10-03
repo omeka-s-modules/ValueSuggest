@@ -28,7 +28,7 @@ class PactolsSujets implements SuggesterInterface
         $params = ['q' => $query, 'lang' => $lang, 'theso' => 'TH_1',  'group' => '6', 'format' => 'jsonld'];
 
         $response = $this->client
-            ->setUri('https://pactols.frantiq.fr/opentheso/api/search')
+            ->setUri('https://pactols.frantiq.fr/api/search')
             ->setParameterGet($params)
             ->send();
         if (!$response->isSuccess()) {

@@ -10,7 +10,7 @@ class Relators extends AbstractDataType
     {
         return new Suggest(
             $this->services->get('Omeka\HttpClient'),
-            'http://id.loc.gov/vocabulary/relators/suggest'
+            'https://id.loc.gov/vocabulary/relators/suggest'
         );
     }
 

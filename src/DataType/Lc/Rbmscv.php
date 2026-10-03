@@ -10,7 +10,7 @@ class Rbmscv extends AbstractDataType
     {
         return new Suggest(
             $this->services->get('Omeka\HttpClient'),
-            'http://id.loc.gov/vocabulary/rbmscv/suggest'
+            'https://id.loc.gov/vocabulary/rbmscv/suggest'
         );
     }
 

@@ -28,7 +28,7 @@ class GndSuggest implements SuggesterInterface
     {
         $params = ['q' => $query, 'format' => 'json', 'size' => 100];
         $response = $this->client
-            ->setUri('http://lobid.org/gnd/search')
+            ->setUri('https://lobid.org/gnd/search')
             ->setParameterGet($params)
             ->send();
         if (!$response->isSuccess()) {

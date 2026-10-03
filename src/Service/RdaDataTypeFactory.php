@@ -10,259 +10,259 @@ class RdaDataTypeFactory implements FactoryInterface
     protected $types = [
         'valuesuggestall:rda:AspectRatio' => [
             'label' => 'RDA: Aspect Ratio Designation', // @translate
-            'url' => 'http://rdaregistry.info/termList/AspectRatio.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/AspectRatio.jsonld',
         ],
         'valuesuggestall:rda:bookFormat' => [
             'label' => 'RDA: Bibliographic Format', // @translate
-            'url' => 'http://rdaregistry.info/termList/bookFormat.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/bookFormat.jsonld',
         ],
         'valuesuggestall:rda:broadcastStand' => [
             'label' => 'RDA: Broadcast Standard', // @translate
-            'url' => 'http://rdaregistry.info/termList/broadcastStand.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/broadcastStand.jsonld',
         ],
         'valuesuggestall:rda:RDACarrierEU' => [
             'label' => 'RDA: Carrier Extent Unit', // @translate
-            'url' => 'http://rdaregistry.info/termList/RDACarrierEU.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/RDACarrierEU.jsonld',
         ],
         'valuesuggestall:rda:RDACarrierType' => [
             'label' => 'RDA: Carrier Type', // @translate
-            'url' => 'http://rdaregistry.info/termList/RDACarrierType.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/RDACarrierType.jsonld',
         ],
         'valuesuggestall:rda:RDACartoDT' => [
             'label' => 'RDA: Cartographic Data Type', // @translate
-            'url' => 'http://rdaregistry.info/termList/RDACartoDT.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/RDACartoDT.jsonld',
         ],
         'valuesuggestall:rda:RDACollectionAccrualMethod' => [
             'label' => 'RDA: Collection Accrual Method', // @translate
-            'url' => 'http://rdaregistry.info/termList/RDACollectionAccrualMethod.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/RDACollectionAccrualMethod.jsonld',
         ],
         'valuesuggestall:rda:RDACollectionAccrualPolicy' => [
             'label' => 'RDA: Collection Accrual Policy', // @translate
-            'url' => 'http://rdaregistry.info/termList/RDACollectionAccrualPolicy.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/RDACollectionAccrualPolicy.jsonld',
         ],
         'valuesuggestall:rda:RDAColourContent' => [
             'label' => 'RDA: Colour Content', // @translate
-            'url' => 'http://rdaregistry.info/termList/RDAColourContent.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/RDAColourContent.jsonld',
         ],
         'valuesuggestall:rda:configPlayback' => [
             'label' => 'RDA: Configuration of Playback Channels', // @translate
-            'url' => 'http://rdaregistry.info/termList/configPlayback.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/configPlayback.jsonld',
         ],
         'valuesuggestall:rda:RDAContentType' => [
             'label' => 'RDA: Content Type', // @translate
-            'url' => 'http://rdaregistry.info/termList/RDAContentType.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/RDAContentType.jsonld',
         ],
         'valuesuggestall:rda:RDAExtensionPlan' => [
             'label' => 'RDA: Extension Plan', // @translate
-            'url' => 'http://rdaregistry.info/termList/RDAExtensionPlan.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/RDAExtensionPlan.jsonld',
         ],
         'valuesuggestall:rda:CollTitle' => [
             'label' => 'RDA: Conventional Collective Title', // @translate
-            'url' => 'http://rdaregistry.info/termList/CollTitle.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/CollTitle.jsonld',
         ],
         'valuesuggestall:rda:fileType' => [
             'label' => 'RDA: File Type', // @translate
-            'url' => 'http://rdaregistry.info/termList/fileType.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/fileType.jsonld',
         ],
         'valuesuggestall:rda:fontSize' => [
             'label' => 'RDA: Font Size', // @translate
-            'url' => 'http://rdaregistry.info/termList/fontSize.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/fontSize.jsonld',
         ],
         'valuesuggestall:rda:MusNotation' => [
             'label' => 'RDA: Form of Musical Notation', // @translate
-            'url' => 'http://rdaregistry.info/termList/MusNotation.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/MusNotation.jsonld',
         ],
         'valuesuggestall:rda:noteMove' => [
             'label' => 'RDA: Form of Notated Movement', // @translate
-            'url' => 'http://rdaregistry.info/termList/noteMove.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/noteMove.jsonld',
         ],
         'valuesuggestall:rda:TacNotation' => [
             'label' => 'RDA: Form of Tactile Notation', // @translate
-            'url' => 'http://rdaregistry.info/termList/TacNotation.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/TacNotation.jsonld',
         ],
         'valuesuggestall:rda:formatNoteMus' => [
             'label' => 'RDA: Format of Notated Music', // @translate
-            'url' => 'http://rdaregistry.info/termList/formatNoteMus.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/formatNoteMus.jsonld',
         ],
         'valuesuggestall:rda:frequency' => [
             'label' => 'RDA: Frequency', // @translate
-            'url' => 'http://rdaregistry.info/termList/frequency.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/frequency.jsonld',
         ],
         'valuesuggestall:rda:RDAGeneration' => [
             'label' => 'RDA: Generation', // @translate
-            'url' => 'http://rdaregistry.info/termList/RDAGeneration.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/RDAGeneration.jsonld',
         ],
         'valuesuggestall:rda:groovePitch' => [
             'label' => 'RDA: Groove Pitch of an Analog Cylinder', // @translate
-            'url' => 'http://rdaregistry.info/termList/groovePitch.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/groovePitch.jsonld',
         ],
         'valuesuggestall:rda:grooveWidth' => [
             'label' => 'RDA: Groove Width of an Analog Disc', // @translate
-            'url' => 'http://rdaregistry.info/termList/grooveWidth.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/grooveWidth.jsonld',
         ],
         'valuesuggestall:rda:IllusContent' => [
             'label' => 'RDA: Illustrative Content', // @translate
-            'url' => 'http://rdaregistry.info/termList/IllusContent.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/IllusContent.jsonld',
         ],
         'valuesuggestall:rda:RDAInteractivityMode' => [
             'label' => 'RDA: Interactivity Mode', // @translate
-            'url' => 'http://rdaregistry.info/termList/RDAInteractivityMode.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/RDAInteractivityMode.jsonld',
         ],
         'valuesuggestall:rda:layout' => [
             'label' => 'RDA: Layout', // @translate
-            'url' => 'http://rdaregistry.info/termList/layout.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/layout.jsonld',
         ],
         'valuesuggestall:rda:RDALinkedDataWork' => [
             'label' => 'RDA: Linked Data Work', // @translate
-            'url' => 'http://rdaregistry.info/termList/RDALinkedDataWork.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/RDALinkedDataWork.jsonld',
         ],
         'valuesuggestall:rda:RDAMaterial' => [
             'label' => 'RDA: Material', // @translate
-            'url' => 'http://rdaregistry.info/termList/RDAMaterial.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/RDAMaterial.jsonld',
         ],
         'valuesuggestall:rda:RDAMediaType' => [
             'label' => 'RDA: Media Type', // @translate
-            'url' => 'http://rdaregistry.info/termList/RDAMediaType.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/RDAMediaType.jsonld',
         ],
         'valuesuggestall:rda:ModeIssue' => [
             'label' => 'RDA: Mode of Issuance', // @translate
-            'url' => 'http://rdaregistry.info/termList/ModeIssue.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/ModeIssue.jsonld',
         ],
         'valuesuggestall:rda:RDAPolarity' => [
             'label' => 'RDA: Polarity', // @translate
-            'url' => 'http://rdaregistry.info/termList/RDAPolarity.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/RDAPolarity.jsonld',
         ],
         'valuesuggestall:rda:presFormat' => [
             'label' => 'RDA: Presentation Format', // @translate
-            'url' => 'http://rdaregistry.info/termList/presFormat.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/presFormat.jsonld',
         ],
         'valuesuggestall:rda:RDAproductionMethod' => [
             'label' => 'RDA: Production Method', // @translate
-            'url' => 'http://rdaregistry.info/termList/RDAproductionMethod.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/RDAproductionMethod.jsonld',
         ],
         'valuesuggestall:rda:recMedium' => [
             'label' => 'RDA: Recording Medium', // @translate
-            'url' => 'http://rdaregistry.info/termList/recMedium.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/recMedium.jsonld',
         ],
         'valuesuggestall:rda:RDARecordingMethods' => [
             'label' => 'RDA: Recording Methods', // @translate
-            'url' => 'http://rdaregistry.info/termList/RDARecordingMethods.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/RDARecordingMethods.jsonld',
         ],
         'valuesuggestall:rda:RDARecordingSources' => [
             'label' => 'RDA: Recording Sources', // @translate
-            'url' => 'http://rdaregistry.info/termList/RDARecordingSources.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/RDARecordingSources.jsonld',
         ],
         'valuesuggestall:rda:RDAReductionRatio' => [
             'label' => 'RDA: Reduction Ratio Designation', // @translate
-            'url' => 'http://rdaregistry.info/termList/RDAReductionRatio.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/RDAReductionRatio.jsonld',
         ],
         'valuesuggestall:rda:RDARegionalEncoding' => [
             'label' => 'RDA: Regional Encoding', // @translate
-            'url' => 'http://rdaregistry.info/termList/RDARegionalEncoding.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/RDARegionalEncoding.jsonld',
         ],
         'valuesuggestall:rda:scale' => [
             'label' => 'RDA: Scale Designation', // @translate
-            'url' => 'http://rdaregistry.info/termList/scale.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/scale.jsonld',
         ],
         'valuesuggestall:rda:soundCont' => [
             'label' => 'RDA: Sound Content', // @translate
-            'url' => 'http://rdaregistry.info/termList/soundCont.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/soundCont.jsonld',
         ],
         'valuesuggestall:rda:specPlayback' => [
             'label' => 'RDA: Special Playback Characteristics', // @translate
-            'url' => 'http://rdaregistry.info/termList/specPlayback.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/specPlayback.jsonld',
         ],
         'valuesuggestall:rda:statIdentification' => [
             'label' => 'RDA: Status of Identification', // @translate
-            'url' => 'http://rdaregistry.info/termList/statIdentification.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/statIdentification.jsonld',
         ],
         'valuesuggestall:rda:RDATerms' => [
             'label' => 'RDA: Terms', // @translate
-            'url' => 'http://rdaregistry.info/termList/RDATerms.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/RDATerms.jsonld',
         ],
         'valuesuggestall:rda:trackConfig' => [
             'label' => 'RDA: Track Configuration', // @translate
-            'url' => 'http://rdaregistry.info/termList/trackConfig.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/trackConfig.jsonld',
         ],
         'valuesuggestall:rda:RDATypeOfBinding' => [
             'label' => 'RDA: Type Of Binding', // @translate
-            'url' => 'http://rdaregistry.info/termList/RDATypeOfBinding.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/RDATypeOfBinding.jsonld',
         ],
         'valuesuggestall:rda:typeRec' => [
             'label' => 'RDA: Type of Recording', // @translate
-            'url' => 'http://rdaregistry.info/termList/typeRec.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/typeRec.jsonld',
         ],
         'valuesuggestall:rda:RDAUnitOfTime' => [
             'label' => 'RDA: Unit of Time', // @translate
-            'url' => 'http://rdaregistry.info/termList/RDAUnitOfTime.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/RDAUnitOfTime.jsonld',
         ],
         'valuesuggestall:rda:RDATasks' => [
             'label' => 'RDA: User Tasks', // @translate
-            'url' => 'http://rdaregistry.info/termList/RDATasks.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/RDATasks.jsonld',
         ],
         'valuesuggestall:rda:videoFormat' => [
             'label' => 'RDA: Video Format', // @translate
-            'url' => 'http://rdaregistry.info/termList/videoFormat.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/videoFormat.jsonld',
         ],
         'valuesuggestall:rda:gender' => [
             'label' => 'RDA:  Gender', // @translate
-            'url' => 'http://rdaregistry.info/termList/gender.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/gender.jsonld',
         ],
         'valuesuggestall:rda:rofch' => [
             'label' => 'RDA: Character', // @translate
-            'url' => 'http://rdaregistry.info/termList/rofch.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/rofch.jsonld',
         ],
         'valuesuggestall:rda:rofem' => [
             'label' => 'RDA: Extension Mode', // @translate
-            'url' => 'http://rdaregistry.info/termList/rofem.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/rofem.jsonld',
         ],
         'valuesuggestall:rda:rofer' => [
             'label' => 'RDA: Extension Requirement', // @translate
-            'url' => 'http://rdaregistry.info/termList/rofer.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/rofer.jsonld',
         ],
         'valuesuggestall:rda:rofet' => [
             'label' => 'RDA: Extension Termination', // @translate
-            'url' => 'http://rdaregistry.info/termList/rofet.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/rofet.jsonld',
         ],
         'valuesuggestall:rda:rofhf' => [
             'label' => 'RDA: Housing Format', // @translate
-            'url' => 'http://rdaregistry.info/termList/rofhf.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/rofhf.jsonld',
         ],
         'valuesuggestall:rda:rofid' => [
             'label' => 'RDA: Image Dimensionality', // @translate
-            'url' => 'http://rdaregistry.info/termList/rofid.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/rofid.jsonld',
         ],
         'valuesuggestall:rda:rofim' => [
             'label' => 'RDA: Image Movement', // @translate
-            'url' => 'http://rdaregistry.info/termList/rofim.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/rofim.jsonld',
         ],
         'valuesuggestall:rda:rofin' => [
             'label' => 'RDA: Interaction', // @translate
-            'url' => 'http://rdaregistry.info/termList/rofin.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/rofin.jsonld',
         ],
         'valuesuggestall:rda:rofit' => [
             'label' => 'RDA: Intermediation Tool', // @translate
-            'url' => 'http://rdaregistry.info/termList/rofit.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/rofit.jsonld',
         ],
         'valuesuggestall:rda:rofrm' => [
             'label' => 'RDA: Revision Mode', // @translate
-            'url' => 'http://rdaregistry.info/termList/rofrm.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/rofrm.jsonld',
         ],
         'valuesuggestall:rda:rofrr' => [
             'label' => 'RDA: Revision Requirement', // @translate
-            'url' => 'http://rdaregistry.info/termList/rofrr.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/rofrr.jsonld',
         ],
         'valuesuggestall:rda:rofrt' => [
             'label' => 'RDA: Revision Termination', // @translate
-            'url' => 'http://rdaregistry.info/termList/rofrt.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/rofrt.jsonld',
         ],
         'valuesuggestall:rda:rofsm' => [
             'label' => 'RDA: Sensory Mode', // @translate
-            'url' => 'http://rdaregistry.info/termList/rofsm.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/rofsm.jsonld',
         ],
         'valuesuggestall:rda:rofsf' => [
             'label' => 'RDA: Storage Medium Format', // @translate
-            'url' => 'http://rdaregistry.info/termList/rofsf.jsonld',
+            'url' => 'https://www.rdaregistry.info/jsonld/termList/rofsf.jsonld',
         ],
     ];
 

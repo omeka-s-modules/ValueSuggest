@@ -10,7 +10,7 @@ class Geographicareas extends AbstractDataType
     {
         return new Suggest(
             $this->services->get('Omeka\HttpClient'),
-            'http://id.loc.gov/vocabulary/geographicAreas/suggest'
+            'https://id.loc.gov/vocabulary/geographicAreas/suggest'
         );
     }
 

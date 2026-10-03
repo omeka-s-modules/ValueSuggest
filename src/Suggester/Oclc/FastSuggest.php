@@ -27,7 +27,7 @@ class FastSuggest implements SuggesterInterface
     public function getSuggestions($query, $lang = null)
     {
         $response = $this->client
-            ->setUri('http://fast.oclc.org/searchfast/fastsuggest')
+            ->setUri('https://fast.oclc.org/searchfast/fastsuggest')
             ->setParameterGet([
                 'query' => $query,
                 'queryIndex' => 'suggestall',

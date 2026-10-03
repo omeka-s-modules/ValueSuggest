@@ -6,7 +6,7 @@ use Laminas\Http\Client;
 
 class Search implements SuggesterInterface
 {
-    const ENDPOINT = 'http://id.loc.gov/search/';
+    const ENDPOINT = 'https://id.loc.gov/search/';
 
     /**
      * @var Client
