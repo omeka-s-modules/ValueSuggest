@@ -17,7 +17,7 @@ class RorSuggest implements SuggesterInterface
     }
 
     /**
-     * Retrieve suggestions from the ROR public API.
+     * Retrieve suggestions from the ROR public API (v2).
      *
      * @see https://ror.readme.io/docs/rest-api
      * @param string $query
@@ -32,7 +32,7 @@ class RorSuggest implements SuggesterInterface
         $headers = $this->client->getRequest()->getHeaders();
         $headers->addHeaderLine('Accept', 'application/json');
         $response = $this->client
-            ->setUri('https://api.ror.org/organizations')
+            ->setUri('https://api.ror.org/v2/organizations')
             ->setParameterGet($params)
             ->send();
         if (!$response->isSuccess()) {
@@ -41,39 +41,45 @@ class RorSuggest implements SuggesterInterface
         // Parse the JSON response.
         $suggestions = [];
         $results = json_decode($response->getBody(), true);
-        // echo '<pre>';print_r($results);exit;
-        foreach ($results['items'] as $result) {
+        foreach ($results['items'] ?? [] as $result) {
+            // Each name is typed: ror_display (the display name), label,
+            // alias, or acronym. A name may have more than one type.
+            $name = null;
             $info = [];
-            if ($result['aliases']) {
-                foreach ($result['aliases'] as $alias) {
-                    $info[] = sprintf('alias: %s', $alias);
+            foreach ($result['names'] ?? [] as $resultName) {
+                $types = $resultName['types'] ?? [];
+                if (in_array('ror_display', $types)) {
+                    $name = $resultName['value'];
+                }
+                if (in_array('alias', $types)) {
+                    $info[] = sprintf('alias: %s', $resultName['value']);
+                }
+                if (in_array('acronym', $types)) {
+                    $info[] = sprintf('acronym: %s', $resultName['value']);
                 }
             }
-            if ($result['acronyms']) {
-                foreach ($result['acronyms'] as $acronym) {
-                    $info[] = sprintf('acronym: %s', $acronym);
+            if (null === $name) {
+                continue;
+            }
+            foreach ($result['types'] ?? [] as $type) {
+                $info[] = sprintf('type: %s', $type);
+            }
+            foreach ($result['links'] ?? [] as $link) {
+                if (isset($link['value'])) {
+                    $info[] = sprintf('link: %s', $link['value']);
                 }
             }
-            if ($result['types']) {
-                foreach ($result['types'] as $type) {
-                    $info[] = sprintf('type: %s', $type);
-                }
-            }
-            if ($result['links']) {
-                foreach ($result['links'] as $link) {
-                    $info[] = sprintf('link: %s', $link);
-                }
-            }
-            if ($result['country']) {
-                $info[] = sprintf('country: %s', $result['country']['country_name']);
-            }
-            if ($result['addresses']) {
-                foreach ($result['addresses'] as $address) {
-                    $info[] = sprintf('address: %s', $address['city']);
+            foreach ($result['locations'] ?? [] as $location) {
+                $place = array_filter([
+                    $location['geonames_details']['name'] ?? null,
+                    $location['geonames_details']['country_name'] ?? null,
+                ]);
+                if ($place) {
+                    $info[] = sprintf('location: %s', implode(', ', $place));
                 }
             }
             $suggestions[] = [
-                'value' => $result['name'],
+                'value' => $name,
                 'data' => [
                     'uri' => $result['id'],
                     'info' => implode("\n", $info),
