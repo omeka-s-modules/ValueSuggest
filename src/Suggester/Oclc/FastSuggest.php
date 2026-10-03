@@ -43,7 +43,7 @@ class FastSuggest implements SuggesterInterface
         // Parse the JSON response.
         $suggestions = [];
         $results = json_decode($response->getBody(), true);
-        foreach ($results['response']['docs'] as $result) {
+        foreach ($results['response']['docs'] ?? [] as $result) {
             $idroot = substr(is_array($result['idroot']) ? $result['idroot'][0] : $result['idroot'], 3);
             $suggestions[] = [
                 'value' => $result['suggestall'][0],

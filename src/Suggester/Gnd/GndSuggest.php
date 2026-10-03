@@ -38,7 +38,7 @@ class GndSuggest implements SuggesterInterface
         // Parse the JSON response.
         $suggestions = [];
         $results = json_decode($response->getBody(), true);
-        foreach ($results['member'] as $result) {
+        foreach ($results['member'] ?? [] as $result) {
             $info = [];
             // type
             if (isset($result['type'])) {

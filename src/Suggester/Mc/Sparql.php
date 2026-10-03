@@ -59,8 +59,11 @@ ORDER BY ?label',
         }
 
         $suggestions = [];
-        $sparql = new \SimpleXMLElement($response->getBody());
-        foreach ($sparql->results->result as $result) {
+        $sparql = simplexml_load_string($response->getBody(), 'SimpleXMLElement', LIBXML_NOERROR | LIBXML_NOWARNING);
+        if (false === $sparql) {
+            return [];
+        }
+        foreach ($sparql->results->result ?? [] as $result) {
             $suggestions[] = [
                 'value' => (string) $result->binding[1]->literal,
                 'data' => [

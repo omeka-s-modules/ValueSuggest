@@ -70,7 +70,7 @@ LIMIT 500',
 
         $suggestions = [];
         $results = json_decode($response->getBody(), true);
-        foreach ($results['results']['bindings'] as $result) {
+        foreach ($results['results']['bindings'] ?? [] as $result) {
             $suggestions[] = [
                 'value' => $result['label']['value'],
                 'data' => [

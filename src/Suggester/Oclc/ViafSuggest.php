@@ -53,7 +53,7 @@ class ViafSuggest implements SuggesterInterface
         // Parse the JSON response.
         $suggestions = [];
         $results = json_decode($response->getBody(), true);
-        foreach ($results['result'] as $result) {
+        foreach ($results['result'] ?? [] as $result) {
             $info = [];
             if ($result['nametype']) {
                 $info[] = sprintf('Type: %s', $result['nametype']);

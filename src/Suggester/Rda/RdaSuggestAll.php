@@ -48,12 +48,15 @@ class RdaSuggestAll implements SuggesterInterface
         // Parse the JSON-LD response.
         $suggestions = [];
         $results = json_decode($response->getBody(), true);
-        foreach ($results['@graph'] as $result) {
+        foreach ($results['@graph'] ?? [] as $result) {
             if (!isset($result['inScheme'])) {
                 continue;
             }
             $value = $result['prefLabel'][$lang]
-                ?? $result['prefLabel']['en'];
+                ?? $result['prefLabel']['en'] ?? null;
+            if (null === $value) {
+                continue;
+            }
             $info = $result['ToolkitDefinition'][$lang]
                 ?? ($result['ToolkitDefinition']['en'] ?? null);
             $suggestions[] = [

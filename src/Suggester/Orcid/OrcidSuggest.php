@@ -42,7 +42,7 @@ class OrcidSuggest implements SuggesterInterface
         // Parse the JSON response.
         $suggestions = [];
         $results = json_decode($response->getBody(), true);
-        foreach ($results['expanded-result'] as $result) {
+        foreach ($results['expanded-result'] ?? [] as $result) {
             // Match how ORCID itself prioritizes and formats names.
             $value = $result['credit-name'] ?: sprintf('%s %s', $result['given-names'], $result['family-names']);
             $info = [];

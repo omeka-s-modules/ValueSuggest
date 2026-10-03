@@ -48,7 +48,7 @@ class Suggest implements SuggesterInterface
         // information.
         $suggestions = [];
         $results = json_decode($response->getBody(), true);
-        foreach ($results[1] as $key => $result) {
+        foreach ($results[1] ?? [] as $key => $result) {
             $suggestions[] = [
                 'value' => $result,
                 'data' => [

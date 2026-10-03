@@ -41,7 +41,10 @@ class PactolsSujets implements SuggesterInterface
         // Parse the JSON response.
         $suggestions = [];
         $results = json_decode($response->getBody(), true);
-        foreach ($results as $result) {
+        foreach ($results ?? [] as $result) {
+            if (!isset($result['http://www.w3.org/2004/02/skos/core#prefLabel'])) {
+                continue;
+            }
             foreach ($result['http://www.w3.org/2004/02/skos/core#prefLabel'] as $prefLabel) {
                 if ($lang === $prefLabel['@language']) {
                     $info = null;

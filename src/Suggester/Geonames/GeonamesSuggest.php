@@ -43,7 +43,7 @@ class GeonamesSuggest implements SuggesterInterface
         // Parse the JSON response.
         $suggestions = [];
         $results = json_decode($response->getBody(), true);
-        foreach ($results['geonames'] as $result) {
+        foreach ($results['geonames'] ?? [] as $result) {
             $info = [];
             if (isset($result['fcodeName']) && $result['fcodeName']) {
                 $info[] = sprintf('Feature: %s', $result['fcodeName']);
