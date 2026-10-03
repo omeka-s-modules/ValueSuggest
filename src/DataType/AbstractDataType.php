@@ -60,10 +60,7 @@ abstract class AbstractDataType extends BaseAbstractDataType implements DataType
 
     public function isValid(array $valueObject)
     {
-        if (isset($valueObject['@id'])
-            && is_string($valueObject['@id'])
-            && '' !== trim($valueObject['@id'])
-        ) {
+        if ($this->isUsableUri($valueObject['@id'] ?? null)) {
             return true;
         }
         if (isset($valueObject['@value'])
@@ -81,7 +78,7 @@ abstract class AbstractDataType extends BaseAbstractDataType implements DataType
         $valueStr = null;
         $langStr = null;
 
-        if (isset($valueObject['@id'])) {
+        if ($this->isUsableUri($valueObject['@id'] ?? null)) {
             $uriStr = $valueObject['@id'];
             if (isset($valueObject['o:label'])) {
                 $valueStr = $valueObject['o:label'];
@@ -101,13 +98,16 @@ abstract class AbstractDataType extends BaseAbstractDataType implements DataType
 
     public function render(PhpRenderer $view, ValueRepresentation $value)
     {
-        if ($value->uri()) {
-            if ('' !== trim($value->value())) {
-                return $view->hyperlink($value->value(), $value->uri(), ['class' => 'uri-value-link']);
+        $uri = $value->uri();
+        if ($uri) {
+            $label = '' !== trim((string) $value->value()) ? $value->value() : $uri;
+            if (!$this->isUsableUri($uri)) {
+                // Don't link a javascript: URI saved before they were rejected.
+                return $view->escapeHtml($label);
             }
-            return $view->hyperlink($value->uri(), $value->uri(), ['class' => 'uri-value-link']);
+            return $view->hyperlink($label, $uri, ['class' => 'uri-value-link']);
         }
-        return $value->value();
+        return nl2br($view->escapeHtml((string) $value->value()));
     }
 
     public function getJsonLd(ValueRepresentation $value)
@@ -144,22 +144,36 @@ abstract class AbstractDataType extends BaseAbstractDataType implements DataType
         $value = $valueObject->getValue();
         $uri = $valueObject->getUri();
 
-        if (is_string($value) && '' !== trim($value) && is_string($uri) && '' !== trim($uri)) {
-            // The value object has a value and a URI.
+        if ($this->isUsableUri($uri)) {
+            // The value object has a URI.
             return true;
         }
-        if (is_string($uri) && '' !== trim($uri)) {
-            // The value object has no value, but has a URI.
-            return true;
-        }
-        if (is_string($value) && filter_var($value, FILTER_VALIDATE_URL)) {
-            // The value object has a value, but has no URI. The value is a URL.
-            // Move the value to the URI.
+        if (is_string($value) && filter_var($value, FILTER_VALIDATE_URL) && $this->isUsableUri($value)) {
+            // The value object has no usable URI, but the value is a URL. Move
+            // the value to the URI.
             $valueObject->setValue(null);
             $valueObject->setUri($value);
             return true;
         }
 
         return false;
+    }
+
+    /**
+     * Check that a URI is a non-empty string that isn't a javascript: URI.
+     *
+     * Browsers ignore case, tabs, newlines and control characters in a URL's
+     * scheme, so they're ignored here too.
+     *
+     * @param mixed $uri
+     * @return bool
+     */
+    private function isUsableUri($uri)
+    {
+        if (!is_string($uri) || '' === trim($uri)) {
+            return false;
+        }
+        $normalized = strtolower(preg_replace('/[\x00-\x20]/', '', $uri));
+        return 0 !== strpos($normalized, 'javascript:');
     }
 }
