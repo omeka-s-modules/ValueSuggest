@@ -49,7 +49,7 @@ SELECT ?Subject ?Term ?Parents ?ScopeNote ?ScopeNoteEn {
     OPTIONAL {?Subject skos:scopeNote [dct:language gvp_lang:en; rdf:value ?ScopeNoteEn]}
     %s
 } LIMIT 500',
-            addslashes($query),
+            addslashes($this->escapeLucene($query)),
             $this->scheme,
             $lang ?: 'en',
             // Do not filter by language when querying names from ULAN.
@@ -91,5 +91,19 @@ SELECT ?Subject ?Term ?Parents ?ScopeNote ?ScopeNoteEn {
         }
 
         return $suggestions;
+    }
+
+    /**
+     * Escape Lucene query syntax so a query like "chair (" matches literally.
+     *
+     * An unbalanced parenthesis or quote makes Getty's full text search return
+     * nothing. The * wildcard is left as is, since users may type it on purpose.
+     *
+     * @param string $query
+     * @return string
+     */
+    protected function escapeLucene($query)
+    {
+        return preg_replace('/[+\-!(){}\[\]^"~?:\\\\\/]|&&|\|\|/', '\\\\$0', (string) $query);
     }
 }
