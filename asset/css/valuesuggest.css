@@ -44,13 +44,13 @@
     background-color: #fff;
     margin: 0;
     width: 100%;
-    height: 36px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
 .valuesuggest-vocab-container label {
-    width: calc(100% - 35px);
+    padding-right: 35px;
 }
 
 .language-wrapper.active + .valuesuggest-vocab-container label {
@@ -64,6 +64,10 @@
     font-size: 14px;
     margin: 6px;
     padding: 0 6px;
+}
+
+.inputs input[type="text"].valuesuggest-input {
+  margin: .25rem .25rem 0;
 }
 
 .inputs button.valuesuggest-id-remove {
@@ -115,4 +119,14 @@
 .inputs .valuesuggest-language-container a.value-language {
     background-color: #fff;
     cursor: pointer;
+}
+
+.o-icon-vocab.icon {
+    display: inline-flex;
+    gap: .25rem .5rem;
+    margin: 0 .25rem;
+}
+
+.o-icon-vocab.icon::before {
+    line-height: 24px;
 }
