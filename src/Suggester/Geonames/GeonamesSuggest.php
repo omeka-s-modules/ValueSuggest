@@ -10,13 +10,31 @@ class GeonamesSuggest implements SuggesterInterface
     use PrimaryLanguageTrait;
 
     /**
+     * The username used when none is configured.
+     */
+    private const DEFAULT_USERNAME = 'kdlinfo';
+
+    /**
      * @var Client
      */
     protected $client;
 
-    public function __construct(Client $client)
+    /**
+     * @var string
+     */
+    private $username;
+
+    /**
+     * @param Client $client
+     * @param string|null $username A GeoNames username; when blank, a default
+     *   is used
+     */
+    public function __construct(Client $client, $username = null)
     {
         $this->client = $client;
+        $this->username = (is_string($username) && '' !== trim($username))
+            ? trim($username)
+            : self::DEFAULT_USERNAME;
     }
 
     /**
@@ -29,7 +47,7 @@ class GeonamesSuggest implements SuggesterInterface
      */
     public function getSuggestions($query, $lang = null)
     {
-        $params = ['q' => $query, 'maxRows' => 100, 'username' => 'kdlinfo'];
+        $params = ['q' => $query, 'maxRows' => 100, 'username' => $this->username];
         // Geonames requires an ISO-639 2-letter language code, so use the
         // primary subtag ("zh" for "zh_CN" or "zh-CN").
         $lang = $this->getPrimaryLanguage($lang, '');
@@ -40,13 +58,24 @@ class GeonamesSuggest implements SuggesterInterface
         ->setUri('https://secure.geonames.org/searchJSON')
         ->setParameterGet($params)
         ->send();
+
+        // GeoNames reports errors, such as a used-up limit or an invalid
+        // username, as a status object, sometimes with HTTP 200. The proxy
+        // logs the message.
+        $results = json_decode($response->getBody(), true);
+        if (isset($results['status']['message'])) {
+            throw new \RuntimeException(sprintf(
+                'GeoNames error %s: %s',
+                $results['status']['value'] ?? '?',
+                $results['status']['message']
+            ));
+        }
         if (!$response->isSuccess()) {
             return [];
         }
 
         // Parse the JSON response.
         $suggestions = [];
-        $results = json_decode($response->getBody(), true);
         foreach ($results['geonames'] ?? [] as $result) {
             $info = [];
             if (isset($result['fcodeName']) && $result['fcodeName']) {

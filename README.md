@@ -59,7 +59,7 @@ This module includes the following vocabularies:
 
 ### [GeoNames](http://www.geonames.org/)
 
-- The GeoNames geographical database
+- The GeoNames geographical database (enter the username of a free [GeoNames account](https://www.geonames.org/login) in the module's configuration)
 - GeoNames features
 
 ### [The Getty Vocabularies](http://vocab.getty.edu/)

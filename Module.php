@@ -6,7 +6,10 @@ use Omeka\Module\AbstractModule;
 use Laminas\EventManager\Event;
 use Laminas\EventManager\SharedEventManagerInterface;
 use Laminas\ServiceManager\ServiceLocatorInterface;
+use Laminas\Mvc\Controller\AbstractController;
 use Laminas\Mvc\MvcEvent;
+use Laminas\View\Renderer\PhpRenderer;
+use ValueSuggest\Form\ConfigForm;
 
 class Module extends AbstractModule
 {
@@ -22,6 +25,11 @@ class Module extends AbstractModule
         $acl->allow(null, 'ValueSuggest\Controller\Index', 'proxy');
     }
 
+    public function uninstall(ServiceLocatorInterface $services)
+    {
+        $services->get('Omeka\Settings')->delete('valuesuggest_geonames_username');
+    }
+
     public function upgrade($oldVersion, $newVersion, ServiceLocatorInterface $services)
     {
         $conn = $services->get('Omeka\Connection');
@@ -29,6 +37,30 @@ class Module extends AbstractModule
             // OCLC VIAF URIs were invalid. Fix them here.
             $conn->exec("UPDATE value SET uri = REPLACE(uri, 'www.viaf.org', 'viaf.org') WHERE type = 'valuesuggest:oclc:viaf';");
         }
+    }
+
+    public function getConfigForm(PhpRenderer $renderer)
+    {
+        $settings = $this->getServiceLocator()->get('Omeka\Settings');
+        $form = $this->getServiceLocator()->get('FormElementManager')->get(ConfigForm::class);
+        $form->setData([
+            'geonames_username' => $settings->get('valuesuggest_geonames_username'),
+        ]);
+        return $renderer->formCollection($form, false);
+    }
+
+    public function handleConfigForm(AbstractController $controller)
+    {
+        $settings = $this->getServiceLocator()->get('Omeka\Settings');
+        $form = $this->getServiceLocator()->get('FormElementManager')->get(ConfigForm::class);
+        $form->setData($controller->params()->fromPost());
+        if (!$form->isValid()) {
+            $controller->messenger()->addErrors($form->getMessages());
+            return false;
+        }
+        $formData = $form->getData();
+        $settings->set('valuesuggest_geonames_username', $formData['geonames_username']);
+        return true;
     }
 
     public function attachListeners(SharedEventManagerInterface $sharedEventManager)
