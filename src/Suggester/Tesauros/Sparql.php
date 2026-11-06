@@ -35,7 +35,7 @@ class Sparql implements SuggesterInterface
      * Retrieve suggestions from the Tesauros-Diccionarios del patrimonio
      * cultural de España SPARQL endpoint.
      *
-     * @see http://tesauros.cultura.gob.es/tesauros/tesauros
+     * @see https://tesauros.cultura.gob.es/tesauros/tesauros
      * @param string $query
      * @param string $lang
      * @return array

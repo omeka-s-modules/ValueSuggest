@@ -268,7 +268,7 @@ Suggest values that already exist in the working Omeka installation.
 
 - Research Organization Registry
 
-### [Tesauros del patrimonio cultural de España](http://tesauros.cultura.gob.es/tesauros)
+### [Tesauros del patrimonio cultural de España](https://tesauros.cultura.gob.es/tesauros)
 
 - Diccionario de Bienes Culturales
 - Diccionario de Materias

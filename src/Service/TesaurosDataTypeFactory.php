@@ -10,39 +10,39 @@ class TesaurosDataTypeFactory implements FactoryInterface
     protected $types = [
         'valuesuggest:tesauros:bienesculturales' => [
             'label' => 'Tesauros: Diccionario de Bienes Culturales', // @translate
-            'scheme' => 'http://tesauros.cultura.gob.es/tesauros/bienesculturales',
+            'scheme' => 'https://tesauros.cultura.gob.es/tesauros/bienesculturales',
         ],
         'valuesuggest:tesauros:materias' => [
             'label' => 'Tesauros: Diccionario de Materias', // @translate
-            'scheme' => 'http://tesauros.cultura.gob.es/tesauros/materias',
+            'scheme' => 'https://tesauros.cultura.gob.es/tesauros/materias',
         ],
         'valuesuggest:tesauros:tecnicas' => [
             'label' => 'Tesauros: Diccionario de Técnicas', // @translate
-            'scheme' => 'http://tesauros.cultura.gob.es/tesauros/tecnicas',
+            'scheme' => 'https://tesauros.cultura.gob.es/tesauros/tecnicas',
         ],
         'valuesuggest:tesauros:contextosculturales' => [
             'label' => 'Tesauros: Diccionario de Contextos Culturales', // @translate
-            'scheme' => 'http://tesauros.cultura.gob.es/tesauros/contextosculturales',
+            'scheme' => 'https://tesauros.cultura.gob.es/tesauros/contextosculturales',
         ],
         'valuesuggest:tesauros:geografico' => [
             'label' => 'Tesauros: Diccionario Geográfico', // @translate
-            'scheme' => 'http://tesauros.cultura.gob.es/tesauros/geografico',
+            'scheme' => 'https://tesauros.cultura.gob.es/tesauros/geografico',
         ],
         'valuesuggest:tesauros:toponimiahistorica' => [
             'label' => 'Tesauros: Diccionario de Toponimia Histórica', // @translate
-            'scheme' => 'http://tesauros.cultura.gob.es/tesauros/toponimiahistorica',
+            'scheme' => 'https://tesauros.cultura.gob.es/tesauros/toponimiahistorica',
         ],
         'valuesuggest:tesauros:ceramica' => [
             'label' => 'Tesauros: Diccionario de Cerámica', // @translate
-            'scheme' => 'http://tesauros.cultura.gob.es/tesauros/ceramica',
+            'scheme' => 'https://tesauros.cultura.gob.es/tesauros/ceramica',
         ],
         'valuesuggest:tesauros:numismatica' => [
             'label' => 'Tesauros: Diccionario de Numismática', // @translate
-            'scheme' => 'http://tesauros.cultura.gob.es/tesauros/numismatica',
+            'scheme' => 'https://tesauros.cultura.gob.es/tesauros/numismatica',
         ],
         'valuesuggest:tesauros:mobiliario' => [
             'label' => 'Tesauros: Diccionario de Mobiliario', // @translate
-            'scheme' => 'http://tesauros.cultura.gob.es/tesauros/mobiliario',
+            'scheme' => 'https://tesauros.cultura.gob.es/tesauros/mobiliario',
         ],
     ];
 
