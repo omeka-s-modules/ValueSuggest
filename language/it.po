@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-03 14:07-0400\n"
+"POT-Creation-Date: 2026-11-06 20:15-0500\n"
 "PO-Revision-Date: 2017-09-14 20:16+0000\n"
 "Last-Translator: Giorgio Comai <g@giorgiocomai.eu>, 2026\n"
 "Language-Team: Italian (https://app.transifex.com/omeka/teams/14184/it/)\n"
@@ -843,7 +843,7 @@ msgstr ""
 msgid "Geonames: GeoNames features"
 msgstr ""
 
-#: src/DataType/Geonames/Geonames.php:21
+#: src/DataType/Geonames/Geonames.php:24
 msgid "Geonames: The GeoNames geographical database"
 msgstr "Geonames: il database geografico GeoNames"
 
@@ -910,4 +910,15 @@ msgstr "Dublin Core: Termini"
 
 #: src/DataType/Gnd/Gnd.php:21
 msgid "GND: Die Gemeinsame Normdatei"
+msgstr ""
+
+#: src/Form/ConfigForm.php:26
+msgid "GeoNames username"
+msgstr ""
+
+#: src/Form/ConfigForm.php:28
+#, php-format
+msgid ""
+"GeoNames limits how many searches each username can make, so we recommend "
+"using your own. Get a free account at %s and enter its username here."
 msgstr ""

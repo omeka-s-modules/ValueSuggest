@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-03 14:07-0400\n"
+"POT-Creation-Date: 2026-11-06 20:15-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -836,7 +836,7 @@ msgstr ""
 msgid "Geonames: GeoNames features"
 msgstr ""
 
-#: src/DataType/Geonames/Geonames.php:21
+#: src/DataType/Geonames/Geonames.php:24
 msgid "Geonames: The GeoNames geographical database"
 msgstr ""
 
@@ -903,4 +903,15 @@ msgstr ""
 
 #: src/DataType/Gnd/Gnd.php:21
 msgid "GND: Die Gemeinsame Normdatei"
+msgstr ""
+
+#: src/Form/ConfigForm.php:26
+msgid "GeoNames username"
+msgstr ""
+
+#: src/Form/ConfigForm.php:28
+#, php-format
+msgid ""
+"GeoNames limits how many searches each username can make, so we recommend "
+"using your own. Get a free account at %s and enter its username here."
 msgstr ""
