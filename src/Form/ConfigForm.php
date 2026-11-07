@@ -25,8 +25,8 @@ class ConfigForm extends Form
             'options' => [
                 'label' => 'GeoNames username', // @translate
                 'info' => new Message(
-                    'Set a GeoNames username so GeoNames suggestions work reliably. Register a free account at %s and enter its username here.', // @translate
-                    '<a href="https://www.geonames.org/login" target="_blank">https://www.geonames.org/login</a>'
+                    'GeoNames limits how many searches each username can make, so we recommend using your own. Get a free account at %s and enter its username here.', // @translate
+                    '<a href="https://www.geonames.org/" target="_blank">https://www.geonames.org/</a>'
                 ),
                 // The info text carries a link, and holds no user-supplied content.
                 'escape_info' => false,
